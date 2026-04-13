@@ -3,37 +3,28 @@ import pandas as pd
 import plotly.express as px
 import os
 
-st.set_page_config(page_title="2026 AI & SMR 분석", layout="wide")
-st.title("🛡️ 2026 AI 인프라/SMR 성능 리포트")
-
-if os.path.exists("model_perf.csv"):
-    perf = pd.read_csv("model_perf.csv")
-    acc_v, prec_v = perf['Score'].values[0], perf['Score'].values[1]
-    m1, m2 = st.columns(2)
-    m1.metric("예측 정확도", f"{acc_v*100:.1f}%")
-    m2.metric("상승 적중 정밀도", f"{prec_v*100:.1f}%")
-
-st.divider()
+st.set_page_config(page_title="AI & 뉴스 통합 분석", layout="wide")
+st.title("📡 2026 AI 인프라 뉴스-데이터 통합 리포트")
 
 if os.path.exists("full_result.csv"):
     df = pd.read_csv("full_result.csv")
-    imp_df = pd.read_csv("feature_importance.csv")
-    top10 = df.head(10)
     
-    st.subheader("🔥 AI 인프라/SMR 상승 예측 TOP 10")
-    fig = px.bar(top10, x='name', y='prob', text_auto='.1%', color='prob', color_continuous_scale='RdYlGn')
+    st.subheader("💡 뉴스 심리 vs AI 예측 확률 비교")
+    # 버블 차트로 시각화 (X: 뉴스 점수, Y: 상승 확률, 크기: 종가)
+    fig = px.scatter(df, x="news_score", y="prob", size="Close", color="name",
+                     hover_name="name", text="name", size_max=40,
+                     labels={"news_score": "뉴스 감성 지수 (높을수록 호재)", "prob": "AI 예측 상승 확률"},
+                     title="시장 심리와 기술적 지표의 상관관계")
     st.plotly_chart(fig, use_container_width=True)
 
     st.divider()
-    st.subheader("🧐 개별 종목 xAI 분석")
-    sel = st.selectbox("종목 선택", top10['name'].tolist())
-    row = top10[top10['name'] == sel].iloc[0]
     
-    c1, c2 = st.columns(2)
-    with c1:
-        st.write(f"### {sel}")
-        st.write(f"5일 내 상승 확률: **{row['prob']*100:.1f}%**")
-        st.info(f"이 결과는 과거 데이터 시험 정답률 {acc_v*100:.1f}%를 기반으로 산출되었습니다.")
-    with c2:
-        fig_p = px.pie(imp_df, values='Importance', names='Feature', hole=0.4, title="예측 근거 비중")
-        st.plotly_chart(fig_p, use_container_width=True)
+    col1, col2 = st.columns(2)
+    with col1:
+        st.subheader("🔥 AI 추천 TOP 5")
+        st.dataframe(df[['name', 'prob', 'news_score']].head(5).style.format({'prob': '{:.2%}'}))
+    with col2:
+        st.subheader("📰 실시간 뉴스 호재 순위")
+        st.dataframe(df.sort_values('news_score', ascending=False)[['name', 'news_score']].head(5))
+
+    st.info("※ 뉴스 지수는 실시간 헤드라인의 긍정/부정 단어 빈도를 분석한 결과입니다.")
