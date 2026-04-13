@@ -4,3 +4,4 @@ plotly
 yfinance
 xgboost
 scikit-learn
+matplotlib

@@ -17,8 +17,8 @@ else:
     st.plotly_chart(fig_imp, use_container_width=True)
 
     st.divider()
-    st.subheader("📈 전체 50개 종목 분석 결과")
-    st.dataframe(df.style.format({'prob': '{:.2%}', 'Close': '{:,.0f}원'}).background_gradient(subset=['prob'], cmap='RdYlGn'), use_container_width=True, height=500)
+    st.subheader(f"📈 전체 분석 결과 ({len(df)}개 종목)")
+    st.dataframe(df.style.format({'prob': '{:.2%}', 'Close': '{:,.0f}원'}).background_gradient(subset=['prob'], cmap='RdYlGn'), use_container_width=True, height=600)
 
     st.divider()
     selected = st.selectbox("종목 상세 해석", df['name'].tolist())
