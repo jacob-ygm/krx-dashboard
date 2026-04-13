@@ -1,30 +1,32 @@
 import streamlit as st
 import pandas as pd
-import plotly.express as px
 import os
 
-st.set_page_config(page_title="AI & 뉴스 통합 분석", layout="wide")
-st.title("📡 2026 AI 인프라 뉴스-데이터 통합 리포트")
+st.set_page_config(page_title="2026 AI 인프라 통합 분석", layout="wide")
+st.title("📡 AI·SMR·국방 통합 데이터 센터")
 
-if os.path.exists("full_result.csv"):
+if os.path.exists("full_result.csv") and os.path.exists("news_info.csv"):
     df = pd.read_csv("full_result.csv")
+    news = pd.read_csv("news_info.csv")
     
-    st.subheader("💡 뉴스 심리 vs AI 예측 확률 비교")
-    # 버블 차트로 시각화 (X: 뉴스 점수, Y: 상승 확률, 크기: 종가)
-    fig = px.scatter(df, x="news_score", y="prob", size="Close", color="name",
-                     hover_name="name", text="name", size_max=40,
-                     labels={"news_score": "뉴스 감성 지수 (높을수록 호재)", "prob": "AI 예측 상승 확률"},
-                     title="시장 심리와 기술적 지표의 상관관계")
-    st.plotly_chart(fig, use_container_width=True)
+    st.subheader("🏁 종합 예측 순위 (경제지수+차트+심리 반영)")
+    top_df = df.sort_values("prob", ascending=False).head(10)
+    st.dataframe(top_df[['name', 'prob', 'Close', 'USD_KRW', 'SP500']].style.format({'prob': '{:.2%}'}), use_container_width=True)
 
     st.divider()
     
+    sel = st.selectbox("상세 분석 종목 선택", df['name'].unique())
     col1, col2 = st.columns(2)
+    
     with col1:
-        st.subheader("🔥 AI 추천 TOP 5")
-        st.dataframe(df[['name', 'prob', 'news_score']].head(5).style.format({'prob': '{:.2%}'}))
+        st.write(f"### 📊 {sel} 기술적/경제 지표")
+        row = df[df['name'] == sel].iloc[0]
+        st.write(f"- **상승 확률**: {row['prob']*100:.1f}%")
+        st.write(f"- **현재가**: {row['Close']:,}원 / **RSI**: {row['rsi']:.1f}")
+        st.write(f"- **시장환경**: 환율 {row['USD_KRW']:.1f} / S&P500 {row['SP500']:.1f}")
+        
     with col2:
-        st.subheader("📰 실시간 뉴스 호재 순위")
-        st.dataframe(df.sort_values('news_score', ascending=False)[['name', 'news_score']].head(5))
-
-    st.info("※ 뉴스 지수는 실시간 헤드라인의 긍정/부정 단어 빈도를 분석한 결과입니다.")
+        st.write(f"### 📰 {sel} 관련 최신 뉴스")
+        s_news = news[news['name'] == sel]
+        for _, n_row in s_news.iterrows():
+            st.markdown(f"- [{n_row['title']}]({n_row['link']})")
