@@ -1,1 +1,6 @@
-streamlit\npandas\nyfinance\nxgboost\nscikit-learn\nplotly
+streamlit
+pandas
+yfinance
+xgboost
+scikit-learn
+plotly
