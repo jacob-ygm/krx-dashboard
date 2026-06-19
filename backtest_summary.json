@@ -1,9 +1,44 @@
 {
   "backtest_period": "2026-04-05 ~ 2026-06-18",
-  "total_signals": 1654,
-  "win_rate": 0.9045,
-  "avg_real_ret": 0.0962,
-  "avg_pred_ret": 0.0604,
-  "pred_real_corr": 0.4049,
-  "final_cumret": 30.529
+  "wf_auc_mean": 0.5583,
+  "wf_mae_mean": 0.0479,
+  "total_signals": 926,
+  "win_rate": 0.4406,
+  "avg_real_ret": 0.0151,
+  "avg_pred_ret": 0.0174,
+  "pred_real_corr": -0.0263,
+  "final_cumret": 1.5799,
+  "bounce_win_rate": 0.4043,
+  "pattern_stats": {
+    "pattern_double_bottom": {
+      "count": 392,
+      "win_rate": 0.4082,
+      "avg_ret": 0.0171
+    },
+    "pattern_golden_cross": {
+      "count": 116,
+      "win_rate": 0.6293,
+      "avg_ret": 0.0365
+    },
+    "pattern_rsi_div": {
+      "count": 411,
+      "win_rate": 0.438,
+      "avg_ret": 0.0208
+    },
+    "pattern_macd_div": {
+      "count": 270,
+      "win_rate": 0.3963,
+      "avg_ret": 0.0018
+    },
+    "pattern_oversold": {
+      "count": 132,
+      "win_rate": 0.5,
+      "avg_ret": 0.028
+    },
+    "pattern_vol_breakout": {
+      "count": 171,
+      "win_rate": 0.4035,
+      "avg_ret": -0.014
+    }
+  }
 }
