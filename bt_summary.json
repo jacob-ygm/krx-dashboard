@@ -1,33 +1,33 @@
 {
-  "period": "2026-04-05 ~ 2026-06-19",
-  "data_note": "장 마감 후(20:46 KST) — 당일(2026-06-19) 포함",
+  "period": "2026-04-05 ~ 2026-06-18",
+  "data_note": "주말 — 마지막 거래일(2026-06-18) 기준",
   "n_models": 3,
-  "wf_auc": 0.5307,
-  "val_auc": 0.564,
-  "signals": 40,
-  "win_rate": 0.075,
-  "avg_ret": -0.0416,
-  "cumret": -0.1352,
+  "wf_auc": 0.5302,
+  "val_auc": 0.5398,
+  "signals": 3,
+  "win_rate": 0.0,
+  "avg_ret": -0.0646,
+  "cumret": -0.1225,
   "pattern_stats": {
     "이중바닥": {
-      "count": 340,
-      "win_rate": 0.3588,
-      "avg_ret": -0.0003
+      "count": 335,
+      "win_rate": 0.3552,
+      "avg_ret": -0.0013
     },
     "골든크로스": {
-      "count": 91,
-      "win_rate": 0.5385,
-      "avg_ret": 0.0221
+      "count": 89,
+      "win_rate": 0.5393,
+      "avg_ret": 0.0233
     },
     "RSI다이버전스": {
-      "count": 396,
-      "win_rate": 0.452,
-      "avg_ret": 0.0218
+      "count": 358,
+      "win_rate": 0.4246,
+      "avg_ret": 0.0182
     },
     "MACD다이버전스": {
-      "count": 261,
-      "win_rate": 0.3831,
-      "avg_ret": 0.0029
+      "count": 251,
+      "win_rate": 0.3745,
+      "avg_ret": 0.0005
     },
     "과매도반등": {
       "count": 130,

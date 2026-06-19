@@ -346,7 +346,7 @@ with t6:
     if "foreign_net" in df.columns:
         if "supply_source" in df.columns:
             sc2=df["supply_source"].value_counts()
-            lm2={"krx":"✅ KRX직접","pykrx":"📊 pykrx","ewy_est":"📈 EWY추정","none":"❌ 없음"}
+            lm2={"naver":"🟢 네이버","krx":"✅ KRX직접","pykrx":"📊 pykrx","ewy_est":"📈 EWY추정","none":"❌ 없음"}
             cols2=st.columns(min(len(sc2),4))
             for i,(k,v) in enumerate(sc2.items()):
                 cols2[min(i,len(cols2)-1)].markdown(
