@@ -4,3 +4,7 @@ yfinance
 xgboost
 scikit-learn
 plotly
+requests
+beautifulsoup4
+pykrx
+tqdm
