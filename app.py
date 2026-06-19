@@ -28,6 +28,10 @@ st.markdown("""
   .df td,.df th{font-size:13px!important;padding:5px 4px!important;}
   div[data-baseweb="tab-list"]{overflow-x:auto;white-space:nowrap;flex-wrap:nowrap!important;}
   button[data-baseweb="tab"]{font-size:12px!important;padding:5px 8px!important;}
+  .badge-closed{background:#1e3a2f;color:#4ade80;border-radius:6px;
+                padding:2px 8px;font-size:11px;font-weight:700;}
+  .badge-open{background:#3a2a1e;color:#f59e0b;border-radius:6px;
+              padding:2px 8px;font-size:11px;font-weight:700;}
 </style>""", unsafe_allow_html=True)
 
 @st.cache_data(ttl=3600)
@@ -51,17 +55,23 @@ df,news,macro,fi,btg,btd,bts,bts_j=load()
 if df is None:
     st.error("⚠️ 데이터 없음 — Colab 파이프라인을 먼저 실행하세요"); st.stop()
 
-base  = df.get("base_date",  pd.Series(["-"])).iloc[0]
-wauc  = float(df.get("wf_auc",  pd.Series([0])).iloc[0])
-vauc  = float(df.get("val_auc", pd.Series([0])).iloc[0])
-nm    = int(df.get("n_models",  pd.Series([1])).iloc[0])
+base      = df.get("base_date",  pd.Series(["-"])).iloc[0]
+data_note = df.get("data_note",  pd.Series([""])).iloc[0] if "data_note" in df.columns else ""
+wauc      = float(df.get("wf_auc",  pd.Series([0])).iloc[0])
+vauc      = float(df.get("val_auc", pd.Series([0])).iloc[0])
+nm        = int(df.get("n_models",  pd.Series([1])).iloc[0])
+
+# 장 마감 배지
+is_closed = "장 마감 후" in data_note or "주말" in data_note
+badge_cls = "badge-closed" if is_closed else "badge-open"
+badge_txt = "✅ 당일 데이터 포함" if is_closed else "⏳ 전일 데이터 (장 중)"
 
 st.markdown(f"""
 <div style='text-align:center;padding:12px 0 4px;'>
   <div style='font-size:21px;font-weight:900;color:#60a5fa;'>📈 KOSPI 100 분석</div>
   <div style='font-size:11px;color:#8892a4;margin-top:4px;'>
-    기준 <b>{base}</b> | WF-AUC <b>{wauc:.3f}</b> | Val-AUC <b>{vauc:.3f}</b>
-    | {nm}모델 앙상블 | 🇺🇸연계 · 🧠FinBERT · 📉패턴 · 🏭섹터
+    기준 <b>{base}</b> &nbsp;<span class="{badge_cls}">{badge_txt}</span><br>
+    WF-AUC <b>{wauc:.3f}</b> | Val-AUC <b>{vauc:.3f}</b> | {nm}모델 앙상블
   </div>
 </div>""", unsafe_allow_html=True)
 
@@ -93,11 +103,12 @@ with t1:
         st.markdown(f'<div class="card card-gold"><h4>반등신호</h4><div class="val">{hb}</div></div>',unsafe_allow_html=True)
 
     CM={"name":"종목","sector":"섹터","prob_up":"상승확률","pred_ret5d":"예상수익(5일)",
-        "bounce_score":"반등","news_contrib_pct":"뉴스기여%","grade":"등급","Close":"현재가"}
+        "bounce_score":"반등","news_contrib_pct":"뉴스기여%",
+        "dist_52w_high":"52w고가괴리","grade":"등급","Close":"현재가"}
     dc=[c for c in CM if c in show.columns]
     dp=show[dc].rename(columns=CM).reset_index(drop=True); dp.index+=1
     fm={"상승확률":"{:.1%}","예상수익(5일)":"{:+.2%}","현재가":"{:,.0f}",
-        "반등":"{:.0f}","뉴스기여%":"{:.1f}%"}
+        "반등":"{:.0f}","뉴스기여%":"{:.1f}%","52w고가괴리":"{:+.1%}"}
     fm={k:v for k,v in fm.items() if k in dp.columns}
     st2=dp.style.format(fm)
     if "상승확률" in dp.columns: st2=st2.background_gradient(subset=["상승확률"],cmap="RdYlGn")
@@ -151,6 +162,8 @@ with t2:
                 "거래량비율":f"{row.get('vol_ratio',0):.2f}x",
                 "샤프모멘텀":f"{row.get('sharpe_mom',0):.2f}",
                 "52주수익":f"{row.get('ret_52w',0)*100:+.1f}%",
+                "52주고가괴리":f"{row.get('dist_52w_high',0)*100:+.1f}%",
+                "52주저가반등":f"{row.get('dist_52w_low',0)*100:+.1f}%",
                 "섹터상대강도":f"{row.get('sector_rel',0)*100:+.2f}%",
                 "미국섹터연계":f"{row.get('us_sector_ret',0)*100:+.2f}%",
                 "1d/5d/20d":f"{row.get('ret_1d',0)*100:+.2f}%/{row.get('ret_5d',0)*100:+.2f}%/{row.get('ret_20d',0)*100:+.2f}%"}.items():
@@ -162,7 +175,19 @@ with t2:
     for k,v in {"ROE":f"{row.get('dart_roe',0):.1f}%",
                 "부채비율":f"{row.get('dart_debt_ratio',0):.1f}%",
                 "영업이익률":f"{row.get('dart_op_margin',0):.1f}%",
-                "순이익률":f"{row.get('dart_net_margin',0):.1f}%"}.items():
+                "순이익률":f"{row.get('dart_net_margin',0):.1f}%",
+                "매출 YoY":f"{row.get('dart_rev_growth',0)*100:+.1f}%",
+                "영업이익 YoY":f"{row.get('dart_oi_growth',0)*100:+.1f}%"}.items():
+        l,r2=st.columns([2,1])
+        l.markdown(f"<span style='color:#8892a4;font-size:13px'>{k}</span>",unsafe_allow_html=True)
+        r2.markdown(f"<b>{v}</b>",unsafe_allow_html=True)
+
+    st.divider(); st.markdown("##### 🌐 거시 스냅샷")
+    for k,v in {"한미금리차":f"{row.get('rate_diff_kr_us',0):+.3f}%p",
+                "SOX(반도체)":f"{row.get('SOX',0):,.1f}",
+                "KTB10Y":f"{row.get('KTB10Y',0):.3f}%",
+                "US10Y":f"{row.get('US10Y',0):.3f}%",
+                "달러/원":f"{row.get('USD_KRW',0):,.1f}"}.items():
         l,r2=st.columns([2,1])
         l.markdown(f"<span style='color:#8892a4;font-size:13px'>{k}</span>",unsafe_allow_html=True)
         r2.markdown(f"<b>{v}</b>",unsafe_allow_html=True)
@@ -171,17 +196,21 @@ with t2:
     nc=float(row.get("news_contrib_pct",0)); nd=float(row.get("news_direction",0))
     nc_c="#22c55e" if nd>0 else("#ef4444" if nd<0 else "#8892a4")
     dl="🟢 상승기여" if nd>0 else("🔴 하락기여" if nd<0 else "⚪ 중립")
+    sm3=float(row.get("sent_ma3",0)); smom=float(row.get("sent_momentum",0))
     st.markdown(f'<div class="card" style="border-left-color:{nc_c}"><h4>뉴스·감성 기여도</h4>'
                 f'<div class="val" style="color:{nc_c}">{nc:.1f}%</div>'
-                f'<div class="sub">{dl} | 전체 예측 중 뉴스/심리 비중</div></div>',unsafe_allow_html=True)
-    _si=[(l,float(row.get(c,0))) for c,l in [("shap_sentiment","종합감성"),
-         ("shap_bert_score","BERT"),("shap_news_pos","긍정"),("shap_news_neg","부정"),("shap_fomc","FOMC")]]
+                f'<div class="sub">{dl} | 3일평균감성 {sm3:+.3f} | 모멘텀 {smom:+.3f}</div></div>',unsafe_allow_html=True)
+    _si=[(l,float(row.get(c,0))) for c,l in [
+        ("shap_sentiment","종합감성"),("shap_bert_score","BERT"),
+        ("shap_news_pos","긍정"),("shap_news_neg","부정"),
+        ("shap_sent_ma3","감성MA"),("shap_sent_momentum","감성모멘텀"),
+        ("shap_fomc","FOMC")]]
     if any(abs(v)>1e-6 for _,v in _si):
         mx=max(abs(v) for _,v in _si)+1e-9
         for lb,val in _si:
             pct=abs(val)/mx*100; clr="#22c55e" if val>0 else "#ef4444"
             st.markdown(f"""<div style='display:flex;align-items:center;gap:8px;margin:3px 0;font-size:12px;'>
-              <div style='width:60px;color:#8892a4;'>{lb}</div>
+              <div style='width:70px;color:#8892a4;'>{lb}</div>
               <div style='flex:1;background:#2a2f3e;border-radius:6px;height:10px;overflow:hidden;'>
                 <div style='width:{pct:.0f}%;background:{clr};height:10px;'></div></div>
               <div style='width:70px;color:{clr};text-align:right;'>{"▲" if val>0 else "▼"}{abs(val):.3f}</div>
@@ -209,10 +238,12 @@ with t3:
     st.markdown("#### 📉 차트패턴 & 반등")
     if "bounce_score" in df.columns:
         bt2=df.sort_values("bounce_score",ascending=False).head(15)
-        d2=bt2[["name","sector","bounce_score","prob_up","pred_ret5d","grade"]].copy()
-        d2.columns=["종목","섹터","반등스코어","상승확률","예상수익","등급"]
+        d2=bt2[["name","sector","bounce_score","prob_up","pred_ret5d",
+                "dist_52w_low","grade"]].copy()
+        d2.columns=["종목","섹터","반등스코어","상승확률","예상수익","52w저가반등","등급"]
         d2=d2.reset_index(drop=True); d2.index+=1
-        st.dataframe(d2.style.format({"반등스코어":"{:.0f}","상승확률":"{:.1%}","예상수익":"{:+.2%}"}
+        st.dataframe(d2.style.format({"반등스코어":"{:.0f}","상승확률":"{:.1%}",
+                                      "예상수익":"{:+.2%}","52w저가반등":"{:+.1%}"}
                                     ).background_gradient(subset=["반등스코어"],cmap="YlOrRd"),
                      use_container_width=True,height=350)
     st.divider()
@@ -222,28 +253,14 @@ with t3:
     bc="#22c55e" if bs>=60 else("#f59e0b" if bs>=30 else "#ef4444")
     st.markdown(f'<div class="card" style="border-left-color:{bc}"><h4>반등 종합 스코어</h4>'
                 f'<div class="val" style="color:{bc}">{bs}/100</div>'
-                f'<div class="sub">지지 {pr2.get("support",0):,.0f}원 → 저항 {pr2.get("resistance",0):,.0f}원</div></div>',
+                f'<div class="sub">지지 {pr2.get("support",0):,.0f}원 → 저항 {pr2.get("resistance",0):,.0f}원 | '
+                f'52주저가 대비 +{pr2.get("dist_52w_low",0)*100:.1f}%</div></div>',
                 unsafe_allow_html=True)
     PT={"p_db":"📊 이중바닥","p_gc":"✨ 골든크로스","p_rd":"📈 RSI다이버전스",
         "p_md":"📉 MACD다이버전스","p_os":"🔄 과매도","p_vb":"💥 거래량돌파"}
     tg="".join(f'<span class="pt{" pt-on" if int(pr2.get(c,0))==1 else ""}">{l}</span>'
                for c,l in PT.items())
     st.markdown(f"<div style='margin:10px 0;'>{tg}</div>",unsafe_allow_html=True)
-    sr=float(pr2.get("sr_ratio",0.5))
-    st.markdown(f"""
-    <div style='font-size:12px;color:#8892a4;margin-top:10px;'>지지 ↔ 저항 위치 ({sr:.0%})</div>
-    <div style='background:#2a2f3e;border-radius:8px;height:10px;overflow:hidden;'>
-      <div style='width:{int(sr*100)}%;background:linear-gradient(90deg,#22c55e,#f59e0b,#ef4444);height:10px;'></div>
-    </div>""",unsafe_allow_html=True)
-    with st.expander("패턴 해석"):
-        st.markdown("""| 패턴 | 의미 |
-|---|---|
-| 📊 이중바닥 | 강한 반등 시작점 (두 저점이 유사한 가격) |
-| ✨ 골든크로스 | MA5 > MA20 상향 돌파 → 단기 상승 전환 |
-| 📈 RSI 다이버전스 | 가격↓ + RSI↑ → 하락 모멘텀 약화 |
-| 📉 MACD 다이버전스 | 가격↓ + MACD히스토그램↑ → 추세 전환 초기 |
-| 🔄 과매도 반등 | RSI<30 + 볼린저 하단 → 기술적 반등 가능 |
-| 💥 거래량 돌파 | 거래량 20일평균 2배↑ + 가격 상승 |""")
 
 # ── TAB4 거시경제 ──────────────────────────────────────
 with t4:
@@ -266,6 +283,9 @@ with t4:
             ("🛢️ 브렌트","OIL_BRENT","{:.2f}$",None),
             ("🥇 금","GOLD","{:,.1f}$","GOLD_chg"),
             ("🇺🇸 미10년채","US10Y","{:.3f}%","US10Y_chg"),
+            ("🇰🇷 한10년채","KTB10Y","{:.3f}%","KTB10Y_chg"),
+            ("📊 한미금리차","rate_diff_kr_us","{:+.3f}%p",None),
+            ("💻 SOX반도체","SOX","{:,.1f}","SOX_chg"),
             ("💲 달러인덱스","DXY","{:.2f}",None)]:
             if col not in m: continue
             ch=""
@@ -289,8 +309,7 @@ with t5:
     st.markdown("#### 📊 백테스트 결과")
     if bts_j:
         st.caption(f"📅 {bts_j.get('period','-')} | {bts_j.get('n_models',1)}모델 | WF-AUC {bts_j.get('wf_auc',0):.3f}")
-        wr=bts_j.get("win_rate",0); ar=bts_j.get("avg_ret",0)
-        cr=bts_j.get("cumret",0)
+        wr=bts_j.get("win_rate",0); ar=bts_j.get("avg_ret",0); cr=bts_j.get("cumret",0)
         c1,c2,c3=st.columns(3)
         with c1: st.markdown(f'<div class="card {"card-up" if wr>=0.5 else "card-down"}"><h4>실제 승률</h4><div class="val">{wr:.1%}</div><div class="sub">prob≥0.60 기준</div></div>',unsafe_allow_html=True)
         with c2: st.markdown(f'<div class="card {"card-up" if ar>0 else "card-down"}"><h4>평균 수익</h4><div class="val">{ar*100:+.2f}%</div><div class="sub">5일 후 평균</div></div>',unsafe_allow_html=True)
