@@ -1,0 +1,42 @@
+{
+  "period": "2026-04-05 ~ 2026-06-18",
+  "n_models": 3,
+  "wf_auc": 0.5256,
+  "val_auc": 0.5709,
+  "signals": 46,
+  "win_rate": 0.1087,
+  "avg_ret": -0.0387,
+  "cumret": -0.3284,
+  "pattern_stats": {
+    "이중바닥": {
+      "count": 335,
+      "win_rate": 0.3552,
+      "avg_ret": -0.0013
+    },
+    "골든크로스": {
+      "count": 89,
+      "win_rate": 0.5393,
+      "avg_ret": 0.0233
+    },
+    "RSI다이버전스": {
+      "count": 358,
+      "win_rate": 0.4246,
+      "avg_ret": 0.0182
+    },
+    "MACD다이버전스": {
+      "count": 251,
+      "win_rate": 0.3745,
+      "avg_ret": 0.0005
+    },
+    "과매도반등": {
+      "count": 130,
+      "win_rate": 0.5077,
+      "avg_ret": 0.0291
+    },
+    "거래량돌파": {
+      "count": 152,
+      "win_rate": 0.3618,
+      "avg_ret": -0.0157
+    }
+  }
+}
