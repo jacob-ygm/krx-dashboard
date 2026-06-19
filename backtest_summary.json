@@ -1,0 +1,9 @@
+{
+  "backtest_period": "2026-04-05 ~ 2026-06-18",
+  "total_signals": 1654,
+  "win_rate": 0.9045,
+  "avg_real_ret": 0.0962,
+  "avg_pred_ret": 0.0604,
+  "pred_real_corr": 0.4049,
+  "final_cumret": 30.529
+}
