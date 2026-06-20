@@ -137,7 +137,7 @@ with t2:
     c1,c2=st.columns(2)
     with c1:
         clr="card-up" if pu>=0.55 else("card-down" if pu<0.40 else "card")
-        st.markdown(f'<div class="card {clr}"><h4>상승확률</h4><div class="val">{pu:.1%}</div>'
+        st.markdown(f'<div class="card {clr}"><h4>상승확률 <span style="font-size:9px;color:#666;">(동일종목군 대비 상위권 확률)</span></h4><div class="val">{pu:.1%}</div>'
                     f'<div class="sub">하락 {1-pu:.1%} | {row.get("grade","")} | {row.get("sector","")}</div></div>',unsafe_allow_html=True)
     with c2:
         rc="card-up" if pr>0 else "card-down"
@@ -309,11 +309,19 @@ with t5:
     st.markdown("#### 📊 백테스트 결과")
     if bts_j:
         st.caption(f"📅 {bts_j.get('period','-')} | {bts_j.get('n_models',1)}모델 | WF-AUC {bts_j.get('wf_auc',0):.3f}")
+        tm = bts_j.get("target_mode","")
+        if tm:
+            st.caption(f"🎯 타겟 방식: {tm}")
         wr=bts_j.get("win_rate",0); ar=bts_j.get("avg_ret",0); cr=bts_j.get("cumret",0)
+        ar_no=bts_j.get("avg_ret_nosignal",0); spread=bts_j.get("spread",0)
         c1,c2,c3=st.columns(3)
-        with c1: st.markdown(f'<div class="card {"card-up" if wr>=0.5 else "card-down"}"><h4>실제 승률</h4><div class="val">{wr:.1%}</div><div class="sub">prob≥0.60 기준</div></div>',unsafe_allow_html=True)
+        with c1: st.markdown(f'<div class="card {"card-up" if wr>=0.5 else "card-down"}"><h4>실제 승률</h4><div class="val">{wr:.1%}</div><div class="sub">prob≥0.55 기준</div></div>',unsafe_allow_html=True)
         with c2: st.markdown(f'<div class="card {"card-up" if ar>0 else "card-down"}"><h4>평균 수익</h4><div class="val">{ar*100:+.2f}%</div><div class="sub">5일 후 평균</div></div>',unsafe_allow_html=True)
         with c3: st.markdown(f'<div class="card {"card-up" if cr>0 else "card-down"}"><h4>누적 수익</h4><div class="val">{cr*100:+.2f}%</div><div class="sub">2.5개월</div></div>',unsafe_allow_html=True)
+        # ★ 변별력 지표 (신호군 vs 비신호군)
+        sc4,sc5=st.columns(2)
+        with sc4: st.markdown(f'<div class="card"><h4>비신호 평균수익</h4><div class="val">{ar_no*100:+.2f}%</div><div class="sub">prob&lt;0.55 종목군</div></div>',unsafe_allow_html=True)
+        with sc5: st.markdown(f'<div class="card {"card-up" if spread>0 else "card-down"}"><h4>스프레드(변별력)</h4><div class="val">{spread*100:+.2f}%p</div><div class="sub">신호군-비신호군 격차, 양수일수록 모델 유효</div></div>',unsafe_allow_html=True)
         if btd is not None and len(btd)>0:
             fg=go.Figure()
             fg.add_trace(go.Scatter(x=btd["Date"],y=btd["cumret"]*100,mode="lines",fill="tozeroy",
