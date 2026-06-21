@@ -8,9 +8,9 @@ from dotenv import load_dotenv
 load_dotenv()
 
 BASE_URL   = "https://mockapi.kiwoom.com"
-APP_KEY    = os.getenv("APP_KEY", "")
-SECRET_KEY = os.getenv("SECRET_KEY", "")
-ACCOUNT_NO = os.getenv("ACCOUNT_NO", "")
+APP_KEY    = os.getenv("KIWOOM_APP_KEY", "")
+SECRET_KEY = os.getenv("KIWOOM_SECRET_KEY", "")
+ACCOUNT_NO = os.getenv("KIWOOM_ACCOUNT_NO", "")
 
 print(f"BASE_URL   : {BASE_URL}")
 print(f"APP_KEY    : {APP_KEY[:8]}...")
