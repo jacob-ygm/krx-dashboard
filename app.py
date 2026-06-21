@@ -49,6 +49,22 @@ def _rsi(series: pd.Series, period: int = 14) -> float:
 
 
 # ── 시장 데이터 로드 (캐시, 수동 갱신) ──────────────────────
+def _latest_trading_day() -> str:
+    """주말/공휴일을 건너뛰어 가장 최근 거래일 반환 (최대 10일 전까지 탐색)."""
+    for days_back in range(0, 10):
+        candidate = datetime.today() - timedelta(days=days_back)
+        if candidate.weekday() >= 5:  # 토(5), 일(6) 스킵
+            continue
+        date_str = candidate.strftime("%Y%m%d")
+        try:
+            df_test = pykrx_stock.get_market_ohlcv(date_str, market="KOSPI")
+            if df_test is not None and len(df_test) > 10:
+                return date_str
+        except Exception:
+            continue
+    return (datetime.today() - timedelta(days=3)).strftime("%Y%m%d")
+
+
 @st.cache_data(show_spinner=False)
 def load_market_data(refresh_key: int) -> pd.DataFrame:
     """
@@ -57,14 +73,12 @@ def load_market_data(refresh_key: int) -> pd.DataFrame:
     """
     fromdate, todate = _trading_days(25)
 
-    # 오늘 종가 기준 전체 종목 스냅샷
-    today_str = datetime.today().strftime("%Y%m%d")
+    latest = _latest_trading_day()
     try:
-        snap = pykrx_stock.get_market_ohlcv(today_str, market="KOSPI")
-    except Exception:
-        # 장 마감 전이면 전일 사용
-        prev = (datetime.today() - timedelta(days=1)).strftime("%Y%m%d")
-        snap = pykrx_stock.get_market_ohlcv(prev, market="KOSPI")
+        snap = pykrx_stock.get_market_ohlcv(latest, market="KOSPI")
+    except Exception as e:
+        st.error(f"시장 데이터 조회 실패: {e}")
+        return pd.DataFrame()
 
     if snap is None or len(snap) == 0:
         return pd.DataFrame()
