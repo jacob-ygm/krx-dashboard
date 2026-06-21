@@ -29,38 +29,25 @@ def fetch_chart_data(
     progress_cb: Callable[[int, int, str], None] | None = None,
 ) -> dict[str, list[dict]]:
     """
-    codes 리스트에 대해 yfinance로 120일치 일봉 수집.
-    mockapi는 ka10081 rate limit이 심해 yfinance를 사용.
-    Returns: {code: chart_rows}  (ka10081 응답 형식과 동일한 키)
+    codes 리스트에 대해 ka10081 120일치 일봉 수집.
+    Returns: {code: chart_rows}
     """
-    import yfinance as yf
+    import time
+    from . import kiwoom_client as client
 
     result = {}
     for i, code in enumerate(codes):
         if progress_cb:
             progress_cb(i, len(codes), code)
         try:
-            ticker = yf.Ticker(f"{code}.KS")
-            hist = ticker.history(period="6mo")   # 약 120거래일
-            if hist.empty:
-                continue
-            hist = hist.reset_index()
-            rows = []
-            for _, row in hist.iterrows():
-                dt = row["Date"]
-                dt_str = dt.strftime("%Y%m%d") if hasattr(dt, "strftime") else str(dt)[:10].replace("-", "")
-                rows.append({
-                    "dt":        dt_str,
-                    "cur_prc":   str(int(row["Close"])),
-                    "open_pric": str(int(row["Open"])),
-                    "high_pric": str(int(row["High"])),
-                    "low_pric":  str(int(row["Low"])),
-                    "trde_qty":  str(int(row["Volume"])),
-                })
+            body = {"stk_cd": code, "base_dt": "00000000", "upd_stkpc_tp": "1"}
+            resp = client.post("ka10081", "/api/dostk/chart", body)
+            rows = resp.get("stk_dt_pole_chart_qry", [])
             if rows:
-                result[code] = rows[-120:]   # 최근 120일
+                result[code] = rows[:120]
         except Exception as e:
             logger.warning("차트 조회 실패 %s: %s", code, e)
+        time.sleep(0.5)
     return result
 
 
