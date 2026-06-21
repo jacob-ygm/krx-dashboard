@@ -86,6 +86,9 @@ def train(train_df: pd.DataFrame) -> dict:
     X  = df[FEATURE_COLS].values
     y  = df["label"].values
 
+    if len(np.unique(y)) < 2:
+        raise ValueError(f"레이블 클래스가 1개뿐입니다 (unique={np.unique(y)}). 데이터를 늘려주세요.")
+
     logger.info("학습 데이터: %d행, 상승비율=%.1f%%", len(df), y.mean() * 100)
 
     rf_model = RandomForestClassifier(

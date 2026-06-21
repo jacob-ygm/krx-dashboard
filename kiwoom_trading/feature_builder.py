@@ -108,7 +108,9 @@ def build_features(code: str, rows: list[dict]) -> pd.DataFrame | None:
 
     # ── 레이블: 5일 후 수익률 ─────────────────────────────────
     f["ret_5d_fwd"] = close.pct_change(5).shift(-5)
-    f["label"]      = (f["ret_5d_fwd"] > 0.02).astype(int)  # 2% 이상 상승 = 1
+    # 중앙값 기준으로 상/하 분류 → 항상 균형잡힌 레이블
+    median_ret = f["ret_5d_fwd"].median()
+    f["label"] = (f["ret_5d_fwd"] > median_ret).astype(int)
 
     f = f.dropna(subset=["rsi14", "bb_pct", "vol_ratio", "ret_20d"])
     return f.reset_index(drop=True)
