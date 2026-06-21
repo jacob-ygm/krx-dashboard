@@ -84,7 +84,13 @@ def train(train_df: pd.DataFrame) -> dict:
     """
     from sklearn.ensemble import RandomForestClassifier, GradientBoostingClassifier
 
-    df = train_df.dropna(subset=["label", "ret_5d_fwd"] + FEATURE_COLS)
+    # 진단 로그 — 어느 컬럼이 NaN인지 출력
+    check_cols = ["label", "ret_5d_fwd"] + FEATURE_COLS
+    nan_counts = train_df[check_cols].isna().sum()
+    print(f"[진단] train_df shape: {train_df.shape}")
+    print(f"[진단] NaN counts:\n{nan_counts.to_string()}")
+
+    df = train_df.dropna(subset=check_cols)
     X  = df[FEATURE_COLS].values
     y  = df["label"].values
 
