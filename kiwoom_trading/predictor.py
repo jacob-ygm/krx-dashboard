@@ -39,26 +39,30 @@ def fetch_chart_data(
     for i, code in enumerate(codes):
         if progress_cb:
             progress_cb(i, len(codes), code)
-        try:
-            all_rows: list[dict] = []
-            cont_yn  = "N"
-            next_key = ""
-            body = {"stk_cd": code, "base_dt": "00000000", "upd_stkpc_tp": "1"}
-            while len(all_rows) < 120:
+        all_rows: list[dict] = []
+        for attempt in range(4):   # 최대 4회 재시도
+            try:
+                cont_yn  = "N"
+                next_key = ""
+                body = {"stk_cd": code, "base_dt": "00000000", "upd_stkpc_tp": "1"}
                 resp = client.post("ka10081", "/api/dostk/chart", body,
                                    cont_yn=cont_yn, next_key=next_key)
                 rows = resp.get("stk_dt_pole_chart_qry", [])
                 if rows:
                     all_rows.extend(rows)
-                cont_yn  = resp.get("cont_yn", "N")
-                next_key = resp.get("next_key", "")
-                if cont_yn != "Y" or not rows:
+                break   # 성공
+            except Exception as e:
+                err_str = str(e)
+                if "429" in err_str:
+                    wait = 2 ** attempt   # 1, 2, 4, 8초
+                    logger.warning("429 rate limit %s, %d초 대기 후 재시도", code, wait)
+                    time.sleep(wait)
+                else:
+                    logger.warning("차트 조회 실패 %s: %s", code, e)
                     break
-            if all_rows:
-                result[code] = all_rows[:120]
-        except Exception as e:
-            logger.warning("차트 조회 실패 %s: %s", code, e)
-        time.sleep(0.35)   # 429 방지: ~3 req/sec
+        if all_rows:
+            result[code] = all_rows[:120]
+        time.sleep(1.0)   # 종목 간 1초 간격
     return result
 
 
