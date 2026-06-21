@@ -55,12 +55,13 @@ def get_daily_chart(stk_cd: str,
     -------
     list[dict]  각 dict 는 1일치 봉 데이터
         {
-          "stck_bsop_date" : "20240501",  # 날짜
-          "stck_oprc"      : "74000",     # 시가
-          "stck_hgpr"      : "75500",     # 고가
-          "stck_lwpr"      : "73500",     # 저가
-          "stck_clpr"      : "75000",     # 종가
-          "acml_vol"       : "12345678",  # 거래량
+          "dt"        : "20260619",  # 날짜
+          "open_pric" : "372500",    # 시가
+          "high_pric" : "374500",    # 고가
+          "low_pric"  : "346250",    # 저가
+          "cur_prc"   : "354000",    # 종가(현재가)
+          "trde_qty"  : "43284898",  # 거래량
+          "pred_pre"  : "-8500",     # 전일대비
           ...
         }
     """
@@ -77,10 +78,11 @@ def get_daily_chart(stk_cd: str,
     while True:
         resp = client.post(_API_CHART, _PATH_CHART, body,
                            cont_yn=cont_yn, next_key=next_key)
-        rows = resp.get("body", [])
+        # 실제 응답 키: stk_dt_pole_chart_qry
+        rows = resp.get("stk_dt_pole_chart_qry", resp.get("body", []))
         if isinstance(rows, list):
             results.extend(rows)
-        else:
+        elif rows:
             results.append(rows)
 
         cont_yn  = resp.get("cont_yn", "N")
