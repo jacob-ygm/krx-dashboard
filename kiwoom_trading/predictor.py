@@ -11,6 +11,7 @@ ML 예측 + 룰 기반 신호 결합 → 종목 스코어 생성
 from __future__ import annotations
 import pickle
 import logging
+import time
 from pathlib import Path
 from typing import Callable
 
@@ -57,6 +58,7 @@ def fetch_chart_data(
                 result[code] = all_rows[:120]
         except Exception as e:
             logger.warning("차트 조회 실패 %s: %s", code, e)
+        time.sleep(0.35)   # 429 방지: ~3 req/sec
     return result
 
 
@@ -97,8 +99,10 @@ def train(train_df: pd.DataFrame) -> dict:
     X  = df[FEATURE_COLS].values
     y  = df["label"].values
 
+    if len(y) == 0:
+        raise ValueError("학습 데이터가 없습니다. 차트 수집에 실패했거나 종목 수가 너무 적습니다.")
     if len(np.unique(y)) < 2:
-        raise ValueError(f"레이블 클래스가 1개뿐입니다 (unique={np.unique(y)}). 데이터를 늘려주세요.")
+        raise ValueError(f"레이블 클래스가 1개뿐입니다 (unique={np.unique(y)}). 종목 수를 늘리거나 잠시 후 다시 시도하세요.")
 
     logger.info("학습 데이터: %d행, 상승비율=%.1f%%", len(df), y.mean() * 100)
 
