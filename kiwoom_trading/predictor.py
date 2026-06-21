@@ -39,11 +39,22 @@ def fetch_chart_data(
         if progress_cb:
             progress_cb(i, len(codes), code)
         try:
+            all_rows: list[dict] = []
+            cont_yn  = "N"
+            next_key = ""
             body = {"stk_cd": code, "base_dt": "00000000", "upd_stkpc_tp": "1"}
-            resp = client.post("ka10081", "/api/dostk/chart", body)
-            rows = resp.get("stk_dt_pole_chart_qry", [])
-            if rows:
-                result[code] = rows[:120]   # 최근 120일
+            while len(all_rows) < 120:
+                resp = client.post("ka10081", "/api/dostk/chart", body,
+                                   cont_yn=cont_yn, next_key=next_key)
+                rows = resp.get("stk_dt_pole_chart_qry", [])
+                if rows:
+                    all_rows.extend(rows)
+                cont_yn  = resp.get("cont_yn", "N")
+                next_key = resp.get("next_key", "")
+                if cont_yn != "Y" or not rows:
+                    break
+            if all_rows:
+                result[code] = all_rows[:120]
         except Exception as e:
             logger.warning("차트 조회 실패 %s: %s", code, e)
     return result
@@ -82,7 +93,7 @@ def train(train_df: pd.DataFrame) -> dict:
     """
     from sklearn.ensemble import RandomForestClassifier, GradientBoostingClassifier
 
-    df = train_df.dropna(subset=["label"] + FEATURE_COLS)
+    df = train_df.dropna(subset=["label", "ret_5d_fwd"] + FEATURE_COLS)
     X  = df[FEATURE_COLS].values
     y  = df["label"].values
 

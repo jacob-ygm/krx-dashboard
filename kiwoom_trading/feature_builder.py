@@ -107,10 +107,12 @@ def build_features(code: str, rows: list[dict]) -> pd.DataFrame | None:
     f["dist_52w_low"]  = (close / low_52w.replace(0, np.nan)) - 1
 
     # ── 레이블: 5일 후 수익률 ─────────────────────────────────
-    f["ret_5d_fwd"] = close.pct_change(5).shift(-5)
-    # 중앙값 기준으로 상/하 분류 → 항상 균형잡힌 레이블
+    f["ret_5d_fwd"] = (close.shift(-5) / close) - 1   # 정방향 5일 수익률
     median_ret = f["ret_5d_fwd"].median()
-    f["label"] = (f["ret_5d_fwd"] > median_ret).astype(int)
+    # ret_5d_fwd가 NaN인 행은 레이블도 NaN → 학습에서 제외
+    f["label"] = f["ret_5d_fwd"].apply(
+        lambda x: int(x > median_ret) if pd.notna(x) else float("nan")
+    )
 
     f = f.dropna(subset=["rsi14", "bb_pct", "vol_ratio", "ret_20d"])
     return f.reset_index(drop=True)
