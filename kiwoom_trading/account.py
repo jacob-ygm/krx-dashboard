@@ -49,7 +49,7 @@ def get_positions() -> list[dict]:
           ...
         }
     """
-    body = {"acnt_no": config.ACCOUNT_NO}
+    body = {"acnt_no": config.ACCOUNT_NO, "dmst_stex_tp": "KRX"}
 
     results: list[dict] = []
     cont_yn  = "N"
