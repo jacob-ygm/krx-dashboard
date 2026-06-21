@@ -57,8 +57,13 @@ try:
     if r.status_code == 200:
         d = r.json()
         print(f"   return_code: {d.get('return_code')}")
-        items = d.get("stk_list_qry", [])
-        print(f"   종목 수: {len(items)}")
+        print(f"   응답 키 목록: {list(d.keys())}")
+        for key in d.keys():
+            val = d[key]
+            if isinstance(val, list):
+                print(f"   [{key}] → 리스트 {len(val)}건", val[:1] if val else "")
+            else:
+                print(f"   [{key}] → {str(val)[:100]}")
     else:
         print(f"   body: {r.text[:200]}")
 except Exception as e:
