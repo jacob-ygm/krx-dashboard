@@ -101,8 +101,9 @@ def build_features(code: str, rows: list[dict]) -> pd.DataFrame | None:
     f["volatility"] = close.pct_change().rolling(20).std()
 
     # ── 52주 고저 거리 ────────────────────────────────────────
-    high_52w       = close.rolling(min(252, len(close))).max()
-    low_52w        = close.rolling(min(252, len(close))).min()
+    w        = min(252, len(close))
+    high_52w = close.rolling(w, min_periods=1).max()
+    low_52w  = close.rolling(w, min_periods=1).min()
     f["dist_52w_high"] = (close / high_52w.replace(0, np.nan)) - 1
     f["dist_52w_low"]  = (close / low_52w.replace(0, np.nan)) - 1
 
