@@ -27,7 +27,7 @@ def get_deposit() -> dict:
           ...
         }
     """
-    body = {"acnt_no": config.ACCOUNT_NO}
+    body = {"acnt_no": config.ACCOUNT_NO, "qry_tp": "1"}
     resp = client.post(_API_DEPOSIT, _PATH_ACNT, body)
     return resp.get("body", resp)
 
