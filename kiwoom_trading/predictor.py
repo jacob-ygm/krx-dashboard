@@ -11,7 +11,6 @@ ML 예측 + 룰 기반 신호 결합 → 종목 스코어 생성
 from __future__ import annotations
 import pickle
 import logging
-import time
 from pathlib import Path
 from typing import Callable
 
@@ -30,39 +29,38 @@ def fetch_chart_data(
     progress_cb: Callable[[int, int, str], None] | None = None,
 ) -> dict[str, list[dict]]:
     """
-    codes 리스트에 대해 ka10081 120일치 일봉 수집.
-    Returns: {code: chart_rows}
+    codes 리스트에 대해 yfinance로 120일치 일봉 수집.
+    mockapi는 ka10081 rate limit이 심해 yfinance를 사용.
+    Returns: {code: chart_rows}  (ka10081 응답 형식과 동일한 키)
     """
-    from . import kiwoom_client as client
+    import yfinance as yf
 
     result = {}
     for i, code in enumerate(codes):
         if progress_cb:
             progress_cb(i, len(codes), code)
-        all_rows: list[dict] = []
-        for attempt in range(4):   # 최대 4회 재시도
-            try:
-                cont_yn  = "N"
-                next_key = ""
-                body = {"stk_cd": code, "base_dt": "00000000", "upd_stkpc_tp": "1"}
-                resp = client.post("ka10081", "/api/dostk/chart", body,
-                                   cont_yn=cont_yn, next_key=next_key)
-                rows = resp.get("stk_dt_pole_chart_qry", [])
-                if rows:
-                    all_rows.extend(rows)
-                break   # 성공
-            except Exception as e:
-                err_str = str(e)
-                if "429" in err_str:
-                    wait = 2 ** attempt   # 1, 2, 4, 8초
-                    logger.warning("429 rate limit %s, %d초 대기 후 재시도", code, wait)
-                    time.sleep(wait)
-                else:
-                    logger.warning("차트 조회 실패 %s: %s", code, e)
-                    break
-        if all_rows:
-            result[code] = all_rows[:120]
-        time.sleep(1.0)   # 종목 간 1초 간격
+        try:
+            ticker = yf.Ticker(f"{code}.KS")
+            hist = ticker.history(period="6mo")   # 약 120거래일
+            if hist.empty:
+                continue
+            hist = hist.reset_index()
+            rows = []
+            for _, row in hist.iterrows():
+                dt = row["Date"]
+                dt_str = dt.strftime("%Y%m%d") if hasattr(dt, "strftime") else str(dt)[:10].replace("-", "")
+                rows.append({
+                    "dt":        dt_str,
+                    "cur_prc":   str(int(row["Close"])),
+                    "open_pric": str(int(row["Open"])),
+                    "high_pric": str(int(row["High"])),
+                    "low_pric":  str(int(row["Low"])),
+                    "trde_qty":  str(int(row["Volume"])),
+                })
+            if rows:
+                result[code] = rows[-120:]   # 최근 120일
+        except Exception as e:
+            logger.warning("차트 조회 실패 %s: %s", code, e)
     return result
 
 
