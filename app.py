@@ -2,8 +2,11 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 import os, json
+import pytz
+from datetime import datetime
 import plotly.graph_objects as go
 import plotly.express as px
+import yfinance as yf
 
 st.set_page_config(page_title="KOSPI 분석", page_icon="📈",
                    layout="centered", initial_sidebar_state="collapsed")
@@ -51,6 +54,59 @@ def load():
             sc("feature_importance.csv"),
             sc("bt_grade.csv"),sc("bt_daily.csv"),sc("bt_sector.csv"),bs)
 
+@st.cache_data(ttl=180)
+def get_realtime_surge():
+    try:
+        tk_df = pd.read_csv("tickers_kospi200.csv", dtype={"ticker": str})
+    except Exception as e:
+        return None, f"tickers_kospi200.csv 로드 실패: {e}"
+
+    tk_df = tk_df[tk_df["ticker"].str.match(r'^\d{6}$')].copy()
+    ticker_map = {
+        f"{row.ticker}.KS": (row["name"], row.get("sector", "-"))
+        for _, row in tk_df.iterrows()
+    }
+    yf_tickers = list(ticker_map.keys())
+    if not yf_tickers:
+        return None, "유효한 티커 없음"
+
+    try:
+        data = yf.download(yf_tickers, period="5d", interval="1d",
+                           auto_adjust=True, progress=False)
+    except Exception as e:
+        return None, f"yFinance 오류: {e}"
+
+    if data is None or data.empty:
+        return None, "데이터 없음 (API 한도 초과 또는 네트워크 오류)"
+
+    if not isinstance(data.columns, pd.MultiIndex):
+        return None, "멀티 티커 다운로드 실패"
+
+    close_data  = data["Close"]
+    volume_data = data["Volume"]
+
+    results = []
+    for ticker in yf_tickers:
+        if ticker not in close_data.columns:
+            continue
+        closes = close_data[ticker].dropna()
+        if len(closes) < 2:
+            continue
+        prev_close = float(closes.iloc[-2])
+        curr_close = float(closes.iloc[-1])
+        if prev_close <= 0:
+            continue
+        pct = (curr_close - prev_close) / prev_close * 100
+        vol = float(volume_data[ticker].dropna().iloc[-1]) if ticker in volume_data.columns and not volume_data[ticker].dropna().empty else 0
+        name, sector = ticker_map.get(ticker, (ticker, "-"))
+        results.append({"종목명": name, "섹터": sector,
+                        "전일종가": prev_close, "현재가": curr_close,
+                        "등락률(%)": pct, "거래량": vol, "ticker": ticker})
+
+    if not results:
+        return None, "조회 가능한 종목이 없습니다"
+    return pd.DataFrame(results), "ok"
+
 df,news,macro,fi,btg,btd,bts,bts_j=load()
 if df is None:
     st.error("⚠️ 데이터 없음 — Colab 파이프라인을 먼저 실행하세요"); st.stop()
@@ -75,8 +131,8 @@ st.markdown(f"""
   </div>
 </div>""", unsafe_allow_html=True)
 
-T=st.tabs(["🏆 순위","🔍 종목","📉 패턴","🌐 거시경제","📊 백테스트","💰 수급","📰 뉴스"])
-t1,t2,t3,t4,t5,t6,t7=T
+T=st.tabs(["🏆 순위","🔍 종목","📉 패턴","🌐 거시경제","📊 백테스트","💰 수급","📰 뉴스","🚀 실시간 급등"])
+t1,t2,t3,t4,t5,t6,t7,t8=T
 
 # ── TAB1 순위 ──────────────────────────────────────────
 with t1:
@@ -395,5 +451,96 @@ with t7:
                 f'<a href="{nr.get("link","#")}" target="_blank" rel="noopener">{nr.get("title","")}</a>'
                 f'</div>',unsafe_allow_html=True)
     else: st.info("뉴스 없음 — 파이프라인을 재실행하세요")
+
+# ── TAB8 실시간 급등 ────────────────────────────────────
+with t8:
+    st.markdown("#### 🚀 실시간 급등 감지 (yFinance)")
+
+    kst_tz = pytz.timezone("Asia/Seoul")
+    now_kst = datetime.now(kst_tz)
+    _mkt_start = now_kst.replace(hour=9,  minute=0,  second=0, microsecond=0)
+    _mkt_end   = now_kst.replace(hour=15, minute=30, second=0, microsecond=0)
+    is_mkt_open = (now_kst.weekday() < 5) and (_mkt_start <= now_kst <= _mkt_end)
+    mkt_badge = (
+        '<span class="badge-open">🟡 장 중</span>'
+        if is_mkt_open else
+        '<span class="badge-closed">✅ 장 마감</span>'
+    )
+    st.markdown(
+        f"{mkt_badge} &nbsp;"
+        f"<span style='color:#8892a4;font-size:12px'>"
+        f"KST {now_kst.strftime('%H:%M:%S')} &nbsp;|&nbsp; 3분마다 자동 갱신</span>",
+        unsafe_allow_html=True
+    )
+
+    s_ca, s_cb, s_cc = st.columns(3)
+    with s_ca: min_pct  = st.slider("급등 기준 (%)", 1.0, 20.0, 3.0, 0.5, key="surge_pct")
+    with s_cb: sort_by  = st.selectbox("정렬 기준", ["등락률", "거래량"], key="surge_sort")
+    with s_cc: surge_n  = st.slider("표시 개수", 5, 50, 20, 5, key="surge_n")
+
+    with st.spinner("yFinance에서 실시간 데이터 로딩 중..."):
+        surge_df, surge_msg = get_realtime_surge()
+
+    if surge_df is None:
+        st.error(f"⚠️ {surge_msg}")
+    else:
+        all_surge = surge_df[surge_df["등락률(%)"] >= min_pct].copy()
+        filtered = (
+            all_surge.sort_values("등락률(%)", ascending=False)
+            if sort_by == "등락률"
+            else all_surge.sort_values("거래량", ascending=False)
+        ).head(surge_n)
+
+        sc1, sc2, sc3, sc4 = st.columns(4)
+        avg_pct = all_surge["등락률(%)"].mean() if len(all_surge) > 0 else 0
+        top_row = surge_df.sort_values("등락률(%)", ascending=False).iloc[0] if len(surge_df) > 0 else None
+        top_sec = all_surge["섹터"].value_counts().index[0] if len(all_surge) > 0 else "-"
+        with sc1:
+            st.markdown(f'<div class="card card-up"><h4>급등 종목 수</h4>'
+                        f'<div class="val">{len(all_surge)}</div>'
+                        f'<div class="sub">{min_pct:.1f}% 이상</div></div>',unsafe_allow_html=True)
+        with sc2:
+            st.markdown(f'<div class="card card-up"><h4>평균 등락률</h4>'
+                        f'<div class="val">{avg_pct:+.2f}%</div>'
+                        f'<div class="sub">급등 종목 평균</div></div>',unsafe_allow_html=True)
+        with sc3:
+            nm_top = top_row["종목명"] if top_row is not None else "-"
+            pct_top = top_row["등락률(%)"] if top_row is not None else 0
+            st.markdown(f'<div class="card card-gold"><h4>최고 등락률</h4>'
+                        f'<div class="val">{pct_top:+.2f}%</div>'
+                        f'<div class="sub">{nm_top}</div></div>',unsafe_allow_html=True)
+        with sc4:
+            st.markdown(f'<div class="card"><h4>주도 섹터</h4>'
+                        f'<div class="val" style="font-size:15px">{top_sec}</div></div>',unsafe_allow_html=True)
+
+        disp = filtered[["종목명","섹터","전일종가","현재가","등락률(%)","거래량"]].reset_index(drop=True)
+        disp.index += 1
+        st.dataframe(
+            disp.style
+                .format({"전일종가":"{:,.0f}","현재가":"{:,.0f}",
+                         "등락률(%)":"{:+.2f}%","거래량":"{:,.0f}"})
+                .background_gradient(subset=["등락률(%)"], cmap="Greens"),
+            use_container_width=True, height=430
+        )
+
+        if len(filtered) > 0:
+            fig_s = go.Figure(go.Bar(
+                x=filtered["등락률(%)"],
+                y=filtered["종목명"],
+                orientation="h",
+                marker=dict(color=filtered["등락률(%)"], colorscale="Greens", showscale=False),
+                text=[f"{v:+.2f}%" for v in filtered["등락률(%)"]],
+                textposition="outside"
+            ))
+            fig_s.update_layout(
+                height=max(260, len(filtered)*26),
+                margin=dict(l=10,r=70,t=15,b=10),
+                paper_bgcolor="rgba(0,0,0,0)", plot_bgcolor="rgba(0,0,0,0)",
+                font_color="#ccc", xaxis_title="등락률 (%)",
+                yaxis=dict(autorange="reversed")
+            )
+            st.plotly_chart(fig_s, use_container_width=True)
+
+        st.caption("⚠️ yFinance 데이터는 15~20분 지연될 수 있습니다. 투자 결정에 단독 사용하지 마세요.")
 
 st.markdown("<div style='height:50px'></div>",unsafe_allow_html=True)
