@@ -77,35 +77,30 @@ def build_dataset(
 # ── 모델 학습 ─────────────────────────────────────────────────
 def train(train_df: pd.DataFrame) -> dict:
     """
-    XGBoost + LightGBM 학습.
+    RandomForest + GradientBoosting 학습 (sklearn, Python 3.14 호환).
     Returns model dict (저장 후 재사용 가능).
     """
-    import xgboost as xgb
-    import lightgbm as lgb
+    from sklearn.ensemble import RandomForestClassifier, GradientBoostingClassifier
 
-    # 레이블 있는 행만 사용
     df = train_df.dropna(subset=["label"] + FEATURE_COLS)
     X  = df[FEATURE_COLS].values
     y  = df["label"].values
 
     logger.info("학습 데이터: %d행, 상승비율=%.1f%%", len(df), y.mean() * 100)
 
-    xgb_model = xgb.XGBClassifier(
-        n_estimators=200, max_depth=4, learning_rate=0.05,
-        subsample=0.8, colsample_bytree=0.8,
-        use_label_encoder=False, eval_metric="logloss",
-        random_state=42, verbosity=0,
+    rf_model = RandomForestClassifier(
+        n_estimators=200, max_depth=6, min_samples_leaf=5,
+        random_state=42, n_jobs=-1,
     )
-    xgb_model.fit(X, y)
+    rf_model.fit(X, y)
 
-    lgb_model = lgb.LGBMClassifier(
+    gb_model = GradientBoostingClassifier(
         n_estimators=200, max_depth=4, learning_rate=0.05,
-        subsample=0.8, colsample_bytree=0.8,
-        random_state=42, verbosity=-1,
+        subsample=0.8, random_state=42,
     )
-    lgb_model.fit(X, y)
+    gb_model.fit(X, y)
 
-    model = {"xgb": xgb_model, "lgb": lgb_model}
+    model = {"rf": rf_model, "gb": gb_model}
     MODEL_PATH.write_bytes(pickle.dumps(model))
     logger.info("모델 저장 완료: %s", MODEL_PATH)
     return model
@@ -129,9 +124,9 @@ def predict_ml(latest_df: pd.DataFrame, model: dict) -> pd.DataFrame:
         return df
 
     X = valid[FEATURE_COLS].values
-    prob_xgb = model["xgb"].predict_proba(X)[:, 1]
-    prob_lgb = model["lgb"].predict_proba(X)[:, 1]
-    prob_avg = (prob_xgb + prob_lgb) / 2
+    prob_rf  = model["rf"].predict_proba(X)[:, 1]
+    prob_gb  = model["gb"].predict_proba(X)[:, 1]
+    prob_avg = (prob_rf + prob_gb) / 2
 
     df.loc[valid.index, "prob_ml"] = prob_avg
     return df
