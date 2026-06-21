@@ -1,6 +1,6 @@
 """
 KOSPI 대시보드 — 키움 REST API 전용
-탭 1: 전종목 현재가 목록  탭 2: 계좌 현황  탭 3: 기술지표 스크리너
+탭 1: 전종목 현재가 목록  탭 2: 계좌 현황  탭 3: 기술지표 스크리너  탭 4: 예측 순위
 """
 import streamlit as st
 import pandas as pd
@@ -141,8 +141,8 @@ dep, pos = load_account(st.session_state.refresh_key)
 now_str = datetime.now().strftime("%Y-%m-%d %H:%M")
 st.caption(f"기준: {now_str} | 코스피 {len(df):,}개 종목")
 
-T = st.tabs(["🏆 전종목 현재가", "💰 계좌 현황", "🔍 기술지표 스크리너"])
-t1, t2, t3 = T
+T = st.tabs(["🏆 전종목 현재가", "💰 계좌 현황", "🔍 기술지표 스크리너", "🎯 예측 순위"])
+t1, t2, t3, t4 = T
 
 
 # ── TAB1: 전종목 현재가 ───────────────────────────────────────
@@ -304,3 +304,163 @@ with t3:
                 st.plotly_chart(fig2, use_container_width=True)
             else:
                 st.info("조건에 맞는 종목이 없습니다. 필터를 조정해보세요.")
+
+
+# ── TAB4: 예측 순위 ───────────────────────────────────────────
+with t4:
+    st.markdown("#### 🎯 예측 순위")
+    st.caption("XGBoost + LightGBM 앙상블 × 기술지표 룰 결합 → 5일 수익률 예측")
+
+    from kiwoom_trading import predictor
+
+    # ── 설정 ───────────────────────────────────────────────
+    ca, cb = st.columns(2)
+    with ca:
+        top_n_pred = st.slider("학습·예측 종목 수 (시총 상위)", 50, 300, 150, 50,
+                               key="top_n_pred")
+    with cb:
+        ml_w = st.slider("ML 가중치", 0.0, 1.0, 0.6, 0.1, key="ml_w")
+        rule_w = round(1.0 - ml_w, 1)
+        st.caption(f"룰 가중치: {rule_w}")
+
+    col_run, col_load = st.columns(2)
+    run_train  = col_run.button("🚀 데이터 수집 & 모델 학습", key="run_train",
+                                use_container_width=True)
+    load_model = col_load.button("📂 저장된 모델로 예측", key="load_model",
+                                 use_container_width=True)
+
+    # ── 대상 종목 선정 (시총 상위 N) ─────────────────────────
+    target_codes = (
+        df.sort_values("market_cap", ascending=False)
+          .head(top_n_pred)["code"].tolist()
+    )
+
+    if run_train:
+        st.info(f"시총 상위 {top_n_pred}개 종목 120일치 차트 수집 중... (수 분 소요)")
+        prog_bar = st.progress(0)
+        status   = st.empty()
+
+        def _cb(i, total, code):
+            prog_bar.progress((i + 1) / total)
+            status.caption(f"수집 중: {code} ({i+1}/{total})")
+
+        chart_data = predictor.fetch_chart_data(target_codes, progress_cb=_cb)
+        prog_bar.empty(); status.empty()
+        st.success(f"차트 수집 완료: {len(chart_data)}개 종목")
+
+        with st.spinner("피처 생성 중..."):
+            train_df, latest_df = predictor.build_dataset(chart_data)
+
+        if len(train_df) < 100:
+            st.error("학습 데이터 부족. 종목 수를 늘리거나 나중에 다시 시도하세요.")
+        else:
+            st.info(f"학습 데이터: {len(train_df):,}행 | 예측 대상: {len(latest_df)}종목")
+            with st.spinner("XGBoost + LightGBM 학습 중..."):
+                model = predictor.train(train_df)
+            st.success("모델 학습 완료!")
+
+            # 예측 & 스코어 계산
+            pred_df = predictor.predict_ml(latest_df, model)
+            pred_df = predictor.rule_score(pred_df)
+            pred_df = predictor.combined_score(pred_df, ml_w, rule_w)
+            st.session_state["pred_result"] = pred_df
+
+    elif load_model:
+        model = predictor.load_model()
+        if model is None:
+            st.warning("저장된 모델이 없습니다. 먼저 '데이터 수집 & 모델 학습'을 실행하세요.")
+        else:
+            st.info(f"시총 상위 {top_n_pred}개 종목 차트 수집 중...")
+            prog_bar = st.progress(0)
+            status   = st.empty()
+
+            def _cb2(i, total, code):
+                prog_bar.progress((i + 1) / total)
+                status.caption(f"수집 중: {code} ({i+1}/{total})")
+
+            chart_data = predictor.fetch_chart_data(target_codes, progress_cb=_cb2)
+            prog_bar.empty(); status.empty()
+
+            with st.spinner("피처 생성 & 예측 중..."):
+                _, latest_df = predictor.build_dataset(chart_data)
+                pred_df = predictor.predict_ml(latest_df, model)
+                pred_df = predictor.rule_score(pred_df)
+                pred_df = predictor.combined_score(pred_df, ml_w, rule_w)
+            st.session_state["pred_result"] = pred_df
+            st.success("예측 완료!")
+
+    # ── 결과 표시 ─────────────────────────────────────────
+    if "pred_result" in st.session_state:
+        pred_df = st.session_state["pred_result"]
+        name_map = df.set_index("code")["name"].to_dict()
+        sec_map  = df.set_index("code")["upName"].to_dict()
+        price_map= df.set_index("code")["lastPrice"].to_dict()
+
+        result = pred_df.copy()
+        result["name"]   = result["code"].map(name_map)
+        result["sector"] = result["code"].map(sec_map)
+        result["price"]  = result["code"].map(price_map)
+
+        top_buy = result.head(20)
+
+        # 요약 카드
+        c1, c2, c3, c4 = st.columns(4)
+        strong = (result["final_score"] >= 0.65).sum()
+        mid    = ((result["final_score"] >= 0.50) & (result["final_score"] < 0.65)).sum()
+        with c1:
+            st.markdown(f'<div class="card card-up"><h4>강력매수 후보</h4><div class="val">{strong}</div><div class="sub">스코어 ≥ 0.65</div></div>', unsafe_allow_html=True)
+        with c2:
+            st.markdown(f'<div class="card"><h4>매수관심</h4><div class="val">{mid}</div><div class="sub">스코어 0.50~0.65</div></div>', unsafe_allow_html=True)
+        with c3:
+            avg_ml = result["prob_ml"].mean() if "prob_ml" in result.columns else 0
+            st.markdown(f'<div class="card"><h4>평균 ML 확률</h4><div class="val">{avg_ml:.1%}</div></div>', unsafe_allow_html=True)
+        with c4:
+            avg_rule = result["rule_score"].mean() if "rule_score" in result.columns else 0
+            st.markdown(f'<div class="card"><h4>평균 룰 스코어</h4><div class="val">{avg_rule:.2f}</div></div>', unsafe_allow_html=True)
+
+        # 스코어 산포도
+        fig3 = go.Figure(go.Scatter(
+            x=result["prob_ml"] if "prob_ml" in result.columns else result["rule_score"],
+            y=result["rule_score"],
+            mode="markers",
+            marker=dict(color=result["final_score"], colorscale="RdYlGn",
+                        size=7, opacity=0.7, colorbar=dict(title="최종스코어")),
+            text=result["name"].fillna(result["code"]),
+            hovertemplate="%{text}<br>ML: %{x:.2f} | 룰: %{y:.2f}<extra></extra>",
+        ))
+        fig3.update_layout(
+            height=250, margin=dict(l=10, r=10, t=10, b=20),
+            paper_bgcolor="rgba(0,0,0,0)", plot_bgcolor="rgba(0,0,0,0)",
+            font_color="#ccc", xaxis_title="ML 확률", yaxis_title="룰 스코어",
+        )
+        st.plotly_chart(fig3, use_container_width=True)
+
+        # 상위 20종목 테이블
+        st.markdown("##### 📋 상위 20 종목")
+        show_cols = ["name", "sector", "price", "final_score", "prob_ml",
+                     "rule_score", "rsi14", "vol_ratio", "macd_cross"]
+        show_cols = [c for c in show_cols if c in top_buy.columns]
+        disp4 = top_buy[show_cols].copy()
+        disp4.columns = [{"name":"종목명","sector":"섹터","price":"현재가",
+                          "final_score":"최종스코어","prob_ml":"ML확률",
+                          "rule_score":"룰스코어","rsi14":"RSI(14)",
+                          "vol_ratio":"거래량비율","macd_cross":"MACD크로스"
+                         }.get(c, c) for c in show_cols]
+        disp4 = disp4.reset_index(drop=True); disp4.index += 1
+        fmt4 = {}
+        if "현재가"   in disp4.columns: fmt4["현재가"]   = "{:,.0f}"
+        if "최종스코어" in disp4.columns: fmt4["최종스코어"] = "{:.3f}"
+        if "ML확률"   in disp4.columns: fmt4["ML확률"]   = "{:.1%}"
+        if "룰스코어"  in disp4.columns: fmt4["룰스코어"]  = "{:.2f}"
+        if "RSI(14)"  in disp4.columns: fmt4["RSI(14)"]  = "{:.1f}"
+        if "거래량비율" in disp4.columns: fmt4["거래량비율"] = "{:.2f}x"
+
+        styled4 = disp4.style.format(fmt4)
+        if "최종스코어" in disp4.columns:
+            styled4 = styled4.background_gradient(subset=["최종스코어"], cmap="RdYlGn")
+        if "ML확률" in disp4.columns:
+            styled4 = styled4.background_gradient(subset=["ML확률"], cmap="Blues")
+        st.dataframe(styled4, use_container_width=True, height=500)
+
+        st.divider()
+        st.caption("⚠️ 본 예측은 투자 참고용이며, 실제 투자 결과를 보장하지 않습니다.")
