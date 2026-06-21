@@ -73,6 +73,38 @@ def run_order(signal: Signal) -> None:
     )
 
 
+def place_top_orders(top_df, price_map: dict, qty_per_stock: int = 1) -> list[dict]:
+    """
+    예측 상위 종목 직접 매수 (모의투자 테스트용, DRY_RUN 무관하게 전송).
+    top_df : final_score 기준 정렬된 DataFrame (code 컬럼 필요)
+    price_map : {code: price}
+    qty_per_stock : 종목당 주문 수량
+    """
+    results = []
+    for _, row in top_df.iterrows():
+        code = row["code"]
+        body = {
+            "acnt_no":      config.ACCOUNT_NO,
+            "stk_cd":       code,
+            "ord_qty":      str(qty_per_stock),
+            "ord_uv":       "0",
+            "trde_tp":      _ORDER_TYPE_MARKET,
+            "dmst_stex_tp": _EXCHANGE,
+        }
+        try:
+            resp = client.post(_API_BUY, _PATH_ORDER, body)
+            results.append({
+                "code":   code,
+                "status": "성공",
+                "ord_no": resp.get("ord_no", resp.get("return_msg", "?")),
+            })
+            logger.info("모의매수 완료: %s %d주", code, qty_per_stock)
+        except Exception as e:
+            results.append({"code": code, "status": f"실패: {e}", "ord_no": "-"})
+            logger.error("모의매수 실패: %s — %s", code, e)
+    return results
+
+
 def run_all(signals: list[Signal]) -> None:
     """BUY 시그널 전체에 대해 순차적으로 주문을 처리한다."""
     buy_signals = [s for s in signals if s.action == "BUY"]

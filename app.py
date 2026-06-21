@@ -345,6 +345,7 @@ with t4:
             status.caption(f"수집 중: {code} ({i+1}/{total})")
 
         chart_data = predictor.fetch_chart_data(target_codes, progress_cb=_cb)
+        st.session_state["chart_data_cache"] = chart_data
         prog_bar.empty(); status.empty()
         st.success(f"차트 수집 완료: {len(chart_data)}개 종목")
 
@@ -462,5 +463,83 @@ with t4:
             styled4 = styled4.background_gradient(subset=["ML확률"], cmap="Blues")
         st.dataframe(styled4, use_container_width=True, height=500)
 
+        # ── 모의 자동매수 (상위 3종목) ────────────────────────
         st.divider()
+        st.markdown("#### 🛒 모의 자동매수 — 상위 3종목")
+        st.caption("최종스코어 1·2·3위 종목에 시장가 1주씩 모의 매수합니다.")
+        top3 = result.head(3)[["code", "name", "final_score"]].copy()
+        st.dataframe(top3.reset_index(drop=True), use_container_width=True, height=160)
+        if st.button("🚀 상위 3종목 모의매수 실행", type="primary"):
+            from kiwoom_trading import order_engine
+            price_map2 = df.set_index("code")["lastPrice"].to_dict()
+            order_results = order_engine.place_top_orders(top3, price_map2, qty_per_stock=1)
+            for r in order_results:
+                if "실패" in r["status"]:
+                    st.error(f"{r['code']} — {r['status']}")
+                else:
+                    st.success(f"{r['code']} 매수 완료 | 주문번호: {r['ord_no']}")
+
+        # ── 백테스트 ──────────────────────────────────────────
+        st.divider()
+        st.markdown("#### 📊 백테스트")
+        st.caption("수집된 차트 데이터와 학습된 모델로 전략 성과를 시뮬레이션합니다.")
+
+        bt_threshold = st.slider("매수 신호 임계값 (final_score ≥)", 0.40, 0.80, 0.55, 0.05)
+        bt_hold      = st.slider("보유 일수", 3, 20, 5)
+
+        if st.button("▶ 백테스트 실행"):
+            if "chart_data_cache" not in st.session_state:
+                st.warning("먼저 '데이터 수집 & 모델 학습'을 실행하세요.")
+            else:
+                from kiwoom_trading import backtester
+                loaded_model = predictor.load_model()
+                if loaded_model is None:
+                    st.warning("저장된 모델이 없습니다. 먼저 학습을 실행하세요.")
+                else:
+                    with st.spinner("백테스트 실행 중..."):
+                        bt = backtester.run_backtest(
+                            st.session_state["chart_data_cache"],
+                            loaded_model,
+                            threshold=bt_threshold,
+                            hold_days=bt_hold,
+                        )
+                    if not bt:
+                        st.warning("백테스트 결과 없음 — 신호 임계값을 낮춰보세요.")
+                    else:
+                        stats = bt["stats"]
+                        s1, s2, s3, s4, s5 = st.columns(5)
+                        s1.metric("누적수익률", f"{stats['total_ret']:.1%}")
+                        s2.metric("연환산수익률", f"{stats['ann_ret']:.1%}")
+                        s3.metric("샤프비율", f"{stats['sharpe']:.2f}")
+                        s4.metric("최대낙폭(MDD)", f"{stats['max_dd']:.1%}")
+                        s5.metric("승률 / 거래수", f"{stats['win_rate']:.1%} / {stats['n_trades']}")
+
+                        eq = bt["equity_curve"]
+                        fig_bt = go.Figure()
+                        fig_bt.add_trace(go.Scatter(
+                            x=eq["date"], y=eq["strategy"] * 100,
+                            name="전략", line=dict(color="#4f8ef7", width=2)))
+                        fig_bt.add_trace(go.Scatter(
+                            x=eq["date"], y=eq["benchmark"] * 100,
+                            name="벤치마크(전종목평균)", line=dict(color="#aaa", width=1, dash="dot")))
+                        fig_bt.update_layout(
+                            height=320, margin=dict(l=10, r=10, t=20, b=20),
+                            paper_bgcolor="rgba(0,0,0,0)", plot_bgcolor="rgba(0,0,0,0)",
+                            font_color="#ccc", yaxis_title="누적수익률(%)",
+                            legend=dict(orientation="h", y=1.1),
+                        )
+                        st.plotly_chart(fig_bt, use_container_width=True)
+
+                        with st.expander("거래 내역 보기"):
+                            td = bt["trades"].copy()
+                            td["수익률"] = td["ret"].map("{:.2%}".format)
+                            td["entry_date"] = td["entry_date"].dt.strftime("%Y-%m-%d")
+                            td["exit_date"]  = td["exit_date"].dt.strftime("%Y-%m-%d")
+                            st.dataframe(td[["code","entry_date","exit_date",
+                                            "entry_px","exit_px","수익률"]]
+                                         .rename(columns={"code":"종목","entry_date":"매수일",
+                                                          "exit_date":"매도일","entry_px":"매수가",
+                                                          "exit_px":"매도가"}),
+                                         use_container_width=True, height=300)
+
         st.caption("⚠️ 본 예측은 투자 참고용이며, 실제 투자 결과를 보장하지 않습니다.")
