@@ -60,18 +60,24 @@ def _headers(api_id: str, cont_yn: str = "N", next_key: str = "") -> dict:
 
 def post(api_id: str, path: str, body: dict,
          cont_yn: str = "N", next_key: str = "") -> dict:
-    """POST 요청 공통 래퍼. return_code != 0 이면 RuntimeError."""
+    """POST 요청 공통 래퍼. 429는 최대 4회 재시도, return_code != 0 이면 RuntimeError."""
     url = config.BASE_URL + path
-    resp = requests.post(url, json=body,
-                         headers=_headers(api_id, cont_yn, next_key),
-                         timeout=10)
-    resp.raise_for_status()
-    data = resp.json()
-    if data.get("return_code", -1) != 0:
-        raise RuntimeError(
-            f"[{api_id}] API 오류 {data.get('return_code')}: {data.get('return_msg')}"
-        )
-    return data
+    for attempt in range(4):
+        resp = requests.post(url, json=body,
+                             headers=_headers(api_id, cont_yn, next_key),
+                             timeout=10)
+        if resp.status_code == 429:
+            wait = 2 ** attempt   # 1, 2, 4, 8초
+            time.sleep(wait)
+            continue
+        resp.raise_for_status()
+        data = resp.json()
+        if data.get("return_code", -1) != 0:
+            raise RuntimeError(
+                f"[{api_id}] API 오류 {data.get('return_code')}: {data.get('return_msg')}"
+            )
+        return data
+    raise RuntimeError(f"[{api_id}] 429 rate limit — 잠시 후 다시 시도하세요.")
 
 
 def get(api_id: str, path: str, params: dict | None = None) -> dict:
