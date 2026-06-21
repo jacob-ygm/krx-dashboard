@@ -49,6 +49,12 @@ def get_positions() -> list[dict]:
           ...
         }
     """
+    # 모의투자에서는 kt00005 미지원 → 빈 리스트 반환
+    if config.TRADING_MODE == "mock":
+        import logging
+        logging.getLogger(__name__).info("모의투자 모드: 보유종목 조회 미지원, 빈 리스트 반환")
+        return []
+
     body = {"acnt_no": config.ACCOUNT_NO, "dmst_stex_tp": "KRX"}
 
     results: list[dict] = []
