@@ -125,6 +125,9 @@ with t1:
                       paper_bgcolor="rgba(0,0,0,0)",plot_bgcolor="rgba(0,0,0,0)",
                       font_color="#ccc",legend_title_text="")
     st.plotly_chart(fig,use_container_width=True)
+    csv_dl=show[dc].to_csv(index=False).encode("utf-8-sig")
+    st.download_button("📥 순위 CSV 다운로드",csv_dl,
+                       f"kospi_ranking_{base}.csv","text/csv",key="dl1")
 
 # ── TAB2 종목 ──────────────────────────────────────────
 with t2:
@@ -297,12 +300,21 @@ with t4:
             ra.markdown(f"<b style='font-size:14px'>{fmt.format(m[col])}</b>{ch}",unsafe_allow_html=True)
     if fi is not None:
         st.divider(); st.markdown("#### 🎯 예측 기여 지표 Top 20")
-        fig2=px.bar(fi.head(20),x="importance_cls",y="feature",orientation="h",
-                    color="importance_cls",color_continuous_scale="Blues")
-        fig2.update_layout(height=380,margin=dict(l=10,r=10,t=10,b=10),
-                           paper_bgcolor="rgba(0,0,0,0)",plot_bgcolor="rgba(0,0,0,0)",
-                           font_color="#ccc",coloraxis_showscale=False,yaxis=dict(autorange="reversed"))
-        st.plotly_chart(fig2,use_container_width=True)
+        _fi_cols=[c for c in ["importance_cls","importance_reg"] if c in fi.columns]
+        _fi_lbl={"importance_cls":"분류 모델","importance_reg":"회귀 모델"}
+        if len(_fi_cols)>1:
+            fi_sel=st.radio("모델",_fi_cols,format_func=lambda x:_fi_lbl.get(x,x),
+                            horizontal=True,key="fi_model")
+        else:
+            fi_sel=_fi_cols[0] if _fi_cols else "importance_cls"
+        if fi_sel in fi.columns:
+            fi_top=fi.nlargest(20,fi_sel)
+            fig2=px.bar(fi_top,x=fi_sel,y="feature",orientation="h",
+                        color=fi_sel,color_continuous_scale="Blues")
+            fig2.update_layout(height=380,margin=dict(l=10,r=10,t=10,b=10),
+                               paper_bgcolor="rgba(0,0,0,0)",plot_bgcolor="rgba(0,0,0,0)",
+                               font_color="#ccc",coloraxis_showscale=False,yaxis=dict(autorange="reversed"))
+            st.plotly_chart(fig2,use_container_width=True)
 
 # ── TAB5 백테스트 ──────────────────────────────────────
 with t5:
