@@ -338,15 +338,22 @@ def main():
                         st.markdown(f'<div class="price-big">{price_str}</div>',
                                     unsafe_allow_html=True)
                         if row.get("목표가"):
-                            try: st.caption(f"목표 ₩{float(row['목표가']):,.0f}")
+                            try:
+                                is_krx = str(row["ticker"]).isdigit()
+                                sym = "₩" if is_krx else "$"
+                                fmt = ",.0f" if is_krx else ",.2f"
+                                st.caption(f"목표 {sym}{float(row['목표가']):{fmt}}")
                             except: pass
 
                     with c_zone:
                         if row.get("진입하단") and row.get("진입상단"):
                             try:
+                                is_krx = str(row["ticker"]).isdigit()
+                                sym = "₩" if is_krx else "$"
+                                fmt = ",.0f" if is_krx else ",.2f"
                                 st.caption(
-                                    f"진입: ₩{float(row['진입하단']):,.0f} ~ ₩{float(row['진입상단']):,.0f}  |  "
-                                    f"손절: ₩{float(row.get('손절가', 0)):,.0f}"
+                                    f"진입: {sym}{float(row['진입하단']):{fmt}} ~ {sym}{float(row['진입상단']):{fmt}}  |  "
+                                    f"손절: {sym}{float(row.get('손절가', 0)):{fmt}}"
                                 )
                             except: pass
                         if row["리스크"]:
@@ -424,10 +431,16 @@ def main():
 
                 st.markdown("**💰 가격 레벨**")
                 pc1, pc2, pc3, pc4 = st.columns(4)
-                pc1.metric("현재가", (lambda v: f"₩{float(v):,.0f}" if v not in (None,"","?") else "—")(row.get('현재가', 0)) if row.get('현재가') else "—")
-                pc2.metric("진입 하단", (lambda v: f"₩{float(v):,.0f}" if v not in (None,"","?") else "—")(row.get('진입하단', 0)) if row.get('진입하단') else "—")
-                pc3.metric("목표가", (lambda v: f"₩{float(v):,.0f}" if v not in (None,"","?") else "—")(row.get('목표가', 0)) if row.get('목표가') else "—")
-                pc4.metric("손절가", (lambda v: f"₩{float(v):,.0f}" if v not in (None,"","?") else "—")(row.get('손절가', 0)) if row.get('손절가') else "—")
+                _is_krx = str(row["ticker"]).isdigit()
+                _sym = "₩" if _is_krx else "$"
+                _fmt = ",.0f" if _is_krx else ",.2f"
+                def _fmt_price(v):
+                    try: return f"{_sym}{float(v):{_fmt}}" if v not in (None,"","?",0) else "—"
+                    except: return "—"
+                pc1.metric("현재가",  _fmt_price(row.get('현재가')))
+                pc2.metric("진입 하단", _fmt_price(row.get('진입하단')))
+                pc3.metric("목표가",  _fmt_price(row.get('목표가')))
+                pc4.metric("손절가",  _fmt_price(row.get('손절가')))
 
                 if sig_data and sig_data.get("indicators"):
                     with st.expander("🔧 기술적 지표 상세"):
