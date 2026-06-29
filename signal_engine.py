@@ -463,7 +463,10 @@ def generate_signal(
 
     # 지표 계산
     ind = calc_indicators(ohlcv)
-    cur = ind.get("current_price") or naver.get("current_price", 0)
+    # 현재가: 기술지표 → naver/yfinance 순으로 가져오기
+    cur = ind.get("current_price") or naver.get("current_price") or naver.get("current_price".replace("current_price","current_price"), 0)
+    if not cur or cur == 0:
+        cur = naver.get("current_price", 0)
 
     # 개별 점수 (각 최대치 기준)
     s_mac, r_mac = score_macro(macro_snap)
@@ -546,8 +549,8 @@ def generate_signal(
         "stop_loss":   stop_loss,
         "top_reasons": top_reasons,
         "risk_flags":  risk_flags,
-        "indicators":  ind,  # 모든 값 그대로 저장 (bool 포함)
-        "current_price": cur,
+        "indicators":  ind,
+        "current_price": cur or ind.get("current_price", 0),
     }
 
 
