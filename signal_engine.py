@@ -546,7 +546,7 @@ def generate_signal(
         "stop_loss":   stop_loss,
         "top_reasons": top_reasons,
         "risk_flags":  risk_flags,
-        "indicators":  {k: v for k, v in ind.items() if not isinstance(v, bool) or v},
+        "indicators":  ind,  # 모든 값 그대로 저장 (bool 포함)
         "current_price": cur,
     }
 
