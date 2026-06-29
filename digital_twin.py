@@ -28,7 +28,7 @@ def fetch_historical_ohlcv(ticker, is_krx, years=2):
             if isinstance(df.columns, pd.MultiIndex):
                 df.columns = df.columns.get_level_values(0)
         if df.empty: return pd.DataFrame()
-        df.index = pd.to_datetime(df.index)
+        df.index = pd.to_datetime(df.index).tz_localize(None)
         df.columns = [c.lower() for c in df.columns]
         keep = [c for c in ["open","high","low","close","volume"] if c in df.columns]
         return df[keep].dropna()
@@ -42,7 +42,7 @@ def fetch_historical_investor(ticker, pages=5):
     rows_data = []
     for page in range(1, pages+1):
         try:
-            url = f"https://finance.naver.com/item/frgn.naver?code={ticker}&page={page}"
+            url = "https://finance.naver.com/item/frgn.naver?code=" + ticker + "&page=" + str(page)
             r = requests.get(url, headers=headers, timeout=10)
             r.encoding = "euc-kr"
             soup = BeautifulSoup(r.text, "html.parser")
@@ -63,39 +63,44 @@ def fetch_historical_investor(ticker, pages=5):
                     def pn(s):
                         s = s.replace(",","").replace("+","").strip()
                         return float(s) if s and s != "-" else 0.0
-                    rows_data.append({"date": date, "foreign": pn(tds[5].get_text(strip=True)), "institutional": pn(tds[6].get_text(strip=True))})
+                    rows_data.append({
+                        "date": date,
+                        "foreign": pn(tds[5].get_text(strip=True)),
+                        "institutional": pn(tds[6].get_text(strip=True))
+                    })
                 except: continue
             time.sleep(0.3)
         except: break
     if not rows_data: return pd.DataFrame()
     df = pd.DataFrame(rows_data).set_index("date").sort_index()
+    df.index = pd.to_datetime(df.index).tz_localize(None)
     return df[~df.index.duplicated()]
 
 def collect_historical_data(watchlist, years=2, save_path="/content/historical_data.pkl"):
     import pickle
     if os.path.exists(save_path):
-        print(f"기존 데이터 로드: {save_path}")
+        print("기존 데이터 로드: " + save_path)
         with open(save_path, "rb") as f:
             return pickle.load(f)
     historical = {}
     krx_list = [t for t in watchlist if t.isdigit()]
     yf_list  = [t for t in watchlist if not t.isdigit()]
-    print(f"과거 {years}년치 수집: KRX {len(krx_list)}개 + yf {len(yf_list)}개")
+    print("과거 " + str(years) + "년치 수집: KRX " + str(len(krx_list)) + "개 + yf " + str(len(yf_list)) + "개")
     for i, ticker in enumerate(krx_list, 1):
-        print(f"  [{i}/{len(krx_list)}] {ticker} {watchlist[ticker]}", end=" ")
+        print("  [" + str(i) + "/" + str(len(krx_list)) + "] " + ticker + " " + watchlist[ticker], end=" ")
         ohlcv    = fetch_historical_ohlcv(ticker, is_krx=True, years=years)
         investor = fetch_historical_investor(ticker, pages=8)
         historical[ticker] = {"ohlcv": ohlcv, "investor": investor}
-        print(f"→ {len(ohlcv)}행 | 수급 {len(investor)}행")
+        print("-> OHLCV " + str(len(ohlcv)) + "행 | 수급 " + str(len(investor)) + "행")
         time.sleep(0.4)
     for ticker in yf_list:
-        print(f"  [yf] {ticker}", end=" ")
+        print("  [yf] " + ticker, end=" ")
         ohlcv = fetch_historical_ohlcv(ticker, is_krx=False, years=years)
         historical[ticker] = {"ohlcv": ohlcv, "investor": pd.DataFrame()}
-        print(f"→ {len(ohlcv)}행")
+        print("-> " + str(len(ohlcv)) + "행")
     with open(save_path, "wb") as f:
         pickle.dump(historical, f)
-    print(f"✅ 저장: {save_path}")
+    print("저장 완료: " + save_path)
     return historical
 
 def fetch_macro_history(years=2):
@@ -112,29 +117,32 @@ def fetch_macro_history(years=2):
             if isinstance(df.columns, pd.MultiIndex):
                 df.columns = df.columns.get_level_values(0)
             df.columns = [c.lower() for c in df.columns]
-            df.index = pd.to_datetime(df.index)
+            df.index = pd.to_datetime(df.index).tz_localize(None)
             macro_cache[name] = df[["close"]].dropna()
-            print(f"  매크로 {name}: {len(df)}행")
+            print("  매크로 " + name + ": " + str(len(df)) + "행")
         except Exception as e:
-            print(f"  매크로 {name} 오류: {e}")
+            print("  매크로 " + name + " 오류: " + str(e))
     return macro_cache
 
 def get_macro_on_date(date_str, macro_cache):
     snap = {}
-    date = pd.to_datetime(date_str)
+    date = pd.Timestamp(date_str)
     for name, df in macro_cache.items():
         if df.empty: continue
         rows = df[df.index <= date]
         if rows.empty: continue
         latest = float(rows["close"].iloc[-1])
         prev   = float(rows["close"].iloc[-2]) if len(rows) > 1 else latest
-        snap[name] = {"value": round(latest,4), "chg_pct": round((latest-prev)/prev*100,2) if prev else 0}
+        snap[name] = {
+            "value": round(latest,4),
+            "chg_pct": round((latest-prev)/prev*100,2) if prev else 0
+        }
     return snap
 
 def simulate_signals_on_date(date_str, historical, watchlist, macro_snap, weights, lookback=120):
     from signal_engine import calc_indicators, score_macro, score_fundamental, score_supply_demand, score_technical, score_momentum
     from config import SIGNAL_BANDS
-    date = pd.to_datetime(date_str)
+    date = pd.Timestamp(date_str)
     rows = []
     for ticker, name in watchlist.items():
         data     = historical.get(ticker, {})
@@ -163,10 +171,13 @@ def simulate_signals_on_date(date_str, historical, watchlist, macro_snap, weight
             if lo <= overall <= hi:
                 signal = label
                 break
-        rows.append({"date":date_str,"ticker":ticker,"name":name,"signal":signal,
-                     "score":round(overall,1),"s_mac":s_mac,"s_fun":s_fun,
-                     "s_snd":s_snd,"s_tec":s_tec,"s_mom":s_mom,
-                     "price":ind.get("current_price",0)})
+        rows.append({
+            "date": date_str, "ticker": ticker, "name": name,
+            "signal": signal, "score": round(overall,1),
+            "s_mac": s_mac, "s_fun": s_fun, "s_snd": s_snd,
+            "s_tec": s_tec, "s_mom": s_mom,
+            "price": ind.get("current_price", 0)
+        })
     return pd.DataFrame(rows)
 
 def calc_forward_returns(signal_df, historical, holding_days_list=[5,20]):
@@ -174,7 +185,7 @@ def calc_forward_returns(signal_df, historical, holding_days_list=[5,20]):
     for _, row in signal_df.iterrows():
         if row["signal"] not in ("STRONG BUY","BUY","SELL","STRONG SELL"): continue
         ticker  = row["ticker"]
-        date    = pd.to_datetime(row["date"])
+        date    = pd.Timestamp(row["date"])
         is_buy  = row["signal"] in ("STRONG BUY","BUY")
         ohlcv   = historical.get(ticker,{}).get("ohlcv", pd.DataFrame())
         if ohlcv.empty: continue
@@ -182,37 +193,40 @@ def calc_forward_returns(signal_df, historical, holding_days_list=[5,20]):
         entry_rows = ohlcv[ohlcv.index >= date]
         if entry_rows.empty: continue
         entry_price = float(entry_rows["close"].iloc[0])
-        ret_dict = {"date":row["date"],"ticker":ticker,"name":row["name"],
-                    "signal":row["signal"],"score":row["score"],
-                    "s_mac":row["s_mac"],"s_fun":row["s_fun"],
-                    "s_snd":row["s_snd"],"s_tec":row["s_tec"],"s_mom":row["s_mom"],
-                    "entry_price":entry_price}
+        ret_dict = {
+            "date": row["date"], "ticker": ticker, "name": row["name"],
+            "signal": row["signal"], "score": row["score"],
+            "s_mac": row["s_mac"], "s_fun": row["s_fun"],
+            "s_snd": row["s_snd"], "s_tec": row["s_tec"], "s_mom": row["s_mom"],
+            "entry_price": entry_price
+        }
         for n in holding_days_list:
             if len(future) >= n:
                 exit_price = float(future["close"].iloc[n-1])
                 raw_ret    = (exit_price - entry_price) / entry_price * 100
                 actual_ret = raw_ret if is_buy else -raw_ret
-                ret_dict[f"ret_{n}d"]     = round(actual_ret, 2)
-                ret_dict[f"correct_{n}d"] = actual_ret > 0
+                ret_dict["ret_" + str(n) + "d"]     = round(actual_ret, 2)
+                ret_dict["correct_" + str(n) + "d"] = actual_ret > 0
             else:
-                ret_dict[f"ret_{n}d"]     = None
-                ret_dict[f"correct_{n}d"] = None
+                ret_dict["ret_" + str(n) + "d"]     = None
+                ret_dict["correct_" + str(n) + "d"] = None
         results.append(ret_dict)
     return pd.DataFrame(results) if results else pd.DataFrame()
 
 def optimize_weights(result_df, holding_days=5, method="sharpe"):
-    ret_col = f"ret_{holding_days}d"
+    ret_col = "ret_" + str(holding_days) + "d"
     valid = result_df[result_df[ret_col].notna()].copy()
     if len(valid) < 20:
-        print("⚠️ 최적화 데이터 부족")
+        print("최적화 데이터 부족 (최소 20건)")
         return None
     score_cols = ["s_mac","s_fun","s_snd","s_tec","s_mom"]
     max_vals   = [25, 20, 20, 20, 15]
     for col, mx in zip(score_cols, max_vals):
-        valid[f"{col}_norm"] = valid[col] / mx
+        valid[col + "_norm"] = valid[col] / mx
     def neg_obj(w):
-        w = np.array(w); w = w/w.sum()
-        norm_cols = [f"{c}_norm" for c in score_cols]
+        w = np.array(w)
+        w = w / w.sum()
+        norm_cols = [c + "_norm" for c in score_cols]
         scores = valid[norm_cols].values @ w * 100
         is_buy  = (scores >= 55) & valid["signal"].isin(["STRONG BUY","BUY"])
         is_sell = (scores <= 43) & valid["signal"].isin(["SELL","STRONG SELL"])
@@ -226,25 +240,32 @@ def optimize_weights(result_df, holding_days=5, method="sharpe"):
     w0 = np.array([0.25,0.20,0.20,0.20,0.15])
     constraints = {"type":"eq","fun":lambda w: np.sum(w)-1}
     bounds = [(0.05,0.50)]*5
-    result = minimize(neg_obj, w0, method="SLSQP", bounds=bounds, constraints=constraints, options={"maxiter":1000})
-    if result.success:
-        w_opt = result.x/result.x.sum()
-        return {"macro":round(float(w_opt[0]),3),"fundamental":round(float(w_opt[1]),3),
-                "supply_demand":round(float(w_opt[2]),3),"technical":round(float(w_opt[3]),3),
-                "momentum":round(float(w_opt[4]),3)}
-    print(f"⚠️ 최적화 실패: {result.message}")
+    res = minimize(neg_obj, w0, method="SLSQP", bounds=bounds, constraints=constraints, options={"maxiter":1000})
+    if res.success:
+        w_opt = res.x / res.x.sum()
+        return {
+            "macro":         round(float(w_opt[0]),3),
+            "fundamental":   round(float(w_opt[1]),3),
+            "supply_demand": round(float(w_opt[2]),3),
+            "technical":     round(float(w_opt[3]),3),
+            "momentum":      round(float(w_opt[4]),3)
+        }
+    print("최적화 실패: " + str(res.message))
     return None
 
 def update_config_weights(new_weights):
-    import re
+    import re, subprocess
     content = open("/content/repo/config.py").read()
     new_w_str = "WEIGHTS = {\n"
     for k, v in new_weights.items():
-        new_w_str += f'    "{k}":         {v},\n'
+        new_w_str += '    "' + k + '":         ' + str(v) + ",\n"
     new_w_str += "}"
     content = re.sub(r"WEIGHTS = \{.*?\}", new_w_str, content, flags=re.DOTALL)
     open("/content/repo/config.py","w").write(content)
-    print(f"✅ 가중치 업데이트: {new_weights}")
+    print("가중치 업데이트: " + str(new_weights))
+    import os
+    os.chdir("/content/repo")
+    os.system("git add config.py && git commit -m 'auto: Digital Twin 가중치 최적화' && git push origin main --force")
 
 def run_digital_twin(watchlist, years=2, sim_interval_days=5, holding_days_list=[5,20], save_path="/content/historical_data.pkl"):
     from config import WEIGHTS
@@ -259,65 +280,69 @@ def run_digital_twin(watchlist, years=2, sim_interval_days=5, holding_days_list=
     macro_cache = fetch_macro_history(years=years)
 
     print("\n▶ 3단계: 신호 시뮬레이션")
-    end_date   = datetime.now(KST) - timedelta(days=max(holding_days_list)*2)
-    start_date = datetime.now(KST) - timedelta(days=365*years)
+    end_date   = pd.Timestamp(datetime.now(KST).strftime("%Y-%m-%d")) - pd.Timedelta(days=max(holding_days_list)*2)
+    start_date = pd.Timestamp(datetime.now(KST).strftime("%Y-%m-%d")) - pd.Timedelta(days=365*years)
+
     sample_ticker = list(watchlist.keys())[0]
     sample_ohlcv  = historical.get(sample_ticker,{}).get("ohlcv", pd.DataFrame())
     if sample_ohlcv.empty:
-        print("오류: 기준 OHLCV 없음"); return None
+        print("오류: 기준 OHLCV 없음")
+        return None
+
     trading_days = sample_ohlcv.index[
-        (sample_ohlcv.index >= pd.to_datetime(start_date)) &
-        (sample_ohlcv.index <= pd.to_datetime(end_date))
+        (sample_ohlcv.index >= start_date) &
+        (sample_ohlcv.index <= end_date)
     ]
     sim_dates = trading_days[::sim_interval_days]
-    print(f"  시뮬레이션: {len(sim_dates)}개 ({sim_dates[0].date()} ~ {sim_dates[-1].date()})")
+    print("  시뮬레이션: " + str(len(sim_dates)) + "개 (" + str(sim_dates[0].date()) + " ~ " + str(sim_dates[-1].date()) + ")")
 
     all_signals = []
     for i, date in enumerate(sim_dates):
         date_str   = date.strftime("%Y-%m-%d")
         macro_snap = get_macro_on_date(date_str, macro_cache)
         sig_df     = simulate_signals_on_date(date_str, historical, watchlist, macro_snap, WEIGHTS)
-        if not sig_df.empty: all_signals.append(sig_df)
+        if not sig_df.empty:
+            all_signals.append(sig_df)
         if (i+1) % 10 == 0:
-            print(f"  진행: {i+1}/{len(sim_dates)} ({date_str})")
+            print("  진행: " + str(i+1) + "/" + str(len(sim_dates)) + " (" + date_str + ")")
 
     if not all_signals:
-        print("시뮬레이션 결과 없음"); return None
+        print("시뮬레이션 결과 없음")
+        return None
 
     full_signal_df = pd.concat(all_signals, ignore_index=True)
-    print(f"\n  총 신호: {len(full_signal_df)}건")
+    print("  총 신호: " + str(len(full_signal_df)) + "건")
 
     print("\n▶ 4단계: 수익률 계산")
     result_df = calc_forward_returns(full_signal_df, historical, holding_days_list)
-    print(f"  평가 신호: {len(result_df)}건")
+    print("  평가 신호: " + str(len(result_df)) + "건")
     if result_df.empty:
-        print("수익률 계산 결과 없음"); return None
+        print("수익률 계산 결과 없음")
+        return None
 
     print("\n▶ 5단계: 성과 분석")
     for n in holding_days_list:
-        valid = result_df[result_df[f"ret_{n}d"].notna()]
+        ret_col = "ret_" + str(n) + "d"
+        cor_col = "correct_" + str(n) + "d"
+        valid   = result_df[result_df[ret_col].notna()]
         if valid.empty: continue
-        win_rate = valid[f"correct_{n}d"].mean()*100
-        avg_ret  = valid[f"ret_{n}d"].mean()
-        std_ret  = valid[f"ret_{n}d"].std()
+        win_rate = valid[cor_col].mean()*100
+        avg_ret  = valid[ret_col].mean()
+        std_ret  = valid[ret_col].std()
         sharpe   = avg_ret/std_ret*(252/n)**0.5 if std_ret > 0 else 0
-        print(f"\n  [{n}일] 평가:{len(valid)}건 | 승률:{win_rate:.1f}% | 평균:{avg_ret:+.2f}% | Sharpe:{sharpe:.2f}")
+        print("  [" + str(n) + "일] 평가:" + str(len(valid)) + "건 | 승률:" + str(round(win_rate,1)) + "% | 평균:" + str(round(avg_ret,2)) + "% | Sharpe:" + str(round(sharpe,2)))
 
     print("\n▶ 6단계: 가중치 최적화")
     opt_5d  = optimize_weights(result_df, holding_days=5,  method="sharpe")
     opt_20d = optimize_weights(result_df, holding_days=20, method="sharpe")
-    print(f"  현재: {WEIGHTS}")
-    if opt_5d:  print(f"  최적(5일):  {opt_5d}")
-    if opt_20d: print(f"  최적(20일): {opt_20d}")
+    print("  현재: " + str(WEIGHTS))
+    if opt_5d:  print("  최적(5일):  " + str(opt_5d))
+    if opt_20d: print("  최적(20일): " + str(opt_20d))
 
     best = opt_20d or opt_5d
     if best:
         update_config_weights(best)
-        %cd /content/repo
-        !git add config.py
-        !git commit -m "auto: Digital Twin 가중치 최적화"
-        !git push origin main --force
 
     result_df.to_csv("/content/twin_results.csv", index=False, encoding="utf-8-sig")
-    print("\n✅ Digital Twin 완료! → /content/twin_results.csv")
-    return {"signal_df":full_signal_df,"result_df":result_df,"opt_5d":opt_5d,"opt_20d":opt_20d}
+    print("\n완료! 결과: /content/twin_results.csv")
+    return {"signal_df": full_signal_df, "result_df": result_df, "opt_5d": opt_5d, "opt_20d": opt_20d}
