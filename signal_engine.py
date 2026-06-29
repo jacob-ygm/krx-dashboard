@@ -1,63 +1,59 @@
-# signal_engine.py
-"""
-신호 생성 엔진
-- 기술적 지표 계산 (MA, RSI, MACD, 지지/저항)
-- 5개 카테고리 점수화 (매크로/펀더멘털/수급/기술/모멘텀)
-- BUY/SELL 신호 + 신뢰도 + 진입/목표/손절 가격
-"""
-
+# signal_engine.py v2 — 7규칙 적용
 import numpy as np
 import pandas as pd
 from config import WEIGHTS, SIGNAL_BANDS, CONFIDENCE_BANDS
 
+# ── 섹터 분류 ────────────────────────────────────────────────────────────────
+SECTOR_STRONG = {
+    "012450","329180","042660","034020","047810","272210",  # 방산/조선
+    "003490","180640",                                       # 항공
+    "105560","055550","086790","316140","138040",            # 금융
+    "000660","NVDA","AMD","AMAT","LRCX","KLAC","MU","MRVL", # AI반도체
+    "MSFT","META","GOOGL","AAPL",                           # 빅테크
+}
+SECTOR_WEAK = {
+    "051910","006400","373220","003670",  # 2차전지/화학
+    "000720","047040","028050",           # 건설
+    "011170","030200",                    # 통신
+}
 
 # ════════════════════════════════════════════════════════════════════════════
-# A. 기술적 지표 계산
+# A. 기술적 지표
 # ════════════════════════════════════════════════════════════════════════════
 
 def calc_indicators(df: pd.DataFrame) -> dict:
-    """OHLCV DataFrame → 기술적 지표 딕셔너리"""
     if df.empty or len(df) < 20:
         return {}
-
     close = df["close"]
     high  = df["high"]
     low   = df["low"]
     vol   = df["volume"]
+    ind   = {}
 
-    ind = {}
-
-    # ── 이동평균 ──────────────────────────────────────────────────────────
+    # MA
     for n in [5, 20, 60, 120]:
         if len(close) >= n:
-            ind[f"ma{n}"] = close.rolling(n).mean().iloc[-1]
-
+            ind["ma" + str(n)] = close.rolling(n).mean().iloc[-1]
     cur = close.iloc[-1]
     ind["current_price"] = cur
 
-    # MA 정배열 여부
-    mas = [ind.get(f"ma{n}") for n in [5, 20, 60, 120] if ind.get(f"ma{n}")]
+    mas = [ind.get("ma" + str(n)) for n in [5,20,60,120] if ind.get("ma" + str(n))]
     ind["ma_aligned_up"]   = all(mas[i] > mas[i+1] for i in range(len(mas)-1)) if len(mas) >= 2 else False
     ind["ma_aligned_down"] = all(mas[i] < mas[i+1] for i in range(len(mas)-1)) if len(mas) >= 2 else False
 
-    # 가격 대비 MA 위치
     for n in [5, 20, 60, 120]:
-        k = f"ma{n}"
+        k = "ma" + str(n)
         if ind.get(k):
-            ind[f"pct_vs_ma{n}"] = (cur / ind[k] - 1) * 100
+            ind["pct_vs_ma" + str(n)] = (cur / ind[k] - 1) * 100
 
-    # ── 골든/데드크로스 ──────────────────────────────────────────────────
+    # 골든/데드크로스
     if len(close) >= 21:
         ma5  = close.rolling(5).mean()
         ma20 = close.rolling(20).mean()
-        cross_now  = ma5.iloc[-1]  > ma20.iloc[-1]
-        cross_prev = ma5.iloc[-2]  < ma20.iloc[-2]
-        death_now  = ma5.iloc[-1]  < ma20.iloc[-1]
-        death_prev = ma5.iloc[-2]  > ma20.iloc[-2]
-        ind["golden_cross"] = cross_now and cross_prev
-        ind["dead_cross"]   = death_now and death_prev
+        ind["golden_cross"] = bool(ma5.iloc[-1] > ma20.iloc[-1] and ma5.iloc[-2] < ma20.iloc[-2])
+        ind["dead_cross"]   = bool(ma5.iloc[-1] < ma20.iloc[-1] and ma5.iloc[-2] > ma20.iloc[-2])
 
-    # ── RSI (14일) ────────────────────────────────────────────────────────
+    # RSI
     if len(close) >= 15:
         delta = close.diff()
         gain  = delta.clip(lower=0).rolling(14).mean()
@@ -65,47 +61,39 @@ def calc_indicators(df: pd.DataFrame) -> dict:
         rs    = gain / loss.replace(0, np.nan)
         rsi   = 100 - (100 / (1 + rs))
         ind["rsi"] = round(rsi.iloc[-1], 1)
-        ind["rsi_oversold"]   = ind["rsi"] < 30
-        ind["rsi_overbought"] = ind["rsi"] > 70
-        # RSI 회복 (전일 <35, 오늘 >35)
-        if len(rsi) >= 2:
-            ind["rsi_recovering"] = rsi.iloc[-2] < 35 and rsi.iloc[-1] >= 35
+        ind["rsi_oversold"]   = bool(ind["rsi"] < 30)
+        ind["rsi_overbought"] = bool(ind["rsi"] > 70)
+        ind["rsi_recovering"] = bool(len(rsi) >= 2 and rsi.iloc[-2] < 35 and rsi.iloc[-1] >= 35)
+        ind["rsi_in_buy_zone"] = bool(30 <= ind["rsi"] <= 45)
 
-    # ── MACD (12, 26, 9) ─────────────────────────────────────────────────
+    # MACD
     if len(close) >= 27:
         ema12  = close.ewm(span=12).mean()
         ema26  = close.ewm(span=26).mean()
         macd   = ema12 - ema26
         signal = macd.ewm(span=9).mean()
         hist   = macd - signal
-        ind["macd"]         = round(macd.iloc[-1], 2)
-        ind["macd_signal"]  = round(signal.iloc[-1], 2)
-        ind["macd_hist"]    = round(hist.iloc[-1], 2)
-        ind["macd_cross_up"]   = macd.iloc[-1] > signal.iloc[-1] and macd.iloc[-2] <= signal.iloc[-2]
-        ind["macd_cross_down"] = macd.iloc[-1] < signal.iloc[-1] and macd.iloc[-2] >= signal.iloc[-2]
-        # 다이버전스 (간단 근사: 가격 신저 but MACD 신저 아닌 경우)
+        ind["macd"]           = round(macd.iloc[-1], 2)
+        ind["macd_signal"]    = round(signal.iloc[-1], 2)
+        ind["macd_hist"]      = round(hist.iloc[-1], 2)
+        ind["macd_cross_up"]  = bool(macd.iloc[-1] > signal.iloc[-1] and macd.iloc[-2] <= signal.iloc[-2])
+        ind["macd_cross_down"]= bool(macd.iloc[-1] < signal.iloc[-1] and macd.iloc[-2] >= signal.iloc[-2])
         if len(close) >= 40:
-            price_low_recent = close.iloc[-10:].min()
-            price_low_before = close.iloc[-30:-10].min()
-            macd_low_recent  = macd.iloc[-10:].min()
-            macd_low_before  = macd.iloc[-30:-10].min()
-            ind["macd_bull_divergence"] = (
-                price_low_recent < price_low_before and
-                macd_low_recent  > macd_low_before
-            )
+            pl_r = close.iloc[-10:].min()
+            pl_b = close.iloc[-30:-10].min()
+            ml_r = macd.iloc[-10:].min()
+            ml_b = macd.iloc[-30:-10].min()
+            ind["macd_bull_divergence"] = bool(pl_r < pl_b and ml_r > ml_b)
 
-    # ── 볼린저 밴드 (20, 2σ) ─────────────────────────────────────────────
+    # 볼린저밴드
     if len(close) >= 20:
         ma20  = close.rolling(20).mean()
         std20 = close.rolling(20).std()
-        ind["bb_upper"] = round((ma20 + 2 * std20).iloc[-1], 0)
-        ind["bb_lower"] = round((ma20 - 2 * std20).iloc[-1], 0)
-        ind["bb_pct"]   = round(
-            (cur - (ma20 - 2*std20).iloc[-1]) /
-            (4 * std20.iloc[-1] + 1e-9) * 100, 1
-        )   # 0%=하단, 100%=상단
+        ind["bb_upper"] = round((ma20 + 2*std20).iloc[-1], 0)
+        ind["bb_lower"] = round((ma20 - 2*std20).iloc[-1], 0)
+        ind["bb_pct"]   = round((cur - (ma20-2*std20).iloc[-1]) / (4*std20.iloc[-1]+1e-9)*100, 1)
 
-    # ── 지지/저항 (52주 고저, 최근 20일 고저) ───────────────────────────
+    # 지지/저항
     if len(close) >= 20:
         ind["resistance_20d"] = round(high.iloc[-20:].max(), 0)
         ind["support_20d"]    = round(low.iloc[-20:].min(), 0)
@@ -113,423 +101,396 @@ def calc_indicators(df: pd.DataFrame) -> dict:
         ind["resistance_120d"] = round(high.iloc[-120:].max(), 0)
         ind["support_120d"]    = round(low.iloc[-120:].min(), 0)
 
-    # ── 거래량 확인 ──────────────────────────────────────────────────────
+    # 거래량
     if len(vol) >= 20:
         avg_vol = vol.rolling(20).mean().iloc[-1]
         ind["vol_ratio"] = round(vol.iloc[-1] / avg_vol, 2) if avg_vol else 1.0
-        ind["vol_surge"] = ind["vol_ratio"] > 1.5
+        ind["vol_surge"] = bool(ind["vol_ratio"] > 1.5)
 
-    # ── 추세 강도 (ADX 근사) ─────────────────────────────────────────────
+    # 추세강도
     if len(close) >= 15:
         returns = close.pct_change().iloc[-14:]
-        trend_score = returns.mean() / (returns.std() + 1e-9)
-        ind["trend_strength"] = round(float(trend_score), 3)
+        ind["trend_strength"] = round(float(returns.mean() / (returns.std()+1e-9)), 3)
+
+    # Rule 3 — 최근 수익률
+    if len(close) >= 6:
+        ind["ret_5d"]  = round((cur / close.iloc[-6] - 1)*100, 2)
+    if len(close) >= 21:
+        ind["ret_20d"] = round((cur / close.iloc[-21] - 1)*100, 2)
+
+    # Rule 6 — 급락 여부
+    if len(close) >= 11:
+        ind["ret_10d"] = round((cur / close.iloc[-11] - 1)*100, 2)
+        ind["is_crash"] = bool(ind["ret_10d"] < -15)
 
     return ind
 
 
 # ════════════════════════════════════════════════════════════════════════════
-# B. 매크로 점수 (0-25점)
+# B. 매크로 점수 + Rule1 게이팅
 # ════════════════════════════════════════════════════════════════════════════
 
-def score_macro(macro_snap: dict) -> tuple[float, list[str]]:
-    """매크로 환경 점수 산출"""
-    score = 12.5   # 중립 시작
+def score_macro(macro_snap: dict) -> tuple:
+    score = 12.5
     reasons = []
 
-    vix   = macro_snap.get("VIX", {}).get("value", 20)
-    dxy   = macro_snap.get("DXY", {}).get("value", 104)
-    krw   = macro_snap.get("USD/KRW", {}).get("value", 1350)
-    sp500 = macro_snap.get("S&P500", {}).get("chg_pct", 0)
-    wti   = macro_snap.get("WTI", {}).get("value", 75)
+    vix      = macro_snap.get("VIX",      {}).get("value", 20)
+    dxy      = macro_snap.get("DXY",      {}).get("value", 104)
+    krw      = macro_snap.get("USD/KRW",  {}).get("value", 1350)
+    sp500    = macro_snap.get("S&P500",   {}).get("chg_pct", 0)
+    wti      = macro_snap.get("WTI",      {}).get("value", 75)
 
-    # VIX
-    if vix < 15:
-        score += 3; reasons.append(f"VIX {vix:.1f} — 공포지수 낮음(리스크온)")
-    elif vix < 20:
-        score += 1.5
-    elif vix > 30:
-        score -= 4; reasons.append(f"VIX {vix:.1f} — 공포지수 높음(리스크오프)")
-    elif vix > 25:
-        score -= 2
+    if vix < 15:   score += 3;   reasons.append("VIX " + str(vix) + " — 공포지수 낮음")
+    elif vix < 20: score += 1.5
+    elif vix > 30: score -= 5;   reasons.append("VIX " + str(vix) + " — 극도 공포")
+    elif vix > 25: score -= 3;   reasons.append("VIX " + str(vix) + " — 공포 확대")
 
-    # S&P500 방향
-    if sp500 > 0.5:
-        score += 2; reasons.append(f"S&P500 +{sp500:.1f}% 상승")
-    elif sp500 < -1.0:
-        score -= 2.5; reasons.append(f"S&P500 {sp500:.1f}% 하락")
+    if sp500 > 0.5:  score += 2;   reasons.append("S&P500 +" + str(sp500) + "%")
+    elif sp500 < -1: score -= 2.5; reasons.append("S&P500 " + str(sp500) + "%")
 
-    # USD/KRW
-    if krw < 1300:
-        score += 2; reasons.append(f"USD/KRW {krw:.0f} — 원화 강세")
-    elif krw > 1400:
-        score -= 2.5; reasons.append(f"USD/KRW {krw:.0f} — 원화 약세 경고")
-    elif krw > 1380:
-        score -= 1.5
+    if krw < 1300:   score += 2;   reasons.append("USD/KRW " + str(krw) + " — 원화 강세")
+    elif krw > 1400: score -= 3;   reasons.append("USD/KRW " + str(krw) + " — 원화 약세 경고")
+    elif krw > 1380: score -= 1.5
 
-    # DXY
-    if dxy < 100:
-        score += 1.5
-    elif dxy > 106:
-        score -= 1.5; reasons.append(f"DXY {dxy:.1f} — 달러 강세 부담")
+    if dxy < 100:    score += 1.5
+    elif dxy > 106:  score -= 1.5; reasons.append("DXY " + str(dxy) + " — 달러 강세")
 
-    # WTI (에너지 비용)
-    if 60 < wti < 85:
-        score += 1   # 적정
-    elif wti > 100:
-        score -= 2; reasons.append(f"WTI {wti:.1f} — 유가 고공 비용 부담")
+    if 60 < wti < 85: score += 1
+    elif wti > 100:   score -= 2; reasons.append("WTI " + str(wti) + " — 유가 부담")
 
-    score = max(0, min(25, score))
-    return round(score, 1), reasons
+    return round(max(0, min(25, score)), 1), reasons
 
 
 def get_macro_regime(macro_snap: dict) -> str:
-    """RISK-ON / NEUTRAL / RISK-OFF 판별"""
-    vix = macro_snap.get("VIX", {}).get("value", 20)
-    dxy = macro_snap.get("DXY", {}).get("value", 104)
-    krw = macro_snap.get("USD/KRW", {}).get("value", 1350)
-    sp500_chg = macro_snap.get("S&P500", {}).get("chg_pct", 0)
-
-    risk_off = (vix > 25) or (krw > 1400) or (sp500_chg < -1.5)
-    risk_on  = (vix < 17) and (krw < 1330) and (sp500_chg > 0)
-
-    if risk_off:
+    vix      = macro_snap.get("VIX",     {}).get("value", 20)
+    krw      = macro_snap.get("USD/KRW", {}).get("value", 1350)
+    sp500    = macro_snap.get("S&P500",  {}).get("chg_pct", 0)
+    if vix > 25 or krw > 1400 or sp500 < -1.5:
         return "RISK-OFF"
-    elif risk_on:
+    if vix < 17 and krw < 1330 and sp500 > 0:
         return "RISK-ON"
     return "NEUTRAL"
 
 
 # ════════════════════════════════════════════════════════════════════════════
-# C. 펀더멘털 점수 (0-20점)
+# C. 펀더멘털 점수
 # ════════════════════════════════════════════════════════════════════════════
 
-def score_fundamental(fund: dict, naver: dict) -> tuple[float, list[str]]:
+def score_fundamental(fund: dict, naver: dict) -> tuple:
     score = 10.0
     reasons = []
 
-    # PER: naver에서 우선 가져오기 (fund의 PER은 오류값 가능)
-    per  = naver.get("PER", fund.get("PER", 0))
-    pbr  = naver.get("PBR", fund.get("PBR", 0))
-    roe  = naver.get("ROE", 0)
+    per  = naver.get("PER",  fund.get("PER", 0))
+    pbr  = naver.get("PBR",  fund.get("PBR", 0))
+    roe  = naver.get("ROE",  0)
     op_m = naver.get("operating_margin", 0)
     debt = naver.get("debt_ratio", 100)
     cr   = naver.get("current_ratio", 1)
 
-    # PER 이상값 필터 (0 이하이거나 500 초과면 무시)
-    if per <= 0 or per > 500:
-        per = 0
+    if per <= 0 or per > 500: per = 0
 
-    # PER
-    if 0 < per < 10:
-        score += 2.5; reasons.append(f"PER {per:.1f} — 저평가")
-    elif 10 <= per <= 20:
-        score += 1
-    elif per > 40:
-        score -= 2; reasons.append(f"PER {per:.1f} — 고평가")
+    if 0 < per < 10:   score += 2.5; reasons.append("PER " + str(per) + " — 저평가")
+    elif 10 <= per <= 20: score += 1
+    elif per > 40:     score -= 2;   reasons.append("PER " + str(per) + " — 고평가")
 
-    # PBR
-    if 0 < pbr < 1:
-        score += 2; reasons.append(f"PBR {pbr:.2f} — 자산 대비 저평가")
-    elif pbr > 4:
-        score -= 1.5
+    if 0 < pbr < 1:    score += 2;   reasons.append("PBR " + str(pbr) + " — 자산 저평가")
+    elif pbr > 4:      score -= 1.5
 
-    # ROE
-    if roe > 20:
-        score += 2.5; reasons.append(f"ROE {roe:.1f}% — 우수한 자기자본수익률")
-    elif roe > 10:
-        score += 1
-    elif roe < 0:
-        score -= 2; reasons.append(f"ROE {roe:.1f}% — 적자")
+    if roe > 20:       score += 2.5; reasons.append("ROE " + str(roe) + "%")
+    elif roe > 10:     score += 1
+    elif roe < 0:      score -= 2;   reasons.append("ROE 적자")
 
-    # 영업이익률
-    if op_m > 15:
-        score += 2; reasons.append(f"영업이익률 {op_m:.1f}%")
-    elif op_m < 0:
-        score -= 2
+    if op_m > 15:      score += 2;   reasons.append("영업이익률 " + str(op_m) + "%")
+    elif op_m < 0:     score -= 2
 
-    # 부채비율
-    if debt < 50:
-        score += 1
-    elif debt > 200:
-        score -= 2; reasons.append(f"부채비율 {debt:.0f}% — 재무 위험")
+    if debt < 50:      score += 1
+    elif debt > 200:   score -= 2;   reasons.append("부채비율 " + str(debt) + "%")
 
-    # 유동비율
-    if cr > 2:
-        score += 1
-    elif cr < 1:
-        score -= 1.5
+    if cr > 2:         score += 1
+    elif cr < 1:       score -= 1.5
 
-    score = max(0, min(20, score))
-    return round(score, 1), reasons
+    return round(max(0, min(20, score)), 1), reasons
 
 
 # ════════════════════════════════════════════════════════════════════════════
-# D. 수급 점수 (0-20점)
+# D. 수급 점수 + Rule7 외국인 가중치
 # ════════════════════════════════════════════════════════════════════════════
 
-def score_supply_demand(investor_df: pd.DataFrame, foreign_ratio: float) -> tuple[float, list[str]]:
+def score_supply_demand(investor_df: pd.DataFrame, foreign_ratio: float) -> tuple:
     score = 10.0
     reasons = []
 
     if investor_df.empty:
         return score, reasons
 
-    recent = investor_df.tail(10)   # 최근 10거래일
+    recent = investor_df.tail(10)
 
-    # 외국인 누적 순매수 (주식 수 단위)
+    # Rule 7 — 외국인 수급 강화
     if "foreign" in recent.columns:
-        f_sum = recent["foreign"].sum()
+        f_sum    = recent["foreign"].sum()
         f_consec = (recent["foreign"] > 0).sum()
-        if f_sum > 0:
-            score += min(4, f_sum / 5e6)   # 500만주 기준
-            if f_consec >= 7:
-                score += 2; reasons.append(f"외국인 {f_consec}일 연속 순매수")
-            elif f_consec >= 4:
-                score += 1; reasons.append(f"외국인 {f_consec}일 순매수")
-        else:
-            consec_sell = (recent["foreign"] < 0).sum()
-            if consec_sell >= 7:
-                score -= 3; reasons.append(f"외국인 {consec_sell}일 연속 순매도")
-            elif consec_sell >= 4:
-                score -= 1.5; reasons.append(f"외국인 {consec_sell}일 연속 순매도")
+        f_consec_sell = (recent["foreign"] < 0).sum()
 
-    # 기관 순매수 (주식 수 단위)
+        if f_sum > 0:
+            score += min(5, f_sum / 3e6)
+            if f_consec >= 7:
+                score += 3; reasons.append("외국인 " + str(f_consec) + "일 연속 순매수")
+            elif f_consec >= 4:
+                score += 1.5; reasons.append("외국인 " + str(f_consec) + "일 순매수")
+        else:
+            if f_consec_sell >= 3:
+                score -= 3; reasons.append("외국인 " + str(f_consec_sell) + "일 연속 순매도")
+            elif f_consec_sell >= 2:
+                score -= 1.5
+
+    # 기관
     if "institutional" in recent.columns:
         i_sum = recent["institutional"].sum()
         if i_sum > 0:
-            score += min(3, i_sum / 5e6)
-            reasons.append("기관 순매수 우위")
+            score += min(3, i_sum / 3e6); reasons.append("기관 순매수")
         elif i_sum < -3e6:
-            score -= 2; reasons.append("기관 순매도 우위")
+            score -= 2; reasons.append("기관 순매도")
 
-    # 외국인+기관 동반 매수
+    # 외국인+기관 동반
     if "foreign" in recent.columns and "institutional" in recent.columns:
         joint = ((recent["foreign"] > 0) & (recent["institutional"] > 0)).sum()
         if joint >= 6:
-            score += 2; reasons.append(f"외국인+기관 {joint}일 동반 매수")
+            score += 2.5; reasons.append("외국인+기관 " + str(joint) + "일 동반 매수")
 
-    # 외국인 보유비율
     if foreign_ratio > 40:
-        score += 1; reasons.append(f"외국인 보유비율 {foreign_ratio:.1f}%")
+        score += 1; reasons.append("외국인 보유 " + str(foreign_ratio) + "%")
 
-    score = max(0, min(20, score))
-    return round(score, 1), reasons
+    return round(max(0, min(20, score)), 1), reasons
 
 
 # ════════════════════════════════════════════════════════════════════════════
-# E. 기술적 점수 (0-20점)
+# E. 기술적 점수 + Rule2 복합조건
 # ════════════════════════════════════════════════════════════════════════════
 
-def score_technical(ind: dict) -> tuple[float, list[str]]:
+def score_technical(ind: dict) -> tuple:
     score = 10.0
     reasons = []
 
     if not ind:
         return score, reasons
 
-    # MA 정배열
+    # MA
     if ind.get("ma_aligned_up"):
-        score += 3; reasons.append("MA 정배열 (5>20>60>120일)")
+        score += 3; reasons.append("MA 정배열")
     elif ind.get("ma_aligned_down"):
         score -= 3; reasons.append("MA 역배열")
 
-    # 골든/데드크로스
-    if ind.get("golden_cross"):
-        score += 2; reasons.append("골든크로스 발생")
-    if ind.get("dead_cross"):
-        score -= 2.5; reasons.append("데드크로스 발생")
+    # 골든/데드
+    if ind.get("golden_cross") and not ind.get("dead_cross"):
+        score += 2; reasons.append("골든크로스")
+    if ind.get("dead_cross") and not ind.get("golden_cross"):
+        score -= 2.5; reasons.append("데드크로스")
 
-    # RSI
+    # Rule 2 — RSI 복합조건
     rsi = ind.get("rsi", 50)
-    if ind.get("rsi_recovering"):
-        score += 2; reasons.append(f"RSI 과매도 회복 ({rsi:.0f})")
+    vol_surge = ind.get("vol_surge", False)
+    bb_pct    = ind.get("bb_pct", 50)
+    ma20      = ind.get("ma20", 0)
+    cur       = ind.get("current_price", 0)
+    near_support = cur > 0 and ma20 > 0 and cur >= ma20 * 0.97
+
+    buy_conditions = [
+        ind.get("rsi_in_buy_zone", False),
+        vol_surge,
+        near_support,
+    ]
+    buy_count = sum(buy_conditions)
+
+    if buy_count >= 2:
+        score += 2.5; reasons.append("복합 매수조건 " + str(buy_count) + "/3 충족")
+    elif ind.get("rsi_recovering"):
+        score += 1.5; reasons.append("RSI 과매도 회복 (" + str(rsi) + ")")
     elif ind.get("rsi_oversold"):
-        score += 1; reasons.append(f"RSI 과매도 ({rsi:.0f}) — 반등 가능")
+        score += 0.5
     elif ind.get("rsi_overbought"):
-        score -= 2; reasons.append(f"RSI 과매수 ({rsi:.0f}) — 단기 부담")
+        score -= 2; reasons.append("RSI 과매수 (" + str(rsi) + ")")
 
     # MACD
-    if ind.get("macd_cross_up"):
+    if ind.get("macd_cross_up") and not ind.get("macd_cross_down"):
         score += 2; reasons.append("MACD 골든크로스")
-    if ind.get("macd_cross_down"):
+    if ind.get("macd_cross_down") and not ind.get("macd_cross_up"):
         score -= 2; reasons.append("MACD 데드크로스")
     if ind.get("macd_bull_divergence"):
         score += 1.5; reasons.append("MACD 강세 다이버전스")
 
-    # 볼린저밴드 위치
-    bb_pct = ind.get("bb_pct", 50)
+    # 볼린저밴드
     if bb_pct < 20:
-        score += 1.5; reasons.append(f"볼린저밴드 하단 근접 ({bb_pct:.0f}%)")
+        score += 1.5; reasons.append("볼린저밴드 하단")
     elif bb_pct > 85:
-        score -= 1.5; reasons.append(f"볼린저밴드 상단 돌파 ({bb_pct:.0f}%) — 과열")
+        score -= 1.5; reasons.append("볼린저밴드 상단 과열")
 
-    # 거래량 서지
-    if ind.get("vol_surge"):
-        vr = ind.get("vol_ratio", 1)
-        reasons.append(f"거래량 급증 ({vr:.1f}배)")
-        # 방향성과 결합
+    # 거래량
+    if vol_surge:
         if ind.get("ma_aligned_up") or ind.get("macd_cross_up"):
-            score += 1
-        else:
-            score -= 0.5
+            score += 1; reasons.append("거래량 급증 (" + str(ind.get("vol_ratio",1)) + "배)")
 
-    # MA 대비 위치
-    pct_ma20 = ind.get("pct_vs_ma20", 0)
-    if -5 < pct_ma20 < 0:
-        score += 1   # MA20 근방 약간 아래 — 지지 확인 가능 구간
-    elif pct_ma20 < -15:
-        score -= 1   # 심하게 이탈
-
-    score = max(0, min(20, score))
-    return round(score, 1), reasons
+    return round(max(0, min(20, score)), 1), reasons
 
 
 # ════════════════════════════════════════════════════════════════════════════
-# F. 모멘텀/촉매 점수 (0-15점)
+# F. 모멘텀 점수 + Rule4 섹터
 # ════════════════════════════════════════════════════════════════════════════
 
-def score_momentum(ind: dict, macro_snap: dict) -> tuple[float, list[str]]:
+def score_momentum(ind: dict, macro_snap: dict, ticker: str = "") -> tuple:
     score = 7.5
     reasons = []
 
     if not ind:
         return score, reasons
 
-    # 추세 강도 (t-stat 근사)
     ts = ind.get("trend_strength", 0)
-    if ts > 0.3:
-        score += 2; reasons.append(f"강한 상승 모멘텀 (추세강도 {ts:.2f})")
-    elif ts > 0.1:
-        score += 1
-    elif ts < -0.3:
-        score -= 2; reasons.append(f"강한 하락 모멘텀 (추세강도 {ts:.2f})")
-    elif ts < -0.1:
-        score -= 1
+    if ts > 0.3:   score += 2; reasons.append("강한 상승 모멘텀")
+    elif ts > 0.1: score += 1
+    elif ts < -0.3: score -= 2; reasons.append("강한 하락 모멘텀")
+    elif ts < -0.1: score -= 1
 
-    # 52주 고저 위치
-    cur   = ind.get("current_price", 0)
-    h120  = ind.get("resistance_120d", cur * 1.3)
-    l120  = ind.get("support_120d", cur * 0.7)
+    cur  = ind.get("current_price", 0)
+    h120 = ind.get("resistance_120d", cur*1.3)
+    l120 = ind.get("support_120d", cur*0.7)
     if cur and h120 and l120:
         pos = (cur - l120) / (h120 - l120 + 1e-9)
-        if pos < 0.2:
-            score += 2; reasons.append("52주 저점 근방 — 역발산 기회")
-        elif pos > 0.85:
-            score -= 1.5; reasons.append("52주 고점 근방 — 차익실현 주의")
+        if pos < 0.2:  score += 2; reasons.append("52주 저점 근방")
+        elif pos > 0.85: score -= 1.5; reasons.append("52주 고점 근방")
 
-    # 코퍼 (글로벌 경기선행)
     copper_chg = macro_snap.get("Copper", {}).get("chg_pct", 0)
-    if copper_chg > 1:
-        score += 1; reasons.append(f"구리 +{copper_chg:.1f}% — 경기 개선 시그널")
-    elif copper_chg < -2:
-        score -= 1
+    if copper_chg > 1:   score += 1; reasons.append("구리 +" + str(copper_chg) + "%")
+    elif copper_chg < -2: score -= 1
 
-    # KOSPI 방향
     kospi_chg = macro_snap.get("KOSPI", {}).get("chg_pct", 0)
-    if kospi_chg > 0.5:
-        score += 0.5
-    elif kospi_chg < -1:
-        score -= 0.5
+    if kospi_chg > 0.5:  score += 0.5
+    elif kospi_chg < -1: score -= 0.5
 
-    score = max(0, min(15, score))
-    return round(score, 1), reasons
+    # Rule 4 — 섹터 모멘텀
+    if ticker in SECTOR_STRONG:
+        score *= 1.3; reasons.append("강세 섹터")
+    elif ticker in SECTOR_WEAK:
+        score *= 0.7; reasons.append("약세 섹터")
+
+    return round(max(0, min(15, score)), 1), reasons
 
 
 # ════════════════════════════════════════════════════════════════════════════
-# G. 종합 신호 생성
+# G. 종합 신호 생성 — Rule1,3,5,6,7 게이팅
 # ════════════════════════════════════════════════════════════════════════════
 
-def _band(val: float, bands: list) -> str:
+def _band(val, bands):
     for lo, hi, label in bands:
         if lo <= val <= hi:
             return label
     return bands[-1][2]
 
 
-def generate_signal(
-    ticker: str,
-    name: str,
-    stock_data: dict,
-    macro_snap: dict,
-) -> dict:
-    """단일 종목 신호 생성"""
+def generate_signal(ticker, name, stock_data, macro_snap):
+    ohlcv    = stock_data.get("ohlcv", pd.DataFrame())
+    fund     = stock_data.get("fundamental", {})
+    investor = stock_data.get("investor", pd.DataFrame())
+    naver    = stock_data.get("naver", {})
+    f_ratio  = stock_data.get("foreign_ratio", 0.0)
 
-    ohlcv     = stock_data.get("ohlcv", pd.DataFrame())
-    fund      = stock_data.get("fundamental", {})
-    investor  = stock_data.get("investor", pd.DataFrame())
-    naver     = stock_data.get("naver", {})
-    f_ratio   = stock_data.get("foreign_ratio", 0.0)
-
-    # 지표 계산
     ind = calc_indicators(ohlcv)
-    # 현재가: 기술지표 → naver/yfinance 순으로 가져오기
-    cur = ind.get("current_price") or naver.get("current_price") or naver.get("current_price".replace("current_price","current_price"), 0)
-    if not cur or cur == 0:
-        cur = naver.get("current_price", 0)
+    cur = ind.get("current_price") or naver.get("current_price", 0)
 
-    # 개별 점수 (각 최대치 기준)
     s_mac, r_mac = score_macro(macro_snap)
     s_fun, r_fun = score_fundamental(fund, naver)
     s_snd, r_snd = score_supply_demand(investor, f_ratio)
     s_tec, r_tec = score_technical(ind)
-    s_mom, r_mom = score_momentum(ind, macro_snap)
+    s_mom, r_mom = score_momentum(ind, macro_snap, ticker)
 
-    # 가중 합산 → 0-100
-    raw_score = (
-        s_mac * (25 / 25) +
-        s_fun * (25 / 20) +   # 각 카테고리 만점을 25점으로 정규화
-        s_snd * (25 / 20) +
-        s_tec * (25 / 20) +
-        s_mom * (25 / 15)
-    )
-    # 각 가중치 적용
     overall = (
-        s_mac   / 25 * 100 * WEIGHTS["macro"] +
-        s_fun   / 20 * 100 * WEIGHTS["fundamental"] +
-        s_snd   / 20 * 100 * WEIGHTS["supply_demand"] +
-        s_tec   / 20 * 100 * WEIGHTS["technical"] +
-        s_mom   / 15 * 100 * WEIGHTS["momentum"]
+        s_mac/25*100*WEIGHTS["macro"] +
+        s_fun/20*100*WEIGHTS["fundamental"] +
+        s_snd/20*100*WEIGHTS["supply_demand"] +
+        s_tec/20*100*WEIGHTS["technical"] +
+        s_mom/15*100*WEIGHTS["momentum"]
     )
     overall = round(overall, 1)
 
-    signal     = _band(overall, SIGNAL_BANDS)
-    confidence = _band(overall, [(h, 100, c) if i == 0 else (0, h-0.1, c) for i, (h, c) in enumerate(CONFIDENCE_BANDS)])
-    # 신뢰도 재계산 (단순화)
+    # ── Rule 1: 매크로 게이팅 ──────────────────────────────────────────────
+    regime = get_macro_regime(macro_snap)
+    vix    = macro_snap.get("VIX",    {}).get("value", 20)
+    krw    = macro_snap.get("USD/KRW",{}).get("value", 1350)
+
+    if vix > 30:
+        overall = min(overall, 35)   # STRONG SELL만 허용
+    elif vix > 25:
+        overall = min(overall, 45)   # SELL/HOLD만 허용
+
+    if krw > 1400 and ticker.isdigit():
+        overall = min(overall, 50)   # KOSPI BUY 차단
+
+    # ── Rule 3: 추세 필터 ──────────────────────────────────────────────────
+    ret_5d  = ind.get("ret_5d", 0)
+    ret_20d = ind.get("ret_20d", 0)
+    if overall >= 58:   # BUY 후보
+        if ret_5d < -5 and ret_20d < -15:
+            overall -= 8   # 하락 추세 중 BUY 억제
+
+    # ── Rule 5: 신호 강도 필터 ────────────────────────────────────────────
+    if 58 <= overall < 63:
+        # 복합 기술 조건 2개 미충족 시 HOLD 유지
+        rsi    = ind.get("rsi", 50)
+        vol_s  = ind.get("vol_surge", False)
+        ma_up  = ind.get("ma_aligned_up", False)
+        conditions_met = sum([
+            30 <= rsi <= 45,
+            vol_s,
+            ma_up,
+            ind.get("macd_cross_up", False),
+        ])
+        if conditions_met < 2:
+            overall = min(overall, 57)   # HOLD로 낮춤
+
+    # ── Rule 6: 급락주 필터 ───────────────────────────────────────────────
+    if ind.get("is_crash") and overall >= 58:
+        if ind.get("rsi", 50) > 20:   # RSI 20 이하면 예외
+            overall -= 10; r_tec.append("급락 필터 적용")
+
+    # ── Rule 7: 외국인 3일 연속 매도 BUY 차단 ────────────────────────────
+    if not investor.empty and "foreign" in investor.columns:
+        recent3 = investor.tail(3)
+        if (recent3["foreign"] < 0).all() and overall >= 58:
+            overall = min(overall, 57)   # BUY 차단
+
+    overall = round(overall, 1)
+    signal  = _band(overall, SIGNAL_BANDS)
+
     if overall >= 70:   confidence = "HIGH"
     elif overall >= 45: confidence = "MEDIUM"
     else:               confidence = "LOW"
 
-    # 진입/목표/손절 가격
+    # 진입/목표/손절
     if cur and cur > 0:
-        support  = ind.get("support_20d", cur * 0.94)
-        resist   = ind.get("resistance_20d", cur * 1.12)
+        support  = ind.get("support_20d",  cur*0.94)
+        resist   = ind.get("resistance_20d", cur*1.12)
         ma20     = ind.get("ma20", cur)
-        bb_lower = ind.get("bb_lower", cur * 0.95)
-
-        entry_low  = round(min(ma20, bb_lower) * 0.99, -1)
-        entry_high = round(cur * 1.01, -1)
-        target     = round(resist * 1.02, -1)
-        stop_loss  = round(support * 0.97, -1)
+        bb_lower = ind.get("bb_lower", cur*0.95)
+        entry_low  = round(min(ma20, bb_lower)*0.99, -1)
+        entry_high = round(cur*1.01, -1)
+        target     = round(resist*1.02, -1)
+        stop_loss  = round(support*0.97, -1)
     else:
         entry_low = entry_high = target = stop_loss = None
 
     # 리스크 플래그
     risk_flags = []
-    krw = macro_snap.get("USD/KRW", {}).get("value", 0)
     if krw > 1380:
-        risk_flags.append(f"USD/KRW {krw:.0f} 이상 — 외환 리스크 모니터링")
+        risk_flags.append("USD/KRW " + str(krw) + " — 외환 리스크")
     if ind.get("rsi_overbought"):
-        risk_flags.append(f"RSI {ind.get('rsi', 0):.0f} 과매수 — 단기 조정 가능")
+        risk_flags.append("RSI " + str(ind.get("rsi",0)) + " 과매수")
     if ind.get("dead_cross"):
-        risk_flags.append("데드크로스 발생 — 추세 전환 주의")
-    vix = macro_snap.get("VIX", {}).get("value", 0)
+        risk_flags.append("데드크로스 발생")
     if vix > 25:
-        risk_flags.append(f"VIX {vix:.1f} — 시장 변동성 확대")
+        risk_flags.append("VIX " + str(vix) + " — 변동성 확대")
+    if regime == "RISK-OFF":
+        risk_flags.append("매크로 RISK-OFF — 보수적 접근 권고")
 
-    # 상위 3개 근거
     all_reasons = r_mac + r_fun + r_snd + r_tec + r_mom
-    top_reasons = all_reasons[:3] if all_reasons else ["데이터 부족 — 신호 신뢰도 낮음"]
+    top_reasons = all_reasons[:3] if all_reasons else ["데이터 부족"]
 
     return {
         "ticker":        ticker,
@@ -538,37 +499,30 @@ def generate_signal(
         "confidence":    confidence,
         "overall_score": overall,
         "scores": {
-            "macro":        s_mac,
-            "fundamental":  s_fun,
-            "supply_demand":s_snd,
-            "technical":    s_tec,
-            "momentum":     s_mom,
+            "macro":         s_mac,
+            "fundamental":   s_fun,
+            "supply_demand": s_snd,
+            "technical":     s_tec,
+            "momentum":      s_mom,
         },
-        "entry_zone":  {"low": entry_low, "high": entry_high},
-        "target_price":stop_loss if signal in ("SELL","STRONG SELL") else target,
-        "stop_loss":   stop_loss,
-        "top_reasons": top_reasons,
-        "risk_flags":  risk_flags,
-        "indicators":  ind,
-        "current_price": cur or ind.get("current_price", 0),
+        "entry_zone":   {"low": entry_low, "high": entry_high},
+        "target_price": stop_loss if signal in ("SELL","STRONG SELL") else target,
+        "stop_loss":    stop_loss,
+        "top_reasons":  top_reasons,
+        "risk_flags":   risk_flags,
+        "indicators":   ind,
+        "current_price": cur,
     }
 
 
-def generate_all_signals(
-    collected: dict,
-    watchlist: dict,
-    macro_snap: dict,
-) -> list[dict]:
-    """전체 워치리스트 신호 생성"""
+def generate_all_signals(collected, watchlist, macro_snap):
     signals = []
     for ticker, name in watchlist.items():
         data = collected.get(ticker, {})
         try:
             sig = generate_signal(ticker, name, data, macro_snap)
             signals.append(sig)
-            lvl = sig["signal"]
-            sc  = sig["overall_score"]
-            print(f"  {ticker} {name:12s} → {lvl:12s} {sc:.0f}점 [{sig['confidence']}]")
+            print("  " + ticker + " " + name[:12] + " -> " + sig["signal"] + " " + str(sig["overall_score"]) + "점 [" + sig["confidence"] + "]")
         except Exception as e:
-            print(f"  [오류] {ticker} {name}: {e}")
+            print("  [오류] " + ticker + " " + name + ": " + str(e))
     return sorted(signals, key=lambda x: -x["overall_score"])

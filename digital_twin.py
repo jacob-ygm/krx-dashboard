@@ -140,8 +140,7 @@ def get_macro_on_date(date_str, macro_cache):
     return snap
 
 def simulate_signals_on_date(date_str, historical, watchlist, macro_snap, weights, lookback=120):
-    from signal_engine import calc_indicators, score_macro, score_fundamental, score_supply_demand, score_technical, score_momentum
-    from config import SIGNAL_BANDS
+    from signal_engine import generate_signal
     date = pd.Timestamp(date_str)
     rows = []
     for ticker, name in watchlist.items():
@@ -152,32 +151,30 @@ def simulate_signals_on_date(date_str, historical, watchlist, macro_snap, weight
         hist = ohlcv[ohlcv.index <= date].tail(lookback)
         if len(hist) < 20: continue
         inv_hist = investor[investor.index <= date].tail(20) if not investor.empty else pd.DataFrame()
-        ind = calc_indicators(hist)
-        if not ind: continue
-        s_mac, _ = score_macro(macro_snap)
-        s_fun, _ = score_fundamental({}, {})
-        s_snd, _ = score_supply_demand(inv_hist, 0)
-        s_tec, _ = score_technical(ind)
-        s_mom, _ = score_momentum(ind, macro_snap)
-        overall = (
-            s_mac/25*100*weights["macro"] +
-            s_fun/20*100*weights["fundamental"] +
-            s_snd/20*100*weights["supply_demand"] +
-            s_tec/20*100*weights["technical"] +
-            s_mom/15*100*weights["momentum"]
-        )
-        signal = "HOLD"
-        for lo, hi, label in SIGNAL_BANDS:
-            if lo <= overall <= hi:
-                signal = label
-                break
-        rows.append({
-            "date": date_str, "ticker": ticker, "name": name,
-            "signal": signal, "score": round(overall,1),
-            "s_mac": s_mac, "s_fun": s_fun, "s_snd": s_snd,
-            "s_tec": s_tec, "s_mom": s_mom,
-            "price": ind.get("current_price", 0)
-        })
+        stock_data = {
+            "ohlcv":         hist,
+            "fundamental":   {},
+            "investor":      inv_hist,
+            "naver":         {},
+            "foreign_ratio": 0.0,
+        }
+        try:
+            sig = generate_signal(ticker, name, stock_data, macro_snap)
+            rows.append({
+                "date":   date_str,
+                "ticker": ticker,
+                "name":   name,
+                "signal": sig["signal"],
+                "score":  sig["overall_score"],
+                "s_mac":  sig["scores"]["macro"],
+                "s_fun":  sig["scores"]["fundamental"],
+                "s_snd":  sig["scores"]["supply_demand"],
+                "s_tec":  sig["scores"]["technical"],
+                "s_mom":  sig["scores"]["momentum"],
+                "price":  sig.get("current_price", 0),
+            })
+        except Exception as e:
+            continue
     return pd.DataFrame(rows)
 
 def calc_forward_returns(signal_df, historical, holding_days_list=[5,20]):
