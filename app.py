@@ -299,7 +299,7 @@ def main():
                 color = SIGNAL_COLOR.get(sig, "#888")
                 conf  = CONF_ICON.get(row["confidence"], "⚪")
                 price = row.get("현재가")
-                price_str = f"₩{float(price):,.0f}" if price not in (None, "", "?") else "—"
+                price_str = (lambda v: f"₩{float(v):,.0f}" if v not in (None,"","?") else "—")(float(price)) if price not in (None, "", "?") else "—"
 
                 with st.container():
                     c_main, c_price, c_zone = st.columns([3, 2, 3])
@@ -407,10 +407,10 @@ def main():
 
                 st.markdown("**💰 가격 레벨**")
                 pc1, pc2, pc3, pc4 = st.columns(4)
-                pc1.metric("현재가", f"₩{row.get('현재가', 0):,.0f}" if row.get('현재가') else "—")
-                pc2.metric("진입 하단", f"₩{row.get('진입하단', 0):,.0f}" if row.get('진입하단') else "—")
-                pc3.metric("목표가", f"₩{row.get('목표가', 0):,.0f}" if row.get('목표가') else "—")
-                pc4.metric("손절가", f"₩{row.get('손절가', 0):,.0f}" if row.get('손절가') else "—")
+                pc1.metric("현재가", (lambda v: f"₩{float(v):,.0f}" if v not in (None,"","?") else "—")(row.get('현재가', 0)) if row.get('현재가') else "—")
+                pc2.metric("진입 하단", (lambda v: f"₩{float(v):,.0f}" if v not in (None,"","?") else "—")(row.get('진입하단', 0)) if row.get('진입하단') else "—")
+                pc3.metric("목표가", (lambda v: f"₩{float(v):,.0f}" if v not in (None,"","?") else "—")(row.get('목표가', 0)) if row.get('목표가') else "—")
+                pc4.metric("손절가", (lambda v: f"₩{float(v):,.0f}" if v not in (None,"","?") else "—")(row.get('손절가', 0)) if row.get('손절가') else "—")
 
                 if sig_data and sig_data.get("indicators"):
                     with st.expander("🔧 기술적 지표 상세"):
