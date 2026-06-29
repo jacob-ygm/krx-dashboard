@@ -299,7 +299,7 @@ def main():
                 color = SIGNAL_COLOR.get(sig, "#888")
                 conf  = CONF_ICON.get(row["confidence"], "⚪")
                 price = row.get("현재가")
-                price_str = f"₩{price:,.0f}" if price else "—"
+                price_str = f"₩{float(price):,.0f}" if price not in (None, "", "?") else "—"
 
                 with st.container():
                     c_main, c_price, c_zone = st.columns([3, 2, 3])
