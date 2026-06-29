@@ -120,8 +120,8 @@ NASDAQ_TOP50 = {
     "ILMN":  "Illumina",
     "ALGN":  "Align Technology",
     "DXCM":  "DexCom",
-    "SGEN":  "Seagen",
-    "EXAS":  "Exact Sciences",
+    
+    
     "TTD":   "The Trade Desk",
     "ROKU":  "Roku",
     "ZM":    "Zoom",
@@ -169,11 +169,11 @@ WEIGHTS = {
 
 # ── Signal thresholds ────────────────────────────────────────────────────────
 SIGNAL_BANDS = [
-    (80, 100, "STRONG BUY"),
-    (65,  80, "BUY"),
-    (40,  65, "HOLD"),
-    (25,  40, "SELL"),
-    (  0, 25, "STRONG SELL"),
+    (75, 100, "STRONG BUY"),
+    (58,  75, "BUY"),
+    (43,  58, "HOLD"),
+    (28,  43, "SELL"),
+    (  0, 28, "STRONG SELL"),
 ]
 
 CONFIDENCE_BANDS = [
