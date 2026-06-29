@@ -3,9 +3,8 @@ import pytz
 
 KST = pytz.timezone("Asia/Seoul")
 
-# ── Watchlist (34 tickers) ──────────────────────────────────────────────────
-WATCHLIST = {
-    # KOSPI 블루칩
+# ── KOSPI 워치리스트 ────────────────────────────────────────────────────────
+KOSPI_WATCHLIST = {
     "005930": "삼성전자",
     "000660": "SK하이닉스",
     "005380": "현대차",
@@ -33,31 +32,142 @@ WATCHLIST = {
     "010140": "삼성중공업",
     "042660": "한화오션",
     "329180": "HD현대중공업",
-    # KOSDAQ
-    "091990": "셀트리온헬스케어",
     "263750": "펄어비스",
     "112040": "위메이드",
-    # 미국 ETF / 지수 (yfinance)
-    "SPY":   "S&P500 ETF",
-    "QQQ":   "NASDAQ ETF",
-    "SOXL":  "반도체 3x ETF",
-    "TLT":   "미국장기채 ETF",
 }
 
-# KRX vs yfinance 구분
-KRX_TICKERS  = [t for t in WATCHLIST if t.isdigit()]
-YF_TICKERS   = [t for t in WATCHLIST if not t.isdigit()]
+# ── S&P 500 Top 50 ──────────────────────────────────────────────────────────
+SP500_TOP50 = {
+    "AAPL":  "Apple",
+    "MSFT":  "Microsoft",
+    "NVDA":  "NVIDIA",
+    "AMZN":  "Amazon",
+    "GOOGL": "Alphabet A",
+    "META":  "Meta",
+    "BRK-B": "Berkshire Hathaway",
+    "LLY":   "Eli Lilly",
+    "AVGO":  "Broadcom",
+    "TSLA":  "Tesla",
+    "JPM":   "JPMorgan Chase",
+    "WMT":   "Walmart",
+    "V":     "Visa",
+    "UNH":   "UnitedHealth",
+    "XOM":   "ExxonMobil",
+    "ORCL":  "Oracle",
+    "MA":    "Mastercard",
+    "COST":  "Costco",
+    "HD":    "Home Depot",
+    "PG":    "Procter & Gamble",
+    "JNJ":   "Johnson & Johnson",
+    "ABBV":  "AbbVie",
+    "BAC":   "Bank of America",
+    "KO":    "Coca-Cola",
+    "NFLX":  "Netflix",
+    "CRM":   "Salesforce",
+    "CVX":   "Chevron",
+    "MRK":   "Merck",
+    "AMD":   "AMD",
+    "ACN":   "Accenture",
+    "PEP":   "PepsiCo",
+    "TMO":   "Thermo Fisher",
+    "LIN":   "Linde",
+    "MCD":   "McDonald's",
+    "CSCO":  "Cisco",
+    "ABT":   "Abbott",
+    "GE":    "GE Aerospace",
+    "IBM":   "IBM",
+    "TXN":   "Texas Instruments",
+    "INTU":  "Intuit",
+    "AMGN":  "Amgen",
+    "PM":    "Philip Morris",
+    "RTX":   "RTX Corp",
+    "SPGI":  "S&P Global",
+    "GS":    "Goldman Sachs",
+    "CAT":   "Caterpillar",
+    "NOW":   "ServiceNow",
+    "BKNG":  "Booking Holdings",
+    "DHR":   "Danaher",
+    "BLK":   "BlackRock",
+}
 
-# ── Signal weights ──────────────────────────────────────────────────────────
+# ── NASDAQ Top 50 (SP500 미포함) ─────────────────────────────────────────────
+NASDAQ_TOP50 = {
+    "ADBE":  "Adobe",
+    "QCOM":  "Qualcomm",
+    "AMAT":  "Applied Materials",
+    "MU":    "Micron",
+    "LRCX":  "Lam Research",
+    "KLAC":  "KLA Corp",
+    "SNPS":  "Synopsys",
+    "CDNS":  "Cadence Design",
+    "MRVL":  "Marvell Tech",
+    "FTNT":  "Fortinet",
+    "PANW":  "Palo Alto Networks",
+    "CRWD":  "CrowdStrike",
+    "SNOW":  "Snowflake",
+    "DDOG":  "Datadog",
+    "ZS":    "Zscaler",
+    "WDAY":  "Workday",
+    "TEAM":  "Atlassian",
+    "MELI":  "MercadoLibre",
+    "ASML":  "ASML",
+    "AZN":   "AstraZeneca",
+    "GILD":  "Gilead Sciences",
+    "VRTX":  "Vertex Pharma",
+    "REGN":  "Regeneron",
+    "BIIB":  "Biogen",
+    "IDXX":  "IDEXX Labs",
+    "ILMN":  "Illumina",
+    "ALGN":  "Align Technology",
+    "DXCM":  "DexCom",
+    "SGEN":  "Seagen",
+    "EXAS":  "Exact Sciences",
+    "TTD":   "The Trade Desk",
+    "ROKU":  "Roku",
+    "ZM":    "Zoom",
+    "DOCU":  "DocuSign",
+    "PTON":  "Peloton",
+    "LYFT":  "Lyft",
+    "UBER":  "Uber",
+    "ABNB":  "Airbnb",
+    "DASH":  "DoorDash",
+    "COIN":  "Coinbase",
+    "HOOD":  "Robinhood",
+    "RBLX":  "Roblox",
+    "U":     "Unity Software",
+    "PATH":  "UiPath",
+    "AI":    "C3.ai",
+    "PLTR":  "Palantir",
+    "SOFI":  "SoFi Technologies",
+    "AFRM":  "Affirm",
+    "LCID":  "Lucid Motors",
+    "RIVN":  "Rivian",
+}
+
+# ── ETF (매크로 참조용) ──────────────────────────────────────────────────────
+ETF_WATCHLIST = {
+    "SPY":  "S&P500 ETF",
+    "QQQ":  "NASDAQ ETF",
+    "SOXL": "반도체 3x ETF",
+    "TLT":  "미국장기채 ETF",
+}
+
+# ── 전체 통합 ────────────────────────────────────────────────────────────────
+WATCHLIST = {**KOSPI_WATCHLIST, **SP500_TOP50, **NASDAQ_TOP50, **ETF_WATCHLIST}
+
+KRX_TICKERS = [t for t in WATCHLIST if t.isdigit()]
+YF_TICKERS  = [t for t in WATCHLIST if not t.isdigit()]
+
+# ── Signal weights ───────────────────────────────────────────────────────────
 WEIGHTS = {
-    "macro":        0.25,
-    "fundamental":  0.20,
-    "supply_demand":0.20,
-    "technical":    0.20,
-    "momentum":     0.15,
+    "macro":         0.25,
+    "fundamental":   0.20,
+    "supply_demand": 0.20,
+    "technical":     0.20,
+    "momentum":      0.15,
 }
 
-# ── Signal thresholds ───────────────────────────────────────────────────────
+# ── Signal thresholds ────────────────────────────────────────────────────────
 SIGNAL_BANDS = [
     (80, 100, "STRONG BUY"),
     (65,  80, "BUY"),
@@ -72,20 +182,20 @@ CONFIDENCE_BANDS = [
     (0,  "LOW"),
 ]
 
-# ── GitHub storage (set your own repo) ─────────────────────────────────────
-GITHUB_REPO  = "jacob-ygm/krx-dashboard"
-GITHUB_BRANCH= "main"
-DATA_FILE    = "data/signals_latest.csv.gz"
+# ── GitHub ───────────────────────────────────────────────────────────────────
+GITHUB_REPO   = "jacob-ygm/krx-dashboard"
+GITHUB_BRANCH = "main"
+DATA_FILE     = "data/signals_latest.csv.gz"
 
-# ── Macro tickers (yfinance) ────────────────────────────────────────────────
+# ── Macro tickers (yfinance) ─────────────────────────────────────────────────
 MACRO_YF = {
-    "^GSPC":  "S&P500",
-    "^IXIC":  "NASDAQ",
-    "^VIX":   "VIX",
+    "^GSPC":   "S&P500",
+    "^IXIC":   "NASDAQ",
+    "^VIX":    "VIX",
     "DX-Y.NYB":"DXY",
-    "CL=F":   "WTI",
-    "HG=F":   "Copper",
-    "^KS11":  "KOSPI",
-    "^KQ11":  "KOSDAQ",
-    "KRW=X":  "USD/KRW",
+    "CL=F":    "WTI",
+    "HG=F":    "Copper",
+    "^KS11":   "KOSPI",
+    "^KQ11":   "KOSDAQ",
+    "KRW=X":   "USD/KRW",
 }

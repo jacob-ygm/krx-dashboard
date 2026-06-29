@@ -193,6 +193,25 @@ def get_yf_ohlcv(ticker, period="6mo"):
         print(f"[yf] {ticker}: {e}")
         return pd.DataFrame()
 
+def get_yf_fundamentals(ticker):
+    """yfinance로 미국 주식 펀더멘털 수집"""
+    try:
+        info = yf.Ticker(ticker).info
+        return {
+            "PER":              round(info.get("trailingPE", 0) or 0, 2),
+            "PBR":              round(info.get("priceToBook", 0) or 0, 2),
+            "ROE":              round((info.get("returnOnEquity", 0) or 0) * 100, 2),
+            "operating_margin": round((info.get("operatingMargins", 0) or 0) * 100, 2),
+            "debt_ratio":       round(info.get("debtToEquity", 0) or 0, 2),
+            "current_ratio":    round(info.get("currentRatio", 0) or 0, 2),
+            "current_price":    info.get("currentPrice") or info.get("regularMarketPrice", 0),
+            "high_52w":         info.get("fiftyTwoWeekHigh", 0),
+            "low_52w":          info.get("fiftyTwoWeekLow", 0),
+        }
+    except Exception as e:
+        print(f"[yf Fund] {ticker}: {e}")
+        return {}
+
 def get_macro_snapshot():
     snap = {}
     for sym, name in MACRO_YF.items():
@@ -219,9 +238,10 @@ def collect_stock_data(ticker, is_krx=True):
         time.sleep(0.5)
     else:
         data["ohlcv"]        = get_yf_ohlcv(ticker)
-        data["fundamental"]  = {}
+        yf_fund              = get_yf_fundamentals(ticker)
+        data["fundamental"]  = {"PER": yf_fund.get("PER",0), "PBR": yf_fund.get("PBR",0)}
+        data["naver"]        = yf_fund
         data["investor"]     = pd.DataFrame()
-        data["naver"]        = {}
         data["foreign_ratio"]= 0.0
     return data
 
