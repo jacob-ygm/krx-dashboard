@@ -156,9 +156,9 @@ def score_bar_chart(df: pd.DataFrame):
         xaxis=dict(range=[0, 100], title="종합 점수"),
         yaxis=dict(tickfont=dict(size=11)),
         margin=dict(l=10, r=60, t=10, b=30),
-        paper_bgcolor="rgba(0,0,0,0)",
-        plot_bgcolor="rgba(17,17,17,0.5)",
-        font=dict(color="#E0E0E0"),
+        paper_bgcolor="#FFFFFF",
+        plot_bgcolor="#F8FAFC",
+        font=dict(color="#0F172A"),
     )
     return fig
 
@@ -174,7 +174,7 @@ def signal_distribution(df: pd.DataFrame):
     fig.update_traces(textposition="inside", textinfo="percent+label")
     fig.update_layout(showlegend=False, height=250,
                       margin=dict(l=0, r=0, t=10, b=0),
-                      paper_bgcolor="rgba(0,0,0,0)")
+                      paper_bgcolor="#FFFFFF")
     return fig
 
 
@@ -196,39 +196,56 @@ def main():
     @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@300;400;600&family=IBM+Plex+Mono:wght@400;600&display=swap');
 
     html, body, [class*="css"] { font-family: 'IBM Plex Sans KR', sans-serif; }
-    .stApp { background: #0D0D0D; color: #E0E0E0; }
+    .stApp { background: #FFFFFF; color: #0F172A; }
 
     .sig-badge {
-        display: inline-block; padding: 2px 10px; border-radius: 4px;
+        display: inline-block; padding: 3px 12px; border-radius: 6px;
         font-family: 'IBM Plex Mono', monospace; font-size: 0.78rem;
-        font-weight: 600; letter-spacing: 0.08em;
+        font-weight: 700; letter-spacing: 0.08em;
     }
     .card {
-        background: #1A1A1A; border: 1px solid #2A2A2A;
+        background: #F8FAFC; border: 1px solid #E2E8F0;
         border-radius: 8px; padding: 16px; margin-bottom: 8px;
     }
     .ticker-label {
         font-family: 'IBM Plex Mono', monospace;
-        font-size: 0.85rem; color: #888; letter-spacing: 0.1em;
+        font-size: 0.85rem; color: #64748B; letter-spacing: 0.1em;
     }
     .price-big {
         font-family: 'IBM Plex Mono', monospace;
-        font-size: 1.6rem; font-weight: 600;
+        font-size: 1.6rem; font-weight: 600; color: #0F172A;
     }
-    .reason-list { font-size: 0.82rem; color: #AAA; line-height: 1.8; }
-    .risk-flag { font-size: 0.78rem; color: #FF6D00; }
+    .reason-list { font-size: 0.82rem; color: #475569; line-height: 1.8; }
+    .risk-flag { font-size: 0.78rem; color: #DC2626; font-weight: 600; }
     div[data-testid="metric-container"] {
-        background: #1A1A1A; border: 1px solid #2A2A2A;
-        border-radius: 6px; padding: 10px 14px;
+        background: #F8FAFC; border: 1px solid #E2E8F0;
+        border-radius: 8px; padding: 12px 16px;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+    }
+    div[data-testid="metric-container"] label {
+        color: #64748B !important; font-size: 0.8rem !important;
+    }
+    div[data-testid="metric-container"] div[data-testid="metric-value"] {
+        color: #0F172A !important; font-weight: 700 !important;
+    }
+    .stTabs [data-baseweb="tab"] {
+        font-weight: 600; color: #475569;
+    }
+    .stTabs [aria-selected="true"] {
+        color: #1D4ED8 !important;
+    }
+    [data-testid="stSidebar"] {
+        background: #F8FAFC;
+        border-right: 1px solid #E2E8F0;
     }
     </style>
     """, unsafe_allow_html=True)
 
     # ── 헤더 ─────────────────────────────────────────────────────────────
     st.markdown("""
-    <div style="display:flex; align-items:baseline; gap:12px; margin-bottom:4px;">
-        <span style="font-size:1.6rem; font-weight:600; letter-spacing:-0.02em;">📈 KRX Signal</span>
-        <span style="font-size:0.85rem; color:#666; font-family:'IBM Plex Mono',monospace;">KOSPI · KOSDAQ · US</span>
+    <div style="display:flex; align-items:baseline; gap:12px; margin-bottom:4px; padding:8px 0;">
+        <span style="font-size:1.8rem; font-weight:700; letter-spacing:-0.02em; color:#0F172A;">📈 KRX Signal</span>
+        <span style="font-size:0.85rem; color:#64748B; font-family:'IBM Plex Mono',monospace;">KOSPI · NASDAQ · S&P500</span>
     </div>
     """, unsafe_allow_html=True)
 
