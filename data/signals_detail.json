@@ -1,0 +1,1860 @@
+{
+  "regime": "RISK-OFF",
+  "macro": {
+    "S&P500": {
+      "value": 7354.02,
+      "chg_pct": -0.05
+    },
+    "NASDAQ": {
+      "value": 25297.6191,
+      "chg_pct": -0.24
+    },
+    "VIX": {
+      "value": 18.41,
+      "chg_pct": -2.54
+    },
+    "DXY": {
+      "value": 101.36,
+      "chg_pct": -0.07
+    },
+    "WTI": {
+      "value": 69.23,
+      "chg_pct": -3.74
+    },
+    "Copper": {
+      "value": 6.1415,
+      "chg_pct": 1.17
+    },
+    "KOSPI": {
+      "value": 8186.6802,
+      "chg_pct": -2.67
+    },
+    "KOSDAQ": {
+      "value": 906.85,
+      "chg_pct": 6.52
+    },
+    "USD/KRW": {
+      "value": 1545.12,
+      "chg_pct": -0.09
+    }
+  },
+  "signals": [
+    {
+      "ticker": "028260",
+      "name": "삼성물산",
+      "signal": "HOLD",
+      "confidence": "MEDIUM",
+      "overall_score": 55.5,
+      "scores": {
+        "macro": 12.5,
+        "fundamental": 10.0,
+        "supply_demand": 10.0,
+        "technical": 14.0,
+        "momentum": 9.0
+      },
+      "entry_zone": {
+        "low": 390940.0,
+        "high": 472180.0
+      },
+      "target_price": 576300.0,
+      "stop_loss": 372480.0,
+      "top_reasons": [
+        "USD/KRW 1545 — 원화 약세 경고",
+        "MA 정배열 (5>20>60>120일)",
+        "구리 +1.2% — 경기 개선 시그널"
+      ],
+      "risk_flags": [
+        "USD/KRW 1545 이상 — 외환 리스크 모니터링"
+      ],
+      "indicators": {
+        "ma5": 483500.0,
+        "ma20": 470975.0,
+        "ma60": 387666.6666666667,
+        "current_price": "467500",
+        "ma_aligned_up": true,
+        "pct_vs_ma5": -3.3092037228541926,
+        "pct_vs_ma20": -0.7378310950687417,
+        "pct_vs_ma60": 20.593293207222697,
+        "golden_cross": "False",
+        "dead_cross": "False",
+        "rsi": 55.7,
+        "rsi_oversold": "False",
+        "rsi_overbought": "False",
+        "rsi_recovering": "False",
+        "macd": 22945.1,
+        "macd_signal": 25390.02,
+        "macd_hist": -2444.92,
+        "macd_cross_up": "False",
+        "macd_cross_down": "False",
+        "bb_upper": 547058.0,
+        "bb_lower": 394892.0,
+        "bb_pct": 47.7,
+        "resistance_20d": 565000,
+        "support_20d": 384000,
+        "vol_ratio": 0.61,
+        "vol_surge": "False",
+        "trend_strength": 0.122
+      },
+      "current_price": "467500"
+    },
+    {
+      "ticker": "032830",
+      "name": "삼성생명",
+      "signal": "HOLD",
+      "confidence": "MEDIUM",
+      "overall_score": 54.5,
+      "scores": {
+        "macro": 12.5,
+        "fundamental": 10.0,
+        "supply_demand": 10.0,
+        "technical": 14.0,
+        "momentum": 8.0
+      },
+      "entry_zone": {
+        "low": 348830.0,
+        "high": 410560.0
+      },
+      "target_price": 526830.0,
+      "stop_loss": 331740.0,
+      "top_reasons": [
+        "USD/KRW 1545 — 원화 약세 경고",
+        "MA 정배열 (5>20>60>120일)",
+        "구리 +1.2% — 경기 개선 시그널"
+      ],
+      "risk_flags": [
+        "USD/KRW 1545 이상 — 외환 리스크 모니터링"
+      ],
+      "indicators": {
+        "ma5": 428800.0,
+        "ma20": 424450.0,
+        "ma60": 327075.0,
+        "current_price": "406500",
+        "ma_aligned_up": true,
+        "pct_vs_ma5": -5.200559701492535,
+        "pct_vs_ma20": -4.2290022381906045,
+        "pct_vs_ma60": 24.283421233662004,
+        "golden_cross": "False",
+        "dead_cross": "False",
+        "rsi": 52.3,
+        "rsi_oversold": "False",
+        "rsi_overbought": "False",
+        "rsi_recovering": "False",
+        "macd": 24694.79,
+        "macd_signal": 30693.5,
+        "macd_hist": -5998.71,
+        "macd_cross_up": "False",
+        "macd_cross_down": "False",
+        "bb_upper": 496551.0,
+        "bb_lower": 352349.0,
+        "bb_pct": 37.6,
+        "resistance_20d": 516500,
+        "support_20d": 342000,
+        "vol_ratio": 0.46,
+        "vol_surge": "False",
+        "trend_strength": 0.069
+      },
+      "current_price": "406500"
+    },
+    {
+      "ticker": "009150",
+      "name": "삼성전기",
+      "signal": "HOLD",
+      "confidence": "MEDIUM",
+      "overall_score": 53.5,
+      "scores": {
+        "macro": 12.5,
+        "fundamental": 10.0,
+        "supply_demand": 10.0,
+        "technical": 13.0,
+        "momentum": 8.0
+      },
+      "entry_zone": {
+        "low": 1588370.0,
+        "high": 2032120.0
+      },
+      "target_price": 2465340.0,
+      "stop_loss": 1505440.0,
+      "top_reasons": [
+        "USD/KRW 1545 — 원화 약세 경고",
+        "MA 정배열 (5>20>60>120일)",
+        "구리 +1.2% — 경기 개선 시그널"
+      ],
+      "risk_flags": [
+        "USD/KRW 1545 이상 — 외환 리스크 모니터링"
+      ],
+      "indicators": {
+        "ma5": 1991200.0,
+        "ma20": 1949100.0,
+        "ma60": 1239975.0,
+        "current_price": "2012000",
+        "ma_aligned_up": true,
+        "pct_vs_ma5": 1.0445962233828876,
+        "pct_vs_ma20": 3.2271304704735604,
+        "pct_vs_ma60": 62.26133591403054,
+        "golden_cross": "False",
+        "dead_cross": "False",
+        "rsi": 51.7,
+        "rsi_oversold": "False",
+        "rsi_overbought": "False",
+        "rsi_recovering": "False",
+        "macd": 183911.6,
+        "macd_signal": 223455.14,
+        "macd_hist": -39543.54,
+        "macd_cross_up": "False",
+        "macd_cross_down": "False",
+        "bb_upper": 2293785.0,
+        "bb_lower": 1604415.0,
+        "bb_pct": 59.1,
+        "resistance_20d": 2417000,
+        "support_20d": 1552000,
+        "vol_ratio": 0.46,
+        "vol_surge": "False",
+        "trend_strength": 0.053
+      },
+      "current_price": "2012000"
+    },
+    {
+      "ticker": "263750",
+      "name": "펄어비스",
+      "signal": "HOLD",
+      "confidence": "MEDIUM",
+      "overall_score": 53.0,
+      "scores": {
+        "macro": 12.5,
+        "fundamental": 10.0,
+        "supply_demand": 10.0,
+        "technical": 12.5,
+        "momentum": 8.0
+      },
+      "entry_zone": {
+        "low": 33850.0,
+        "high": 37070.0
+      },
+      "target_price": 45800.0,
+      "stop_loss": 32300.0,
+      "top_reasons": [
+        "USD/KRW 1545 — 원화 약세 경고",
+        "MA 역배열",
+        "RSI 과매도 회복 (43)"
+      ],
+      "risk_flags": [
+        "USD/KRW 1545 이상 — 외환 리스크 모니터링"
+      ],
+      "indicators": {
+        "ma5": 35770.0,
+        "ma20": 39225.0,
+        "ma60": 49203.333333333336,
+        "current_price": "36700",
+        "ma_aligned_down": true,
+        "pct_vs_ma5": 2.5999440872239266,
+        "pct_vs_ma20": -6.437221159974504,
+        "pct_vs_ma60": -25.41155748255539,
+        "golden_cross": "False",
+        "dead_cross": "False",
+        "rsi": 43.0,
+        "rsi_oversold": "False",
+        "rsi_overbought": "False",
+        "rsi_recovering": "True",
+        "macd": -3077.32,
+        "macd_signal": -3094.59,
+        "macd_hist": 17.27,
+        "macd_cross_up": "True",
+        "macd_cross_down": "False",
+        "macd_bull_divergence": true,
+        "bb_upper": 44257.0,
+        "bb_lower": 34193.0,
+        "bb_pct": 24.9,
+        "resistance_20d": 44900,
+        "support_20d": 33300,
+        "vol_ratio": 0.58,
+        "vol_surge": "False",
+        "trend_strength": -0.092
+      },
+      "current_price": "36700"
+    },
+    {
+      "ticker": "000660",
+      "name": "SK하이닉스",
+      "signal": "HOLD",
+      "confidence": "MEDIUM",
+      "overall_score": 52.5,
+      "scores": {
+        "macro": 12.5,
+        "fundamental": 10.0,
+        "supply_demand": 10.0,
+        "technical": 11.0,
+        "momentum": 9.0
+      },
+      "entry_zone": {
+        "low": 1819210.0,
+        "high": 2610850.0
+      },
+      "target_price": 3046740.0,
+      "stop_loss": 1799350.0,
+      "top_reasons": [
+        "USD/KRW 1545 — 원화 약세 경고",
+        "MA 정배열 (5>20>60>120일)",
+        "MACD 데드크로스"
+      ],
+      "risk_flags": [
+        "USD/KRW 1545 이상 — 외환 리스크 모니터링"
+      ],
+      "indicators": {
+        "ma5": 2662000.0,
+        "ma20": 2419250.0,
+        "ma60": 1777216.6666666667,
+        "current_price": "2585000",
+        "ma_aligned_up": true,
+        "pct_vs_ma5": -2.892561983471076,
+        "pct_vs_ma20": 6.851296889531877,
+        "pct_vs_ma60": 45.45215833747527,
+        "golden_cross": "False",
+        "dead_cross": "False",
+        "rsi": 58.8,
+        "rsi_oversold": "False",
+        "rsi_overbought": "False",
+        "rsi_recovering": "False",
+        "macd": 222901.64,
+        "macd_signal": 224930.73,
+        "macd_hist": -2029.09,
+        "macd_cross_up": "False",
+        "macd_cross_down": "True",
+        "bb_upper": 3000912.0,
+        "bb_lower": 1837588.0,
+        "bb_pct": 64.2,
+        "resistance_20d": 2987000,
+        "support_20d": 1855000,
+        "vol_ratio": 0.59,
+        "vol_surge": "False",
+        "trend_strength": 0.193
+      },
+      "current_price": "2585000"
+    },
+    {
+      "ticker": "055550",
+      "name": "신한지주",
+      "signal": "HOLD",
+      "confidence": "MEDIUM",
+      "overall_score": 52.0,
+      "scores": {
+        "macro": 12.5,
+        "fundamental": 10.0,
+        "supply_demand": 10.0,
+        "technical": 12.5,
+        "momentum": 7.0
+      },
+      "entry_zone": {
+        "low": 89370.0,
+        "high": 96960.0
+      },
+      "target_price": 113020.0,
+      "stop_loss": 86720.0,
+      "top_reasons": [
+        "USD/KRW 1545 — 원화 약세 경고",
+        "MACD 강세 다이버전스",
+        "구리 +1.2% — 경기 개선 시그널"
+      ],
+      "risk_flags": [
+        "USD/KRW 1545 이상 — 외환 리스크 모니터링"
+      ],
+      "indicators": {
+        "ma5": 95100.0,
+        "ma20": 98985.0,
+        "ma60": 97518.33333333333,
+        "current_price": "96000",
+        "pct_vs_ma5": 0.9463722397476282,
+        "pct_vs_ma20": -3.015608425519023,
+        "pct_vs_ma60": -1.5569721932627956,
+        "golden_cross": "False",
+        "dead_cross": "False",
+        "rsi": 42.4,
+        "rsi_oversold": "False",
+        "rsi_overbought": "False",
+        "rsi_recovering": "False",
+        "macd": -569.19,
+        "macd_signal": 342.12,
+        "macd_hist": -911.31,
+        "macd_cross_up": "False",
+        "macd_cross_down": "False",
+        "macd_bull_divergence": true,
+        "bb_upper": 107695.0,
+        "bb_lower": 90275.0,
+        "bb_pct": 32.9,
+        "resistance_20d": 110800,
+        "support_20d": 89400,
+        "vol_ratio": 0.43,
+        "vol_surge": "False",
+        "trend_strength": -0.11
+      },
+      "current_price": "96000"
+    },
+    {
+      "ticker": "207940",
+      "name": "삼성바이오로직스",
+      "signal": "HOLD",
+      "confidence": "MEDIUM",
+      "overall_score": 52.0,
+      "scores": {
+        "macro": 12.5,
+        "fundamental": 10.0,
+        "supply_demand": 10.0,
+        "technical": 10.5,
+        "momentum": 9.0
+      },
+      "entry_zone": {
+        "low": 1226310.0,
+        "high": 1441270.0
+      },
+      "target_price": 1485120.0,
+      "stop_loss": 1191160.0,
+      "top_reasons": [
+        "USD/KRW 1545 — 원화 약세 경고",
+        "골든크로스 발생",
+        "볼린저밴드 상단 돌파 (93%) — 과열"
+      ],
+      "risk_flags": [
+        "USD/KRW 1545 이상 — 외환 리스크 모니터링"
+      ],
+      "indicators": {
+        "ma5": 1362800.0,
+        "ma20": 1340000.0,
+        "ma60": 1442766.6666666667,
+        "current_price": "1427000",
+        "pct_vs_ma5": 4.710889345465219,
+        "pct_vs_ma20": 6.492537313432845,
+        "pct_vs_ma60": -1.092807799829032,
+        "golden_cross": "True",
+        "dead_cross": "False",
+        "rsi": 61.8,
+        "rsi_oversold": "False",
+        "rsi_overbought": "False",
+        "rsi_recovering": "False",
+        "macd": -8144.26,
+        "macd_signal": -21670.04,
+        "macd_hist": 13525.78,
+        "macd_cross_up": "False",
+        "macd_cross_down": "False",
+        "bb_upper": 1441307.0,
+        "bb_lower": 1238693.0,
+        "bb_pct": 92.9,
+        "resistance_20d": 1456000,
+        "support_20d": 1228000,
+        "vol_ratio": 0.7,
+        "vol_surge": "False",
+        "trend_strength": 0.192
+      },
+      "current_price": "1427000"
+    },
+    {
+      "ticker": "329180",
+      "name": "HD현대중공업",
+      "signal": "HOLD",
+      "confidence": "MEDIUM",
+      "overall_score": 52.0,
+      "scores": {
+        "macro": 12.5,
+        "fundamental": 10.0,
+        "supply_demand": 10.0,
+        "technical": 11.5,
+        "momentum": 8.0
+      },
+      "entry_zone": {
+        "low": 547450.0,
+        "high": 592870.0
+      },
+      "target_price": 752760.0,
+      "stop_loss": 532530.0,
+      "top_reasons": [
+        "USD/KRW 1545 — 원화 약세 경고",
+        "볼린저밴드 하단 근접 (19%)",
+        "구리 +1.2% — 경기 개선 시그널"
+      ],
+      "risk_flags": [
+        "USD/KRW 1545 이상 — 외환 리스크 모니터링"
+      ],
+      "indicators": {
+        "ma5": 581600.0,
+        "ma20": 642800.0,
+        "ma60": 616566.6666666666,
+        "current_price": "587000",
+        "pct_vs_ma5": 0.9284731774415356,
+        "pct_vs_ma20": -8.680771624144368,
+        "pct_vs_ma60": -4.795372222522564,
+        "golden_cross": "False",
+        "dead_cross": "False",
+        "rsi": 45.7,
+        "rsi_oversold": "False",
+        "rsi_overbought": "False",
+        "rsi_recovering": "False",
+        "macd": -17570.53,
+        "macd_signal": -4947.85,
+        "macd_hist": -12622.69,
+        "macd_cross_up": "False",
+        "macd_cross_down": "False",
+        "bb_upper": 732618.0,
+        "bb_lower": 552982.0,
+        "bb_pct": 18.9,
+        "resistance_20d": 738000,
+        "support_20d": 549000,
+        "vol_ratio": 0.44,
+        "vol_surge": "False",
+        "trend_strength": -0.048
+      },
+      "current_price": "587000"
+    },
+    {
+      "ticker": "105560",
+      "name": "KB금융",
+      "signal": "HOLD",
+      "confidence": "MEDIUM",
+      "overall_score": 51.5,
+      "scores": {
+        "macro": 12.5,
+        "fundamental": 10.0,
+        "supply_demand": 10.0,
+        "technical": 11.0,
+        "momentum": 8.0
+      },
+      "entry_zone": {
+        "low": 142300.0,
+        "high": 154230.0
+      },
+      "target_price": 186350.0,
+      "stop_loss": 140650.0,
+      "top_reasons": [
+        "USD/KRW 1545 — 원화 약세 경고",
+        "구리 +1.2% — 경기 개선 시그널"
+      ],
+      "risk_flags": [
+        "USD/KRW 1545 이상 — 외환 리스크 모니터링"
+      ],
+      "indicators": {
+        "ma5": 151880.0,
+        "ma20": 158045.0,
+        "ma60": 156521.66666666666,
+        "current_price": "152700",
+        "pct_vs_ma5": 0.5398999209902611,
+        "pct_vs_ma20": -3.381948179316019,
+        "pct_vs_ma60": -2.4416215007506903,
+        "golden_cross": "False",
+        "dead_cross": "False",
+        "rsi": 47.9,
+        "rsi_oversold": "False",
+        "rsi_overbought": "False",
+        "rsi_recovering": "False",
+        "macd": -1145.56,
+        "macd_signal": 126.63,
+        "macd_hist": -1272.18,
+        "macd_cross_up": "False",
+        "macd_cross_down": "False",
+        "bb_upper": 172355.0,
+        "bb_lower": 143735.0,
+        "bb_pct": 31.3,
+        "resistance_20d": 182700,
+        "support_20d": 145000,
+        "vol_ratio": 0.44,
+        "vol_surge": "False",
+        "trend_strength": -0.019
+      },
+      "current_price": "152700"
+    },
+    {
+      "ticker": "035420",
+      "name": "NAVER",
+      "signal": "HOLD",
+      "confidence": "MEDIUM",
+      "overall_score": 51.0,
+      "scores": {
+        "macro": 12.5,
+        "fundamental": 10.0,
+        "supply_demand": 10.0,
+        "technical": 12.5,
+        "momentum": 6.0
+      },
+      "entry_zone": {
+        "low": 179910.0,
+        "high": 204020.0
+      },
+      "target_price": 310080.0,
+      "stop_loss": 184590.0,
+      "top_reasons": [
+        "USD/KRW 1545 — 원화 약세 경고",
+        "RSI 과매도 (27) — 반등 가능",
+        "볼린저밴드 하단 근접 (18%)"
+      ],
+      "risk_flags": [
+        "USD/KRW 1545 이상 — 외환 리스크 모니터링"
+      ],
+      "indicators": {
+        "ma5": 200000.0,
+        "ma20": 236450.0,
+        "ma60": 216965.0,
+        "current_price": "202000",
+        "pct_vs_ma5": 1.0000000000000009,
+        "pct_vs_ma20": -14.569676464368786,
+        "pct_vs_ma60": -6.897425852095962,
+        "golden_cross": "False",
+        "dead_cross": "False",
+        "rsi": 26.7,
+        "rsi_oversold": "True",
+        "rsi_overbought": "False",
+        "rsi_recovering": "False",
+        "macd": -6227.43,
+        "macd_signal": -107.03,
+        "macd_hist": -6120.4,
+        "macd_cross_up": "False",
+        "macd_cross_down": "False",
+        "bb_upper": 291172.0,
+        "bb_lower": 181728.0,
+        "bb_pct": 18.5,
+        "resistance_20d": 304000,
+        "support_20d": 190300,
+        "vol_ratio": 0.19,
+        "vol_surge": "False",
+        "trend_strength": -0.313
+      },
+      "current_price": "202000"
+    },
+    {
+      "ticker": "017670",
+      "name": "SK텔레콤",
+      "signal": "HOLD",
+      "confidence": "MEDIUM",
+      "overall_score": 51.0,
+      "scores": {
+        "macro": 12.5,
+        "fundamental": 10.0,
+        "supply_demand": 10.0,
+        "technical": 12.5,
+        "momentum": 6.0
+      },
+      "entry_zone": {
+        "low": 81530.0,
+        "high": 89380.0
+      },
+      "target_price": 142290.0,
+      "stop_loss": 84390.0,
+      "top_reasons": [
+        "USD/KRW 1545 — 원화 약세 경고",
+        "RSI 과매도 (21) — 반등 가능",
+        "볼린저밴드 하단 근접 (17%)"
+      ],
+      "risk_flags": [
+        "USD/KRW 1545 이상 — 외환 리스크 모니터링"
+      ],
+      "indicators": {
+        "ma5": 90280.0,
+        "ma20": 100855.0,
+        "ma60": 97448.33333333333,
+        "current_price": "88500",
+        "pct_vs_ma5": -1.9716437749224602,
+        "pct_vs_ma20": -12.250260274651726,
+        "pct_vs_ma60": -9.182643794147316,
+        "golden_cross": "False",
+        "dead_cross": "False",
+        "rsi": 20.7,
+        "rsi_oversold": "True",
+        "rsi_overbought": "False",
+        "rsi_recovering": "False",
+        "macd": -3046.02,
+        "macd_signal": -1364.39,
+        "macd_hist": -1681.63,
+        "macd_cross_up": "False",
+        "macd_cross_down": "False",
+        "bb_upper": 119355.0,
+        "bb_lower": 82355.0,
+        "bb_pct": 16.6,
+        "resistance_20d": 139500,
+        "support_20d": 87000,
+        "vol_ratio": 0.22,
+        "vol_surge": "False",
+        "trend_strength": -0.533
+      },
+      "current_price": "88500"
+    },
+    {
+      "ticker": "112040",
+      "name": "위메이드",
+      "signal": "HOLD",
+      "confidence": "MEDIUM",
+      "overall_score": 50.5,
+      "scores": {
+        "macro": 12.5,
+        "fundamental": 10.0,
+        "supply_demand": 10.0,
+        "technical": 10.0,
+        "momentum": 8.0
+      },
+      "entry_zone": {
+        "low": 14340.0,
+        "high": 17070.0
+      },
+      "target_price": 20090.0,
+      "stop_loss": 13600.0,
+      "top_reasons": [
+        "USD/KRW 1545 — 원화 약세 경고",
+        "MA 역배열",
+        "RSI 과매도 회복 (49)"
+      ],
+      "risk_flags": [
+        "USD/KRW 1545 이상 — 외환 리스크 모니터링"
+      ],
+      "indicators": {
+        "ma5": 15494.0,
+        "ma20": 17288.5,
+        "ma60": 20179.333333333332,
+        "current_price": "16900",
+        "ma_aligned_down": true,
+        "pct_vs_ma5": 9.074480444042866,
+        "pct_vs_ma20": -2.247158515776382,
+        "pct_vs_ma60": -16.250949816644088,
+        "golden_cross": "False",
+        "dead_cross": "False",
+        "rsi": 49.2,
+        "rsi_oversold": "False",
+        "rsi_overbought": "False",
+        "rsi_recovering": "True",
+        "macd": -1215.8,
+        "macd_signal": -1171.9,
+        "macd_hist": -43.91,
+        "macd_cross_up": "False",
+        "macd_cross_down": "False",
+        "bb_upper": 20092.0,
+        "bb_lower": 14485.0,
+        "bb_pct": 43.1,
+        "resistance_20d": 19700,
+        "support_20d": 14020,
+        "vol_ratio": 1.31,
+        "vol_surge": "False",
+        "trend_strength": 0.013
+      },
+      "current_price": "16900"
+    },
+    {
+      "ticker": "005380",
+      "name": "현대차",
+      "signal": "HOLD",
+      "confidence": "MEDIUM",
+      "overall_score": 50.0,
+      "scores": {
+        "macro": 12.5,
+        "fundamental": 10.0,
+        "supply_demand": 10.0,
+        "technical": 11.5,
+        "momentum": 6.0
+      },
+      "entry_zone": {
+        "low": 446330.0,
+        "high": 496920.0
+      },
+      "target_price": 798660.0,
+      "stop_loss": 446680.0,
+      "top_reasons": [
+        "USD/KRW 1545 — 원화 약세 경고",
+        "RSI 과매도 (25) — 반등 가능",
+        "볼린저밴드 하단 근접 (13%)"
+      ],
+      "risk_flags": [
+        "USD/KRW 1545 이상 — 외환 리스크 모니터링"
+      ],
+      "indicators": {
+        "ma5": 499100.0,
+        "ma20": 607925.0,
+        "ma60": 583750.0,
+        "current_price": "492000",
+        "pct_vs_ma5": -1.4225606090963683,
+        "pct_vs_ma20": -19.068964099189866,
+        "pct_vs_ma60": -15.71734475374732,
+        "golden_cross": "False",
+        "dead_cross": "False",
+        "rsi": 25.0,
+        "rsi_oversold": "True",
+        "rsi_overbought": "False",
+        "rsi_recovering": "False",
+        "macd": -35471.8,
+        "macd_signal": -16876.88,
+        "macd_hist": -18594.92,
+        "macd_cross_up": "False",
+        "macd_cross_down": "False",
+        "bb_upper": 765009.0,
+        "bb_lower": 450841.0,
+        "bb_pct": 13.1,
+        "resistance_20d": 783000,
+        "support_20d": 460500,
+        "vol_ratio": 0.55,
+        "vol_surge": "False",
+        "trend_strength": -0.391
+      },
+      "current_price": "492000"
+    },
+    {
+      "ticker": "030200",
+      "name": "KT",
+      "signal": "HOLD",
+      "confidence": "MEDIUM",
+      "overall_score": 50.0,
+      "scores": {
+        "macro": 12.5,
+        "fundamental": 10.0,
+        "supply_demand": 10.0,
+        "technical": 9.5,
+        "momentum": 8.0
+      },
+      "entry_zone": {
+        "low": 49740.0,
+        "high": 53830.0
+      },
+      "target_price": 61200.0,
+      "stop_loss": 49180.0,
+      "top_reasons": [
+        "USD/KRW 1545 — 원화 약세 경고",
+        "MA 역배열",
+        "MACD 강세 다이버전스"
+      ],
+      "risk_flags": [
+        "USD/KRW 1545 이상 — 외환 리스크 모니터링"
+      ],
+      "indicators": {
+        "ma5": 52320.0,
+        "ma20": 54100.0,
+        "ma60": 57803.333333333336,
+        "current_price": "53300",
+        "ma_aligned_down": true,
+        "pct_vs_ma5": 1.8730886850153006,
+        "pct_vs_ma20": -1.4787430683918634,
+        "pct_vs_ma60": -7.790784845164644,
+        "golden_cross": "False",
+        "dead_cross": "False",
+        "rsi": 48.7,
+        "rsi_oversold": "False",
+        "rsi_overbought": "False",
+        "rsi_recovering": "False",
+        "macd": -1192.62,
+        "macd_signal": -1144.78,
+        "macd_hist": -47.84,
+        "macd_cross_up": "False",
+        "macd_cross_down": "False",
+        "macd_bull_divergence": true,
+        "bb_upper": 57956.0,
+        "bb_lower": 50244.0,
+        "bb_pct": 39.6,
+        "resistance_20d": 60000,
+        "support_20d": 50700,
+        "vol_ratio": 0.31,
+        "vol_surge": "False",
+        "trend_strength": -0.001
+      },
+      "current_price": "53300"
+    },
+    {
+      "ticker": "012330",
+      "name": "현대모비스",
+      "signal": "HOLD",
+      "confidence": "MEDIUM",
+      "overall_score": 50.0,
+      "scores": {
+        "macro": 12.5,
+        "fundamental": 10.0,
+        "supply_demand": 10.0,
+        "technical": 10.5,
+        "momentum": 7.0
+      },
+      "entry_zone": {
+        "low": 432940.0,
+        "high": 500960.0
+      },
+      "target_price": 838440.0,
+      "stop_loss": 448620.0,
+      "top_reasons": [
+        "USD/KRW 1545 — 원화 약세 경고",
+        "볼린저밴드 하단 근접 (17%)",
+        "구리 +1.2% — 경기 개선 시그널"
+      ],
+      "risk_flags": [
+        "USD/KRW 1545 이상 — 외환 리스크 모니터링"
+      ],
+      "indicators": {
+        "ma5": 502900.0,
+        "ma20": 607725.0,
+        "ma60": 532091.6666666666,
+        "current_price": "496000",
+        "pct_vs_ma5": -1.37204215549811,
+        "pct_vs_ma20": -18.38413756221975,
+        "pct_vs_ma60": -6.78297912327136,
+        "golden_cross": "False",
+        "dead_cross": "False",
+        "rsi": 34.7,
+        "rsi_oversold": "False",
+        "rsi_overbought": "False",
+        "rsi_recovering": "False",
+        "macd": -23656.99,
+        "macd_signal": -2753.67,
+        "macd_hist": -20903.32,
+        "macd_cross_up": "False",
+        "macd_cross_down": "False",
+        "bb_upper": 778135.0,
+        "bb_lower": 437315.0,
+        "bb_pct": 17.2,
+        "resistance_20d": 822000,
+        "support_20d": 462500,
+        "vol_ratio": 0.42,
+        "vol_surge": "False",
+        "trend_strength": -0.248
+      },
+      "current_price": "496000"
+    },
+    {
+      "ticker": "091990",
+      "name": "셀트리온헬스케어",
+      "signal": "HOLD",
+      "confidence": "MEDIUM",
+      "overall_score": 50.0,
+      "scores": {
+        "macro": 12.5,
+        "fundamental": 10.0,
+        "supply_demand": 10.0,
+        "technical": 10.0,
+        "momentum": 7.5
+      },
+      "entry_zone": {
+        "low": null,
+        "high": null
+      },
+      "target_price": null,
+      "stop_loss": null,
+      "top_reasons": [
+        "USD/KRW 1545 — 원화 약세 경고"
+      ],
+      "risk_flags": [
+        "USD/KRW 1545 이상 — 외환 리스크 모니터링"
+      ],
+      "indicators": {},
+      "current_price": 0
+    },
+    {
+      "ticker": "SPY",
+      "name": "S&P500 ETF",
+      "signal": "HOLD",
+      "confidence": "MEDIUM",
+      "overall_score": 50.0,
+      "scores": {
+        "macro": 12.5,
+        "fundamental": 10.0,
+        "supply_demand": 10.0,
+        "technical": 10.0,
+        "momentum": 7.5
+      },
+      "entry_zone": {
+        "low": null,
+        "high": null
+      },
+      "target_price": null,
+      "stop_loss": null,
+      "top_reasons": [
+        "USD/KRW 1545 — 원화 약세 경고"
+      ],
+      "risk_flags": [
+        "USD/KRW 1545 이상 — 외환 리스크 모니터링"
+      ],
+      "indicators": {},
+      "current_price": 0
+    },
+    {
+      "ticker": "QQQ",
+      "name": "NASDAQ ETF",
+      "signal": "HOLD",
+      "confidence": "MEDIUM",
+      "overall_score": 50.0,
+      "scores": {
+        "macro": 12.5,
+        "fundamental": 10.0,
+        "supply_demand": 10.0,
+        "technical": 10.0,
+        "momentum": 7.5
+      },
+      "entry_zone": {
+        "low": null,
+        "high": null
+      },
+      "target_price": null,
+      "stop_loss": null,
+      "top_reasons": [
+        "USD/KRW 1545 — 원화 약세 경고"
+      ],
+      "risk_flags": [
+        "USD/KRW 1545 이상 — 외환 리스크 모니터링"
+      ],
+      "indicators": {},
+      "current_price": 0
+    },
+    {
+      "ticker": "SOXL",
+      "name": "반도체 3x ETF",
+      "signal": "HOLD",
+      "confidence": "MEDIUM",
+      "overall_score": 50.0,
+      "scores": {
+        "macro": 12.5,
+        "fundamental": 10.0,
+        "supply_demand": 10.0,
+        "technical": 10.0,
+        "momentum": 7.5
+      },
+      "entry_zone": {
+        "low": null,
+        "high": null
+      },
+      "target_price": null,
+      "stop_loss": null,
+      "top_reasons": [
+        "USD/KRW 1545 — 원화 약세 경고"
+      ],
+      "risk_flags": [
+        "USD/KRW 1545 이상 — 외환 리스크 모니터링"
+      ],
+      "indicators": {},
+      "current_price": 0
+    },
+    {
+      "ticker": "TLT",
+      "name": "미국장기채 ETF",
+      "signal": "HOLD",
+      "confidence": "MEDIUM",
+      "overall_score": 50.0,
+      "scores": {
+        "macro": 12.5,
+        "fundamental": 10.0,
+        "supply_demand": 10.0,
+        "technical": 10.0,
+        "momentum": 7.5
+      },
+      "entry_zone": {
+        "low": null,
+        "high": null
+      },
+      "target_price": null,
+      "stop_loss": null,
+      "top_reasons": [
+        "USD/KRW 1545 — 원화 약세 경고"
+      ],
+      "risk_flags": [
+        "USD/KRW 1545 이상 — 외환 리스크 모니터링"
+      ],
+      "indicators": {},
+      "current_price": 0
+    },
+    {
+      "ticker": "003550",
+      "name": "LG",
+      "signal": "HOLD",
+      "confidence": "MEDIUM",
+      "overall_score": 49.5,
+      "scores": {
+        "macro": 12.5,
+        "fundamental": 10.0,
+        "supply_demand": 10.0,
+        "technical": 10.0,
+        "momentum": 7.0
+      },
+      "entry_zone": {
+        "low": 80410.0,
+        "high": 99690.0
+      },
+      "target_price": 189620.0,
+      "stop_loss": 91080.0,
+      "top_reasons": [
+        "USD/KRW 1545 — 원화 약세 경고",
+        "구리 +1.2% — 경기 개선 시그널"
+      ],
+      "risk_flags": [
+        "USD/KRW 1545 이상 — 외환 리스크 모니터링"
+      ],
+      "indicators": {
+        "ma5": 98900.0,
+        "ma20": 113800.0,
+        "ma60": 106225.0,
+        "current_price": "98700",
+        "pct_vs_ma5": -0.2022244691607722,
+        "pct_vs_ma20": -13.268892794376097,
+        "pct_vs_ma60": -7.084019769357496,
+        "golden_cross": "False",
+        "dead_cross": "False",
+        "rsi": 33.3,
+        "rsi_oversold": "False",
+        "rsi_overbought": "False",
+        "rsi_recovering": "False",
+        "macd": -4096.37,
+        "macd_signal": -1767.99,
+        "macd_hist": -2328.38,
+        "macd_cross_up": "False",
+        "macd_cross_down": "False",
+        "bb_upper": 146377.0,
+        "bb_lower": 81223.0,
+        "bb_pct": 26.8,
+        "resistance_20d": 185900,
+        "support_20d": 93900,
+        "vol_ratio": 0.18,
+        "vol_surge": "False",
+        "trend_strength": -0.19
+      },
+      "current_price": "98700"
+    },
+    {
+      "ticker": "005930",
+      "name": "삼성전자",
+      "signal": "HOLD",
+      "confidence": "MEDIUM",
+      "overall_score": 49.0,
+      "scores": {
+        "macro": 12.5,
+        "fundamental": 10.0,
+        "supply_demand": 10.0,
+        "technical": 8.5,
+        "momentum": 8.0
+      },
+      "entry_zone": {
+        "low": 289930.0,
+        "high": 326230.0
+      },
+      "target_price": 381990.0,
+      "stop_loss": 278880.0,
+      "top_reasons": [
+        "USD/KRW 1545 — 원화 약세 경고",
+        "데드크로스 발생",
+        "구리 +1.2% — 경기 개선 시그널"
+      ],
+      "risk_flags": [
+        "USD/KRW 1545 이상 — 외환 리스크 모니터링",
+        "데드크로스 발생 — 추세 전환 주의"
+      ],
+      "indicators": {
+        "ma5": 334300.0,
+        "ma20": 334975.0,
+        "ma60": 273405.0,
+        "current_price": "323000",
+        "pct_vs_ma5": -3.380197427460363,
+        "pct_vs_ma20": -3.5748936487797645,
+        "pct_vs_ma60": 18.139756039574984,
+        "golden_cross": "False",
+        "dead_cross": "True",
+        "rsi": 50.2,
+        "rsi_oversold": "False",
+        "rsi_overbought": "False",
+        "rsi_recovering": "False",
+        "macd": 13701.84,
+        "macd_signal": 17266.65,
+        "macd_hist": -3564.81,
+        "macd_cross_up": "False",
+        "macd_cross_down": "False",
+        "bb_upper": 377087.0,
+        "bb_lower": 292863.0,
+        "bb_pct": 35.8,
+        "resistance_20d": 374500,
+        "support_20d": 287500,
+        "vol_ratio": 0.64,
+        "vol_surge": "False",
+        "trend_strength": 0.032
+      },
+      "current_price": "323000"
+    },
+    {
+      "ticker": "316140",
+      "name": "우리금융지주",
+      "signal": "HOLD",
+      "confidence": "MEDIUM",
+      "overall_score": 49.0,
+      "scores": {
+        "macro": 12.5,
+        "fundamental": 10.0,
+        "supply_demand": 10.0,
+        "technical": 9.5,
+        "momentum": 7.0
+      },
+      "entry_zone": {
+        "low": 27390.0,
+        "high": 29090.0
+      },
+      "target_price": 34370.0,
+      "stop_loss": 26680.0,
+      "top_reasons": [
+        "USD/KRW 1545 — 원화 약세 경고",
+        "MA 역배열",
+        "MACD 강세 다이버전스"
+      ],
+      "risk_flags": [
+        "USD/KRW 1545 이상 — 외환 리스크 모니터링"
+      ],
+      "indicators": {
+        "ma5": 28980.0,
+        "ma20": 30297.5,
+        "ma60": 31974.166666666668,
+        "current_price": "28800",
+        "ma_aligned_down": true,
+        "pct_vs_ma5": -0.6211180124223614,
+        "pct_vs_ma20": -4.942652033996209,
+        "pct_vs_ma60": -9.927285047825073,
+        "golden_cross": "False",
+        "dead_cross": "False",
+        "rsi": 43.0,
+        "rsi_oversold": "False",
+        "rsi_overbought": "False",
+        "rsi_recovering": "False",
+        "macd": -638.21,
+        "macd_signal": -434.33,
+        "macd_hist": -203.88,
+        "macd_cross_up": "False",
+        "macd_cross_down": "False",
+        "macd_bull_divergence": true,
+        "bb_upper": 32925.0,
+        "bb_lower": 27670.0,
+        "bb_pct": 21.5,
+        "resistance_20d": 33700,
+        "support_20d": 27500,
+        "vol_ratio": 0.48,
+        "vol_surge": "False",
+        "trend_strength": -0.111
+      },
+      "current_price": "28800"
+    },
+    {
+      "ticker": "042660",
+      "name": "한화오션",
+      "signal": "HOLD",
+      "confidence": "MEDIUM",
+      "overall_score": 49.0,
+      "scores": {
+        "macro": 12.5,
+        "fundamental": 10.0,
+        "supply_demand": 10.0,
+        "technical": 8.5,
+        "momentum": 8.0
+      },
+      "entry_zone": {
+        "low": 91580.0,
+        "high": 103420.0
+      },
+      "target_price": 144740.0,
+      "stop_loss": 92640.0,
+      "top_reasons": [
+        "USD/KRW 1545 — 원화 약세 경고",
+        "MA 역배열",
+        "MACD 강세 다이버전스"
+      ],
+      "risk_flags": [
+        "USD/KRW 1545 이상 — 외환 리스크 모니터링"
+      ],
+      "indicators": {
+        "ma5": 103300.0,
+        "ma20": 113655.0,
+        "ma60": 121920.0,
+        "current_price": "102400",
+        "ma_aligned_down": true,
+        "pct_vs_ma5": -0.871248789932233,
+        "pct_vs_ma20": -9.902775944745057,
+        "pct_vs_ma60": -16.010498687664043,
+        "golden_cross": "False",
+        "dead_cross": "False",
+        "rsi": 50.1,
+        "rsi_oversold": "False",
+        "rsi_overbought": "False",
+        "rsi_recovering": "False",
+        "macd": -4367.84,
+        "macd_signal": -2586.66,
+        "macd_hist": -1781.18,
+        "macd_cross_up": "False",
+        "macd_cross_down": "False",
+        "macd_bull_divergence": true,
+        "bb_upper": 134810.0,
+        "bb_lower": 92500.0,
+        "bb_pct": 23.4,
+        "resistance_20d": 141900,
+        "support_20d": 95500,
+        "vol_ratio": 0.36,
+        "vol_surge": "False",
+        "trend_strength": 0.033
+      },
+      "current_price": "102400"
+    },
+    {
+      "ticker": "068270",
+      "name": "셀트리온",
+      "signal": "HOLD",
+      "confidence": "MEDIUM",
+      "overall_score": 48.5,
+      "scores": {
+        "macro": 12.5,
+        "fundamental": 10.0,
+        "supply_demand": 10.0,
+        "technical": 7.0,
+        "momentum": 9.0
+      },
+      "entry_zone": {
+        "low": 158280.0,
+        "high": 180490.0
+      },
+      "target_price": 189100.0,
+      "stop_loss": 153740.0,
+      "top_reasons": [
+        "USD/KRW 1545 — 원화 약세 경고",
+        "MA 역배열",
+        "구리 +1.2% — 경기 개선 시그널"
+      ],
+      "risk_flags": [
+        "USD/KRW 1545 이상 — 외환 리스크 모니터링"
+      ],
+      "indicators": {
+        "ma5": 170180.0,
+        "ma20": 171651.1,
+        "ma60": 182791.61666666667,
+        "current_price": "178700",
+        "ma_aligned_down": true,
+        "pct_vs_ma5": 5.006463744270762,
+        "pct_vs_ma20": 4.106527718144526,
+        "pct_vs_ma60": -2.23840498885024,
+        "golden_cross": "False",
+        "dead_cross": "False",
+        "rsi": 57.3,
+        "rsi_oversold": "False",
+        "rsi_overbought": "False",
+        "rsi_recovering": "False",
+        "macd": -2612.82,
+        "macd_signal": -3527.0,
+        "macd_hist": 914.18,
+        "macd_cross_up": "False",
+        "macd_cross_down": "False",
+        "bb_upper": 183428.0,
+        "bb_lower": 159874.0,
+        "bb_pct": 79.9,
+        "resistance_20d": 185390,
+        "support_20d": 158500,
+        "vol_ratio": 0.71,
+        "vol_surge": "False",
+        "trend_strength": 0.113
+      },
+      "current_price": "178700"
+    },
+    {
+      "ticker": "035720",
+      "name": "카카오",
+      "signal": "HOLD",
+      "confidence": "MEDIUM",
+      "overall_score": 48.5,
+      "scores": {
+        "macro": 12.5,
+        "fundamental": 10.0,
+        "supply_demand": 10.0,
+        "technical": 9.0,
+        "momentum": 7.0
+      },
+      "entry_zone": {
+        "low": 32180.0,
+        "high": 35500.0
+      },
+      "target_price": 49470.0,
+      "stop_loss": 31280.0,
+      "top_reasons": [
+        "USD/KRW 1545 — 원화 약세 경고",
+        "MA 역배열",
+        "RSI 과매도 회복 (36)"
+      ],
+      "risk_flags": [
+        "USD/KRW 1545 이상 — 외환 리스크 모니터링"
+      ],
+      "indicators": {
+        "ma5": 34160.0,
+        "ma20": 38547.5,
+        "ma60": 43375.833333333336,
+        "current_price": "35150",
+        "ma_aligned_down": true,
+        "pct_vs_ma5": 2.8981264637002235,
+        "pct_vs_ma20": -8.813801154419876,
+        "pct_vs_ma60": -18.964092908877838,
+        "golden_cross": "False",
+        "dead_cross": "False",
+        "rsi": 36.2,
+        "rsi_oversold": "False",
+        "rsi_overbought": "False",
+        "rsi_recovering": "True",
+        "macd": -2323.91,
+        "macd_signal": -1949.9,
+        "macd_hist": -374.01,
+        "macd_cross_up": "False",
+        "macd_cross_down": "False",
+        "bb_upper": 44591.0,
+        "bb_lower": 32504.0,
+        "bb_pct": 21.9,
+        "resistance_20d": 48500,
+        "support_20d": 32250,
+        "vol_ratio": 0.43,
+        "vol_surge": "False",
+        "trend_strength": -0.209
+      },
+      "current_price": "35150"
+    },
+    {
+      "ticker": "096770",
+      "name": "SK이노베이션",
+      "signal": "HOLD",
+      "confidence": "MEDIUM",
+      "overall_score": 48.5,
+      "scores": {
+        "macro": 12.5,
+        "fundamental": 10.0,
+        "supply_demand": 10.0,
+        "technical": 9.0,
+        "momentum": 7.0
+      },
+      "entry_zone": {
+        "low": 87890.0,
+        "high": 97670.0
+      },
+      "target_price": 123420.0,
+      "stop_loss": 85070.0,
+      "top_reasons": [
+        "USD/KRW 1545 — 원화 약세 경고",
+        "MA 역배열",
+        "RSI 과매도 회복 (41)"
+      ],
+      "risk_flags": [
+        "USD/KRW 1545 이상 — 외환 리스크 모니터링"
+      ],
+      "indicators": {
+        "ma5": 94540.0,
+        "ma20": 105025.0,
+        "ma60": 119718.33333333333,
+        "current_price": "96700",
+        "ma_aligned_down": true,
+        "pct_vs_ma5": 2.2847471969536626,
+        "pct_vs_ma20": -7.926684122827899,
+        "pct_vs_ma60": -19.2270746613579,
+        "golden_cross": "False",
+        "dead_cross": "False",
+        "rsi": 41.3,
+        "rsi_oversold": "False",
+        "rsi_overbought": "False",
+        "rsi_recovering": "True",
+        "macd": -6890.73,
+        "macd_signal": -6106.32,
+        "macd_hist": -784.41,
+        "macd_cross_up": "False",
+        "macd_cross_down": "False",
+        "bb_upper": 121270.0,
+        "bb_lower": 88780.0,
+        "bb_pct": 24.4,
+        "resistance_20d": 121000,
+        "support_20d": 87700,
+        "vol_ratio": 0.55,
+        "vol_surge": "False",
+        "trend_strength": -0.12
+      },
+      "current_price": "96700"
+    },
+    {
+      "ticker": "010950",
+      "name": "S-Oil",
+      "signal": "HOLD",
+      "confidence": "MEDIUM",
+      "overall_score": 48.5,
+      "scores": {
+        "macro": 12.5,
+        "fundamental": 10.0,
+        "supply_demand": 10.0,
+        "technical": 9.0,
+        "momentum": 7.0
+      },
+      "entry_zone": {
+        "low": 95320.0,
+        "high": 103120.0
+      },
+      "target_price": 119240.0,
+      "stop_loss": 87690.0,
+      "top_reasons": [
+        "USD/KRW 1545 — 원화 약세 경고",
+        "MA 역배열",
+        "RSI 과매도 회복 (42)"
+      ],
+      "risk_flags": [
+        "USD/KRW 1545 이상 — 외환 리스크 모니터링"
+      ],
+      "indicators": {
+        "ma5": 100460.0,
+        "ma20": 107615.0,
+        "ma60": 113065.0,
+        "current_price": "102100",
+        "ma_aligned_down": true,
+        "pct_vs_ma5": 1.6324905434998982,
+        "pct_vs_ma20": -5.124750267156064,
+        "pct_vs_ma60": -9.697961349666118,
+        "golden_cross": "False",
+        "dead_cross": "False",
+        "rsi": 41.5,
+        "rsi_oversold": "False",
+        "rsi_overbought": "False",
+        "rsi_recovering": "True",
+        "macd": -3357.91,
+        "macd_signal": -2316.9,
+        "macd_hist": -1041.0,
+        "macd_cross_up": "False",
+        "macd_cross_down": "False",
+        "bb_upper": 118944.0,
+        "bb_lower": 96286.0,
+        "bb_pct": 25.7,
+        "resistance_20d": 116900,
+        "support_20d": 90400,
+        "vol_ratio": 0.6,
+        "vol_surge": "False",
+        "trend_strength": -0.103
+      },
+      "current_price": "102100"
+    },
+    {
+      "ticker": "006400",
+      "name": "삼성SDI",
+      "signal": "HOLD",
+      "confidence": "MEDIUM",
+      "overall_score": 48.5,
+      "scores": {
+        "macro": 12.5,
+        "fundamental": 10.0,
+        "supply_demand": 10.0,
+        "technical": 8.0,
+        "momentum": 8.0
+      },
+      "entry_zone": {
+        "low": 429090.0,
+        "high": 513080.0
+      },
+      "target_price": 692580.0,
+      "stop_loss": 428740.0,
+      "top_reasons": [
+        "USD/KRW 1545 — 원화 약세 경고",
+        "MA 역배열",
+        "구리 +1.2% — 경기 개선 시그널"
+      ],
+      "risk_flags": [
+        "USD/KRW 1545 이상 — 외환 리스크 모니터링"
+      ],
+      "indicators": {
+        "ma5": 480400.0,
+        "ma20": 532250.0,
+        "ma60": 569791.6666666666,
+        "current_price": "508000",
+        "ma_aligned_down": true,
+        "pct_vs_ma5": 5.745212323064108,
+        "pct_vs_ma20": -4.556129638327855,
+        "pct_vs_ma60": -10.844606946983538,
+        "golden_cross": "False",
+        "dead_cross": "False",
+        "rsi": 49.0,
+        "rsi_oversold": "False",
+        "rsi_overbought": "False",
+        "rsi_recovering": "False",
+        "macd": -29321.3,
+        "macd_signal": -24489.89,
+        "macd_hist": -4831.41,
+        "macd_cross_up": "False",
+        "macd_cross_down": "False",
+        "bb_upper": 631074.0,
+        "bb_lower": 433426.0,
+        "bb_pct": 37.7,
+        "resistance_20d": 679000,
+        "support_20d": 442000,
+        "vol_ratio": 0.84,
+        "vol_surge": "False",
+        "trend_strength": 0.013
+      },
+      "current_price": "508000"
+    },
+    {
+      "ticker": "011170",
+      "name": "롯데케미칼",
+      "signal": "HOLD",
+      "confidence": "MEDIUM",
+      "overall_score": 48.0,
+      "scores": {
+        "macro": 12.5,
+        "fundamental": 10.0,
+        "supply_demand": 10.0,
+        "technical": 8.5,
+        "momentum": 7.0
+      },
+      "entry_zone": {
+        "low": 62860.0,
+        "high": 67570.0
+      },
+      "target_price": 85680.0,
+      "stop_loss": 58780.0,
+      "top_reasons": [
+        "USD/KRW 1545 — 원화 약세 경고",
+        "MA 역배열",
+        "볼린저밴드 하단 근접 (15%)"
+      ],
+      "risk_flags": [
+        "USD/KRW 1545 이상 — 외환 리스크 모니터링"
+      ],
+      "indicators": {
+        "ma5": 66480.0,
+        "ma20": 74765.0,
+        "ma60": 85281.66666666667,
+        "current_price": "66900",
+        "ma_aligned_down": true,
+        "pct_vs_ma5": 0.631768953068601,
+        "pct_vs_ma20": -10.519628168260553,
+        "pct_vs_ma60": -21.554065938361124,
+        "golden_cross": "False",
+        "dead_cross": "False",
+        "rsi": 38.1,
+        "rsi_oversold": "False",
+        "rsi_overbought": "False",
+        "rsi_recovering": "False",
+        "macd": -4786.34,
+        "macd_signal": -3896.43,
+        "macd_hist": -889.92,
+        "macd_cross_up": "False",
+        "macd_cross_down": "False",
+        "bb_upper": 86039.0,
+        "bb_lower": 63491.0,
+        "bb_pct": 15.1,
+        "resistance_20d": 84000,
+        "support_20d": 60600,
+        "vol_ratio": 0.51,
+        "vol_surge": "False",
+        "trend_strength": -0.173
+      },
+      "current_price": "66900"
+    },
+    {
+      "ticker": "010140",
+      "name": "삼성중공업",
+      "signal": "HOLD",
+      "confidence": "MEDIUM",
+      "overall_score": 48.0,
+      "scores": {
+        "macro": 12.5,
+        "fundamental": 10.0,
+        "supply_demand": 10.0,
+        "technical": 8.5,
+        "momentum": 7.0
+      },
+      "entry_zone": {
+        "low": 22630.0,
+        "high": 24210.0
+      },
+      "target_price": 30750.0,
+      "stop_loss": 21530.0,
+      "top_reasons": [
+        "USD/KRW 1545 — 원화 약세 경고",
+        "MA 역배열",
+        "볼린저밴드 하단 근접 (16%)"
+      ],
+      "risk_flags": [
+        "USD/KRW 1545 이상 — 외환 리스크 모니터링"
+      ],
+      "indicators": {
+        "ma5": 23935.0,
+        "ma20": 26418.75,
+        "ma60": 28786.25,
+        "current_price": "23975",
+        "ma_aligned_down": true,
+        "pct_vs_ma5": 0.16711928138708476,
+        "pct_vs_ma20": -9.250059143600664,
+        "pct_vs_ma60": -16.71370880194537,
+        "golden_cross": "False",
+        "dead_cross": "False",
+        "rsi": 42.9,
+        "rsi_oversold": "False",
+        "rsi_overbought": "False",
+        "rsi_recovering": "False",
+        "macd": -1319.25,
+        "macd_signal": -998.18,
+        "macd_hist": -321.07,
+        "macd_cross_up": "False",
+        "macd_cross_down": "False",
+        "bb_upper": 29979.0,
+        "bb_lower": 22859.0,
+        "bb_pct": 15.7,
+        "resistance_20d": 30150,
+        "support_20d": 22200,
+        "vol_ratio": 0.41,
+        "vol_surge": "False",
+        "trend_strength": -0.106
+      },
+      "current_price": "23975"
+    },
+    {
+      "ticker": "051910",
+      "name": "LG화학",
+      "signal": "HOLD",
+      "confidence": "MEDIUM",
+      "overall_score": 47.5,
+      "scores": {
+        "macro": 12.5,
+        "fundamental": 10.0,
+        "supply_demand": 10.0,
+        "technical": 7.0,
+        "momentum": 8.0
+      },
+      "entry_zone": {
+        "low": 269660.0,
+        "high": 303500.0
+      },
+      "target_price": 388620.0,
+      "stop_loss": 256560.0,
+      "top_reasons": [
+        "USD/KRW 1545 — 원화 약세 경고",
+        "MA 역배열",
+        "구리 +1.2% — 경기 개선 시그널"
+      ],
+      "risk_flags": [
+        "USD/KRW 1545 이상 — 외환 리스크 모니터링"
+      ],
+      "indicators": {
+        "ma5": 289200.0,
+        "ma20": 329625.0,
+        "ma60": 354825.0,
+        "current_price": "300500",
+        "ma_aligned_down": true,
+        "pct_vs_ma5": 3.9073305670816127,
+        "pct_vs_ma20": -8.835798255593474,
+        "pct_vs_ma60": -15.31036426407384,
+        "golden_cross": "False",
+        "dead_cross": "False",
+        "rsi": 42.9,
+        "rsi_oversold": "False",
+        "rsi_overbought": "False",
+        "rsi_recovering": "False",
+        "macd": -17992.85,
+        "macd_signal": -12798.73,
+        "macd_hist": -5194.11,
+        "macd_cross_up": "False",
+        "macd_cross_down": "False",
+        "bb_upper": 386868.0,
+        "bb_lower": 272382.0,
+        "bb_pct": 24.6,
+        "resistance_20d": 381000,
+        "support_20d": 264500,
+        "vol_ratio": 0.49,
+        "vol_surge": "False",
+        "trend_strength": -0.088
+      },
+      "current_price": "300500"
+    },
+    {
+      "ticker": "086790",
+      "name": "하나금융지주",
+      "signal": "HOLD",
+      "confidence": "MEDIUM",
+      "overall_score": 47.5,
+      "scores": {
+        "macro": 12.5,
+        "fundamental": 10.0,
+        "supply_demand": 10.0,
+        "technical": 7.0,
+        "momentum": 8.0
+      },
+      "entry_zone": {
+        "low": 105930.0,
+        "high": 114230.0
+      },
+      "target_price": 138720.0,
+      "stop_loss": 104370.0,
+      "top_reasons": [
+        "USD/KRW 1545 — 원화 약세 경고",
+        "MA 역배열",
+        "구리 +1.2% — 경기 개선 시그널"
+      ],
+      "risk_flags": [
+        "USD/KRW 1545 이상 — 외환 리스크 모니터링"
+      ],
+      "indicators": {
+        "ma5": 113300.0,
+        "ma20": 119205.0,
+        "ma60": 119965.0,
+        "current_price": "113100",
+        "ma_aligned_down": true,
+        "pct_vs_ma5": -0.1765225066195919,
+        "pct_vs_ma20": -5.121429470240346,
+        "pct_vs_ma60": -5.722502396532326,
+        "golden_cross": "False",
+        "dead_cross": "False",
+        "rsi": 43.7,
+        "rsi_oversold": "False",
+        "rsi_overbought": "False",
+        "rsi_recovering": "False",
+        "macd": -1603.17,
+        "macd_signal": -321.62,
+        "macd_hist": -1281.55,
+        "macd_cross_up": "False",
+        "macd_cross_down": "False",
+        "bb_upper": 131413.0,
+        "bb_lower": 106997.0,
+        "bb_pct": 25.0,
+        "resistance_20d": 136000,
+        "support_20d": 107600,
+        "vol_ratio": 0.4,
+        "vol_surge": "False",
+        "trend_strength": -0.09
+      },
+      "current_price": "113100"
+    },
+    {
+      "ticker": "000270",
+      "name": "기아",
+      "signal": "HOLD",
+      "confidence": "MEDIUM",
+      "overall_score": 47.0,
+      "scores": {
+        "macro": 12.5,
+        "fundamental": 10.0,
+        "supply_demand": 10.0,
+        "technical": 8.5,
+        "momentum": 6.0
+      },
+      "entry_zone": {
+        "low": 130550.0,
+        "high": 140090.0
+      },
+      "target_price": 178090.0,
+      "stop_loss": 126100.0,
+      "top_reasons": [
+        "USD/KRW 1545 — 원화 약세 경고",
+        "MA 역배열",
+        "볼린저밴드 하단 근접 (14%)"
+      ],
+      "risk_flags": [
+        "USD/KRW 1545 이상 — 외환 리스크 모니터링"
+      ],
+      "indicators": {
+        "ma5": 137960.0,
+        "ma20": 156060.0,
+        "ma60": 157895.0,
+        "current_price": "138700",
+        "ma_aligned_down": true,
+        "pct_vs_ma5": 0.5363873586546886,
+        "pct_vs_ma20": -11.123926694860952,
+        "pct_vs_ma60": -12.156813071978211,
+        "golden_cross": "False",
+        "dead_cross": "False",
+        "rsi": 30.3,
+        "rsi_oversold": "False",
+        "rsi_overbought": "False",
+        "rsi_recovering": "False",
+        "macd": -6359.5,
+        "macd_signal": -3463.41,
+        "macd_hist": -2896.09,
+        "macd_cross_up": "False",
+        "macd_cross_down": "False",
+        "bb_upper": 180256.0,
+        "bb_lower": 131864.0,
+        "bb_pct": 14.1,
+        "resistance_20d": 174600,
+        "support_20d": 130000,
+        "vol_ratio": 0.32,
+        "vol_surge": "False",
+        "trend_strength": -0.301
+      },
+      "current_price": "138700"
+    }
+  ],
+  "updated": "2026-06-29 13:05 KST"
+}
