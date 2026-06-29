@@ -129,10 +129,15 @@ def run(github_token: str = None, verbose: bool = True):
 
     # JSON 저장 (Streamlit용 상세 데이터)
     json_path = "/content/signals_detail.json"
+    # 한글 포함 데이터 ASCII 인코딩으로 저장
+    export_data = {
+        "regime": regime,
+        "macro": macro_snap,
+        "signals": signals,
+        "updated": now_kst.strftime("%Y-%m-%d %H:%M KST")
+    }
     with open(json_path, "w", encoding="utf-8") as f:
-        json.dump({"regime": regime, "macro": macro_snap, "signals": signals,
-                   "updated": now_kst.strftime("%Y-%m-%d %H:%M KST")}, f,
-                  ensure_ascii=True, indent=2, default=str)
+        json.dump(export_data, f, ensure_ascii=False, indent=2, default=str)
     print(f"✅ JSON 저장: {json_path}")
 
     # ── 2-7. GitHub 업로드 (토큰 제공 시) ───────────────────────────────
@@ -153,16 +158,27 @@ def run(github_token: str = None, verbose: bool = True):
                 repo.create_file(DATA_FILE, f"Init: signals {now_kst.strftime('%Y-%m-%d')}",
                                  content, branch=GITHUB_BRANCH)
 
-            # JSON 업로드
+            # JSON 업로드 (utf-8 바이트로 인코딩)
             json_github = "data/signals_detail.json"
             with open(json_path, "r", encoding="utf-8") as f:
                 jcontent = f.read()
+            jbytes = jcontent.encode("utf-8")
+            import base64
+            jb64 = base64.b64encode(jbytes).decode("ascii")
             try:
                 existing_j = repo.get_contents(json_github, ref=GITHUB_BRANCH)
-                repo.update_file(json_github, f"Auto: detail {now_kst.strftime('%Y-%m-%d %H:%M')}",
-                                 jcontent, existing_j.sha, branch=GITHUB_BRANCH)
-            except:
-                repo.create_file(json_github, "Init: detail", jcontent, branch=GITHUB_BRANCH)
+                repo._Github__requester.requestJsonAndCheck(
+                    "PUT",
+                    repo.url + "/contents/" + json_github,
+                    input={
+                        "message": f"Auto: detail {now_kst.strftime('%Y-%m-%d %H:%M')}",
+                        "content": jb64,
+                        "sha": existing_j.sha,
+                        "branch": GITHUB_BRANCH,
+                    }
+                )
+            except Exception as je:
+                repo.create_file(json_github, "Init: detail", jcontent.encode("utf-8"), branch=GITHUB_BRANCH)
 
             print(f"✅ GitHub 업로드 완료: {GITHUB_REPO}/{DATA_FILE}")
         except Exception as e:
