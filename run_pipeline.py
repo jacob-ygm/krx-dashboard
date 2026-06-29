@@ -181,6 +181,19 @@ def run(github_token: str = None, verbose: bool = True):
         print("\n💡 GitHub 업로드 건너뜀 (github_token 미제공)")
         print("   사용법: run(github_token='ghp_xxxx...')")
 
+    # ── 2-8. 히스토리 누적 저장 ─────────────────────────────────────────────
+    try:
+        from backtester import append_signal_history
+        if github_token:
+            from github import Github
+            g2   = Github(github_token)
+            repo2 = g2.get_repo(GITHUB_REPO)
+        else:
+            repo2 = None
+        append_signal_history(df, repo=repo2, branch=GITHUB_BRANCH)
+    except Exception as e:
+        print(f"⚠️ 히스토리 저장 실패: {e}")
+
     return df, signals, macro_snap, regime
 
 

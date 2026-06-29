@@ -287,7 +287,7 @@ def main():
     st.markdown("---")
 
     # ── 탭 레이아웃 ──────────────────────────────────────────────────────
-    tab1, tab2, tab3 = st.tabs(["📋 신호 리스트", "📊 점수 분석", "🔍 종목 상세"])
+    tab1, tab2, tab3, tab4 = st.tabs(["📋 신호 리스트", "📊 점수 분석", "🔍 종목 상세", "🧪 백테스트"])
 
     # ─── 탭1: 신호 리스트 ────────────────────────────────────────────────
     with tab1:
@@ -429,6 +429,90 @@ def main():
                         if ind.get("macd_bull_divergence"): flags.append("✅ 강세 다이버전스")
                         if flags:
                             st.markdown("  ".join(flags))
+
+    # ─── 탭4: 백테스트 ──────────────────────────────────────────────────────
+    with tab4:
+        st.markdown("#### 🧪 신호 정확도 백테스트")
+        st.caption("신호 발생일 종가 매수 → n일 후 종가 매도 기준")
+
+        # GitHub에서 히스토리 로드
+        HIST_URL = f"{GITHUB_RAW_BASE}/data/signals_history.csv.gz"
+
+        @st.cache_data(ttl=3600)
+        def load_history():
+            try:
+                import io
+                r = requests.get(HIST_URL, timeout=15)
+                r.raise_for_status()
+                return pd.read_csv(io.BytesIO(r.content), compression="gzip")
+            except:
+                return None
+
+        history = load_history()
+
+        if history is None or history.empty:
+            st.info("📌 아직 히스토리 데이터가 없습니다. 며칠간 파이프라인을 실행하면 백테스트가 가능합니다.")
+        else:
+            n_days  = history["signal_date"].nunique()
+            n_sigs  = len(history)
+            st.markdown(f"**누적 데이터**: {n_days}일치 · {n_sigs}건")
+
+            # 날짜별 신호 분포
+            sig_counts = history.groupby(["signal_date","signal"]).size().reset_index(name="count")
+            fig_hist = px.bar(sig_counts, x="signal_date", y="count", color="signal",
+                color_discrete_map=SIGNAL_COLOR, barmode="stack",
+                title="날짜별 신호 분포")
+            fig_hist.update_layout(height=250, margin=dict(t=30,b=20),
+                paper_bgcolor="rgba(0,0,0,0)", font=dict(color="#E0E0E0"))
+            st.plotly_chart(fig_hist, use_container_width=True)
+
+            st.markdown("---")
+
+            # 평가 가능한 신호만 필터
+            today = pd.Timestamp.now()
+            buy_sell = history[history["signal"].isin(["STRONG BUY","BUY","SELL","STRONG SELL"])].copy()
+            buy_sell["signal_date"] = pd.to_datetime(buy_sell["signal_date"])
+
+            col5, col20 = st.columns(2)
+
+            for col, n, label in [(col5, 5, "5일 단기"), (col20, 20, "20일 장기")]:
+                with col:
+                    st.markdown(f"**{label} 백테스트**")
+                    cutoff = today - pd.Timedelta(days=n*2)
+                    eval_df = buy_sell[buy_sell["signal_date"] <= cutoff]
+
+                    if eval_df.empty:
+                        st.info(f"최소 {n*2}일 이상 데이터 필요")
+                        continue
+
+                    # return_pct 컬럼 있으면 사용
+                    if f"return_{n}d" in eval_df.columns:
+                        ret_col = f"return_{n}d"
+                        valid = eval_df[eval_df[ret_col].notna()]
+                        if valid.empty:
+                            st.info("수익률 데이터 없음")
+                            continue
+
+                        win_rate   = (valid[ret_col] > 0).mean() * 100
+                        avg_ret    = valid[ret_col].mean()
+                        std_ret    = valid[ret_col].std()
+                        sharpe     = avg_ret / std_ret * (252/n)**0.5 if std_ret > 0 else 0
+
+                        m1, m2, m3 = st.columns(3)
+                        m1.metric("승률",        f"{win_rate:.1f}%")
+                        m2.metric("평균수익률",   f"{avg_ret:+.2f}%")
+                        m3.metric("Sharpe",      f"{sharpe:.2f}")
+
+                        # 신호별 승률
+                        by_sig = valid.groupby("signal").agg(
+                            건수=(ret_col,"count"),
+                            승률=(ret_col, lambda x: f"{(x>0).mean()*100:.0f}%"),
+                            평균수익률=(ret_col, lambda x: f"{x.mean():+.2f}%")
+                        )
+                        st.dataframe(by_sig, use_container_width=True)
+                    else:
+                        st.info(f"수익률 컬럼 없음 — 파이프라인 재실행 후 데이터 쌓이면 자동 계산됩니다")
+                        st.metric("평가 대상 신호", f"{len(eval_df)}건")
 
     # ── 푸터 ─────────────────────────────────────────────────────────────
     st.markdown("---")
