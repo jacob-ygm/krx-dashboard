@@ -231,10 +231,10 @@ YF_TICKERS  = [t for t in WATCHLIST if not t.isdigit()]
 # ── Signal weights ───────────────────────────────────────────────────────────
 WEIGHTS = {
     "macro":         0.25,
-    "fundamental":   0.20,
-    "supply_demand": 0.20,
-    "technical":     0.20,
-    "momentum":      0.15,
+    "fundamental":         0.2,
+    "supply_demand":         0.2,
+    "technical":         0.2,
+    "momentum":         0.15,
 }
 
 # ── Signal thresholds ────────────────────────────────────────────────────────
