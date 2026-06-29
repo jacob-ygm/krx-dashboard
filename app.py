@@ -321,14 +321,17 @@ def main():
                         st.markdown(f'<div class="price-big">{price_str}</div>',
                                     unsafe_allow_html=True)
                         if row.get("목표가"):
-                            st.caption(f"목표 ₩{row['목표가']:,.0f}")
+                            try: st.caption(f"목표 ₩{float(row['목표가']):,.0f}")
+                            except: pass
 
                     with c_zone:
                         if row.get("진입하단") and row.get("진입상단"):
-                            st.caption(
-                                f"진입: ₩{row['진입하단']:,.0f} ~ ₩{row['진입상단']:,.0f}  |  "
-                                f"손절: ₩{row.get('손절가', 0):,.0f}"
-                            )
+                            try:
+                                st.caption(
+                                    f"진입: ₩{float(row['진입하단']):,.0f} ~ ₩{float(row['진입상단']):,.0f}  |  "
+                                    f"손절: ₩{float(row.get('손절가', 0)):,.0f}"
+                                )
+                            except: pass
                         if row["리스크"]:
                             for rf in row["리스크"].split("\n")[:1]:
                                 if rf:
