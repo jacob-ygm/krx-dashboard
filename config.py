@@ -239,11 +239,9 @@ WEIGHTS = {
 
 # ── Signal thresholds ────────────────────────────────────────────────────────
 SIGNAL_BANDS = [
-    (76, 100, "STRONG BUY"),
-    (62,  76, "BUY"),
-    (38,  62, "HOLD"),
-    (22,  38, "SELL"),
-    (  0, 22, "STRONG SELL"),
+    (72, 100, "STRONG BUY"),
+    (60,  72, "BUY"),
+    (  0, 60, "HOLD"),
 ]
 
 CONFIDENCE_BANDS = [
