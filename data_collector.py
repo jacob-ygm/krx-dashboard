@@ -64,18 +64,20 @@ def get_naver_current_price(ticker):
             if len(nums) >= 2:
                 result["high_52w"] = max(nums)
                 result["low_52w"]  = min(nums)
-        # PER — per_table의 첫 번째 td 숫자값
+        # PER — per_table 첫 td에서 숫자 추출 ("25.60배|12,372원" 형태)
         per_tbl = soup.select_one("table.per_table")
         if per_tbl:
-            for td in per_tbl.select("td"):
-                v = td.get_text(strip=True).replace(",","").replace("배","")
-                try:
-                    val = float(v)
-                    # PER은 0~500 범위여야 함 (연도값 2026 등 필터)
-                    if 0 < val < 500:
-                        result["PER"] = val
-                        break
-                except: continue
+            first_td = per_tbl.select_one("td")
+            if first_td:
+                raw = first_td.get_text(strip=True)
+                # 첫 번째 숫자만 추출 (소수점 포함)
+                m = re.search(r"([\d.]+)", raw)
+                if m:
+                    try:
+                        val = float(m.group(1))
+                        if 0 < val < 500:
+                            result["PER"] = val
+                    except: pass
         # 외국인 보유비율
         lwidth = soup.select_one("table.lwidth")
         if lwidth:
