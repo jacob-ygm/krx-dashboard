@@ -1,5 +1,5 @@
-# data_collector.py v2 - FinanceDataReader 기반
-import time, requests, warnings
+# data_collector.py v4
+import time, requests, warnings, re
 import numpy as np
 import pandas as pd
 from datetime import datetime, timedelta
@@ -51,84 +51,125 @@ def get_naver_current_price(ticker):
     result = {}
     if not soup: return result
     try:
-        tag = soup.select_one("strong#_nowVal")
-        if tag:
-            result["current_price"] = int(tag.text.strip().replace(",",""))
-        for tr in soup.select("table.no_info tr"):
-            tds = tr.select("td")
-            for i in range(0, len(tds)-1, 2):
-                key = tds[i].get_text(strip=True)
-                val = tds[i+1].get_text(strip=True).replace(",","").replace("억원","").strip()
-                if "PER" in key:
-                    try: result["PER"] = float(val.replace("배",""))
-                    except: pass
-                elif "PBR" in key:
-                    try: result["PBR"] = float(val.replace("배",""))
-                    except: pass
+        # 현재가
+        for tag in soup.select("span.blind"):
+            txt = tag.get_text(strip=True).replace(",","")
+            if txt.isdigit() and 100 < int(txt) < 10000000:
+                result["current_price"] = int(txt)
+                break
+        # 52주 고저
+        rwidth = soup.select_one("table.rwidth")
+        if rwidth:
+            nums = [int(n.replace(",","")) for n in re.findall(r"[\d,]+", rwidth.get_text()) if int(n.replace(",","")) > 100]
+            if len(nums) >= 2:
+                result["high_52w"] = max(nums)
+                result["low_52w"]  = min(nums)
+        # PER
+        per_tbl = soup.select_one("table.per_table")
+        if per_tbl:
+            m = re.search(r"PER[^\d]*([\d.]+)", per_tbl.get_text())
+            if m: result["PER"] = float(m.group(1))
+        # 외국인 보유비율
+        lwidth = soup.select_one("table.lwidth")
+        if lwidth:
+            m = re.search(r"([\d.]+)%", lwidth.get_text())
+            if m: result["foreign_ratio"] = float(m.group(1))
     except Exception as e:
         print(f"[Naver Price] {ticker}: {e}")
     return result
 
 def get_naver_investor_flow(ticker):
+    """
+    frgn 페이지 rows=33 테이블
+    컬럼: 날짜[0] 종가[1] 등락[2] 등락률[3] 거래량[4] 외국인순매수[5] 기관순매수[6] 보유수[7] 보유율[8]
+    """
     soup = _naver_get(f"https://finance.naver.com/item/frgn.naver?code={ticker}")
     if not soup: return pd.DataFrame()
     try:
-        rows = []
-        table = soup.select_one("table.type2")
-        if not table: return pd.DataFrame()
-        for tr in table.select("tr"):
+        rows_data = []
+        tables = soup.select("table.type2")
+        target = None
+        for tbl in tables:
+            if len(tbl.select("tr")) > 20:
+                target = tbl
+                break
+        if not target: return pd.DataFrame()
+
+        for tr in target.select("tr"):
             tds = tr.select("td")
-            if len(tds) < 5: continue
-            date_str = tds[0].get_text(strip=True).replace(".","-")
-            if not date_str or len(date_str) < 8: continue
+            if len(tds) < 7: continue
+            date_str = tds[0].get_text(strip=True)
+            if not date_str or "." not in date_str: continue
             try:
-                def pn(s): s=s.replace(",","").replace("+","").strip(); return float(s) if s and s!="-" else 0.0
-                rows.append({"date": pd.to_datetime(date_str), "foreign": pn(tds[3].get_text(strip=True))})
+                date = pd.to_datetime(date_str.replace(".","-"))
+                def pn(s):
+                    s = s.replace(",","").replace("+","").strip()
+                    return float(s) if s and s != "-" and s != "" else 0.0
+                foreign_net = pn(tds[5].get_text(strip=True))  # 외국인순매수
+                inst_net    = pn(tds[6].get_text(strip=True))  # 기관순매수
+                hold_ratio  = pn(tds[8].get_text(strip=True).replace("%",""))
+                rows_data.append({
+                    "date": date,
+                    "foreign": foreign_net,
+                    "institutional": inst_net,
+                    "foreign_ratio": hold_ratio,
+                })
             except: continue
-        if not rows: return pd.DataFrame()
-        return pd.DataFrame(rows).set_index("date").sort_index()
+
+        if not rows_data: return pd.DataFrame()
+        df = pd.DataFrame(rows_data).set_index("date").sort_index()
+        return df
     except Exception as e:
         print(f"[Naver Investor] {ticker}: {e}")
         return pd.DataFrame()
 
 def get_naver_financials(ticker):
-    soup = _naver_get(f"https://finance.naver.com/item/coinfo.naver?code={ticker}&target=finsum_more")
-    result = {}
-    if not soup: return result
+    """
+    main.naver th 클래스명으로 재무지표 수집
+    th_cop_anal13 = ROE
+    th_cop_anal11 = 영업이익률
+    th_cop_anal14 = 부채비율
+    th_cop_anal15 = 유동비율
+    """
     try:
-        for tbl in soup.select("table.tb_type1"):
-            for row in tbl.select("tr"):
-                th = row.select_one("th")
-                tds = row.select("td")
-                if not th or not tds: continue
-                label = th.get_text(strip=True)
-                latest = None
-                for td in reversed(tds):
-                    v = td.get_text(strip=True).replace(",","")
-                    try: latest = float(v); break
-                    except: continue
-                if latest is None: continue
-                if "ROE" in label: result["ROE"] = latest
-                elif "영업이익률" in label: result["operating_margin"] = latest
-                elif "부채비율" in label: result["debt_ratio"] = latest
-                elif "유동비율" in label: result["current_ratio"] = latest
+        r = requests.get(
+            f"https://finance.naver.com/item/main.naver?code={ticker}",
+            headers=NAVER_HEADERS, timeout=10
+        )
+        r.encoding = "cp949"
+        soup = BeautifulSoup(r.text, "html.parser")
+    except Exception as e:
+        print(f"[Naver Fin GET] {ticker}: {e}")
+        return {}
+
+    result = {}
+    # th 클래스 → 지표명 매핑
+    CLASS_MAP = {
+        "th_cop_anal11": "operating_margin",  # 영업이익률
+        "th_cop_anal12": "net_margin",         # 당기순이익률
+        "th_cop_anal13": "ROE",                # ROE
+        "th_cop_anal14": "debt_ratio",         # 부채비율
+        "th_cop_anal15": "current_ratio",      # 유동비율
+        "th_cop_anal9":  "revenue",            # 매출액
+        "th_cop_anal10": "operating_profit",   # 영업이익
+    }
+    try:
+        for cls, key in CLASS_MAP.items():
+            th = soup.select_one(f"th.{cls}")
+            if not th: continue
+            tr = th.find_parent("tr")
+            if not tr: continue
+            tds = tr.select("td")
+            # 첫 번째 유효한 숫자값 (가장 최근 연도)
+            for td in tds:
+                v = td.get_text(strip=True).replace(",","")
+                try:
+                    result[key] = float(v)
+                    break
+                except: continue
     except Exception as e:
         print(f"[Naver Fin] {ticker}: {e}")
     return result
-
-def get_naver_foreign_ratio(ticker):
-    soup = _naver_get(f"https://finance.naver.com/item/frgn.naver?code={ticker}")
-    if not soup: return 0.0
-    try:
-        table = soup.select_one("table.type2")
-        if table:
-            trs = table.select("tr")
-            if len(trs) > 1:
-                tds = trs[1].select("td")
-                if len(tds) >= 6:
-                    return float(tds[5].get_text(strip=True).replace("%",""))
-    except: pass
-    return 0.0
 
 def get_yf_ohlcv(ticker, period="6mo"):
     try:
@@ -159,20 +200,20 @@ def get_macro_snapshot():
 def collect_stock_data(ticker, is_krx=True):
     data = {"ticker": ticker, "is_krx": is_krx}
     if is_krx:
-        data["ohlcv"]         = get_fdr_ohlcv(ticker)
-        nv_price              = get_naver_current_price(ticker)
-        nv_fin                = get_naver_financials(ticker)
-        data["fundamental"]   = {"PER": nv_price.get("PER",0), "PBR": nv_price.get("PBR",0)}
-        data["naver"]         = {**nv_price, **nv_fin}
-        data["investor"]      = get_naver_investor_flow(ticker)
-        data["foreign_ratio"] = get_naver_foreign_ratio(ticker)
+        data["ohlcv"]        = get_fdr_ohlcv(ticker)
+        nv_price             = get_naver_current_price(ticker)
+        nv_fin               = get_naver_financials(ticker)
+        data["fundamental"]  = {"PER": nv_price.get("PER",0), "PBR": nv_price.get("PBR",0)}
+        data["naver"]        = {**nv_price, **nv_fin}
+        data["investor"]     = get_naver_investor_flow(ticker)
+        data["foreign_ratio"]= nv_price.get("foreign_ratio", 0.0)
         time.sleep(0.5)
     else:
-        data["ohlcv"]         = get_yf_ohlcv(ticker)
-        data["fundamental"]   = {}
-        data["investor"]      = pd.DataFrame()
-        data["naver"]         = {}
-        data["foreign_ratio"] = 0.0
+        data["ohlcv"]        = get_yf_ohlcv(ticker)
+        data["fundamental"]  = {}
+        data["investor"]     = pd.DataFrame()
+        data["naver"]        = {}
+        data["foreign_ratio"]= 0.0
     return data
 
 def collect_all(watchlist):
@@ -184,10 +225,12 @@ def collect_all(watchlist):
         print(f"  [{i}/{len(krx_list)}] {ticker} {watchlist[ticker]}", end=" ")
         results[ticker] = collect_stock_data(ticker, is_krx=True)
         ohlcv = results[ticker]["ohlcv"]
-        print(f"→ {len(ohlcv)}행" if not ohlcv.empty else "→ OHLCV 없음")
+        inv   = results[ticker]["investor"]
+        price = results[ticker]["naver"].get("current_price","?")
+        per   = results[ticker]["fundamental"].get("PER","?")
+        print(f"→ OHLCV {len(ohlcv)}행 | 현재가 {price} | PER {per} | 수급 {len(inv)}행")
     for ticker in yf_list:
         print(f"  [yf] {ticker} {watchlist[ticker]}", end=" ")
         results[ticker] = collect_stock_data(ticker, is_krx=False)
-        ohlcv = results[ticker]["ohlcv"]
-        print(f"→ {len(ohlcv)}행" if not ohlcv.empty else "→ 없음")
+        print(f"→ {len(results[ticker]['ohlcv'])}행")
     return results

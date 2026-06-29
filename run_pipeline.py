@@ -132,7 +132,7 @@ def run(github_token: str = None, verbose: bool = True):
     with open(json_path, "w", encoding="utf-8") as f:
         json.dump({"regime": regime, "macro": macro_snap, "signals": signals,
                    "updated": now_kst.strftime("%Y-%m-%d %H:%M KST")}, f,
-                  ensure_ascii=False, indent=2, default=str)
+                  ensure_ascii=True, indent=2, default=str)
     print(f"✅ JSON 저장: {json_path}")
 
     # ── 2-7. GitHub 업로드 (토큰 제공 시) ───────────────────────────────

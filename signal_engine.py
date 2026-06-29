@@ -208,12 +208,17 @@ def score_fundamental(fund: dict, naver: dict) -> tuple[float, list[str]]:
     score = 10.0
     reasons = []
 
-    per  = fund.get("PER", 0)
-    pbr  = fund.get("PBR", 0)
+    # PER: naver에서 우선 가져오기 (fund의 PER은 오류값 가능)
+    per  = naver.get("PER", fund.get("PER", 0))
+    pbr  = naver.get("PBR", fund.get("PBR", 0))
     roe  = naver.get("ROE", 0)
     op_m = naver.get("operating_margin", 0)
     debt = naver.get("debt_ratio", 100)
     cr   = naver.get("current_ratio", 1)
+
+    # PER 이상값 필터 (0 이하이거나 500 초과면 무시)
+    if per <= 0 or per > 500:
+        per = 0
 
     # PER
     if 0 < per < 10:
@@ -272,12 +277,12 @@ def score_supply_demand(investor_df: pd.DataFrame, foreign_ratio: float) -> tupl
 
     recent = investor_df.tail(10)   # 최근 10거래일
 
-    # 외국인 누적 순매수
+    # 외국인 누적 순매수 (주식 수 단위)
     if "foreign" in recent.columns:
         f_sum = recent["foreign"].sum()
-        f_consec = (recent["foreign"] > 0).sum()   # 순매수 일수
+        f_consec = (recent["foreign"] > 0).sum()
         if f_sum > 0:
-            score += min(4, f_sum / 1e10)   # 규모 비례 (최대 +4)
+            score += min(4, f_sum / 5e6)   # 500만주 기준
             if f_consec >= 7:
                 score += 2; reasons.append(f"외국인 {f_consec}일 연속 순매수")
             elif f_consec >= 4:
@@ -287,16 +292,16 @@ def score_supply_demand(investor_df: pd.DataFrame, foreign_ratio: float) -> tupl
             if consec_sell >= 7:
                 score -= 3; reasons.append(f"외국인 {consec_sell}일 연속 순매도")
             elif consec_sell >= 4:
-                score -= 1.5
+                score -= 1.5; reasons.append(f"외국인 {consec_sell}일 연속 순매도")
 
-    # 기관 순매수
+    # 기관 순매수 (주식 수 단위)
     if "institutional" in recent.columns:
         i_sum = recent["institutional"].sum()
         if i_sum > 0:
-            score += min(3, i_sum / 1e10)
+            score += min(3, i_sum / 5e6)
             reasons.append("기관 순매수 우위")
-        elif i_sum < -5e9:
-            score -= 2
+        elif i_sum < -3e6:
+            score -= 2; reasons.append("기관 순매도 우위")
 
     # 외국인+기관 동반 매수
     if "foreign" in recent.columns and "institutional" in recent.columns:
