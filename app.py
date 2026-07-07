@@ -319,10 +319,13 @@ def main():
     st.markdown("---")
 
     # ── 탭 레이아웃 ──────────────────────────────────────────────────────
-    tab1, tab2, tab3, tab4 = st.tabs(["📋 신호 리스트", "📊 점수 분석", "🔍 종목 상세", "🧪 백테스트"])
+    df_filt = df_filt.copy()
+    df_filt["market"] = df_filt["ticker"].apply(lambda x: "KR" if str(x).isdigit() else "US")
+
+    tab_kr, tab_us, tab_watch, tab2, tab3, tab4 = st.tabs(["🇰🇷 한국", "🇺🇸 미국", "👀 관찰 대상", "📊 점수 분석", "🔍 종목 상세", "🧪 백테스트"])
 
     # ─── 탭1: 신호 리스트 ────────────────────────────────────────────────
-    with tab1:
+    def render_signal_list(df_filt):
         if df_filt.empty:
             st.info("선택한 조건에 해당하는 종목이 없습니다.")
         else:
@@ -373,6 +376,29 @@ def main():
                     st.divider()
 
     # ─── 탭2: 점수 분석 ──────────────────────────────────────────────────
+    with tab_kr:
+        kr_df = df_filt[df_filt["market"] == "KR"]
+        st.caption(f"한국 주식 {len(kr_df)}종목")
+        render_signal_list(kr_df)
+
+    with tab_us:
+        us_df = df_filt[df_filt["market"] == "US"]
+        st.caption(f"미국 주식 {len(us_df)}종목")
+        render_signal_list(us_df)
+
+    with tab_watch:
+        st.markdown("#### 👀 관찰 대상 — 게이트 대기 종목")
+        st.caption("BUY 조건(60점)을 넘었지만 검증된 안전 게이트에 걸려 대기 중인 종목입니다.")
+        watch_rows = [s for s in data.get("signals", []) if s.get("gate_reason")]
+        if not watch_rows:
+            st.info("현재 게이트 대기 종목이 없습니다.")
+        else:
+            for s in sorted(watch_rows, key=lambda x: -x["overall_score"]):
+                mkt = "🇰🇷" if str(s["ticker"]).isdigit() else "🇺🇸"
+                st.markdown(f'{mkt} **{s["name"]}** `{s["ticker"]}` — {s["overall_score"]:.1f}점')
+                st.markdown(f'<span style="color:#DC2626; font-size:0.85rem;">⛔ {s.get("gate_reason","")}</span>', unsafe_allow_html=True)
+                st.divider()
+
     with tab2:
         col_bar, col_pie = st.columns([3, 1])
         with col_bar:
