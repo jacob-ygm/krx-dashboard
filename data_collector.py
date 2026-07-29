@@ -246,20 +246,66 @@ def collect_stock_data(ticker, is_krx=True):
     return data
 
 def collect_all(watchlist):
+    """병렬 수집 버전: KRX는 ThreadPool(5), 미국은 yfinance 배치"""
+    from concurrent.futures import ThreadPoolExecutor, as_completed
+
     results = {}
     krx_list = [t for t in watchlist if t.isdigit()]
     yf_list  = [t for t in watchlist if not t.isdigit()]
-    print(f"[수집] KRX {len(krx_list)}개 + yfinance {len(yf_list)}개")
-    for i, ticker in enumerate(krx_list, 1):
-        print(f"  [{i}/{len(krx_list)}] {ticker} {watchlist[ticker]}", end=" ")
-        results[ticker] = collect_stock_data(ticker, is_krx=True)
-        ohlcv = results[ticker]["ohlcv"]
-        inv   = results[ticker]["investor"]
-        price = results[ticker]["naver"].get("current_price","?")
-        per   = results[ticker]["fundamental"].get("PER","?")
-        print(f"→ OHLCV {len(ohlcv)}행 | 현재가 {price} | PER {per} | 수급 {len(inv)}행")
+    print("[수집] KRX " + str(len(krx_list)) + "개 (병렬5) + yfinance " + str(len(yf_list)) + "개 (배치)")
+
+    # ── 1. KRX 병렬 (동시 5개 — Naver 차단 방지) ──
+    def _collect_one_krx(ticker):
+        time.sleep(0.2)
+        return ticker, collect_stock_data(ticker, is_krx=True)
+
+    done = 0
+    with ThreadPoolExecutor(max_workers=5) as ex:
+        futures = {ex.submit(_collect_one_krx, t): t for t in krx_list}
+        for fut in as_completed(futures):
+            try:
+                ticker, data = fut.result()
+                results[ticker] = data
+            except Exception as e:
+                t = futures[fut]
+                print("  [오류] " + t + ": " + str(e))
+                results[t] = {"ticker": t, "is_krx": True, "ohlcv": pd.DataFrame(),
+                              "fundamental": {}, "investor": pd.DataFrame(),
+                              "naver": {}, "foreign_ratio": 0.0}
+            done += 1
+            if done % 20 == 0:
+                print("  KRX 진행: " + str(done) + "/" + str(len(krx_list)))
+    print("  KRX 완료: " + str(len(krx_list)) + "개")
+
+    # ── 2. 미국 배치 다운로드 (1회 호출) ──
+    print("  yfinance 배치 다운로드 중...")
+    try:
+        batch = yf.download(yf_list, period="6mo", group_by="ticker",
+                            threads=True, progress=False, auto_adjust=True)
+    except Exception as e:
+        print("  [배치 오류] " + str(e))
+        batch = pd.DataFrame()
+
     for ticker in yf_list:
-        print(f"  [yf] {ticker} {watchlist[ticker]}", end=" ")
-        results[ticker] = collect_stock_data(ticker, is_krx=False)
-        print(f"→ {len(results[ticker]['ohlcv'])}행")
+        try:
+            if not batch.empty and ticker in batch.columns.get_level_values(0):
+                df = batch[ticker].copy()
+                df.columns = [c.lower() for c in df.columns]
+                keep = [c for c in ["open","high","low","close","volume"] if c in df.columns]
+                ohlcv = df[keep].dropna()
+            else:
+                ohlcv = get_yf_ohlcv(ticker)
+        except Exception:
+            ohlcv = pd.DataFrame()
+
+        yf_fund = get_yf_fundamentals(ticker)
+        results[ticker] = {
+            "ticker": ticker, "is_krx": False, "ohlcv": ohlcv,
+            "fundamental": {"PER": yf_fund.get("PER",0), "PBR": yf_fund.get("PBR",0)},
+            "naver": yf_fund, "investor": pd.DataFrame(), "foreign_ratio": 0.0,
+        }
+    print("  yfinance 완료: " + str(len(yf_list)) + "개")
+
+    ok = sum(1 for r in results.values() if not r["ohlcv"].empty)
+    print("[수집 완료] OHLCV 확보: " + str(ok) + "/" + str(len(watchlist)))
     return results
