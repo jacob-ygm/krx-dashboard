@@ -79,7 +79,7 @@ def _load_history_from_github(repo=None, branch="main"):
         import base64, io
         file = repo.get_contents(HISTORY_FILE, ref=branch)
         content = base64.b64decode(file.content)
-        return pd.read_csv(io.BytesIO(content), compression="gzip")
+        return pd.read_csv(io.BytesIO(content))
     except:
         return None
 

@@ -548,7 +548,7 @@ def main():
         st.caption("신호 발생일 종가 매수 → n일 후 종가 매도 기준")
 
         # GitHub에서 히스토리 로드
-        HIST_URL = f"{GITHUB_RAW_BASE}/data/signals_history.csv.gz"
+        HIST_URL = f"{GITHUB_RAW_BASE}/data/signals_history.csv"
 
         @st.cache_data(ttl=3600)
         def load_history():
