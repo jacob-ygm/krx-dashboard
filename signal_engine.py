@@ -432,6 +432,27 @@ def generate_signal(ticker, name, stock_data, macro_snap,
     vix    = macro_snap.get("VIX",    {}).get("value", 20)
     krw    = macro_snap.get("USD/KRW",{}).get("value", 1350)
 
+    # Rule 3: 하락추세 중 BUY 억제 (87건/69% 검증 당시 포함)
+    ret_5d  = ind.get("ret_5d", 0)
+    ret_20d = ind.get("ret_20d", 0)
+    if overall >= 58 and ret_5d < -5 and ret_20d < -15:
+        overall -= 8
+
+    # Rule 5: 58~63점 구간 복합조건 미충족 시 강등
+    if 58 <= overall < 63:
+        conditions_met = sum([
+            30 <= ind.get("rsi", 50) <= 45,
+            ind.get("vol_surge", False),
+            ind.get("ma_aligned_up", False),
+            ind.get("macd_cross_up", False),
+        ])
+        if conditions_met < 2:
+            overall = min(overall, 57)
+
+    # Rule 6: 10일 -15% 급락주 BUY 억제
+    if ind.get("is_crash") and overall >= 58 and ind.get("rsi", 50) > 20:
+        overall -= 10
+
     gate_reason = None
     if overall >= 60:
         if s_mac > 16.5:
