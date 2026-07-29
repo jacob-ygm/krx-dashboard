@@ -65,7 +65,7 @@ def get_dynamic_sector_sets(historical, as_of=None):
     weak_sectors   = set(sec[sec["trend"].isin(["눌림목","약세"])]["sector"])
     strong = {t for t, s in SECTOR_MAP.items() if s in strong_sectors}
     weak   = {t for t, s in SECTOR_MAP.items() if s in weak_sectors}
-    return strong, weak, weak
+    return strong, weak
 
 def cross_sectional_rank(factor_dict):
     """종목별 팩터 → 그날 횡단면 백분위 (0~100)"""
