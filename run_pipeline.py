@@ -70,7 +70,14 @@ def run(github_token: str = None, verbose: bool = True):
 
     # ── 2-3. 신호 생성 ──────────────────────────────────────────────────
     print("\n▶ 신호 생성 중...")
-    signals = generate_all_signals(collected, WATCHLIST, macro_snap)
+    # 동적 섹터 계산 (Twin 검증 로직과 동일)
+    from sector_engine import get_dynamic_sector_sets, calc_sector_strength
+    hist_for_sector = {t: {"ohlcv": d.get("ohlcv", pd.DataFrame())} for t, d in collected.items()}
+    dyn_strong, dyn_weak = get_dynamic_sector_sets(hist_for_sector)
+    sector_table = calc_sector_strength(hist_for_sector)
+    print("  섹터 강세/반등: " + str(len(dyn_strong)) + "종목 | 약세/눌림목: " + str(len(dyn_weak)) + "종목")
+
+    signals = generate_all_signals(collected, WATCHLIST, macro_snap, dyn_strong, dyn_weak)
 
     # ── 2-4. DataFrame 변환 ─────────────────────────────────────────────
     rows = []
@@ -133,6 +140,7 @@ def run(github_token: str = None, verbose: bool = True):
     export_data = {
         "regime": regime,
         "macro": macro_snap,
+        "sector_strength": sector_table.to_dict("records") if not sector_table.empty else [],
         "signals": signals,
         "updated": now_kst.strftime("%Y-%m-%d %H:%M KST")
     }

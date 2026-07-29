@@ -538,12 +538,12 @@ def generate_signal(ticker, name, stock_data, macro_snap,
     }
 
 
-def generate_all_signals(collected, watchlist, macro_snap):
+def generate_all_signals(collected, watchlist, macro_snap, dyn_strong=None, dyn_weak=None):
     signals = []
     for ticker, name in watchlist.items():
         data = collected.get(ticker, {})
         try:
-            sig = generate_signal(ticker, name, data, macro_snap)
+            sig = generate_signal(ticker, name, data, macro_snap, dyn_strong, dyn_weak)
             signals.append(sig)
             print("  " + ticker + " " + name[:12] + " -> " + sig["signal"] + " " + str(sig["overall_score"]) + "점 [" + sig["confidence"] + "]")
         except Exception as e:
