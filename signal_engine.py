@@ -2,6 +2,10 @@
 import numpy as np
 import pandas as pd
 from config import WEIGHTS, SIGNAL_BANDS, CONFIDENCE_BANDS
+from sector_map import get_sector
+
+# Twin 검증: 개별재료 장세 업종은 가격 모멘텀 신호 미작동
+MOMENTUM_UNFIT_SECTORS = {"KR_플랫폼","KR_바이오","KR_내수소비","KR_에너지화학"}
 
 # ── 섹터 분류 ────────────────────────────────────────────────────────────────
 SECTOR_STRONG = {
@@ -463,6 +467,8 @@ def generate_signal(ticker, name, stock_data, macro_snap,
             gate_reason = "모멘텀 미달 (s_mom " + str(s_mom) + " < 9.0)"
         elif dyn_weak is not None and ticker in dyn_weak:
             gate_reason = "섹터 약세/눌림목 (해당 구간 승률 51%)"
+        elif get_sector(ticker) in MOMENTUM_UNFIT_SECTORS:
+            gate_reason = "모멘텀 부적합 업종 (개별재료 장세, 반기별 25/75/14/54%)"
         elif not investor.empty and "foreign" in investor.columns and (investor.tail(3)["foreign"] < 0).all():
             gate_reason = "외국인 3일 연속 순매도"
         if gate_reason is not None:
