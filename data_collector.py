@@ -235,6 +235,19 @@ def get_macro_snapshot():
             snap[name] = {"value": round(latest, 4), "chg_pct": chg}
         except Exception as e:
             print("[Macro] " + sym + ": " + str(e))
+
+    # 한국 지수는 네이버로 오버라이드 (야후 ^KS11/^KQ11 전일종가 행 오염 확인됨)
+    for idx_name, naver_code in [("KOSPI", "KOSPI"), ("KOSDAQ", "KOSDAQ")]:
+        try:
+            r = requests.get("https://m.stock.naver.com/api/index/" + naver_code + "/basic",
+                             headers=NAVER_HEADERS, timeout=10)
+            j = r.json()
+            price = float(str(j.get("closePrice", "0")).replace(",", ""))
+            chg   = float(str(j.get("fluctuationsRatio", "0")).replace(",", ""))
+            if price > 0:
+                snap[idx_name] = {"value": round(price, 2), "chg_pct": round(chg, 2)}
+        except Exception as e:
+            print("[Macro Naver] " + idx_name + ": " + str(e))
     return snap
 
 def collect_stock_data(ticker, is_krx=True):
