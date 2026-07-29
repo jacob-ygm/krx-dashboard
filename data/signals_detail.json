@@ -10,20 +10,20 @@
       "chg_pct": -0.82
     },
     "VIX": {
-      "value": 18.67,
-      "chg_pct": -0.16
+      "value": 18.23,
+      "chg_pct": -2.36
     },
     "DXY": {
-      "value": 101.325,
-      "chg_pct": -0.18
+      "value": 101.305,
+      "chg_pct": -0.2
     },
     "WTI": {
-      "value": 81.83,
-      "chg_pct": 3.24
+      "value": 82.02,
+      "chg_pct": 3.48
     },
     "Copper": {
-      "value": 6.3375,
-      "chg_pct": 0.25
+      "value": 6.347,
+      "chg_pct": 0.4
     },
     "KOSPI": {
       "value": 5663.24,
@@ -34,8 +34,8 @@
       "chg_pct": -6.12
     },
     "USD/KRW": {
-      "value": 1447.6899,
-      "chg_pct": -1.14
+      "value": 1447.3,
+      "chg_pct": -1.17
     }
   },
   "sector_strength": [
@@ -188,12 +188,12 @@
       "target_price": 175850.0,
       "stop_loss": 128820.0,
       "top_reasons": [
-        "USD/KRW 1447.6899 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
+        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
         "PER 6.83 \u2014 \uc800\ud3c9\uac00",
         "\ubd80\ucc44\ube44\uc728 482.7%"
       ],
       "risk_flags": [
-        "USD/KRW 1447.6899 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
+        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
         "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
       ],
       "indicators": {
@@ -255,12 +255,12 @@
       "target_price": 270.0,
       "stop_loss": 240.0,
       "top_reasons": [
-        "USD/KRW 1447.6899 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
+        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
         "ROE 25.74%",
         "\uc601\uc5c5\uc774\uc775\ub960 29.19%"
       ],
       "risk_flags": [
-        "USD/KRW 1447.6899 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
+        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
         "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
       ],
       "indicators": {
@@ -326,12 +326,12 @@
       "target_price": 220.0,
       "stop_loss": 180.0,
       "top_reasons": [
-        "USD/KRW 1447.6899 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
+        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
         "\uc601\uc5c5\uc774\uc775\ub960 22.9%",
         "\ubcf5\ud569 \ub9e4\uc218\uc870\uac74 2/3 \ucda9\uc871"
       ],
       "risk_flags": [
-        "USD/KRW 1447.6899 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
+        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
         "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
       ],
       "indicators": {
@@ -397,26 +397,26 @@
       "target_price": 160.0,
       "stop_loss": 120.0,
       "top_reasons": [
-        "USD/KRW 1447.6899 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
+        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
         "ROE 24.41%",
         "\uc601\uc5c5\uc774\uc775\ub960 16.96%"
       ],
       "risk_flags": [
-        "USD/KRW 1447.6899 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
+        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
         "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
       ],
       "indicators": {
         "ma5": 144.14800109863282,
         "ma20": 138.04467239379883,
         "ma60": 156.70295448303222,
-        "ma120": 178.25167331695556,
+        "ma120": 178.25167306264242,
         "current_price": 154.05999755859375,
         "ma_aligned_up": false,
         "ma_aligned_down": false,
         "pct_vs_ma5": 6.876263551638617,
         "pct_vs_ma20": 11.60155251707804,
         "pct_vs_ma60": -1.6866031231878575,
-        "pct_vs_ma120": -13.571640202976242,
+        "pct_vs_ma120": -13.571640079668178,
         "golden_cross": false,
         "dead_cross": false,
         "rsi": 62.8,
@@ -468,12 +468,12 @@
       "target_price": 380.0,
       "stop_loss": 310.0,
       "top_reasons": [
-        "USD/KRW 1447.6899 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
+        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
         "ROE 48.68%",
         "\uc601\uc5c5\uc774\uc775\ub960 34.03%"
       ],
       "risk_flags": [
-        "USD/KRW 1447.6899 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
+        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
         "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
       ],
       "indicators": {
@@ -539,26 +539,26 @@
       "target_price": 1180.0,
       "stop_loss": 970.0,
       "top_reasons": [
-        "USD/KRW 1447.6899 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
+        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
         "\uc601\uc5c5\uc774\uc775\ub960 42.32%",
         "\ubd80\ucc44\ube44\uc728 647.15%"
       ],
       "risk_flags": [
-        "USD/KRW 1447.6899 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
+        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
         "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
       ],
       "indicators": {
         "ma5": 1072.347998046875,
         "ma20": 1059.5629974365233,
         "ma60": 1021.2031748453776,
-        "ma120": 947.963671875,
+        "ma120": 947.9636723836263,
         "current_price": 1048.22998046875,
         "ma_aligned_up": true,
         "ma_aligned_down": false,
         "pct_vs_ma5": -2.2490849632817445,
         "pct_vs_ma20": -1.0695935017731029,
         "pct_vs_ma60": 2.646564982278332,
-        "pct_vs_ma120": 10.577020150511762,
+        "pct_vs_ma120": 10.577020091182089,
         "golden_cross": false,
         "dead_cross": false,
         "rsi": 49.0,
@@ -610,12 +610,12 @@
       "target_price": 1606500.0,
       "stop_loss": 1264880.0,
       "top_reasons": [
-        "USD/KRW 1447.6899 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
+        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
         "PER 48.05 \u2014 \uace0\ud3c9\uac00",
         "\uc601\uc5c5\uc774\uc775\ub960 30.14%"
       ],
       "risk_flags": [
-        "USD/KRW 1447.6899 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
+        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
         "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
       ],
       "indicators": {
@@ -677,12 +677,12 @@
       "target_price": 192580.0,
       "stop_loss": 163150.0,
       "top_reasons": [
-        "USD/KRW 1447.6899 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
+        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
         "\uc601\uc5c5\uc774\uc775\ub960 29.93%",
         "\uc678\uad6d\uc778 7\uc77c \uc5f0\uc18d \uc21c\ub9e4\uc218"
       ],
       "risk_flags": [
-        "USD/KRW 1447.6899 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
+        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
         "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
       ],
       "indicators": {
@@ -744,12 +744,12 @@
       "target_price": 239190.0,
       "stop_loss": 175670.0,
       "top_reasons": [
-        "USD/KRW 1447.6899 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
+        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
         "\uc601\uc5c5\uc774\uc775\ub960 15.39%",
         "\uc678\uad6d\uc778 7\uc77c \uc5f0\uc18d \uc21c\ub9e4\uc218"
       ],
       "risk_flags": [
-        "USD/KRW 1447.6899 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
+        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
         "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
       ],
       "indicators": {
@@ -811,12 +811,12 @@
       "target_price": 34370.0,
       "stop_loss": 27600.0,
       "top_reasons": [
-        "USD/KRW 1447.6899 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
+        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
         "PER 7.6 \u2014 \uc800\ud3c9\uac00",
         "\ubd80\ucc44\ube44\uc728 1391.14%"
       ],
       "risk_flags": [
-        "USD/KRW 1447.6899 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
+        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
         "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
       ],
       "indicators": {
@@ -878,12 +878,12 @@
       "target_price": 22540.0,
       "stop_loss": 17720.0,
       "top_reasons": [
-        "USD/KRW 1447.6899 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
+        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
         "\uc678\uad6d\uc778 9\uc77c \uc5f0\uc18d \uc21c\ub9e4\uc218",
         "\uae30\uad00 \uc21c\ub9e4\uc218"
       ],
       "risk_flags": [
-        "USD/KRW 1447.6899 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
+        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
         "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
       ],
       "indicators": {
@@ -945,12 +945,12 @@
       "target_price": 130560.0,
       "stop_loss": 101850.0,
       "top_reasons": [
-        "USD/KRW 1447.6899 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
+        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
         "PER 8.82 \u2014 \uc800\ud3c9\uac00",
         "ROE 28.11%"
       ],
       "risk_flags": [
-        "USD/KRW 1447.6899 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
+        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
         "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
       ],
       "indicators": {
@@ -1012,12 +1012,12 @@
       "target_price": 38660.0,
       "stop_loss": 32400.0,
       "top_reasons": [
-        "USD/KRW 1447.6899 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
+        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
         "ROE \uc801\uc790",
         "\uc678\uad6d\uc778 8\uc77c \uc5f0\uc18d \uc21c\ub9e4\uc218"
       ],
       "risk_flags": [
-        "USD/KRW 1447.6899 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
+        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
         "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
       ],
       "indicators": {
@@ -1079,12 +1079,12 @@
       "target_price": 59160.0,
       "stop_loss": 49960.0,
       "top_reasons": [
-        "USD/KRW 1447.6899 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
+        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
         "PER 8.79 \u2014 \uc800\ud3c9\uac00",
         "\uc678\uad6d\uc778 9\uc77c \uc5f0\uc18d \uc21c\ub9e4\uc218"
       ],
       "risk_flags": [
-        "USD/KRW 1447.6899 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
+        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
         "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
       ],
       "indicators": {
@@ -1146,12 +1146,12 @@
       "target_price": 260100.0,
       "stop_loss": 214860.0,
       "top_reasons": [
-        "USD/KRW 1447.6899 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
+        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
         "\uc601\uc5c5\uc774\uc775\ub960 40.2%",
         "\uc678\uad6d\uc778 7\uc77c \uc5f0\uc18d \uc21c\ub9e4\uc218"
       ],
       "risk_flags": [
-        "USD/KRW 1447.6899 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
+        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
         "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
       ],
       "indicators": {
@@ -1213,12 +1213,12 @@
       "target_price": 101800.0,
       "stop_loss": 64990.0,
       "top_reasons": [
-        "USD/KRW 1447.6899 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
+        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
         "PER 6.05 \u2014 \uc800\ud3c9\uac00",
         "\uc678\uad6d\uc778 9\uc77c \uc5f0\uc18d \uc21c\ub9e4\uc218"
       ],
       "risk_flags": [
-        "USD/KRW 1447.6899 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
+        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
         "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
       ],
       "indicators": {
@@ -1280,12 +1280,12 @@
       "target_price": 78640.0,
       "stop_loss": 64210.0,
       "top_reasons": [
-        "USD/KRW 1447.6899 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
+        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
         "\uc678\uad6d\uc778 7\uc77c \uc5f0\uc18d \uc21c\ub9e4\uc218",
         "\uae30\uad00 \uc21c\ub9e4\uc218"
       ],
       "risk_flags": [
-        "USD/KRW 1447.6899 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
+        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
         "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
       ],
       "indicators": {
@@ -1347,12 +1347,12 @@
       "target_price": 60.0,
       "stop_loss": 60.0,
       "top_reasons": [
-        "USD/KRW 1447.6899 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
+        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
         "\uc601\uc5c5\uc774\uc775\ub960 38.3%",
         "MA \uc815\ubc30\uc5f4"
       ],
       "risk_flags": [
-        "USD/KRW 1447.6899 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
+        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
         "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
       ],
       "indicators": {
@@ -1418,12 +1418,12 @@
       "target_price": 700.0,
       "stop_loss": 600.0,
       "top_reasons": [
-        "USD/KRW 1447.6899 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
+        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
         "\uc601\uc5c5\uc774\uc775\ub960 20.66%",
         "\uac15\uc138/\ub20c\ub9bc\ubaa9 \uc139\ud130"
       ],
       "risk_flags": [
-        "USD/KRW 1447.6899 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
+        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
         "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
       ],
       "indicators": {
@@ -1489,12 +1489,12 @@
       "target_price": 80.0,
       "stop_loss": 60.0,
       "top_reasons": [
-        "USD/KRW 1447.6899 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
+        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
         "ROE 35.62%",
         "\uc601\uc5c5\uc774\uc775\ub960 21.42%"
       ],
       "risk_flags": [
-        "USD/KRW 1447.6899 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
+        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
         "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
       ],
       "indicators": {
@@ -1560,12 +1560,12 @@
       "target_price": 100.0,
       "stop_loss": 80.0,
       "top_reasons": [
-        "USD/KRW 1447.6899 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
+        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
         "ROE 21.95%",
         "\uc601\uc5c5\uc774\uc775\ub960 25.06%"
       ],
       "risk_flags": [
-        "USD/KRW 1447.6899 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
+        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
         "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
       ],
       "indicators": {
@@ -1631,12 +1631,12 @@
       "target_price": 195330.0,
       "stop_loss": 160340.0,
       "top_reasons": [
-        "USD/KRW 1447.6899 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
+        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
         "\uc601\uc5c5\uc774\uc775\ub960 19.91%",
         "\uc678\uad6d\uc778 5\uc77c \uc21c\ub9e4\uc218"
       ],
       "risk_flags": [
-        "USD/KRW 1447.6899 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
+        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
         "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
       ],
       "indicators": {
@@ -1698,12 +1698,12 @@
       "target_price": 237660.0,
       "stop_loss": 172660.0,
       "top_reasons": [
-        "USD/KRW 1447.6899 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
+        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
         "PER 9.72 \u2014 \uc800\ud3c9\uac00",
         "\uc678\uad6d\uc778 8\uc77c \uc5f0\uc18d \uc21c\ub9e4\uc218"
       ],
       "risk_flags": [
-        "USD/KRW 1447.6899 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
+        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
         "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
       ],
       "indicators": {
@@ -1765,26 +1765,26 @@
       "target_price": 370.0,
       "stop_loss": 330.0,
       "top_reasons": [
-        "USD/KRW 1447.6899 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
+        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
         "ROE 60.35%",
         "\uc601\uc5c5\uc774\uc775\ub960 67.35%"
       ],
       "risk_flags": [
-        "USD/KRW 1447.6899 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
+        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
         "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
       ],
       "indicators": {
         "ma5": 355.82200317382814,
         "ma20": 354.2195022583008,
         "ma60": 334.9365483601888,
-        "ma120": 323.564705657959,
+        "ma120": 323.56470591227213,
         "current_price": 362.5299987792969,
         "ma_aligned_up": true,
         "ma_aligned_down": false,
         "pct_vs_ma5": 1.885211017203936,
         "pct_vs_ma20": 2.3461431310283887,
         "pct_vs_ma60": 8.238411291393088,
-        "pct_vs_ma120": 12.042504154494594,
+        "pct_vs_ma120": 12.04250406643219,
         "golden_cross": false,
         "dead_cross": false,
         "rsi": 59.2,
@@ -1836,12 +1836,12 @@
       "target_price": 54570.0,
       "stop_loss": 37150.0,
       "top_reasons": [
-        "USD/KRW 1447.6899 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
+        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
         "ROE 24.45%",
         "\uc678\uad6d\uc778 7\uc77c \uc5f0\uc18d \uc21c\ub9e4\uc218"
       ],
       "risk_flags": [
-        "USD/KRW 1447.6899 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
+        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
         "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
       ],
       "indicators": {
@@ -1903,12 +1903,12 @@
       "target_price": 80.0,
       "stop_loss": 60.0,
       "top_reasons": [
-        "USD/KRW 1447.6899 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
+        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
         "ROE 49.54%",
         "\uc601\uc5c5\uc774\uc775\ub960 33.38%"
       ],
       "risk_flags": [
-        "USD/KRW 1447.6899 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
+        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
         "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
       ],
       "indicators": {
@@ -1974,12 +1974,12 @@
       "target_price": 715020.0,
       "stop_loss": 553870.0,
       "top_reasons": [
-        "USD/KRW 1447.6899 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
+        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
         "\ubd80\ucc44\ube44\uc728 426.62%",
         "\uc678\uad6d\uc778 6\uc77c \uc21c\ub9e4\uc218"
       ],
       "risk_flags": [
-        "USD/KRW 1447.6899 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
+        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
         "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
       ],
       "indicators": {
@@ -2041,12 +2041,12 @@
       "target_price": 520.0,
       "stop_loss": 470.0,
       "top_reasons": [
-        "USD/KRW 1447.6899 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
+        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
         "\ubcf5\ud569 \ub9e4\uc218\uc870\uac74 2/3 \ucda9\uc871",
         "\uac15\uc138/\ub20c\ub9bc\ubaa9 \uc139\ud130"
       ],
       "risk_flags": [
-        "USD/KRW 1447.6899 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
+        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
         "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
       ],
       "indicators": {
@@ -2112,12 +2112,12 @@
       "target_price": 470.0,
       "stop_loss": 400.0,
       "top_reasons": [
-        "USD/KRW 1447.6899 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
+        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
         "MA \uc815\ubc30\uc5f4",
         "\ubcf5\ud569 \ub9e4\uc218\uc870\uac74 2/3 \ucda9\uc871"
       ],
       "risk_flags": [
-        "USD/KRW 1447.6899 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
+        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
         "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
       ],
       "indicators": {
@@ -2183,12 +2183,12 @@
       "target_price": 138520.0,
       "stop_loss": 88270.0,
       "top_reasons": [
-        "USD/KRW 1447.6899 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
+        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
         "\uc678\uad6d\uc778 10\uc77c \uc5f0\uc18d \uc21c\ub9e4\uc218",
         "\uae30\uad00 \uc21c\ub9e4\uc218"
       ],
       "risk_flags": [
-        "USD/KRW 1447.6899 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
+        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
         "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
       ],
       "indicators": {
@@ -2250,12 +2250,12 @@
       "target_price": 230520.0,
       "stop_loss": 177510.0,
       "top_reasons": [
-        "USD/KRW 1447.6899 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
+        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
         "\uc678\uad6d\uc778 8\uc77c \uc5f0\uc18d \uc21c\ub9e4\uc218",
         "\ubcf5\ud569 \ub9e4\uc218\uc870\uac74 2/3 \ucda9\uc871"
       ],
       "risk_flags": [
-        "USD/KRW 1447.6899 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
+        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
         "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
       ],
       "indicators": {
@@ -2317,12 +2317,12 @@
       "target_price": 102510.0,
       "stop_loss": 81770.0,
       "top_reasons": [
-        "USD/KRW 1447.6899 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
+        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
         "PER 9.85 \u2014 \uc800\ud3c9\uac00",
         "\uc601\uc5c5\uc774\uc775\ub960 18.44%"
       ],
       "risk_flags": [
-        "USD/KRW 1447.6899 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
+        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
         "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
       ],
       "indicators": {
@@ -2384,12 +2384,12 @@
       "target_price": 150.0,
       "stop_loss": 130.0,
       "top_reasons": [
-        "USD/KRW 1447.6899 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
+        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
         "ROE 51.51%",
         "\uc601\uc5c5\uc774\uc775\ub960 16.84%"
       ],
       "risk_flags": [
-        "USD/KRW 1447.6899 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
+        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
         "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
       ],
       "indicators": {
@@ -2455,26 +2455,26 @@
       "target_price": 320.0,
       "stop_loss": 250.0,
       "top_reasons": [
-        "USD/KRW 1447.6899 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
+        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
         "ROE 22.5%",
         "\uc601\uc5c5\uc774\uc775\ub960 46.97%"
       ],
       "risk_flags": [
-        "USD/KRW 1447.6899 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
+        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
         "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
       ],
       "indicators": {
         "ma5": 291.23200073242185,
         "ma20": 281.1485885620117,
         "ma60": 312.77682774861654,
-        "ma120": 362.4446338653564,
+        "ma120": 362.444634882609,
         "current_price": 303.9100036621094,
         "ma_aligned_up": false,
         "ma_aligned_down": false,
         "pct_vs_ma5": 4.353231409255676,
         "pct_vs_ma20": 8.095866750217496,
         "pct_vs_ma60": -2.834872439346292,
-        "pct_vs_ma120": -16.149950843248494,
+        "pct_vs_ma120": -16.149951078585623,
         "golden_cross": false,
         "dead_cross": false,
         "rsi": 62.7,
@@ -2526,12 +2526,12 @@
       "target_price": 20.0,
       "stop_loss": 20.0,
       "top_reasons": [
-        "USD/KRW 1447.6899 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
+        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
         "\uc601\uc5c5\uc774\uc775\ub960 18.28%",
         "RSI \uacfc\ub9e4\ub3c4 \ud68c\ubcf5 (42.6)"
       ],
       "risk_flags": [
-        "USD/KRW 1447.6899 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
+        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
         "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
       ],
       "indicators": {
@@ -2597,12 +2597,12 @@
       "target_price": 159630.0,
       "stop_loss": 102340.0,
       "top_reasons": [
-        "USD/KRW 1447.6899 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
+        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
         "\uc678\uad6d\uc778 6\uc77c \uc21c\ub9e4\uc218",
         "\uae30\uad00 \uc21c\ub9e4\uc218"
       ],
       "risk_flags": [
-        "USD/KRW 1447.6899 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
+        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
         "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
       ],
       "indicators": {
@@ -2664,12 +2664,12 @@
       "target_price": 219300.0,
       "stop_loss": 171590.0,
       "top_reasons": [
-        "USD/KRW 1447.6899 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
+        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
         "PER 8.43 \u2014 \uc800\ud3c9\uac00",
         "\uc678\uad6d\uc778 7\uc77c \uc5f0\uc18d \uc21c\ub9e4\uc218"
       ],
       "risk_flags": [
-        "USD/KRW 1447.6899 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
+        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
         "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
       ],
       "indicators": {
@@ -2731,26 +2731,26 @@
       "target_price": 370.0,
       "stop_loss": 310.0,
       "top_reasons": [
-        "USD/KRW 1447.6899 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
+        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
         "\uc601\uc5c5\uc774\uc775\ub960 50.39%",
         "MA \uc815\ubc30\uc5f4"
       ],
       "risk_flags": [
-        "USD/KRW 1447.6899 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
+        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
         "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
       ],
       "indicators": {
         "ma5": 350.55,
         "ma20": 339.950830078125,
         "ma60": 319.72027994791665,
-        "ma120": 309.4547950744629,
+        "ma120": 309.4547945658366,
         "current_price": 356.20001220703125,
         "ma_aligned_up": true,
         "ma_aligned_down": false,
         "pct_vs_ma5": 1.6117564418859587,
         "pct_vs_ma20": 4.77986246574893,
         "pct_vs_ma60": 11.409890002929203,
-        "pct_vs_ma120": 15.105669027141833,
+        "pct_vs_ma120": 15.105669216331874,
         "golden_cross": false,
         "dead_cross": false,
         "rsi": 65.7,
@@ -2802,12 +2802,12 @@
       "target_price": 10.0,
       "stop_loss": 10.0,
       "top_reasons": [
-        "USD/KRW 1447.6899 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
+        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
         "PER 109.17 \u2014 \uace0\ud3c9\uac00",
         "MA \uc815\ubc30\uc5f4"
       ],
       "risk_flags": [
-        "USD/KRW 1447.6899 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
+        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
         "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
       ],
       "indicators": {
@@ -2873,12 +2873,12 @@
       "target_price": 80.0,
       "stop_loss": 60.0,
       "top_reasons": [
-        "USD/KRW 1447.6899 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
+        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
         "ROE 35.31%",
         "MA \uc5ed\ubc30\uc5f4"
       ],
       "risk_flags": [
-        "USD/KRW 1447.6899 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
+        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
         "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
       ],
       "indicators": {
@@ -2944,12 +2944,12 @@
       "target_price": 200.0,
       "stop_loss": 170.0,
       "top_reasons": [
-        "USD/KRW 1447.6899 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
+        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
         "ROE 33.82%",
         "\uc601\uc5c5\uc774\uc775\ub960 18.33%"
       ],
       "risk_flags": [
-        "USD/KRW 1447.6899 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
+        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
         "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
       ],
       "indicators": {
@@ -3015,26 +3015,26 @@
       "target_price": 410.0,
       "stop_loss": 350.0,
       "top_reasons": [
-        "USD/KRW 1447.6899 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
+        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
         "ROE 34.01%",
         "\uc601\uc5c5\uc774\uc775\ub960 46.33%"
       ],
       "risk_flags": [
-        "USD/KRW 1447.6899 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
+        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
         "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
       ],
       "indicators": {
         "ma5": 388.0940002441406,
         "ma20": 387.69849853515626,
         "ma60": 400.86876118977864,
-        "ma120": 398.5277806599935,
+        "ma120": 398.5277809143066,
         "current_price": 389.1000061035156,
         "ma_aligned_up": false,
         "ma_aligned_down": false,
         "pct_vs_ma5": 0.2592170604910571,
         "pct_vs_ma20": 0.36149419552944373,
         "pct_vs_ma60": -2.935812471725996,
-        "pct_vs_ma120": -2.365650530275387,
+        "pct_vs_ma120": -2.3656505925789384,
         "golden_cross": false,
         "dead_cross": false,
         "rsi": 50.2,
@@ -3086,11 +3086,11 @@
       "target_price": 10.0,
       "stop_loss": 10.0,
       "top_reasons": [
-        "USD/KRW 1447.6899 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
+        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
         "\uac15\uc138/\ub20c\ub9bc\ubaa9 \uc139\ud130"
       ],
       "risk_flags": [
-        "USD/KRW 1447.6899 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
+        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
         "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
       ],
       "indicators": {
@@ -3156,12 +3156,12 @@
       "target_price": 160.0,
       "stop_loss": 110.0,
       "top_reasons": [
-        "USD/KRW 1447.6899 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
+        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
         "ROE 53.38%",
         "\uc601\uc5c5\uc774\uc775\ub960 36.2%"
       ],
       "risk_flags": [
-        "USD/KRW 1447.6899 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
+        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
         "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
       ],
       "indicators": {
@@ -3227,12 +3227,12 @@
       "target_price": 290.0,
       "stop_loss": 250.0,
       "top_reasons": [
-        "USD/KRW 1447.6899 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
+        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
         "\uc601\uc5c5\uc774\uc775\ub960 44.25%",
         "MA \uc5ed\ubc30\uc5f4"
       ],
       "risk_flags": [
-        "USD/KRW 1447.6899 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
+        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
         "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
       ],
       "indicators": {
@@ -3298,12 +3298,12 @@
       "target_price": 60.0,
       "stop_loss": 40.0,
       "top_reasons": [
-        "USD/KRW 1447.6899 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
+        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
         "MA \uc815\ubc30\uc5f4",
         "MACD \uace8\ub4e0\ud06c\ub85c\uc2a4"
       ],
       "risk_flags": [
-        "USD/KRW 1447.6899 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
+        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
         "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
       ],
       "indicators": {
@@ -3369,12 +3369,12 @@
       "target_price": 190.0,
       "stop_loss": 160.0,
       "top_reasons": [
-        "USD/KRW 1447.6899 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
+        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
         "\uc601\uc5c5\uc774\uc775\ub960 15.47%",
         "\ubcfc\ub9b0\uc800\ubc34\ub4dc \ud558\ub2e8"
       ],
       "risk_flags": [
-        "USD/KRW 1447.6899 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
+        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
         "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
       ],
       "indicators": {
@@ -3440,12 +3440,12 @@
       "target_price": 20.0,
       "stop_loss": 20.0,
       "top_reasons": [
-        "USD/KRW 1447.6899 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
+        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
         "MA \uc5ed\ubc30\uc5f4",
         "RSI \uacfc\ub9e4\ub3c4 \ud68c\ubcf5 (39.7)"
       ],
       "risk_flags": [
-        "USD/KRW 1447.6899 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
+        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
         "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
       ],
       "indicators": {
@@ -3511,12 +3511,12 @@
       "target_price": 220.0,
       "stop_loss": 180.0,
       "top_reasons": [
-        "USD/KRW 1447.6899 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
+        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
         "ROE 114.29%",
         "\uc601\uc5c5\uc774\uc775\ub960 65.6%"
       ],
       "risk_flags": [
-        "USD/KRW 1447.6899 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
+        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
         "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
       ],
       "indicators": {
@@ -3582,12 +3582,12 @@
       "target_price": 90.0,
       "stop_loss": 80.0,
       "top_reasons": [
-        "USD/KRW 1447.6899 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
+        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
         "ROE 43.37%",
         "\uc601\uc5c5\uc774\uc775\ub960 35.05%"
       ],
       "risk_flags": [
-        "USD/KRW 1447.6899 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
+        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
         "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
       ],
       "indicators": {
@@ -3653,26 +3653,26 @@
       "target_price": 320.0,
       "stop_loss": 190.0,
       "top_reasons": [
-        "USD/KRW 1447.6899 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
+        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
         "ROE 34.46%",
         "\uc601\uc5c5\uc774\uc775\ub960 16.55%"
       ],
       "risk_flags": [
-        "USD/KRW 1447.6899 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
+        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
         "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
       ],
       "indicators": {
         "ma5": 210.6779998779297,
         "ma20": 252.1074981689453,
         "ma60": 254.35160903930665,
-        "ma120": 251.41080894470215,
+        "ma120": 251.4108081817627,
         "current_price": 216.27999877929688,
         "ma_aligned_up": false,
         "ma_aligned_down": false,
         "pct_vs_ma5": 2.6590336459493047,
         "pct_vs_ma20": -14.211199448593659,
         "pct_vs_ma60": -14.968102778593517,
-        "pct_vs_ma120": -13.973468488831886,
+        "pct_vs_ma120": -13.973468227772956,
         "golden_cross": false,
         "dead_cross": false,
         "rsi": 16.1,
@@ -3724,12 +3724,12 @@
       "target_price": 540.0,
       "stop_loss": 450.0,
       "top_reasons": [
-        "USD/KRW 1447.6899 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
+        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
         "ROE 24.2%",
         "\uc601\uc5c5\uc774\uc775\ub960 38.13%"
       ],
       "risk_flags": [
-        "USD/KRW 1447.6899 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
+        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
         "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
       ],
       "indicators": {
@@ -3795,12 +3795,12 @@
       "target_price": 390.0,
       "stop_loss": 340.0,
       "top_reasons": [
-        "USD/KRW 1447.6899 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
+        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
         "ROE 101.32%",
         "\uc601\uc5c5\uc774\uc775\ub960 33.8%"
       ],
       "risk_flags": [
-        "USD/KRW 1447.6899 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
+        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
         "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
       ],
       "indicators": {
@@ -3866,12 +3866,12 @@
       "target_price": 1150.0,
       "stop_loss": 920.0,
       "top_reasons": [
-        "USD/KRW 1447.6899 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
+        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
         "\uc601\uc5c5\uc774\uc775\ub960 35.08%",
         "\uac15\uc138/\ub20c\ub9bc\ubaa9 \uc139\ud130"
       ],
       "risk_flags": [
-        "USD/KRW 1447.6899 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
+        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
         "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
       ],
       "indicators": {
@@ -3937,12 +3937,12 @@
       "target_price": 350.0,
       "stop_loss": 270.0,
       "top_reasons": [
-        "USD/KRW 1447.6899 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
+        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
         "PER 40.83 \u2014 \uace0\ud3c9\uac00",
         "ROE 141.47%"
       ],
       "risk_flags": [
-        "USD/KRW 1447.6899 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
+        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
         "RSI 72.1 \uacfc\ub9e4\uc218",
         "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
       ],
@@ -4009,12 +4009,12 @@
       "target_price": 120.0,
       "stop_loss": 100.0,
       "top_reasons": [
-        "USD/KRW 1447.6899 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
+        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
         "ROE 24.13%",
         "MA \uc5ed\ubc30\uc5f4"
       ],
       "risk_flags": [
-        "USD/KRW 1447.6899 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
+        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
         "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
       ],
       "indicators": {
@@ -4080,12 +4080,12 @@
       "target_price": 700.0,
       "stop_loss": 530.0,
       "top_reasons": [
-        "USD/KRW 1447.6899 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
+        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
         "ROE 32.93%",
         "\uc601\uc5c5\uc774\uc775\ub960 40.62%"
       ],
       "risk_flags": [
-        "USD/KRW 1447.6899 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
+        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
         "\ub370\ub4dc\ud06c\ub85c\uc2a4 \ubc1c\uc0dd",
         "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
       ],
@@ -4152,12 +4152,12 @@
       "target_price": 20.0,
       "stop_loss": 10.0,
       "top_reasons": [
-        "USD/KRW 1447.6899 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
+        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
         "PER 2.21 \u2014 \uc800\ud3c9\uac00",
         "ROE 147.81%"
       ],
       "risk_flags": [
-        "USD/KRW 1447.6899 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
+        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
         "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
       ],
       "indicators": {
@@ -4223,12 +4223,12 @@
       "target_price": 396780.0,
       "stop_loss": 304580.0,
       "top_reasons": [
-        "USD/KRW 1447.6899 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
+        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
         "PER 9.42 \u2014 \uc800\ud3c9\uac00",
         "\uc678\uad6d\uc778 8\uc77c \uc5f0\uc18d \uc21c\ub9e4\uc218"
       ],
       "risk_flags": [
-        "USD/KRW 1447.6899 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
+        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
         "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
       ],
       "indicators": {
@@ -4290,12 +4290,12 @@
       "target_price": 15500.0,
       "stop_loss": 13540.0,
       "top_reasons": [
-        "USD/KRW 1447.6899 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
+        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
         "\uc678\uad6d\uc778 6\uc77c \uc21c\ub9e4\uc218",
         "\uae30\uad00 \uc21c\ub9e4\uc218"
       ],
       "risk_flags": [
-        "USD/KRW 1447.6899 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
+        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
         "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
       ],
       "indicators": {
@@ -4357,12 +4357,12 @@
       "target_price": 143310.0,
       "stop_loss": 103890.0,
       "top_reasons": [
-        "USD/KRW 1447.6899 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
+        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
         "\uc678\uad6d\uc778 9\uc77c \uc5f0\uc18d \uc21c\ub9e4\uc218",
         "\ubcfc\ub9b0\uc800\ubc34\ub4dc \ud558\ub2e8"
       ],
       "risk_flags": [
-        "USD/KRW 1447.6899 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
+        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
         "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
       ],
       "indicators": {
@@ -4424,26 +4424,26 @@
       "target_price": 200.0,
       "stop_loss": 170.0,
       "top_reasons": [
-        "USD/KRW 1447.6899 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
+        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
         "\uc601\uc5c5\uc774\uc775\ub960 40.0%",
         "MA \uc815\ubc30\uc5f4"
       ],
       "risk_flags": [
-        "USD/KRW 1447.6899 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
+        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
         "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
       ],
       "indicators": {
         "ma5": 192.4239990234375,
         "ma20": 186.04149932861327,
         "ma60": 180.77857513427733,
-        "ma120": 174.7548812866211,
+        "ma120": 174.75488103230794,
         "current_price": 195.66000366210938,
         "ma_aligned_up": true,
         "ma_aligned_down": false,
         "pct_vs_ma5": 1.6817053252685676,
         "pct_vs_ma20": 5.17008536708603,
         "pct_vs_ma60": 8.231854088228395,
-        "pct_vs_ma120": 11.962539885338664,
+        "pct_vs_ma120": 11.962540048272864,
         "golden_cross": false,
         "dead_cross": false,
         "rsi": 58.1,
@@ -4495,12 +4495,12 @@
       "target_price": 22590.0,
       "stop_loss": 19240.0,
       "top_reasons": [
-        "USD/KRW 1447.6899 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
+        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
         "PER 6.08 \u2014 \uc800\ud3c9\uac00",
         "\ubd80\ucc44\ube44\uc728 1309.41%"
       ],
       "risk_flags": [
-        "USD/KRW 1447.6899 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
+        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
         "\ub370\ub4dc\ud06c\ub85c\uc2a4 \ubc1c\uc0dd",
         "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
       ],
@@ -4563,12 +4563,12 @@
       "target_price": 250.0,
       "stop_loss": 190.0,
       "top_reasons": [
-        "USD/KRW 1447.6899 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
+        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
         "ROE 62.95%",
         "\uc601\uc5c5\uc774\uc775\ub960 35.33%"
       ],
       "risk_flags": [
-        "USD/KRW 1447.6899 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
+        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
         "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
       ],
       "indicators": {
@@ -4634,12 +4634,12 @@
       "target_price": 145350.0,
       "stop_loss": 110190.0,
       "top_reasons": [
-        "USD/KRW 1447.6899 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
+        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
         "PER 8.3 \u2014 \uc800\ud3c9\uac00",
         "\ubd80\ucc44\ube44\uc728 1373.12%"
       ],
       "risk_flags": [
-        "USD/KRW 1447.6899 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
+        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
         "\ub370\ub4dc\ud06c\ub85c\uc2a4 \ubc1c\uc0dd",
         "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
       ],
@@ -4702,12 +4702,12 @@
       "target_price": 58960.0,
       "stop_loss": 45640.0,
       "top_reasons": [
-        "USD/KRW 1447.6899 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
+        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
         "\uc678\uad6d\uc778 7\uc77c \uc5f0\uc18d \uc21c\ub9e4\uc218",
         "\uc57d\uc138 \uc139\ud130"
       ],
       "risk_flags": [
-        "USD/KRW 1447.6899 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
+        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
         "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
       ],
       "indicators": {
@@ -4769,12 +4769,12 @@
       "target_price": 420.0,
       "stop_loss": 350.0,
       "top_reasons": [
-        "USD/KRW 1447.6899 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
+        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
         "PER 63.7 \u2014 \uace0\ud3c9\uac00",
         "ROE 37.28%"
       ],
       "risk_flags": [
-        "USD/KRW 1447.6899 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
+        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
         "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
       ],
       "indicators": {
@@ -4840,12 +4840,12 @@
       "target_price": 210.0,
       "stop_loss": 160.0,
       "top_reasons": [
-        "USD/KRW 1447.6899 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
+        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
         "\uc601\uc5c5\uc774\uc775\ub960 19.78%",
         "\uac15\uc138/\ub20c\ub9bc\ubaa9 \uc139\ud130"
       ],
       "risk_flags": [
-        "USD/KRW 1447.6899 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
+        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
         "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
       ],
       "indicators": {
@@ -4911,12 +4911,12 @@
       "target_price": 224910.0,
       "stop_loss": 135410.0,
       "top_reasons": [
-        "USD/KRW 1447.6899 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
+        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
         "\uc678\uad6d\uc778 6\uc77c \uc21c\ub9e4\uc218",
         "\uc678\uad6d\uc778 \ubcf4\uc720 76.71%"
       ],
       "risk_flags": [
-        "USD/KRW 1447.6899 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
+        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
         "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
       ],
       "indicators": {
@@ -4978,12 +4978,12 @@
       "target_price": 133110.0,
       "stop_loss": 102530.0,
       "top_reasons": [
-        "USD/KRW 1447.6899 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
+        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
         "\uc678\uad6d\uc778 5\uc77c \uc21c\ub9e4\uc218",
         "\uae30\uad00 \uc21c\ub9e4\uc218"
       ],
       "risk_flags": [
-        "USD/KRW 1447.6899 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
+        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
         "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
       ],
       "indicators": {
@@ -5045,12 +5045,12 @@
       "target_price": 198390.0,
       "stop_loss": 149960.0,
       "top_reasons": [
-        "USD/KRW 1447.6899 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
+        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
         "\ubd80\ucc44\ube44\uc728 1120.62%",
         "\uc678\uad6d\uc778 6\uc77c \uc21c\ub9e4\uc218"
       ],
       "risk_flags": [
-        "USD/KRW 1447.6899 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
+        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
         "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
       ],
       "indicators": {
@@ -5112,12 +5112,12 @@
       "target_price": 79150.0,
       "stop_loss": 59660.0,
       "top_reasons": [
-        "USD/KRW 1447.6899 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
+        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
         "PER 7.31 \u2014 \uc800\ud3c9\uac00",
         "\uc678\uad6d\uc778 9\uc77c \uc5f0\uc18d \uc21c\ub9e4\uc218"
       ],
       "risk_flags": [
-        "USD/KRW 1447.6899 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
+        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
         "\ub370\ub4dc\ud06c\ub85c\uc2a4 \ubc1c\uc0dd",
         "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
       ],
@@ -5180,12 +5180,12 @@
       "target_price": 160.0,
       "stop_loss": 130.0,
       "top_reasons": [
-        "USD/KRW 1447.6899 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
+        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
         "RSI \uacfc\ub9e4\uc218 (74.2)",
         "\uac15\ud55c \uc0c1\uc2b9 \ubaa8\uba58\ud140"
       ],
       "risk_flags": [
-        "USD/KRW 1447.6899 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
+        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
         "RSI 74.2 \uacfc\ub9e4\uc218",
         "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
       ],
@@ -5193,14 +5193,14 @@
         "ma5": 154.952001953125,
         "ma20": 144.6145004272461,
         "ma60": 147.1244623819987,
-        "ma120": 149.86236381530762,
+        "ma120": 149.86236394246419,
         "current_price": 154.77000427246094,
         "ma_aligned_up": false,
         "ma_aligned_down": false,
         "pct_vs_ma5": -0.11745422993574284,
         "pct_vs_ma20": 7.0224658075169755,
         "pct_vs_ma60": 5.196648991390096,
-        "pct_vs_ma120": 3.274765145971914,
+        "pct_vs_ma120": 3.274765058344409,
         "golden_cross": false,
         "dead_cross": false,
         "rsi": 74.2,
@@ -5252,12 +5252,12 @@
       "target_price": 200.0,
       "stop_loss": 160.0,
       "top_reasons": [
-        "USD/KRW 1447.6899 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
+        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
         "RSI \uacfc\ub9e4\uc218 (76.1)",
         "\uac15\ud55c \uc0c1\uc2b9 \ubaa8\uba58\ud140"
       ],
       "risk_flags": [
-        "USD/KRW 1447.6899 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
+        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
         "RSI 76.1 \uacfc\ub9e4\uc218",
         "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
       ],
@@ -5265,14 +5265,14 @@
         "ma5": 192.6519989013672,
         "ma20": 180.37099990844726,
         "ma60": 183.21009267171223,
-        "ma120": 186.01399828592938,
+        "ma120": 186.01399790445964,
         "current_price": 190.0,
         "ma_aligned_up": false,
         "ma_aligned_down": false,
         "pct_vs_ma5": -1.3765748170227687,
         "pct_vs_ma20": 5.338441377183822,
         "pct_vs_ma60": 3.706077121228457,
-        "pct_vs_ma120": 2.1428504041634433,
+        "pct_vs_ma120": 2.142850613633729,
         "golden_cross": false,
         "dead_cross": false,
         "rsi": 76.1,
@@ -5324,12 +5324,12 @@
       "target_price": 200.0,
       "stop_loss": 160.0,
       "top_reasons": [
-        "USD/KRW 1447.6899 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
+        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
         "ROE 36.08%",
         "\uc601\uc5c5\uc774\uc775\ub960 22.06%"
       ],
       "risk_flags": [
-        "USD/KRW 1447.6899 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
+        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
         "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
       ],
       "indicators": {
@@ -5395,12 +5395,12 @@
       "target_price": 150.0,
       "stop_loss": 130.0,
       "top_reasons": [
-        "USD/KRW 1447.6899 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
+        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
         "ROE 32.32%",
         "RSI \uacfc\ub9e4\ub3c4 \ud68c\ubcf5 (48.9)"
       ],
       "risk_flags": [
-        "USD/KRW 1447.6899 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
+        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
         "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
       ],
       "indicators": {
@@ -5466,12 +5466,12 @@
       "target_price": 190.0,
       "stop_loss": 160.0,
       "top_reasons": [
-        "USD/KRW 1447.6899 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
+        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
         "\uc601\uc5c5\uc774\uc775\ub960 25.04%",
         "\ubcfc\ub9b0\uc800\ubc34\ub4dc \uc0c1\ub2e8 \uacfc\uc5f4"
       ],
       "risk_flags": [
-        "USD/KRW 1447.6899 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
+        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
         "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
       ],
       "indicators": {
@@ -5537,12 +5537,12 @@
       "target_price": 140.0,
       "stop_loss": 120.0,
       "top_reasons": [
-        "USD/KRW 1447.6899 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
+        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
         "ROE 43.36%",
         "\uc601\uc5c5\uc774\uc775\ub960 39.28%"
       ],
       "risk_flags": [
-        "USD/KRW 1447.6899 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
+        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
         "\ub370\ub4dc\ud06c\ub85c\uc2a4 \ubc1c\uc0dd",
         "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
       ],
@@ -5609,12 +5609,12 @@
       "target_price": 244290.0,
       "stop_loss": 153160.0,
       "top_reasons": [
-        "USD/KRW 1447.6899 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
+        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
         "\uc678\uad6d\uc778 6\uc77c \uc21c\ub9e4\uc218",
         "\uae30\uad00 \uc21c\ub9e4\uc218"
       ],
       "risk_flags": [
-        "USD/KRW 1447.6899 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
+        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
         "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
       ],
       "indicators": {
@@ -5676,12 +5676,12 @@
       "target_price": 600.0,
       "stop_loss": 480.0,
       "top_reasons": [
-        "USD/KRW 1447.6899 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
+        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
         "\uc601\uc5c5\uc774\uc775\ub960 18.75%",
         "\ubcfc\ub9b0\uc800\ubc34\ub4dc \uc0c1\ub2e8 \uacfc\uc5f4"
       ],
       "risk_flags": [
-        "USD/KRW 1447.6899 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
+        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
         "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
       ],
       "indicators": {
@@ -5747,12 +5747,12 @@
       "target_price": 260.0,
       "stop_loss": 220.0,
       "top_reasons": [
-        "USD/KRW 1447.6899 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
+        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
         "ROE 24.29%",
         "\ubcfc\ub9b0\uc800\ubc34\ub4dc \ud558\ub2e8"
       ],
       "risk_flags": [
-        "USD/KRW 1447.6899 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
+        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
         "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
       ],
       "indicators": {
@@ -5818,12 +5818,12 @@
       "target_price": 170.0,
       "stop_loss": 150.0,
       "top_reasons": [
-        "USD/KRW 1447.6899 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
+        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
         "PER 59.28 \u2014 \uace0\ud3c9\uac00",
         "ROE 132.39%"
       ],
       "risk_flags": [
-        "USD/KRW 1447.6899 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
+        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
         "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
       ],
       "indicators": {
@@ -5889,12 +5889,12 @@
       "target_price": 120.0,
       "stop_loss": 90.0,
       "top_reasons": [
-        "USD/KRW 1447.6899 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
+        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
         "PER 46.61 \u2014 \uace0\ud3c9\uac00",
         "ROE 21.46%"
       ],
       "risk_flags": [
-        "USD/KRW 1447.6899 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
+        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
         "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
       ],
       "indicators": {
@@ -5960,12 +5960,12 @@
       "target_price": 1105680.0,
       "stop_loss": 521860.0,
       "top_reasons": [
-        "USD/KRW 1447.6899 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
+        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
         "ROE 27.71%",
         "\uc678\uad6d\uc778 4\uc77c \uc21c\ub9e4\uc218"
       ],
       "risk_flags": [
-        "USD/KRW 1447.6899 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
+        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
         "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
       ],
       "indicators": {
@@ -6027,12 +6027,12 @@
       "target_price": 107710.0,
       "stop_loss": 73720.0,
       "top_reasons": [
-        "USD/KRW 1447.6899 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
+        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
         "PER 46.07 \u2014 \uace0\ud3c9\uac00",
         "\uc678\uad6d\uc778 9\uc77c \uc5f0\uc18d \uc21c\ub9e4\uc218"
       ],
       "risk_flags": [
-        "USD/KRW 1447.6899 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
+        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
         "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
       ],
       "indicators": {
@@ -6094,12 +6094,12 @@
       "target_price": 146570.0,
       "stop_loss": 97870.0,
       "top_reasons": [
-        "USD/KRW 1447.6899 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
+        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
         "PER 44.73 \u2014 \uace0\ud3c9\uac00",
         "\uc601\uc5c5\uc774\uc775\ub960 15.54%"
       ],
       "risk_flags": [
-        "USD/KRW 1447.6899 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
+        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
         "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
       ],
       "indicators": {
@@ -6161,12 +6161,12 @@
       "target_price": 140.0,
       "stop_loss": 120.0,
       "top_reasons": [
-        "USD/KRW 1447.6899 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
+        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
         "\uc601\uc5c5\uc774\uc775\ub960 38.6%",
         "MA \uc815\ubc30\uc5f4"
       ],
       "risk_flags": [
-        "USD/KRW 1447.6899 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
+        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
         "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
       ],
       "indicators": {
@@ -6232,26 +6232,26 @@
       "target_price": 2040.0,
       "stop_loss": 1560.0,
       "top_reasons": [
-        "USD/KRW 1447.6899 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
+        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
         "PER 57.15 \u2014 \uace0\ud3c9\uac00",
         "ROE 53.94%"
       ],
       "risk_flags": [
-        "USD/KRW 1447.6899 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
+        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
         "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
       ],
       "indicators": {
         "ma5": 1761.452001953125,
         "ma20": 1789.4026306152343,
         "ma60": 1700.7360127766926,
-        "ma120": 1549.1569844563803,
+        "ma120": 1549.1569864908854,
         "current_price": 1653.1090087890625,
         "ma_aligned_up": false,
         "ma_aligned_down": false,
         "pct_vs_ma5": -6.150777486070025,
         "pct_vs_ma20": -7.616710710842711,
         "pct_vs_ma60": -2.8003760507118503,
-        "pct_vs_ma120": 6.710231782556253,
+        "pct_vs_ma120": 6.710231642413911,
         "golden_cross": false,
         "dead_cross": false,
         "rsi": 41.0,
@@ -6303,26 +6303,26 @@
       "target_price": 390.0,
       "stop_loss": 330.0,
       "top_reasons": [
-        "USD/KRW 1447.6899 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
+        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
         "PER 42.57 \u2014 \uace0\ud3c9\uac00",
         "ROE 48.23%"
       ],
       "risk_flags": [
-        "USD/KRW 1447.6899 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
+        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
         "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
       ],
       "indicators": {
         "ma5": 349.2460021972656,
         "ma20": 358.38113555908205,
         "ma60": 331.6279088338216,
-        "ma120": 319.88647130330406,
+        "ma120": 319.8864715576172,
         "current_price": 361.6099853515625,
         "ma_aligned_up": false,
         "ma_aligned_down": false,
         "pct_vs_ma5": 3.5401931808837883,
         "pct_vs_ma20": 0.9009541719999792,
         "pct_vs_ma60": 9.04087856271616,
-        "pct_vs_ma120": 13.043225578832885,
+        "pct_vs_ma120": 13.043225488962307,
         "golden_cross": false,
         "dead_cross": false,
         "rsi": 46.4,
@@ -6374,12 +6374,12 @@
       "target_price": 470.0,
       "stop_loss": 360.0,
       "top_reasons": [
-        "USD/KRW 1447.6899 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
+        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
         "\uc601\uc5c5\uc774\uc775\ub960 44.28%",
         "\uac15\uc138/\ub20c\ub9bc\ubaa9 \uc139\ud130"
       ],
       "risk_flags": [
-        "USD/KRW 1447.6899 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
+        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
         "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
       ],
       "indicators": {
@@ -6445,12 +6445,12 @@
       "target_price": 373830.0,
       "stop_loss": 281780.0,
       "top_reasons": [
-        "USD/KRW 1447.6899 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
+        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
         "PER 6.0 \u2014 \uc800\ud3c9\uac00",
         "\uc678\uad6d\uc778 5\uc77c \uc21c\ub9e4\uc218"
       ],
       "risk_flags": [
-        "USD/KRW 1447.6899 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
+        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
         "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
       ],
       "indicators": {
@@ -6512,26 +6512,26 @@
       "target_price": 1190.0,
       "stop_loss": 780.0,
       "top_reasons": [
-        "USD/KRW 1447.6899 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
+        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
         "ROE 66.64%",
         "\uc601\uc5c5\uc774\uc775\ub960 80.37%"
       ],
       "risk_flags": [
-        "USD/KRW 1447.6899 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
+        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
         "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
       ],
       "indicators": {
         "ma5": 948.3320068359375,
         "ma20": 964.1643920898438,
         "ma60": 909.3582000732422,
-        "ma120": 663.1853441874187,
+        "ma120": 663.1853449503581,
         "current_price": 900.2000122070312,
         "ma_aligned_up": false,
         "ma_aligned_down": false,
         "pct_vs_ma5": -5.075437112947001,
         "pct_vs_ma20": -6.63417778208637,
         "pct_vs_ma60": -1.007104556320415,
-        "pct_vs_ma120": 35.73882777973927,
+        "pct_vs_ma120": 35.73882762358307,
         "golden_cross": false,
         "dead_cross": false,
         "rsi": 46.5,
@@ -6583,12 +6583,12 @@
       "target_price": 30290.0,
       "stop_loss": 23230.0,
       "top_reasons": [
-        "USD/KRW 1447.6899 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
+        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
         "\ubd80\ucc44\ube44\uc728 209.64%",
         "\uc678\uad6d\uc778 5\uc77c \uc21c\ub9e4\uc218"
       ],
       "risk_flags": [
-        "USD/KRW 1447.6899 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
+        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
         "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
       ],
       "indicators": {
@@ -6650,12 +6650,12 @@
       "target_price": 270.0,
       "stop_loss": 230.0,
       "top_reasons": [
-        "USD/KRW 1447.6899 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
+        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
         "PER 126.54 \u2014 \uace0\ud3c9\uac00",
         "\uc601\uc5c5\uc774\uc775\ub960 32.16%"
       ],
       "risk_flags": [
-        "USD/KRW 1447.6899 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
+        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
         "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
       ],
       "indicators": {
@@ -6721,12 +6721,12 @@
       "target_price": 10.0,
       "stop_loss": 10.0,
       "top_reasons": [
-        "USD/KRW 1447.6899 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
+        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
         "ROE \uc801\uc790",
         "\ubcf5\ud569 \ub9e4\uc218\uc870\uac74 2/3 \ucda9\uc871"
       ],
       "risk_flags": [
-        "USD/KRW 1447.6899 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
+        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
         "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
       ],
       "indicators": {
@@ -6792,12 +6792,12 @@
       "target_price": 280.0,
       "stop_loss": 110.0,
       "top_reasons": [
-        "USD/KRW 1447.6899 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
+        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
         "RSI \uacfc\ub9e4\ub3c4 \ud68c\ubcf5 (38.8)",
         "\ubcfc\ub9b0\uc800\ubc34\ub4dc \ud558\ub2e8"
       ],
       "risk_flags": [
-        "USD/KRW 1447.6899 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
+        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
         "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
       ],
       "indicators": {
@@ -6863,12 +6863,12 @@
       "target_price": 1270.0,
       "stop_loss": 1100.0,
       "top_reasons": [
-        "USD/KRW 1447.6899 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
+        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
         "PER 42.55 \u2014 \uace0\ud3c9\uac00",
         "ROE 107.46%"
       ],
       "risk_flags": [
-        "USD/KRW 1447.6899 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
+        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
         "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
       ],
       "indicators": {
@@ -6934,12 +6934,12 @@
       "target_price": 125150.0,
       "stop_loss": 75370.0,
       "top_reasons": [
-        "USD/KRW 1447.6899 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
+        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
         "\uc678\uad6d\uc778 7\uc77c \uc5f0\uc18d \uc21c\ub9e4\uc218",
         "\uae30\uad00 \uc21c\ub9e4\uc218"
       ],
       "risk_flags": [
-        "USD/KRW 1447.6899 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
+        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
         "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
       ],
       "indicators": {
@@ -7001,12 +7001,12 @@
       "target_price": 137900.0,
       "stop_loss": 58200.0,
       "top_reasons": [
-        "USD/KRW 1447.6899 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
+        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
         "\uc678\uad6d\uc778 7\uc77c \uc5f0\uc18d \uc21c\ub9e4\uc218",
         "MA \uc5ed\ubc30\uc5f4"
       ],
       "risk_flags": [
-        "USD/KRW 1447.6899 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
+        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
         "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
       ],
       "indicators": {
@@ -7068,12 +7068,12 @@
       "target_price": 370.0,
       "stop_loss": 310.0,
       "top_reasons": [
-        "USD/KRW 1447.6899 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
+        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
         "ROE 128.38%",
         "\ubd80\ucc44\ube44\uc728 459.36%"
       ],
       "risk_flags": [
-        "USD/KRW 1447.6899 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
+        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
         "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
       ],
       "indicators": {
@@ -7139,12 +7139,12 @@
       "target_price": 140.0,
       "stop_loss": 110.0,
       "top_reasons": [
-        "USD/KRW 1447.6899 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
+        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
         "PER 147.06 \u2014 \uace0\ud3c9\uac00",
         "ROE 32.59%"
       ],
       "risk_flags": [
-        "USD/KRW 1447.6899 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
+        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
         "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
       ],
       "indicators": {
@@ -7210,12 +7210,12 @@
       "target_price": 220.0,
       "stop_loss": 180.0,
       "top_reasons": [
-        "USD/KRW 1447.6899 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
+        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
         "\ubcf5\ud569 \ub9e4\uc218\uc870\uac74 2/3 \ucda9\uc871",
         "\ubcfc\ub9b0\uc800\ubc34\ub4dc \uc0c1\ub2e8 \uacfc\uc5f4"
       ],
       "risk_flags": [
-        "USD/KRW 1447.6899 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
+        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
         "RSI 71.0 \uacfc\ub9e4\uc218",
         "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
       ],
@@ -7223,14 +7223,14 @@
         "ma5": 205.78399963378905,
         "ma20": 197.66249923706056,
         "ma60": 185.09011662801106,
-        "ma120": 190.89673283894857,
+        "ma120": 190.8967332204183,
         "current_price": 218.4199981689453,
         "ma_aligned_up": false,
         "ma_aligned_down": false,
         "pct_vs_ma5": 6.140418379292445,
         "pct_vs_ma20": 10.5014856191765,
         "pct_vs_ma60": 18.007380484782832,
-        "pct_vs_ma120": 14.417881815304279,
+        "pct_vs_ma120": 14.417881586662551,
         "golden_cross": false,
         "dead_cross": false,
         "rsi": 71.0,
@@ -7282,12 +7282,12 @@
       "target_price": 83950.0,
       "stop_loss": 56070.0,
       "top_reasons": [
-        "USD/KRW 1447.6899 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
+        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
         "\uc678\uad6d\uc778 8\uc77c \uc5f0\uc18d \uc21c\ub9e4\uc218",
         "MA \uc5ed\ubc30\uc5f4"
       ],
       "risk_flags": [
-        "USD/KRW 1447.6899 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
+        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
         "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
       ],
       "indicators": {
@@ -7349,12 +7349,12 @@
       "target_price": 1171980.0,
       "stop_loss": 850690.0,
       "top_reasons": [
-        "USD/KRW 1447.6899 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
+        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
         "\uc678\uad6d\uc778 5\uc77c \uc21c\ub9e4\uc218",
         "MA \uc5ed\ubc30\uc5f4"
       ],
       "risk_flags": [
-        "USD/KRW 1447.6899 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
+        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
         "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
       ],
       "indicators": {
@@ -7416,12 +7416,12 @@
       "target_price": 21370.0,
       "stop_loss": 11050.0,
       "top_reasons": [
-        "USD/KRW 1447.6899 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
+        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
         "PER 1.0 \u2014 \uc800\ud3c9\uac00",
         "\uc678\uad6d\uc778 5\uc77c \uc21c\ub9e4\uc218"
       ],
       "risk_flags": [
-        "USD/KRW 1447.6899 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
+        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
         "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
       ],
       "indicators": {
@@ -7483,26 +7483,26 @@
       "target_price": 750.0,
       "stop_loss": 480.0,
       "top_reasons": [
-        "USD/KRW 1447.6899 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
+        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
         "PER 48.52 \u2014 \uace0\ud3c9\uac00",
         "ROE 39.69%"
       ],
       "risk_flags": [
-        "USD/KRW 1447.6899 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
+        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
         "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
       ],
       "indicators": {
         "ma5": 546.8819946289062,
         "ma20": 584.0879943847656,
         "ma60": 518.6440353393555,
-        "ma120": 439.99831034342446,
+        "ma120": 439.99831110636393,
         "current_price": 516.8900146484375,
         "ma_aligned_up": false,
         "ma_aligned_down": false,
         "pct_vs_ma5": -5.484177624246012,
         "pct_vs_ma20": -11.504769894664479,
         "pct_vs_ma60": -0.33819355307350696,
-        "pct_vs_ma120": 17.475454450040505,
+        "pct_vs_ma120": 17.47545424634278,
         "golden_cross": false,
         "dead_cross": false,
         "rsi": 43.0,
@@ -7554,26 +7554,26 @@
       "target_price": 450.0,
       "stop_loss": 270.0,
       "top_reasons": [
-        "USD/KRW 1447.6899 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
+        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
         "PER 55.25 \u2014 \uace0\ud3c9\uac00",
         "ROE 66.76%"
       ],
       "risk_flags": [
-        "USD/KRW 1447.6899 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
+        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
         "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
       ],
       "indicators": {
         "ma5": 311.5779968261719,
         "ma20": 340.5125,
         "ma60": 328.6481409708659,
-        "ma120": 281.67004776000977,
+        "ma120": 281.67004839579266,
         "current_price": 291.6099853515625,
         "ma_aligned_up": false,
         "ma_aligned_down": false,
         "pct_vs_ma5": -6.408671882485162,
         "pct_vs_ma20": -14.36144477763298,
         "pct_vs_ma60": -11.269850944505045,
-        "pct_vs_ma120": 3.5289295651420582,
+        "pct_vs_ma120": 3.5289293314575643,
         "golden_cross": false,
         "dead_cross": false,
         "rsi": 38.7,
@@ -7625,12 +7625,12 @@
       "target_price": 400.0,
       "stop_loss": 310.0,
       "top_reasons": [
-        "USD/KRW 1447.6899 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
+        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
         "PER 78.7 \u2014 \uace0\ud3c9\uac00",
         "ROE 20.66%"
       ],
       "risk_flags": [
-        "USD/KRW 1447.6899 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
+        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
         "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
       ],
       "indicators": {
@@ -7696,12 +7696,12 @@
       "target_price": 150.0,
       "stop_loss": 130.0,
       "top_reasons": [
-        "USD/KRW 1447.6899 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
+        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
         "PER 106.6 \u2014 \uace0\ud3c9\uac00",
         "MA \uc815\ubc30\uc5f4"
       ],
       "risk_flags": [
-        "USD/KRW 1447.6899 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
+        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
         "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
       ],
       "indicators": {
@@ -7767,12 +7767,12 @@
       "target_price": 1348440.0,
       "stop_loss": 998130.0,
       "top_reasons": [
-        "USD/KRW 1447.6899 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
+        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
         "ROE 24.81%",
         "\uc678\uad6d\uc778 6\uc77c \uc5f0\uc18d \uc21c\ub9e4\ub3c4"
       ],
       "risk_flags": [
-        "USD/KRW 1447.6899 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
+        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
         "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
       ],
       "indicators": {
@@ -7834,12 +7834,12 @@
       "target_price": 440.0,
       "stop_loss": 290.0,
       "top_reasons": [
-        "USD/KRW 1447.6899 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
+        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
         "PER 284.67 \u2014 \uace0\ud3c9\uac00",
         "\ubcfc\ub9b0\uc800\ubc34\ub4dc \ud558\ub2e8"
       ],
       "risk_flags": [
-        "USD/KRW 1447.6899 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
+        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
         "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
       ],
       "indicators": {
@@ -7905,12 +7905,12 @@
       "target_price": 750.0,
       "stop_loss": 660.0,
       "top_reasons": [
-        "USD/KRW 1447.6899 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
+        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
         "RSI \uacfc\ub9e4\ub3c4 \ud68c\ubcf5 (36.7)",
         "\ubcfc\ub9b0\uc800\ubc34\ub4dc \ud558\ub2e8"
       ],
       "risk_flags": [
-        "USD/KRW 1447.6899 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
+        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
         "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
       ],
       "indicators": {
@@ -7976,12 +7976,12 @@
       "target_price": 1264800.0,
       "stop_loss": 759510.0,
       "top_reasons": [
-        "USD/KRW 1447.6899 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
+        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
         "ROE 25.6%",
         "\ubd80\ucc44\ube44\uc728 317.21%"
       ],
       "risk_flags": [
-        "USD/KRW 1447.6899 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
+        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
         "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
       ],
       "indicators": {
@@ -8043,12 +8043,12 @@
       "target_price": 117610.0,
       "stop_loss": 77020.0,
       "top_reasons": [
-        "USD/KRW 1447.6899 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
+        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
         "\ubd80\ucc44\ube44\uc728 531.77%",
         "\uc678\uad6d\uc778 8\uc77c \uc5f0\uc18d \uc21c\ub9e4\uc218"
       ],
       "risk_flags": [
-        "USD/KRW 1447.6899 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
+        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
         "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
       ],
       "indicators": {
@@ -8110,12 +8110,12 @@
       "target_price": 442170.0,
       "stop_loss": 297300.0,
       "top_reasons": [
-        "USD/KRW 1447.6899 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
+        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
         "ROE 54.87%",
         "\uc601\uc5c5\uc774\uc775\ub960 19.89%"
       ],
       "risk_flags": [
-        "USD/KRW 1447.6899 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
+        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
         "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
       ],
       "indicators": {
@@ -8177,12 +8177,12 @@
       "target_price": 160.0,
       "stop_loss": 140.0,
       "top_reasons": [
-        "USD/KRW 1447.6899 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
+        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
         "ROE 31.11%",
         "\uc601\uc5c5\uc774\uc775\ub960 23.05%"
       ],
       "risk_flags": [
-        "USD/KRW 1447.6899 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
+        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
         "\ub370\ub4dc\ud06c\ub85c\uc2a4 \ubc1c\uc0dd",
         "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
       ],
@@ -8190,14 +8190,14 @@
         "ma5": 147.51272277832032,
         "ma20": 147.61552352905272,
         "ma60": 145.64425659179688,
-        "ma120": 147.48901964823406,
+        "ma120": 147.4890183766683,
         "current_price": 148.6300048828125,
         "ma_aligned_up": false,
         "ma_aligned_down": false,
         "pct_vs_ma5": 0.7574140612746971,
         "pct_vs_ma20": 0.687245710685791,
         "pct_vs_ma60": 2.0500281719888935,
-        "pct_vs_ma120": 0.7736069012457492,
+        "pct_vs_ma120": 0.7736077700580157,
         "golden_cross": false,
         "dead_cross": true,
         "rsi": 50.8,
@@ -8249,12 +8249,12 @@
       "target_price": 1940.0,
       "stop_loss": 1550.0,
       "top_reasons": [
-        "USD/KRW 1447.6899 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
+        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
         "PER 48.08 \u2014 \uace0\ud3c9\uac00",
         "ROE 31.26%"
       ],
       "risk_flags": [
-        "USD/KRW 1447.6899 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
+        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
         "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
       ],
       "indicators": {
@@ -8320,12 +8320,12 @@
       "target_price": 200.0,
       "stop_loss": 160.0,
       "top_reasons": [
-        "USD/KRW 1447.6899 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
+        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
         "ROE 21.96%",
         "\uc601\uc5c5\uc774\uc775\ub960 23.46%"
       ],
       "risk_flags": [
-        "USD/KRW 1447.6899 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
+        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
         "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
       ],
       "indicators": {
@@ -8391,12 +8391,12 @@
       "target_price": 200.0,
       "stop_loss": 160.0,
       "top_reasons": [
-        "USD/KRW 1447.6899 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
+        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
         "PER 87.68 \u2014 \uace0\ud3c9\uac00",
         "RSI \uacfc\ub9e4\ub3c4 \ud68c\ubcf5 (47.0)"
       ],
       "risk_flags": [
-        "USD/KRW 1447.6899 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
+        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
         "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
       ],
       "indicators": {
@@ -8462,12 +8462,12 @@
       "target_price": 115570.0,
       "stop_loss": 91180.0,
       "top_reasons": [
-        "USD/KRW 1447.6899 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
+        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
         "PER 9.37 \u2014 \uc800\ud3c9\uac00",
         "\ubd80\ucc44\ube44\uc728 1128.29%"
       ],
       "risk_flags": [
-        "USD/KRW 1447.6899 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
+        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
         "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
       ],
       "indicators": {
@@ -8529,12 +8529,12 @@
       "target_price": 770.0,
       "stop_loss": 710.0,
       "top_reasons": [
-        "USD/KRW 1447.6899 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
+        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
         "\ubcf5\ud569 \ub9e4\uc218\uc870\uac74 2/3 \ucda9\uc871",
         "\ubcfc\ub9b0\uc800\ubc34\ub4dc \ud558\ub2e8"
       ],
       "risk_flags": [
-        "USD/KRW 1447.6899 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
+        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
         "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
       ],
       "indicators": {
@@ -8600,12 +8600,12 @@
       "target_price": 277950.0,
       "stop_loss": 112330.0,
       "top_reasons": [
-        "USD/KRW 1447.6899 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
+        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
         "ROE 46.2%",
         "\uc601\uc5c5\uc774\uc775\ub960 21.72%"
       ],
       "risk_flags": [
-        "USD/KRW 1447.6899 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
+        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
         "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
       ],
       "indicators": {
@@ -8667,12 +8667,12 @@
       "target_price": 320.0,
       "stop_loss": 270.0,
       "top_reasons": [
-        "USD/KRW 1447.6899 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
+        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
         "PER 42.56 \u2014 \uace0\ud3c9\uac00",
         "ROE 35.18%"
       ],
       "risk_flags": [
-        "USD/KRW 1447.6899 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
+        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
         "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
       ],
       "indicators": {
@@ -8738,12 +8738,12 @@
       "target_price": 280.0,
       "stop_loss": 230.0,
       "top_reasons": [
-        "USD/KRW 1447.6899 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
+        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
         "52\uc8fc \uace0\uc810 \uadfc\ubc29",
         "\uac15\uc138/\ub20c\ub9bc\ubaa9 \uc139\ud130"
       ],
       "risk_flags": [
-        "USD/KRW 1447.6899 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
+        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
         "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
       ],
       "indicators": {
@@ -8809,12 +8809,12 @@
       "target_price": 120.0,
       "stop_loss": 90.0,
       "top_reasons": [
-        "USD/KRW 1447.6899 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
+        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
         "PER 65.85 \u2014 \uace0\ud3c9\uac00",
         "\ubcf5\ud569 \ub9e4\uc218\uc870\uac74 2/3 \ucda9\uc871"
       ],
       "risk_flags": [
-        "USD/KRW 1447.6899 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
+        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
         "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
       ],
       "indicators": {
@@ -8880,26 +8880,26 @@
       "target_price": 110.0,
       "stop_loss": 90.0,
       "top_reasons": [
-        "USD/KRW 1447.6899 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
+        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
         "\ubcfc\ub9b0\uc800\ubc34\ub4dc \uc0c1\ub2e8 \uacfc\uc5f4",
         "\uac15\uc138/\ub20c\ub9bc\ubaa9 \uc139\ud130"
       ],
       "risk_flags": [
-        "USD/KRW 1447.6899 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
+        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
         "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
       ],
       "indicators": {
         "ma5": 101.4279998779297,
         "ma20": 95.45899353027343,
         "ma60": 90.05762646993001,
-        "ma120": 97.51184368133545,
+        "ma120": 97.51184361775717,
         "current_price": 104.48999786376953,
         "ma_aligned_up": false,
         "ma_aligned_down": false,
         "pct_vs_ma5": 3.0188882650993953,
         "pct_vs_ma20": 9.460611304928591,
         "pct_vs_ma60": 16.025707049539495,
-        "pct_vs_ma120": 7.156211921536837,
+        "pct_vs_ma120": 7.156211991403305,
         "golden_cross": false,
         "dead_cross": false,
         "rsi": 67.5,
@@ -8951,12 +8951,12 @@
       "target_price": 470.0,
       "stop_loss": 360.0,
       "top_reasons": [
-        "USD/KRW 1447.6899 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
+        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
         "PER 89.26 \u2014 \uace0\ud3c9\uac00",
         "\ubcf5\ud569 \ub9e4\uc218\uc870\uac74 2/3 \ucda9\uc871"
       ],
       "risk_flags": [
-        "USD/KRW 1447.6899 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
+        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
         "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
       ],
       "indicators": {
@@ -9022,12 +9022,12 @@
       "target_price": 590.0,
       "stop_loss": 500.0,
       "top_reasons": [
-        "USD/KRW 1447.6899 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
+        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
         "PER 40.97 \u2014 \uace0\ud3c9\uac00",
         "ROE 72.91%"
       ],
       "risk_flags": [
-        "USD/KRW 1447.6899 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
+        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
         "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
       ],
       "indicators": {
@@ -9093,26 +9093,26 @@
       "target_price": 560.0,
       "stop_loss": 490.0,
       "top_reasons": [
-        "USD/KRW 1447.6899 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
+        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
         "\uc601\uc5c5\uc774\uc775\ub960 28.47%",
         "\uac15\ud55c \ud558\ub77d \ubaa8\uba58\ud140"
       ],
       "risk_flags": [
-        "USD/KRW 1447.6899 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
+        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
         "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
       ],
       "indicators": {
         "ma5": 507.8179992675781,
         "ma20": 521.2689956665039,
         "ma60": 511.9350824991862,
-        "ma120": 500.16998392740885,
+        "ma120": 500.1699836730957,
         "current_price": 507.0199890136719,
         "ma_aligned_up": false,
         "ma_aligned_down": false,
         "pct_vs_ma5": -0.1571449328415242,
         "pct_vs_ma20": -2.7335227629667447,
         "pct_vs_ma60": -0.9601009295005958,
-        "pct_vs_ma120": 1.3695354192340359,
+        "pct_vs_ma120": 1.369535470775718,
         "golden_cross": false,
         "dead_cross": false,
         "rsi": 23.8,
@@ -9164,26 +9164,26 @@
       "target_price": 90.0,
       "stop_loss": 80.0,
       "top_reasons": [
-        "USD/KRW 1447.6899 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
+        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
         "PBR 0.57 \u2014 \uc790\uc0b0 \uc800\ud3c9\uac00",
         "MA \uc5ed\ubc30\uc5f4"
       ],
       "risk_flags": [
-        "USD/KRW 1447.6899 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
+        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
         "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
       ],
       "indicators": {
         "ma5": 83.4540008544922,
         "ma20": 84.48801002502441,
-        "ma60": 84.7881046295166,
-        "ma120": 85.54299977620443,
+        "ma60": 84.78810450236003,
+        "ma120": 85.54299933115641,
         "current_price": 83.75,
         "ma_aligned_up": false,
         "ma_aligned_down": true,
         "pct_vs_ma5": 0.3546853865327604,
         "pct_vs_ma20": -0.8735085899239659,
-        "pct_vs_ma60": -1.2243517343059063,
-        "pct_vs_ma120": -2.0960216275969112,
+        "pct_vs_ma60": -1.2243515861722454,
+        "pct_vs_ma120": -2.0960211182393773,
         "golden_cross": false,
         "dead_cross": false,
         "rsi": 38.2,
@@ -9235,12 +9235,12 @@
       "target_price": 100.0,
       "stop_loss": 70.0,
       "top_reasons": [
-        "USD/KRW 1447.6899 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
+        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
         "ROE \uc801\uc790",
         "\ub370\ub4dc\ud06c\ub85c\uc2a4"
       ],
       "risk_flags": [
-        "USD/KRW 1447.6899 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
+        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
         "\ub370\ub4dc\ud06c\ub85c\uc2a4 \ubc1c\uc0dd",
         "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
       ],
@@ -9307,26 +9307,26 @@
       "target_price": 1090.0,
       "stop_loss": 810.0,
       "top_reasons": [
-        "USD/KRW 1447.6899 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
+        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
         "PER 43.48 \u2014 \uace0\ud3c9\uac00",
         "ROE 51.33%"
       ],
       "risk_flags": [
-        "USD/KRW 1447.6899 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
+        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
         "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
       ],
       "indicators": {
         "ma5": 887.1659912109375,
         "ma20": 930.6970703125,
         "ma60": 920.2821461995443,
-        "ma120": 830.5653091430664,
+        "ma120": 830.5653106689454,
         "current_price": 873.280029296875,
         "ma_aligned_up": false,
         "ma_aligned_down": false,
         "pct_vs_ma5": -1.5652044884079452,
         "pct_vs_ma20": -6.169251289933264,
         "pct_vs_ma60": -5.107359421974255,
-        "pct_vs_ma120": 5.1428490551669315,
+        "pct_vs_ma120": 5.142848862003002,
         "golden_cross": false,
         "dead_cross": false,
         "rsi": 32.0,
@@ -9378,12 +9378,12 @@
       "target_price": 150.0,
       "stop_loss": 120.0,
       "top_reasons": [
-        "USD/KRW 1447.6899 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
+        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
         "PER 45.89 \u2014 \uace0\ud3c9\uac00",
         "\ub370\ub4dc\ud06c\ub85c\uc2a4"
       ],
       "risk_flags": [
-        "USD/KRW 1447.6899 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
+        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
         "\ub370\ub4dc\ud06c\ub85c\uc2a4 \ubc1c\uc0dd",
         "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
       ],
@@ -9450,12 +9450,12 @@
       "target_price": 10.0,
       "stop_loss": 0.0,
       "top_reasons": [
-        "USD/KRW 1447.6899 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
+        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
         "ROE \uc801\uc790",
         "MACD \uac15\uc138 \ub2e4\uc774\ubc84\uc804\uc2a4"
       ],
       "risk_flags": [
-        "USD/KRW 1447.6899 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
+        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
         "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
       ],
       "indicators": {
@@ -9521,12 +9521,12 @@
       "target_price": 570.0,
       "stop_loss": 470.0,
       "top_reasons": [
-        "USD/KRW 1447.6899 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
+        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
         "ROE 232.08%",
         "\uc601\uc5c5\uc774\uc775\ub960 60.84%"
       ],
       "risk_flags": [
-        "USD/KRW 1447.6899 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
+        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
         "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
       ],
       "indicators": {
@@ -9592,12 +9592,12 @@
       "target_price": 280500.0,
       "stop_loss": 144430.0,
       "top_reasons": [
-        "USD/KRW 1447.6899 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
+        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
         "PER 89.77 \u2014 \uace0\ud3c9\uac00",
         "ROE 55.54%"
       ],
       "risk_flags": [
-        "USD/KRW 1447.6899 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
+        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
         "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
       ],
       "indicators": {
@@ -9659,12 +9659,12 @@
       "target_price": 39220.0,
       "stop_loss": 20180.0,
       "top_reasons": [
-        "USD/KRW 1447.6899 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
+        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
         "PER 84.73 \u2014 \uace0\ud3c9\uac00",
         "\uc678\uad6d\uc778 7\uc77c \uc5f0\uc18d \uc21c\ub9e4\uc218"
       ],
       "risk_flags": [
-        "USD/KRW 1447.6899 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
+        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
         "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
       ],
       "indicators": {
@@ -9726,12 +9726,12 @@
       "target_price": 120.0,
       "stop_loss": 100.0,
       "top_reasons": [
-        "USD/KRW 1447.6899 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
+        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
         "ROE 25.23%",
         "\uc601\uc5c5\uc774\uc775\ub960 24.99%"
       ],
       "risk_flags": [
-        "USD/KRW 1447.6899 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
+        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
         "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
       ],
       "indicators": {
@@ -9797,12 +9797,12 @@
       "target_price": 310.0,
       "stop_loss": 190.0,
       "top_reasons": [
-        "USD/KRW 1447.6899 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
+        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
         "PER 57.47 \u2014 \uace0\ud3c9\uac00",
         "ROE 94.98%"
       ],
       "risk_flags": [
-        "USD/KRW 1447.6899 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
+        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
         "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
       ],
       "indicators": {
@@ -9868,12 +9868,12 @@
       "target_price": 24330.0,
       "stop_loss": 19740.0,
       "top_reasons": [
-        "USD/KRW 1447.6899 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
+        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
         "\uc601\uc5c5\uc774\uc775\ub960 19.18%",
         "\ubd80\ucc44\ube44\uc728 790.66%"
       ],
       "risk_flags": [
-        "USD/KRW 1447.6899 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
+        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
         "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
       ],
       "indicators": {
@@ -9935,12 +9935,12 @@
       "target_price": 180.0,
       "stop_loss": 140.0,
       "top_reasons": [
-        "USD/KRW 1447.6899 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
+        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
         "PER 61.73 \u2014 \uace0\ud3c9\uac00",
         "\uac15\uc138/\ub20c\ub9bc\ubaa9 \uc139\ud130"
       ],
       "risk_flags": [
-        "USD/KRW 1447.6899 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
+        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
         "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
       ],
       "indicators": {
@@ -10006,12 +10006,12 @@
       "target_price": 20.0,
       "stop_loss": 10.0,
       "top_reasons": [
-        "USD/KRW 1447.6899 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
+        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
         "ROE \uc801\uc790",
         "RSI \uacfc\ub9e4\ub3c4 \ud68c\ubcf5 (49.9)"
       ],
       "risk_flags": [
-        "USD/KRW 1447.6899 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
+        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
         "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
       ],
       "indicators": {
@@ -10077,12 +10077,12 @@
       "target_price": 279480.0,
       "stop_loss": 196910.0,
       "top_reasons": [
-        "USD/KRW 1447.6899 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
+        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
         "\uc678\uad6d\uc778 7\uc77c \uc5f0\uc18d \uc21c\ub9e4\ub3c4",
         "\uae30\uad00 \uc21c\ub9e4\uc218"
       ],
       "risk_flags": [
-        "USD/KRW 1447.6899 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
+        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
         "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
       ],
       "indicators": {
@@ -10144,12 +10144,12 @@
       "target_price": 280.0,
       "stop_loss": 240.0,
       "top_reasons": [
-        "USD/KRW 1447.6899 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
+        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
         "ROE \uc801\uc790",
         "MA \uc815\ubc30\uc5f4"
       ],
       "risk_flags": [
-        "USD/KRW 1447.6899 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
+        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
         "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
       ],
       "indicators": {
@@ -10215,12 +10215,12 @@
       "target_price": 70690.0,
       "stop_loss": 54510.0,
       "top_reasons": [
-        "USD/KRW 1447.6899 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
+        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
         "\uc678\uad6d\uc778 5\uc77c \uc5f0\uc18d \uc21c\ub9e4\ub3c4",
         "\uae30\uad00 \uc21c\ub9e4\uc218"
       ],
       "risk_flags": [
-        "USD/KRW 1447.6899 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
+        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
         "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
       ],
       "indicators": {
@@ -10282,12 +10282,12 @@
       "target_price": 110060.0,
       "stop_loss": 85460.0,
       "top_reasons": [
-        "USD/KRW 1447.6899 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
+        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
         "\uc601\uc5c5\uc774\uc775\ub960 21.34%",
         "\uc678\uad6d\uc778 6\uc77c \uc5f0\uc18d \uc21c\ub9e4\ub3c4"
       ],
       "risk_flags": [
-        "USD/KRW 1447.6899 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
+        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
         "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
       ],
       "indicators": {
@@ -10349,12 +10349,12 @@
       "target_price": 871080.0,
       "stop_loss": 436500.0,
       "top_reasons": [
-        "USD/KRW 1447.6899 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
+        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
         "ROE \uc801\uc790",
         "\uc678\uad6d\uc778 8\uc77c \uc5f0\uc18d \uc21c\ub9e4\uc218"
       ],
       "risk_flags": [
-        "USD/KRW 1447.6899 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
+        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
         "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
       ],
       "indicators": {
@@ -10416,12 +10416,12 @@
       "target_price": 166160.0,
       "stop_loss": 111260.0,
       "top_reasons": [
-        "USD/KRW 1447.6899 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
+        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
         "PER 6.77 \u2014 \uc800\ud3c9\uac00",
         "ROE 20.44%"
       ],
       "risk_flags": [
-        "USD/KRW 1447.6899 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
+        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
         "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
       ],
       "indicators": {
@@ -10483,12 +10483,12 @@
       "target_price": 332520.0,
       "stop_loss": 266750.0,
       "top_reasons": [
-        "USD/KRW 1447.6899 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
+        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
         "\uc678\uad6d\uc778 8\uc77c \uc5f0\uc18d \uc21c\ub9e4\ub3c4",
         "\uae30\uad00 \uc21c\ub9e4\uc218"
       ],
       "risk_flags": [
-        "USD/KRW 1447.6899 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
+        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
         "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
       ],
       "indicators": {
@@ -10550,12 +10550,12 @@
       "target_price": 268770.0,
       "stop_loss": 167230.0,
       "top_reasons": [
-        "USD/KRW 1447.6899 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
+        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
         "PER 4.56 \u2014 \uc800\ud3c9\uac00",
         "\ubd80\ucc44\ube44\uc728 1035.59%"
       ],
       "risk_flags": [
-        "USD/KRW 1447.6899 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
+        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
         "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
       ],
       "indicators": {
@@ -10617,12 +10617,12 @@
       "target_price": 34780.0,
       "stop_loss": 24150.0,
       "top_reasons": [
-        "USD/KRW 1447.6899 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
+        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
         "PER 7.28 \u2014 \uc800\ud3c9\uac00",
         "\ubd80\ucc44\ube44\uc728 644.71%"
       ],
       "risk_flags": [
-        "USD/KRW 1447.6899 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
+        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
         "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
       ],
       "indicators": {
@@ -10684,12 +10684,12 @@
       "target_price": 149120.0,
       "stop_loss": 66830.0,
       "top_reasons": [
-        "USD/KRW 1447.6899 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
+        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
         "\uc601\uc5c5\uc774\uc775\ub960 23.0%",
         "\uc678\uad6d\uc778 6\uc77c \uc5f0\uc18d \uc21c\ub9e4\ub3c4"
       ],
       "risk_flags": [
-        "USD/KRW 1447.6899 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
+        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
         "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
       ],
       "indicators": {
@@ -10751,12 +10751,12 @@
       "target_price": 990.0,
       "stop_loss": 880.0,
       "top_reasons": [
-        "USD/KRW 1447.6899 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
+        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
         "PER 47.85 \u2014 \uace0\ud3c9\uac00",
         "ROE 29.15%"
       ],
       "risk_flags": [
-        "USD/KRW 1447.6899 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
+        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
         "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
       ],
       "indicators": {
@@ -10822,12 +10822,12 @@
       "target_price": 90.0,
       "stop_loss": 70.0,
       "top_reasons": [
-        "USD/KRW 1447.6899 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
+        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
         "PER 66.42 \u2014 \uace0\ud3c9\uac00",
         "\ubd80\ucc44\ube44\uc728 240.28%"
       ],
       "risk_flags": [
-        "USD/KRW 1447.6899 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
+        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
         "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
       ],
       "indicators": {
@@ -10893,12 +10893,12 @@
       "target_price": 600.0,
       "stop_loss": 450.0,
       "top_reasons": [
-        "USD/KRW 1447.6899 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
+        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
         "PER 164.12 \u2014 \uace0\ud3c9\uac00",
         "\ubcfc\ub9b0\uc800\ubc34\ub4dc \ud558\ub2e8"
       ],
       "risk_flags": [
-        "USD/KRW 1447.6899 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
+        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
         "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
       ],
       "indicators": {
@@ -10964,12 +10964,12 @@
       "target_price": 220.0,
       "stop_loss": 170.0,
       "top_reasons": [
-        "USD/KRW 1447.6899 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
+        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
         "ROE \uc801\uc790",
         "\ubcfc\ub9b0\uc800\ubc34\ub4dc \ud558\ub2e8"
       ],
       "risk_flags": [
-        "USD/KRW 1447.6899 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
+        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
         "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
       ],
       "indicators": {
@@ -11035,12 +11035,12 @@
       "target_price": 420750.0,
       "stop_loss": 217760.0,
       "top_reasons": [
-        "USD/KRW 1447.6899 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
+        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
         "\uc678\uad6d\uc778 7\uc77c \uc5f0\uc18d \uc21c\ub9e4\uc218",
         "MA \uc5ed\ubc30\uc5f4"
       ],
       "risk_flags": [
-        "USD/KRW 1447.6899 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
+        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
         "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
       ],
       "indicators": {
@@ -11102,12 +11102,12 @@
       "target_price": 212670.0,
       "stop_loss": 137640.0,
       "top_reasons": [
-        "USD/KRW 1447.6899 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
+        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
         "\uc678\uad6d\uc778 6\uc77c \uc21c\ub9e4\uc218",
         "\uae30\uad00 \uc21c\ub9e4\uc218"
       ],
       "risk_flags": [
-        "USD/KRW 1447.6899 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
+        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
         "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
       ],
       "indicators": {
@@ -11169,12 +11169,12 @@
       "target_price": 380970.0,
       "stop_loss": 235710.0,
       "top_reasons": [
-        "USD/KRW 1447.6899 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
+        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
         "PER 5.16 \u2014 \uc800\ud3c9\uac00",
         "\ubd80\ucc44\ube44\uc728 961.28%"
       ],
       "risk_flags": [
-        "USD/KRW 1447.6899 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
+        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
         "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
       ],
       "indicators": {
@@ -11236,12 +11236,12 @@
       "target_price": 163000.0,
       "stop_loss": 69650.0,
       "top_reasons": [
-        "USD/KRW 1447.6899 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
+        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
         "PER 42.18 \u2014 \uace0\ud3c9\uac00",
         "\uc678\uad6d\uc778 5\uc77c \uc21c\ub9e4\uc218"
       ],
       "risk_flags": [
-        "USD/KRW 1447.6899 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
+        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
         "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
       ],
       "indicators": {
@@ -11303,12 +11303,12 @@
       "target_price": 345780.0,
       "stop_loss": 183520.0,
       "top_reasons": [
-        "USD/KRW 1447.6899 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
+        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
         "\uc678\uad6d\uc778 7\uc77c \uc5f0\uc18d \uc21c\ub9e4\ub3c4",
         "\uae30\uad00 \uc21c\ub9e4\ub3c4"
       ],
       "risk_flags": [
-        "USD/KRW 1447.6899 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
+        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
         "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
       ],
       "indicators": {
@@ -11370,12 +11370,12 @@
       "target_price": 180.0,
       "stop_loss": 150.0,
       "top_reasons": [
-        "USD/KRW 1447.6899 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
+        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
         "\uc601\uc5c5\uc774\uc775\ub960 21.8%",
         "MA \uc5ed\ubc30\uc5f4"
       ],
       "risk_flags": [
-        "USD/KRW 1447.6899 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
+        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
         "\ub370\ub4dc\ud06c\ub85c\uc2a4 \ubc1c\uc0dd",
         "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
       ],
@@ -11383,14 +11383,14 @@
         "ma5": 165.45,
         "ma20": 166.0884994506836,
         "ma60": 171.66508967081705,
-        "ma120": 179.19347190856934,
+        "ma120": 179.19347127278647,
         "current_price": 173.60000610351562,
         "ma_aligned_up": false,
         "ma_aligned_down": true,
         "pct_vs_ma5": 4.925963193421357,
         "pct_vs_ma20": 4.522592881310494,
         "pct_vs_ma60": 1.1271461404348093,
-        "pct_vs_ma120": -3.1214673980465624,
+        "pct_vs_ma120": -3.121467054319127,
         "golden_cross": false,
         "dead_cross": true,
         "rsi": 53.2,
@@ -11442,12 +11442,12 @@
       "target_price": 514080.0,
       "stop_loss": 331260.0,
       "top_reasons": [
-        "USD/KRW 1447.6899 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
+        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
         "PER 5.0 \u2014 \uc800\ud3c9\uac00",
         "\uc678\uad6d\uc778 7\uc77c \uc5f0\uc18d \uc21c\ub9e4\ub3c4"
       ],
       "risk_flags": [
-        "USD/KRW 1447.6899 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
+        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
         "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
       ],
       "indicators": {
@@ -11509,12 +11509,12 @@
       "target_price": 38710.0,
       "stop_loss": 21630.0,
       "top_reasons": [
-        "USD/KRW 1447.6899 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
+        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
         "PER 3.0 \u2014 \uc800\ud3c9\uac00",
         "ROE \uc801\uc790"
       ],
       "risk_flags": [
-        "USD/KRW 1447.6899 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
+        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
         "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
       ],
       "indicators": {
@@ -11576,12 +11576,12 @@
       "target_price": 310.0,
       "stop_loss": 170.0,
       "top_reasons": [
-        "USD/KRW 1447.6899 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
+        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
         "PER 64.86 \u2014 \uace0\ud3c9\uac00",
         "\uc57d\uc138 \uc139\ud130"
       ],
       "risk_flags": [
-        "USD/KRW 1447.6899 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
+        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
         "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
       ],
       "indicators": {
@@ -11647,12 +11647,12 @@
       "target_price": 24990.0,
       "stop_loss": 17890.0,
       "top_reasons": [
-        "USD/KRW 1447.6899 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
+        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
         "ROE \uc801\uc790",
         "\ubd80\ucc44\ube44\uc728 357.39%"
       ],
       "risk_flags": [
-        "USD/KRW 1447.6899 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
+        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
         "\ub370\ub4dc\ud06c\ub85c\uc2a4 \ubc1c\uc0dd",
         "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
       ],
@@ -11715,12 +11715,12 @@
       "target_price": 160.0,
       "stop_loss": 130.0,
       "top_reasons": [
-        "USD/KRW 1447.6899 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
+        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
         "ROE \uc801\uc790",
         "\uac15\uc138/\ub20c\ub9bc\ubaa9 \uc139\ud130"
       ],
       "risk_flags": [
-        "USD/KRW 1447.6899 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
+        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
         "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
       ],
       "indicators": {
@@ -11786,12 +11786,12 @@
       "target_price": 30.0,
       "stop_loss": 30.0,
       "top_reasons": [
-        "USD/KRW 1447.6899 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
+        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
         "ROE \uc801\uc790",
         "\uac15\uc138/\ub20c\ub9bc\ubaa9 \uc139\ud130"
       ],
       "risk_flags": [
-        "USD/KRW 1447.6899 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
+        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
         "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
       ],
       "indicators": {
@@ -11857,12 +11857,12 @@
       "target_price": 47740.0,
       "stop_loss": 28030.0,
       "top_reasons": [
-        "USD/KRW 1447.6899 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
+        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
         "PER 9.63 \u2014 \uc800\ud3c9\uac00",
         "\ubd80\ucc44\ube44\uc728 1037.75%"
       ],
       "risk_flags": [
-        "USD/KRW 1447.6899 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
+        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
         "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
       ],
       "indicators": {
@@ -11924,12 +11924,12 @@
       "target_price": 169520.0,
       "stop_loss": 109800.0,
       "top_reasons": [
-        "USD/KRW 1447.6899 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
+        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
         "PER 57.91 \u2014 \uace0\ud3c9\uac00",
         "\ubd80\ucc44\ube44\uc728 340.73%"
       ],
       "risk_flags": [
-        "USD/KRW 1447.6899 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
+        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
         "\ub370\ub4dc\ud06c\ub85c\uc2a4 \ubc1c\uc0dd",
         "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
       ],
@@ -11992,12 +11992,12 @@
       "target_price": 380.0,
       "stop_loss": 300.0,
       "top_reasons": [
-        "USD/KRW 1447.6899 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
+        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
         "PER 277.39 \u2014 \uace0\ud3c9\uac00",
         "\ubcfc\ub9b0\uc800\ubc34\ub4dc \ud558\ub2e8"
       ],
       "risk_flags": [
-        "USD/KRW 1447.6899 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
+        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
         "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
       ],
       "indicators": {
@@ -12063,12 +12063,12 @@
       "target_price": 229500.0,
       "stop_loss": 165000.0,
       "top_reasons": [
-        "USD/KRW 1447.6899 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
+        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
         "PER 5.52 \u2014 \uc800\ud3c9\uac00",
         "\uc678\uad6d\uc778 8\uc77c \uc5f0\uc18d \uc21c\ub9e4\ub3c4"
       ],
       "risk_flags": [
-        "USD/KRW 1447.6899 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
+        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
         "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
       ],
       "indicators": {
@@ -12130,12 +12130,12 @@
       "target_price": 129540.0,
       "stop_loss": 80220.0,
       "top_reasons": [
-        "USD/KRW 1447.6899 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
+        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
         "PER 6.49 \u2014 \uc800\ud3c9\uac00",
         "\ubd80\ucc44\ube44\uc728 753.25%"
       ],
       "risk_flags": [
-        "USD/KRW 1447.6899 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
+        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
         "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
       ],
       "indicators": {
@@ -12197,12 +12197,12 @@
       "target_price": 524280.0,
       "stop_loss": 328340.0,
       "top_reasons": [
-        "USD/KRW 1447.6899 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
+        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
         "\uc678\uad6d\uc778 6\uc77c \uc5f0\uc18d \uc21c\ub9e4\ub3c4",
         "MA \uc5ed\ubc30\uc5f4"
       ],
       "risk_flags": [
-        "USD/KRW 1447.6899 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
+        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
         "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
       ],
       "indicators": {
@@ -12264,12 +12264,12 @@
       "target_price": 213180.0,
       "stop_loss": 109710.0,
       "top_reasons": [
-        "USD/KRW 1447.6899 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
+        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
         "\ubd80\ucc44\ube44\uc728 218.25%",
         "\uc678\uad6d\uc778 9\uc77c \uc5f0\uc18d \uc21c\ub9e4\ub3c4"
       ],
       "risk_flags": [
-        "USD/KRW 1447.6899 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
+        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
         "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
       ],
       "indicators": {
@@ -12331,12 +12331,12 @@
       "target_price": 551820.0,
       "stop_loss": 407880.0,
       "top_reasons": [
-        "USD/KRW 1447.6899 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
+        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
         "\uc678\uad6d\uc778 8\uc77c \uc5f0\uc18d \uc21c\ub9e4\ub3c4",
         "\uae30\uad00 \uc21c\ub9e4\uc218"
       ],
       "risk_flags": [
-        "USD/KRW 1447.6899 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
+        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
         "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
       ],
       "indicators": {
@@ -12398,12 +12398,12 @@
       "target_price": 125460.0,
       "stop_loss": 69160.0,
       "top_reasons": [
-        "USD/KRW 1447.6899 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
+        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
         "\ubd80\ucc44\ube44\uc728 223.38%",
         "\uc678\uad6d\uc778 5\uc77c \uc21c\ub9e4\uc218"
       ],
       "risk_flags": [
-        "USD/KRW 1447.6899 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
+        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
         "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
       ],
       "indicators": {
@@ -12465,12 +12465,12 @@
       "target_price": 3950460.0,
       "stop_loss": 1822630.0,
       "top_reasons": [
-        "USD/KRW 1447.6899 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
+        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
         "\ubd80\ucc44\ube44\uc728 288.94%",
         "\uc678\uad6d\uc778 8\uc77c \uc5f0\uc18d \uc21c\ub9e4\ub3c4"
       ],
       "risk_flags": [
-        "USD/KRW 1447.6899 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
+        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
         "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
       ],
       "indicators": {
@@ -12532,12 +12532,12 @@
       "target_price": 294780.0,
       "stop_loss": 217280.0,
       "top_reasons": [
-        "USD/KRW 1447.6899 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
+        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
         "\uc678\uad6d\uc778 6\uc77c \uc5f0\uc18d \uc21c\ub9e4\ub3c4",
         "\uae30\uad00 \uc21c\ub9e4\uc218"
       ],
       "risk_flags": [
-        "USD/KRW 1447.6899 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
+        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
         "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
       ],
       "indicators": {
@@ -12599,12 +12599,12 @@
       "target_price": 488580.0,
       "stop_loss": 254140.0,
       "top_reasons": [
-        "USD/KRW 1447.6899 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
+        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
         "\uc678\uad6d\uc778 7\uc77c \uc5f0\uc18d \uc21c\ub9e4\ub3c4",
         "\uae30\uad00 \uc21c\ub9e4\uc218"
       ],
       "risk_flags": [
-        "USD/KRW 1447.6899 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
+        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
         "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
       ],
       "indicators": {
@@ -12666,12 +12666,12 @@
       "target_price": 1004700.0,
       "stop_loss": 409820.0,
       "top_reasons": [
-        "USD/KRW 1447.6899 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
+        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
         "\uc678\uad6d\uc778 9\uc77c \uc5f0\uc18d \uc21c\ub9e4\ub3c4",
         "\uae30\uad00 \uc21c\ub9e4\uc218"
       ],
       "risk_flags": [
-        "USD/KRW 1447.6899 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
+        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
         "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
       ],
       "indicators": {
@@ -12733,12 +12733,12 @@
       "target_price": 40290.0,
       "stop_loss": 31040.0,
       "top_reasons": [
-        "USD/KRW 1447.6899 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
+        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
         "PER 2.44 \u2014 \uc800\ud3c9\uac00",
         "ROE \uc801\uc790"
       ],
       "risk_flags": [
-        "USD/KRW 1447.6899 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
+        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
         "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
       ],
       "indicators": {
@@ -12800,12 +12800,12 @@
       "target_price": 791520.0,
       "stop_loss": 404980.0,
       "top_reasons": [
-        "USD/KRW 1447.6899 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
+        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
         "PER 55.97 \u2014 \uace0\ud3c9\uac00",
         "\uc678\uad6d\uc778 6\uc77c \uc5f0\uc18d \uc21c\ub9e4\ub3c4"
       ],
       "risk_flags": [
-        "USD/KRW 1447.6899 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
+        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
         "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
       ],
       "indicators": {
@@ -12867,12 +12867,12 @@
       "target_price": 332520.0,
       "stop_loss": 108830.0,
       "top_reasons": [
-        "USD/KRW 1447.6899 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
+        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
         "PER 65.38 \u2014 \uace0\ud3c9\uac00",
         "\uc678\uad6d\uc778 6\uc77c \uc5f0\uc18d \uc21c\ub9e4\ub3c4"
       ],
       "risk_flags": [
-        "USD/KRW 1447.6899 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
+        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
         "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
       ],
       "indicators": {
@@ -12934,12 +12934,12 @@
       "target_price": 1827840.0,
       "stop_loss": 744960.0,
       "top_reasons": [
-        "USD/KRW 1447.6899 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
+        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
         "PER 7.22 \u2014 \uc800\ud3c9\uac00",
         "ROE \uc801\uc790"
       ],
       "risk_flags": [
-        "USD/KRW 1447.6899 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
+        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
         "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
       ],
       "indicators": {
@@ -13001,12 +13001,12 @@
       "target_price": 89660.0,
       "stop_loss": 49180.0,
       "top_reasons": [
-        "USD/KRW 1447.6899 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
+        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
         "PER 64.22 \u2014 \uace0\ud3c9\uac00",
         "\uc678\uad6d\uc778 5\uc77c \uc5f0\uc18d \uc21c\ub9e4\ub3c4"
       ],
       "risk_flags": [
-        "USD/KRW 1447.6899 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
+        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
         "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
       ],
       "indicators": {
@@ -13068,12 +13068,12 @@
       "target_price": 91290.0,
       "stop_loss": 71390.0,
       "top_reasons": [
-        "USD/KRW 1447.6899 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
+        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
         "ROE \uc801\uc790",
         "\uc678\uad6d\uc778 6\uc77c \uc5f0\uc18d \uc21c\ub9e4\ub3c4"
       ],
       "risk_flags": [
-        "USD/KRW 1447.6899 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
+        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
         "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
       ],
       "indicators": {
@@ -13135,12 +13135,12 @@
       "target_price": 634440.0,
       "stop_loss": 399160.0,
       "top_reasons": [
-        "USD/KRW 1447.6899 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
+        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
         "\ubd80\ucc44\ube44\uc728 229.02%",
         "\uc678\uad6d\uc778 3\uc77c \uc5f0\uc18d \uc21c\ub9e4\ub3c4"
       ],
       "risk_flags": [
-        "USD/KRW 1447.6899 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
+        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
         "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
       ],
       "indicators": {
@@ -13202,12 +13202,12 @@
       "target_price": 570180.0,
       "stop_loss": 295850.0,
       "top_reasons": [
-        "USD/KRW 1447.6899 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
+        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
         "PER 51.27 \u2014 \uace0\ud3c9\uac00",
         "\uc678\uad6d\uc778 7\uc77c \uc5f0\uc18d \uc21c\ub9e4\ub3c4"
       ],
       "risk_flags": [
-        "USD/KRW 1447.6899 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
+        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
         "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
       ],
       "indicators": {
@@ -13269,12 +13269,12 @@
       "target_price": 417180.0,
       "stop_loss": 238620.0,
       "top_reasons": [
-        "USD/KRW 1447.6899 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
+        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
         "\ubd80\ucc44\ube44\uc728 609.68%",
         "\uc678\uad6d\uc778 7\uc77c \uc5f0\uc18d \uc21c\ub9e4\ub3c4"
       ],
       "risk_flags": [
-        "USD/KRW 1447.6899 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
+        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
         "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
       ],
       "indicators": {
@@ -13336,12 +13336,12 @@
       "target_price": 2777460.0,
       "stop_loss": 1208620.0,
       "top_reasons": [
-        "USD/KRW 1447.6899 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
+        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
         "ROE \uc801\uc790",
         "\uc678\uad6d\uc778 5\uc77c \uc5f0\uc18d \uc21c\ub9e4\ub3c4"
       ],
       "risk_flags": [
-        "USD/KRW 1447.6899 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
+        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
         "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
       ],
       "indicators": {
@@ -13403,12 +13403,12 @@
       "target_price": 181760.0,
       "stop_loss": 111940.0,
       "top_reasons": [
-        "USD/KRW 1447.6899 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
+        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
         "PER 165.0 \u2014 \uace0\ud3c9\uac00",
         "\uc678\uad6d\uc778 5\uc77c \uc5f0\uc18d \uc21c\ub9e4\ub3c4"
       ],
       "risk_flags": [
-        "USD/KRW 1447.6899 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
+        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
         "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
       ],
       "indicators": {
@@ -13470,12 +13470,12 @@
       "target_price": 237150.0,
       "stop_loss": 169750.0,
       "top_reasons": [
-        "USD/KRW 1447.6899 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
+        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
         "ROE 71.59%",
         "\uc678\uad6d\uc778 4\uc77c \uc5f0\uc18d \uc21c\ub9e4\ub3c4"
       ],
       "risk_flags": [
-        "USD/KRW 1447.6899 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
+        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
         "\ub370\ub4dc\ud06c\ub85c\uc2a4 \ubc1c\uc0dd",
         "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
       ],
@@ -13538,12 +13538,12 @@
       "target_price": 2337840.0,
       "stop_loss": 898220.0,
       "top_reasons": [
-        "USD/KRW 1447.6899 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
+        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
         "PER 97.19 \u2014 \uace0\ud3c9\uac00",
         "\uc678\uad6d\uc778 5\uc77c \uc5f0\uc18d \uc21c\ub9e4\ub3c4"
       ],
       "risk_flags": [
-        "USD/KRW 1447.6899 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
+        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
         "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
       ],
       "indicators": {
@@ -13605,12 +13605,12 @@
       "target_price": 92620.0,
       "stop_loss": 55290.0,
       "top_reasons": [
-        "USD/KRW 1447.6899 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
+        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
         "PER 252.28 \u2014 \uace0\ud3c9\uac00",
         "\uc678\uad6d\uc778 6\uc77c \uc5f0\uc18d \uc21c\ub9e4\ub3c4"
       ],
       "risk_flags": [
-        "USD/KRW 1447.6899 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
+        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
         "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
       ],
       "indicators": {
@@ -13672,12 +13672,12 @@
       "target_price": 95680.0,
       "stop_loss": 52570.0,
       "top_reasons": [
-        "USD/KRW 1447.6899 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
+        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
         "ROE \uc801\uc790",
         "\uc678\uad6d\uc778 4\uc77c \uc5f0\uc18d \uc21c\ub9e4\ub3c4"
       ],
       "risk_flags": [
-        "USD/KRW 1447.6899 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
+        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
         "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
       ],
       "indicators": {
@@ -13739,12 +13739,12 @@
       "target_price": 60.0,
       "stop_loss": 40.0,
       "top_reasons": [
-        "USD/KRW 1447.6899 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
+        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
         "ROE \uc801\uc790",
         "\ubd80\ucc44\ube44\uc728 435.04%"
       ],
       "risk_flags": [
-        "USD/KRW 1447.6899 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
+        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
         "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
       ],
       "indicators": {
@@ -13810,12 +13810,12 @@
       "target_price": 870060.0,
       "stop_loss": 582970.0,
       "top_reasons": [
-        "USD/KRW 1447.6899 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
+        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
         "PER 43.87 \u2014 \uace0\ud3c9\uac00",
         "\ubd80\ucc44\ube44\uc728 262.59%"
       ],
       "risk_flags": [
-        "USD/KRW 1447.6899 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
+        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
         "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
       ],
       "indicators": {
@@ -13877,12 +13877,12 @@
       "target_price": 275400.0,
       "stop_loss": 145980.0,
       "top_reasons": [
-        "USD/KRW 1447.6899 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
+        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
         "PER 72.86 \u2014 \uace0\ud3c9\uac00",
         "\uc678\uad6d\uc778 5\uc77c \uc5f0\uc18d \uc21c\ub9e4\ub3c4"
       ],
       "risk_flags": [
-        "USD/KRW 1447.6899 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
+        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
         "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
       ],
       "indicators": {
@@ -13944,12 +13944,12 @@
       "target_price": 1656480.0,
       "stop_loss": 882700.0,
       "top_reasons": [
-        "USD/KRW 1447.6899 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
+        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
         "PER 233.08 \u2014 \uace0\ud3c9\uac00",
         "ROE \uc801\uc790"
       ],
       "risk_flags": [
-        "USD/KRW 1447.6899 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
+        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
         "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
       ],
       "indicators": {
@@ -14011,12 +14011,12 @@
       "target_price": 12140.0,
       "stop_loss": 8020.0,
       "top_reasons": [
-        "USD/KRW 1447.6899 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
+        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
         "PER 163.0 \u2014 \uace0\ud3c9\uac00",
         "ROE \uc801\uc790"
       ],
       "risk_flags": [
-        "USD/KRW 1447.6899 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
+        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
         "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
       ],
       "indicators": {
@@ -14058,5 +14058,5 @@
       "current_price": "8570"
     }
   ],
-  "updated": "2026-07-29 15:53 KST"
+  "updated": "2026-07-29 16:45 KST"
 }
