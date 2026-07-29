@@ -322,7 +322,7 @@ def main():
     df_filt = df_filt.copy()
     df_filt["market"] = df_filt["ticker"].apply(lambda x: "KR" if str(x).isdigit() else "US")
 
-    tab_kr, tab_us, tab_watch, tab2, tab3, tab4 = st.tabs(["🇰🇷 한국", "🇺🇸 미국", "👀 관찰 대상", "📊 점수 분석", "🔍 종목 상세", "🧪 백테스트"])
+    tab_kr, tab_us, tab_sector, tab_watch, tab2, tab3, tab4 = st.tabs(["🇰🇷 한국", "🇺🇸 미국", "📈 섹터 동향", "👀 관찰 대상", "📊 점수 분석", "🔍 종목 상세", "🧪 백테스트"])
 
     # ─── 탭1: 신호 리스트 ────────────────────────────────────────────────
     def render_signal_list(df_filt):
@@ -385,6 +385,33 @@ def main():
         us_df = df_filt[df_filt["market"] == "US"]
         st.caption(f"미국 주식 {len(us_df)}종목")
         render_signal_list(us_df)
+
+    with tab_sector:
+        st.markdown("#### 📈 섹터 상대강도")
+        st.caption("20일·60일 수익률 기준 시장 대비 상대강도. 강세·반등시도 섹터만 BUY 신호 통과.")
+        sec_data = data.get("sector_strength", [])
+        if not sec_data:
+            st.info("섹터 데이터가 없습니다. 파이프라인 재실행 후 반영됩니다.")
+        else:
+            sec_df = pd.DataFrame(sec_data)
+            trend_icon = {"강세":"🟢","반등시도":"🟡","눌림목":"🟠","약세":"🔴"}
+            sec_df["상태"] = sec_df["trend"].map(trend_icon) + " " + sec_df["trend"]
+            show = sec_df[["sector","상태","n","ret_20d","ret_60d","rs_20d","rs_60d"]].rename(columns={
+                "sector":"섹터","n":"종목수","ret_20d":"20일수익률","ret_60d":"60일수익률",
+                "rs_20d":"상대강도(20일)","rs_60d":"상대강도(60일)"})
+            st.dataframe(show, use_container_width=True, hide_index=True,
+                column_config={
+                    "20일수익률": st.column_config.NumberColumn(format="%.1f%%"),
+                    "60일수익률": st.column_config.NumberColumn(format="%.1f%%"),
+                    "상대강도(20일)": st.column_config.NumberColumn(format="%+.1f"),
+                    "상대강도(60일)": st.column_config.NumberColumn(format="%+.1f"),
+                })
+            st.markdown("---")
+            fig_sec = px.bar(sec_df.sort_values("rs_20d"), x="rs_20d", y="sector", orientation="h",
+                color="trend", color_discrete_map={"강세":"#00C853","반등시도":"#FFD600","눌림목":"#FF6D00","약세":"#D50000"},
+                title="섹터별 20일 상대강도")
+            fig_sec.update_layout(height=420, paper_bgcolor="#FFFFFF", font=dict(color="#0F172A"))
+            st.plotly_chart(fig_sec, use_container_width=True)
 
     with tab_watch:
         st.markdown("#### 👀 관찰 대상 — 게이트 대기 종목")
