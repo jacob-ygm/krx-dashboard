@@ -213,16 +213,28 @@ def get_yf_fundamentals(ticker):
         return {}
 
 def get_macro_snapshot():
+    import math
     snap = {}
     for sym, name in MACRO_YF.items():
         try:
-            hist = yf.Ticker(sym).history(period="5d")
+            hist = yf.Ticker(sym).history(period="10d")
             if hist.empty: continue
-            latest = float(hist["Close"].iloc[-1])
-            prev   = float(hist["Close"].iloc[-2]) if len(hist) > 1 else latest
-            snap[name] = {"value": round(latest,4), "chg_pct": round((latest-prev)/prev*100,2) if prev else 0}
+            closes = hist["Close"].dropna()
+            if len(closes) == 0: continue
+            latest = float(closes.iloc[-1])
+            prev   = float(closes.iloc[-2]) if len(closes) > 1 else latest
+            chg = round((latest - prev) / prev * 100, 2) if prev else 0.0
+            # 이상치 방어: 지수/환율이 하루 ±12% 초과 = 데이터 오염 → 한 단계 전 종가와 비교
+            if abs(chg) > 12 and len(closes) > 2:
+                prev = float(closes.iloc[-3])
+                chg = round((latest - prev) / prev * 100, 2)
+                if abs(chg) > 12:
+                    chg = 0.0
+            if math.isnan(latest): continue
+            if math.isnan(chg): chg = 0.0
+            snap[name] = {"value": round(latest, 4), "chg_pct": chg}
         except Exception as e:
-            print(f"[Macro] {sym}: {e}")
+            print("[Macro] " + sym + ": " + str(e))
     return snap
 
 def collect_stock_data(ticker, is_krx=True):
