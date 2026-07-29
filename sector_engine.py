@@ -59,12 +59,13 @@ def get_dynamic_sector_sets(historical, as_of=None):
     sec = calc_sector_strength(historical, as_of)
     if sec.empty:
         return set(), set()
-    # 강세 + 눌림목(장기상승 중 단기조정 = R6+F5 최적 구간) 모두 매수 우호
-    strong_sectors = set(sec[sec["trend"].isin(["강세","눌림목"])]["sector"])
-    weak_sectors   = set(sec[sec["trend"] == "약세"]["sector"])
+    # Twin 검증: 강세 61.1% / 반등시도 65.0% / 눌림목 50.9% / 
+    # 섹터 레벨 눌림목은 추세전환 위험 → 차단 대상
+    strong_sectors = set(sec[sec["trend"].isin(["강세","반등시도"])]["sector"])
+    weak_sectors   = set(sec[sec["trend"].isin(["눌림목","약세"])]["sector"])
     strong = {t for t, s in SECTOR_MAP.items() if s in strong_sectors}
     weak   = {t for t, s in SECTOR_MAP.items() if s in weak_sectors}
-    return strong, weak
+    return strong, weak, weak
 
 def cross_sectional_rank(factor_dict):
     """종목별 팩터 → 그날 횡단면 백분위 (0~100)"""

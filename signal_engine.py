@@ -17,6 +17,15 @@ SECTOR_WEAK = {
     "011170","030200",                    # 통신
 }
 
+# Twin 검증: 저변동 방어주는 기술 반등신호 미작동 (승률 20~37%)
+BUY_BLACKLIST = {
+    "055550","105560","086790","316140","024110","323410",  # 은행
+    "000810","032830","005830","138040",                    # 보험/금융지주
+    "003490","180640",                                       # 항공
+    "030200","017670","032640","033780",                    # 통신/KT&G
+    "GOOGL","JNJ","PG","KO","PEP",                          # 미국 저변동 대형주
+}
+
 # ════════════════════════════════════════════════════════════════════════════
 # A. 기술적 지표
 # ════════════════════════════════════════════════════════════════════════════
@@ -414,51 +423,33 @@ def generate_signal(ticker, name, stock_data, macro_snap,
     )
     overall = round(overall, 1)
 
-    # ── Rule 1: 매크로 게이팅 ──────────────────────────────────────────────
+    # ══ 최종 게이트 (Twin 검증 완료 사양) ═══════════════════════════════
+    # R6: 매크로 낙관 구간(s_mac>16.5) 차단 — 해당 구간 승률 47.5%
+    # F5: 블랙리스트(저변동 방어주) 차단 + 모멘텀>=9 필수 — 87건 69.0%
+    # 섹터: 약세/눌림목 섹터 차단 — 해당 구간 승률 51%
+    # Rule7: 외국인 3일 연속 순매도 차단
     regime = get_macro_regime(macro_snap)
     vix    = macro_snap.get("VIX",    {}).get("value", 20)
     krw    = macro_snap.get("USD/KRW",{}).get("value", 1350)
 
-    if vix > 30:
-        overall = min(overall, 35)   # STRONG SELL만 허용
-    elif vix > 25:
-        overall = min(overall, 45)   # SELL/HOLD만 허용
+    gate_reason = None
+    if overall >= 60:
+        if s_mac > 16.5:
+            gate_reason = "매크로 낙관 구간 (역사 승률 47.5%)"
+        elif ticker in BUY_BLACKLIST:
+            gate_reason = "저변동 방어주 (반등신호 미작동 업종)"
+        elif s_mom < 9.0:
+            gate_reason = "모멘텀 미달 (s_mom " + str(s_mom) + " < 9.0)"
+        elif dyn_weak is not None and ticker in dyn_weak:
+            gate_reason = "섹터 약세/눌림목 (해당 구간 승률 51%)"
+        elif not investor.empty and "foreign" in investor.columns and (investor.tail(3)["foreign"] < 0).all():
+            gate_reason = "외국인 3일 연속 순매도"
+        if gate_reason is not None:
+            overall = 57.0
 
-    if krw > 1400 and ticker.isdigit():
-        overall = min(overall, 50)   # KOSPI BUY 차단
-
-    # ── Rule 3: 추세 필터 ──────────────────────────────────────────────────
-    ret_5d  = ind.get("ret_5d", 0)
-    ret_20d = ind.get("ret_20d", 0)
-    if overall >= 58:   # BUY 후보
-        if ret_5d < -5 and ret_20d < -15:
-            overall -= 8   # 하락 추세 중 BUY 억제
-
-    # ── Rule 5: 신호 강도 필터 ────────────────────────────────────────────
-    if 58 <= overall < 63:
-        # 복합 기술 조건 2개 미충족 시 HOLD 유지
-        rsi    = ind.get("rsi", 50)
-        vol_s  = ind.get("vol_surge", False)
-        ma_up  = ind.get("ma_aligned_up", False)
-        conditions_met = sum([
-            30 <= rsi <= 45,
-            vol_s,
-            ma_up,
-            ind.get("macd_cross_up", False),
-        ])
-        if conditions_met < 2:
-            overall = min(overall, 57)   # HOLD로 낮춤
-
-    # ── Rule 6: 급락주 필터 ───────────────────────────────────────────────
-    if ind.get("is_crash") and overall >= 58:
-        if ind.get("rsi", 50) > 20:   # RSI 20 이하면 예외
-            overall -= 10; r_tec.append("급락 필터 적용")
-
-    # ── Rule 7: 외국인 3일 연속 매도 BUY 차단 ────────────────────────────
-    if not investor.empty and "foreign" in investor.columns:
-        recent3 = investor.tail(3)
-        if (recent3["foreign"] < 0).all() and overall >= 58:
-            overall = min(overall, 57)   # BUY 차단
+    # STRONG BUY 승격 (기술>=16 + 모멘텀>=9.5)
+    if overall >= 60 and s_mom >= 9.5 and s_tec >= 16.0:
+        overall = max(overall, 63.5)
 
     overall = round(overall, 1)
     signal  = _band(overall, SIGNAL_BANDS)
@@ -500,6 +491,7 @@ def generate_signal(ticker, name, stock_data, macro_snap,
         "ticker":        ticker,
         "name":          name,
         "signal":        signal,
+        "gate_reason":   gate_reason,
         "confidence":    confidence,
         "overall_score": overall,
         "scores": {
