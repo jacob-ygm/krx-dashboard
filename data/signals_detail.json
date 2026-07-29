@@ -14,16 +14,16 @@
       "chg_pct": -2.36
     },
     "DXY": {
-      "value": 101.305,
+      "value": 101.308,
       "chg_pct": -0.2
     },
     "WTI": {
-      "value": 82.02,
-      "chg_pct": 3.48
+      "value": 82.25,
+      "chg_pct": 3.77
     },
     "Copper": {
-      "value": 6.347,
-      "chg_pct": 0.4
+      "value": 6.337,
+      "chg_pct": 0.24
     },
     "KOSPI": {
       "value": 5663.24,
@@ -34,142 +34,142 @@
       "chg_pct": -6.12
     },
     "USD/KRW": {
-      "value": 1447.3,
-      "chg_pct": -1.17
+      "value": 1447.98,
+      "chg_pct": -1.12
     }
   },
   "sector_strength": [
     {
-      "sector": "US_\uae08\uc735\uc0b0\uc5c5",
+      "sector": "US_금융산업",
       "n": 14,
       "ret_20d": 8.280361173467988,
       "ret_60d": 8.246640769868963,
       "rs_20d": 10.389455931603642,
       "rs_60d": 12.914323878100964,
-      "trend": "\uac15\uc138"
+      "trend": "강세"
     },
     {
-      "sector": "US_\uc131\uc7a5\uc8fc",
+      "sector": "US_성장주",
       "n": 29,
       "ret_20d": 5.746318630130753,
       "ret_60d": 11.946047759604994,
       "rs_20d": 7.855413388266408,
       "rs_60d": 16.613730867836995,
-      "trend": "\uac15\uc138"
+      "trend": "강세"
     },
     {
-      "sector": "US_\ube45\ud14c\ud06c",
+      "sector": "US_빅테크",
       "n": 16,
       "ret_20d": 4.655388784831782,
       "ret_60d": -7.37872040896621,
       "rs_20d": 6.764483542967437,
       "rs_60d": -2.7110373007342083,
-      "trend": "\ubc18\ub4f1\uc2dc\ub3c4"
+      "trend": "반등시도"
     },
     {
-      "sector": "US_\ud5ec\uc2a4",
+      "sector": "US_헬스",
       "n": 18,
       "ret_20d": 3.173583931709145,
       "ret_60d": 11.880482244055878,
       "rs_20d": 5.2826786898448,
       "rs_60d": 16.54816535228788,
-      "trend": "\uac15\uc138"
+      "trend": "강세"
     },
     {
-      "sector": "KR_\ubc14\uc774\uc624",
+      "sector": "KR_바이오",
       "n": 4,
       "ret_20d": 2.004289122004066,
       "ret_60d": -15.999825684127721,
       "rs_20d": 4.11338388013972,
       "rs_60d": -11.33214257589572,
-      "trend": "\ubc18\ub4f1\uc2dc\ub3c4"
+      "trend": "반등시도"
     },
     {
-      "sector": "KR_\ud50c\ub7ab\ud3fc",
+      "sector": "KR_플랫폼",
       "n": 5,
       "ret_20d": 1.2562814070351758,
       "ret_60d": -19.819819819819816,
       "rs_20d": 3.3653761651708303,
       "rs_60d": -15.152136711587815,
-      "trend": "\ubc18\ub4f1\uc2dc\ub3c4"
+      "trend": "반등시도"
     },
     {
-      "sector": "US_\uc18c\ube44",
+      "sector": "US_소비",
       "n": 9,
       "ret_20d": 0.8347011754884948,
       "ret_60d": 0.38179770575113015,
       "rs_20d": 2.9437959336241493,
       "rs_60d": 5.0494808139831315,
-      "trend": "\uac15\uc138"
+      "trend": "강세"
     },
     {
-      "sector": "KR_\uae08\uc735",
+      "sector": "KR_금융",
       "n": 15,
       "ret_20d": 0.6918238993710801,
       "ret_60d": -10.162601626016265,
       "rs_20d": 2.8009186575067346,
       "rs_60d": -5.494918517784264,
-      "trend": "\ubc18\ub4f1\uc2dc\ub3c4"
+      "trend": "반등시도"
     },
     {
-      "sector": "KR_\uc790\ub3d9\ucc28\uc6b4\uc1a1",
+      "sector": "KR_자동차운송",
       "n": 10,
       "ret_20d": -10.490925589836657,
       "ret_60d": -11.728928291783486,
       "rs_20d": -8.381830831701002,
       "rs_60d": -7.061245183551485,
-      "trend": "\uc57d\uc138"
+      "trend": "약세"
     },
     {
-      "sector": "US_\ubc18\ub3c4\uccb4",
+      "sector": "US_반도체",
       "n": 12,
       "ret_20d": -12.315403531784309,
       "ret_60d": 18.023836479199062,
       "rs_20d": -10.206308773648654,
       "rs_60d": 22.691519587431063,
-      "trend": "\ub20c\ub9bc\ubaa9"
+      "trend": "눌림목"
     },
     {
-      "sector": "KR_\uc5d0\ub108\uc9c0\ud654\ud559",
+      "sector": "KR_에너지화학",
       "n": 12,
       "ret_20d": -12.538788788788791,
       "ret_60d": -40.47124991359554,
       "rs_20d": -10.429694030653136,
       "rs_60d": -35.803566805363545,
-      "trend": "\uc57d\uc138"
+      "trend": "약세"
     },
     {
-      "sector": "KR_\ub0b4\uc218\uc18c\ube44",
+      "sector": "KR_내수소비",
       "n": 17,
       "ret_20d": -15.693904020752269,
       "ret_60d": -10.218068535825541,
       "rs_20d": -13.584809262616615,
       "rs_60d": -5.55038542759354,
-      "trend": "\uc57d\uc138"
+      "trend": "약세"
     },
     {
-      "sector": "KR_\ubc29\uc0b0\uc870\uc120",
+      "sector": "KR_방산조선",
       "n": 24,
       "ret_20d": -26.221306923361723,
       "ret_60d": -40.60606060606061,
       "rs_20d": -24.11221216522607,
       "rs_60d": -35.93837749782861,
-      "trend": "\uc57d\uc138"
+      "trend": "약세"
     },
     {
-      "sector": "KR_\ubc18\ub3c4\uccb4",
+      "sector": "KR_반도체",
       "n": 12,
       "ret_20d": -45.836401687322194,
       "ret_60d": -9.418907802735799,
       "rs_20d": -43.72730692918654,
       "rs_60d": -4.751224694503797,
-      "trend": "\uc57d\uc138"
+      "trend": "약세"
     }
   ],
   "signals": [
     {
       "ticker": "005830",
-      "name": "DB\uc190\ud574\ubcf4\ud5d8",
+      "name": "DB손해보험",
       "signal": "HOLD",
       "gate_reason": null,
       "confidence": "MEDIUM",
@@ -188,13 +188,13 @@
       "target_price": 175850.0,
       "stop_loss": 128820.0,
       "top_reasons": [
-        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
-        "PER 6.83 \u2014 \uc800\ud3c9\uac00",
-        "\ubd80\ucc44\ube44\uc728 482.7%"
+        "USD/KRW 1447.98 — 원화 약세 경고",
+        "PER 6.83 — 저평가",
+        "부채비율 482.7%"
       ],
       "risk_flags": [
-        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
-        "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
+        "USD/KRW 1447.98 — 외환 리스크",
+        "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
         "ma5": 162080.0,
@@ -255,13 +255,13 @@
       "target_price": 270.0,
       "stop_loss": 240.0,
       "top_reasons": [
-        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
+        "USD/KRW 1447.98 — 원화 약세 경고",
         "ROE 25.74%",
-        "\uc601\uc5c5\uc774\uc775\ub960 29.19%"
+        "영업이익률 29.19%"
       ],
       "risk_flags": [
-        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
-        "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
+        "USD/KRW 1447.98 — 외환 리스크",
+        "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
         "ma5": 258.9720001220703,
@@ -326,13 +326,13 @@
       "target_price": 220.0,
       "stop_loss": 180.0,
       "top_reasons": [
-        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
-        "\uc601\uc5c5\uc774\uc775\ub960 22.9%",
-        "\ubcf5\ud569 \ub9e4\uc218\uc870\uac74 2/3 \ucda9\uc871"
+        "USD/KRW 1447.98 — 원화 약세 경고",
+        "영업이익률 22.9%",
+        "복합 매수조건 2/3 충족"
       ],
       "risk_flags": [
-        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
-        "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
+        "USD/KRW 1447.98 — 외환 리스크",
+        "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
         "ma5": 200.3220001220703,
@@ -397,26 +397,26 @@
       "target_price": 160.0,
       "stop_loss": 120.0,
       "top_reasons": [
-        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
+        "USD/KRW 1447.98 — 원화 약세 경고",
         "ROE 24.41%",
-        "\uc601\uc5c5\uc774\uc775\ub960 16.96%"
+        "영업이익률 16.96%"
       ],
       "risk_flags": [
-        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
-        "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
+        "USD/KRW 1447.98 — 외환 리스크",
+        "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
         "ma5": 144.14800109863282,
         "ma20": 138.04467239379883,
         "ma60": 156.70295448303222,
-        "ma120": 178.25167306264242,
+        "ma120": 178.25167331695556,
         "current_price": 154.05999755859375,
         "ma_aligned_up": false,
         "ma_aligned_down": false,
         "pct_vs_ma5": 6.876263551638617,
         "pct_vs_ma20": 11.60155251707804,
         "pct_vs_ma60": -1.6866031231878575,
-        "pct_vs_ma120": -13.571640079668178,
+        "pct_vs_ma120": -13.571640202976242,
         "golden_cross": false,
         "dead_cross": false,
         "rsi": 62.8,
@@ -468,13 +468,13 @@
       "target_price": 380.0,
       "stop_loss": 310.0,
       "top_reasons": [
-        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
+        "USD/KRW 1447.98 — 원화 약세 경고",
         "ROE 48.68%",
-        "\uc601\uc5c5\uc774\uc775\ub960 34.03%"
+        "영업이익률 34.03%"
       ],
       "risk_flags": [
-        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
-        "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
+        "USD/KRW 1447.98 — 외환 리스크",
+        "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
         "ma5": 330.64599609375,
@@ -539,13 +539,13 @@
       "target_price": 1180.0,
       "stop_loss": 970.0,
       "top_reasons": [
-        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
-        "\uc601\uc5c5\uc774\uc775\ub960 42.32%",
-        "\ubd80\ucc44\ube44\uc728 647.15%"
+        "USD/KRW 1447.98 — 원화 약세 경고",
+        "영업이익률 42.32%",
+        "부채비율 647.15%"
       ],
       "risk_flags": [
-        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
-        "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
+        "USD/KRW 1447.98 — 외환 리스크",
+        "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
         "ma5": 1072.347998046875,
@@ -591,7 +591,7 @@
     },
     {
       "ticker": "207940",
-      "name": "\uc0bc\uc131\ubc14\uc774\uc624\ub85c\uc9c1\uc2a4",
+      "name": "삼성바이오로직스",
       "signal": "HOLD",
       "gate_reason": null,
       "confidence": "MEDIUM",
@@ -610,13 +610,13 @@
       "target_price": 1606500.0,
       "stop_loss": 1264880.0,
       "top_reasons": [
-        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
-        "PER 48.05 \u2014 \uace0\ud3c9\uac00",
-        "\uc601\uc5c5\uc774\uc775\ub960 30.14%"
+        "USD/KRW 1447.98 — 원화 약세 경고",
+        "PER 48.05 — 고평가",
+        "영업이익률 30.14%"
       ],
       "risk_flags": [
-        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
-        "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
+        "USD/KRW 1447.98 — 외환 리스크",
+        "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
         "ma5": 1494000.0,
@@ -658,7 +658,7 @@
     },
     {
       "ticker": "068270",
-      "name": "\uc140\ud2b8\ub9ac\uc628",
+      "name": "셀트리온",
       "signal": "HOLD",
       "gate_reason": null,
       "confidence": "MEDIUM",
@@ -677,13 +677,13 @@
       "target_price": 192580.0,
       "stop_loss": 163150.0,
       "top_reasons": [
-        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
-        "\uc601\uc5c5\uc774\uc775\ub960 29.93%",
-        "\uc678\uad6d\uc778 7\uc77c \uc5f0\uc18d \uc21c\ub9e4\uc218"
+        "USD/KRW 1447.98 — 원화 약세 경고",
+        "영업이익률 29.93%",
+        "외국인 7일 연속 순매수"
       ],
       "risk_flags": [
-        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
-        "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
+        "USD/KRW 1447.98 — 외환 리스크",
+        "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
         "ma5": 177180.0,
@@ -744,13 +744,13 @@
       "target_price": 239190.0,
       "stop_loss": 175670.0,
       "top_reasons": [
-        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
-        "\uc601\uc5c5\uc774\uc775\ub960 15.39%",
-        "\uc678\uad6d\uc778 7\uc77c \uc5f0\uc18d \uc21c\ub9e4\uc218"
+        "USD/KRW 1447.98 — 원화 약세 경고",
+        "영업이익률 15.39%",
+        "외국인 7일 연속 순매수"
       ],
       "risk_flags": [
-        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
-        "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
+        "USD/KRW 1447.98 — 외환 리스크",
+        "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
         "ma5": 212800.0,
@@ -792,9 +792,9 @@
     },
     {
       "ticker": "316140",
-      "name": "\uc6b0\ub9ac\uae08\uc735\uc9c0\uc8fc",
+      "name": "우리금융지주",
       "signal": "HOLD",
-      "gate_reason": "\uc800\ubcc0\ub3d9 \ubc29\uc5b4\uc8fc (\ubc18\ub4f1\uc2e0\ud638 \ubbf8\uc791\ub3d9 \uc5c5\uc885)",
+      "gate_reason": "저변동 방어주 (반등신호 미작동 업종)",
       "confidence": "MEDIUM",
       "overall_score": 57.0,
       "scores": {
@@ -811,13 +811,13 @@
       "target_price": 34370.0,
       "stop_loss": 27600.0,
       "top_reasons": [
-        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
-        "PER 7.6 \u2014 \uc800\ud3c9\uac00",
-        "\ubd80\ucc44\ube44\uc728 1391.14%"
+        "USD/KRW 1447.98 — 원화 약세 경고",
+        "PER 7.6 — 저평가",
+        "부채비율 1391.14%"
       ],
       "risk_flags": [
-        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
-        "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
+        "USD/KRW 1447.98 — 외환 리스크",
+        "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
         "ma5": 31730.0,
@@ -861,7 +861,7 @@
       "ticker": "011200",
       "name": "HMM",
       "signal": "HOLD",
-      "gate_reason": "\ubaa8\uba58\ud140 \ubbf8\ub2ec (s_mom 4.9 < 9.0)",
+      "gate_reason": "모멘텀 미달 (s_mom 4.9 < 9.0)",
       "confidence": "MEDIUM",
       "overall_score": 57.0,
       "scores": {
@@ -878,13 +878,13 @@
       "target_price": 22540.0,
       "stop_loss": 17720.0,
       "top_reasons": [
-        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
-        "\uc678\uad6d\uc778 9\uc77c \uc5f0\uc18d \uc21c\ub9e4\uc218",
-        "\uae30\uad00 \uc21c\ub9e4\uc218"
+        "USD/KRW 1447.98 — 원화 약세 경고",
+        "외국인 9일 연속 순매수",
+        "기관 순매수"
       ],
       "risk_flags": [
-        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
-        "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
+        "USD/KRW 1447.98 — 외환 리스크",
+        "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
         "ma5": 20710.0,
@@ -926,7 +926,7 @@
     },
     {
       "ticker": "138040",
-      "name": "\uba54\ub9ac\uce20\uae08\uc735\uc9c0\uc8fc",
+      "name": "메리츠금융지주",
       "signal": "HOLD",
       "gate_reason": null,
       "confidence": "MEDIUM",
@@ -945,13 +945,13 @@
       "target_price": 130560.0,
       "stop_loss": 101850.0,
       "top_reasons": [
-        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
-        "PER 8.82 \u2014 \uc800\ud3c9\uac00",
+        "USD/KRW 1447.98 — 원화 약세 경고",
+        "PER 8.82 — 저평가",
         "ROE 28.11%"
       ],
       "risk_flags": [
-        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
-        "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
+        "USD/KRW 1447.98 — 외환 리스크",
+        "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
         "ma5": 120240.0,
@@ -993,7 +993,7 @@
     },
     {
       "ticker": "035720",
-      "name": "\uce74\uce74\uc624",
+      "name": "카카오",
       "signal": "HOLD",
       "gate_reason": null,
       "confidence": "MEDIUM",
@@ -1012,13 +1012,13 @@
       "target_price": 38660.0,
       "stop_loss": 32400.0,
       "top_reasons": [
-        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
-        "ROE \uc801\uc790",
-        "\uc678\uad6d\uc778 8\uc77c \uc5f0\uc18d \uc21c\ub9e4\uc218"
+        "USD/KRW 1447.98 — 원화 약세 경고",
+        "ROE 적자",
+        "외국인 8일 연속 순매수"
       ],
       "risk_flags": [
-        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
-        "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
+        "USD/KRW 1447.98 — 외환 리스크",
+        "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
         "ma5": 36270.0,
@@ -1079,13 +1079,13 @@
       "target_price": 59160.0,
       "stop_loss": 49960.0,
       "top_reasons": [
-        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
-        "PER 8.79 \u2014 \uc800\ud3c9\uac00",
-        "\uc678\uad6d\uc778 9\uc77c \uc5f0\uc18d \uc21c\ub9e4\uc218"
+        "USD/KRW 1447.98 — 원화 약세 경고",
+        "PER 8.79 — 저평가",
+        "외국인 9일 연속 순매수"
       ],
       "risk_flags": [
-        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
-        "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
+        "USD/KRW 1447.98 — 외환 리스크",
+        "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
         "ma5": 53780.0,
@@ -1127,7 +1127,7 @@
     },
     {
       "ticker": "259960",
-      "name": "\ud06c\ub798\ud504\ud1a4",
+      "name": "크래프톤",
       "signal": "HOLD",
       "gate_reason": null,
       "confidence": "MEDIUM",
@@ -1146,13 +1146,13 @@
       "target_price": 260100.0,
       "stop_loss": 214860.0,
       "top_reasons": [
-        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
-        "\uc601\uc5c5\uc774\uc775\ub960 40.2%",
-        "\uc678\uad6d\uc778 7\uc77c \uc5f0\uc18d \uc21c\ub9e4\uc218"
+        "USD/KRW 1447.98 — 원화 약세 경고",
+        "영업이익률 40.2%",
+        "외국인 7일 연속 순매수"
       ],
       "risk_flags": [
-        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
-        "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
+        "USD/KRW 1447.98 — 외환 리스크",
+        "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
         "ma5": 243200.0,
@@ -1213,13 +1213,13 @@
       "target_price": 101800.0,
       "stop_loss": 64990.0,
       "top_reasons": [
-        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
-        "PER 6.05 \u2014 \uc800\ud3c9\uac00",
-        "\uc678\uad6d\uc778 9\uc77c \uc5f0\uc18d \uc21c\ub9e4\uc218"
+        "USD/KRW 1447.98 — 원화 약세 경고",
+        "PER 6.05 — 저평가",
+        "외국인 9일 연속 순매수"
       ],
       "risk_flags": [
-        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
-        "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
+        "USD/KRW 1447.98 — 외환 리스크",
+        "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
         "ma5": 90420.0,
@@ -1261,7 +1261,7 @@
     },
     {
       "ticker": "000100",
-      "name": "\uc720\ud55c\uc591\ud589",
+      "name": "유한양행",
       "signal": "HOLD",
       "gate_reason": null,
       "confidence": "MEDIUM",
@@ -1280,13 +1280,13 @@
       "target_price": 78640.0,
       "stop_loss": 64210.0,
       "top_reasons": [
-        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
-        "\uc678\uad6d\uc778 7\uc77c \uc5f0\uc18d \uc21c\ub9e4\uc218",
-        "\uae30\uad00 \uc21c\ub9e4\uc218"
+        "USD/KRW 1447.98 — 원화 약세 경고",
+        "외국인 7일 연속 순매수",
+        "기관 순매수"
       ],
       "risk_flags": [
-        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
-        "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
+        "USD/KRW 1447.98 — 외환 리스크",
+        "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
         "ma5": 71860.0,
@@ -1347,13 +1347,13 @@
       "target_price": 60.0,
       "stop_loss": 60.0,
       "top_reasons": [
-        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
-        "\uc601\uc5c5\uc774\uc775\ub960 38.3%",
-        "MA \uc815\ubc30\uc5f4"
+        "USD/KRW 1447.98 — 원화 약세 경고",
+        "영업이익률 38.3%",
+        "MA 정배열"
       ],
       "risk_flags": [
-        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
-        "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
+        "USD/KRW 1447.98 — 외환 리스크",
+        "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
         "ma5": 61.65999984741211,
@@ -1418,13 +1418,13 @@
       "target_price": 700.0,
       "stop_loss": 600.0,
       "top_reasons": [
-        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
-        "\uc601\uc5c5\uc774\uc775\ub960 20.66%",
-        "\uac15\uc138/\ub20c\ub9bc\ubaa9 \uc139\ud130"
+        "USD/KRW 1447.98 — 원화 약세 경고",
+        "영업이익률 20.66%",
+        "강세/눌림목 섹터"
       ],
       "risk_flags": [
-        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
-        "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
+        "USD/KRW 1447.98 — 외환 리스크",
+        "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
         "ma5": 663.5199951171875,
@@ -1489,13 +1489,13 @@
       "target_price": 80.0,
       "stop_loss": 60.0,
       "top_reasons": [
-        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
+        "USD/KRW 1447.98 — 원화 약세 경고",
         "ROE 35.62%",
-        "\uc601\uc5c5\uc774\uc775\ub960 21.42%"
+        "영업이익률 21.42%"
       ],
       "risk_flags": [
-        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
-        "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
+        "USD/KRW 1447.98 — 외환 리스크",
+        "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
         "ma5": 73.14400177001953,
@@ -1560,13 +1560,13 @@
       "target_price": 100.0,
       "stop_loss": 80.0,
       "top_reasons": [
-        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
+        "USD/KRW 1447.98 — 원화 약세 경고",
         "ROE 21.95%",
-        "\uc601\uc5c5\uc774\uc775\ub960 25.06%"
+        "영업이익률 25.06%"
       ],
       "risk_flags": [
-        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
-        "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
+        "USD/KRW 1447.98 — 외환 리스크",
+        "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
         "ma5": 88.36399993896484,
@@ -1631,13 +1631,13 @@
       "target_price": 195330.0,
       "stop_loss": 160340.0,
       "top_reasons": [
-        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
-        "\uc601\uc5c5\uc774\uc775\ub960 19.91%",
-        "\uc678\uad6d\uc778 5\uc77c \uc21c\ub9e4\uc218"
+        "USD/KRW 1447.98 — 원화 약세 경고",
+        "영업이익률 19.91%",
+        "외국인 5일 순매수"
       ],
       "risk_flags": [
-        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
-        "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
+        "USD/KRW 1447.98 — 외환 리스크",
+        "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
         "ma5": 181820.0,
@@ -1679,7 +1679,7 @@
     },
     {
       "ticker": "267250",
-      "name": "HD\ud604\ub300",
+      "name": "HD현대",
       "signal": "HOLD",
       "gate_reason": null,
       "confidence": "MEDIUM",
@@ -1698,13 +1698,13 @@
       "target_price": 237660.0,
       "stop_loss": 172660.0,
       "top_reasons": [
-        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
-        "PER 9.72 \u2014 \uc800\ud3c9\uac00",
-        "\uc678\uad6d\uc778 8\uc77c \uc5f0\uc18d \uc21c\ub9e4\uc218"
+        "USD/KRW 1447.98 — 원화 약세 경고",
+        "PER 9.72 — 저평가",
+        "외국인 8일 연속 순매수"
       ],
       "risk_flags": [
-        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
-        "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
+        "USD/KRW 1447.98 — 외환 리스크",
+        "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
         "ma5": 209360.0,
@@ -1765,13 +1765,13 @@
       "target_price": 370.0,
       "stop_loss": 330.0,
       "top_reasons": [
-        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
+        "USD/KRW 1447.98 — 원화 약세 경고",
         "ROE 60.35%",
-        "\uc601\uc5c5\uc774\uc775\ub960 67.35%"
+        "영업이익률 67.35%"
       ],
       "risk_flags": [
-        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
-        "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
+        "USD/KRW 1447.98 — 외환 리스크",
+        "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
         "ma5": 355.82200317382814,
@@ -1817,7 +1817,7 @@
     },
     {
       "ticker": "028050",
-      "name": "\uc0bc\uc131E&A",
+      "name": "삼성E&A",
       "signal": "HOLD",
       "gate_reason": null,
       "confidence": "MEDIUM",
@@ -1836,13 +1836,13 @@
       "target_price": 54570.0,
       "stop_loss": 37150.0,
       "top_reasons": [
-        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
+        "USD/KRW 1447.98 — 원화 약세 경고",
         "ROE 24.45%",
-        "\uc678\uad6d\uc778 7\uc77c \uc5f0\uc18d \uc21c\ub9e4\uc218"
+        "외국인 7일 연속 순매수"
       ],
       "risk_flags": [
-        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
-        "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
+        "USD/KRW 1447.98 — 외환 리스크",
+        "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
         "ma5": 45160.0,
@@ -1903,13 +1903,13 @@
       "target_price": 80.0,
       "stop_loss": 60.0,
       "top_reasons": [
-        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
+        "USD/KRW 1447.98 — 원화 약세 경고",
         "ROE 49.54%",
-        "\uc601\uc5c5\uc774\uc775\ub960 33.38%"
+        "영업이익률 33.38%"
       ],
       "risk_flags": [
-        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
-        "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
+        "USD/KRW 1447.98 — 외환 리스크",
+        "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
         "ma5": 69.31599884033203,
@@ -1955,7 +1955,7 @@
     },
     {
       "ticker": "000810",
-      "name": "\uc0bc\uc131\ud654\uc7ac",
+      "name": "삼성화재",
       "signal": "HOLD",
       "gate_reason": null,
       "confidence": "MEDIUM",
@@ -1974,13 +1974,13 @@
       "target_price": 715020.0,
       "stop_loss": 553870.0,
       "top_reasons": [
-        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
-        "\ubd80\ucc44\ube44\uc728 426.62%",
-        "\uc678\uad6d\uc778 6\uc77c \uc21c\ub9e4\uc218"
+        "USD/KRW 1447.98 — 원화 약세 경고",
+        "부채비율 426.62%",
+        "외국인 6일 순매수"
       ],
       "risk_flags": [
-        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
-        "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
+        "USD/KRW 1447.98 — 외환 리스크",
+        "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
         "ma5": 624600.0,
@@ -2041,13 +2041,13 @@
       "target_price": 520.0,
       "stop_loss": 470.0,
       "top_reasons": [
-        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
-        "\ubcf5\ud569 \ub9e4\uc218\uc870\uac74 2/3 \ucda9\uc871",
-        "\uac15\uc138/\ub20c\ub9bc\ubaa9 \uc139\ud130"
+        "USD/KRW 1447.98 — 원화 약세 경고",
+        "복합 매수조건 2/3 충족",
+        "강세/눌림목 섹터"
       ],
       "risk_flags": [
-        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
-        "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
+        "USD/KRW 1447.98 — 외환 리스크",
+        "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
         "ma5": 492.4,
@@ -2112,26 +2112,26 @@
       "target_price": 470.0,
       "stop_loss": 400.0,
       "top_reasons": [
-        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
-        "MA \uc815\ubc30\uc5f4",
-        "\ubcf5\ud569 \ub9e4\uc218\uc870\uac74 2/3 \ucda9\uc871"
+        "USD/KRW 1447.98 — 원화 약세 경고",
+        "MA 정배열",
+        "복합 매수조건 2/3 충족"
       ],
       "risk_flags": [
-        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
-        "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
+        "USD/KRW 1447.98 — 외환 리스크",
+        "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
         "ma5": 425.9200012207031,
         "ma20": 424.4424987792969,
         "ma60": 401.68357950846354,
-        "ma120": 347.0971331278483,
+        "ma120": 347.097132619222,
         "current_price": 417.6400146484375,
         "ma_aligned_up": true,
         "ma_aligned_down": false,
         "pct_vs_ma5": -1.9440238891188177,
         "pct_vs_ma20": -1.6026868540316874,
         "pct_vs_ma60": 3.9723892023417307,
-        "pct_vs_ma120": 20.32367161459836,
+        "pct_vs_ma120": 20.323671790917253,
         "golden_cross": false,
         "dead_cross": false,
         "rsi": 43.1,
@@ -2164,7 +2164,7 @@
     },
     {
       "ticker": "096770",
-      "name": "SK\uc774\ub178\ubca0\uc774\uc158",
+      "name": "SK이노베이션",
       "signal": "HOLD",
       "gate_reason": null,
       "confidence": "MEDIUM",
@@ -2183,13 +2183,13 @@
       "target_price": 138520.0,
       "stop_loss": 88270.0,
       "top_reasons": [
-        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
-        "\uc678\uad6d\uc778 10\uc77c \uc5f0\uc18d \uc21c\ub9e4\uc218",
-        "\uae30\uad00 \uc21c\ub9e4\uc218"
+        "USD/KRW 1447.98 — 원화 약세 경고",
+        "외국인 10일 연속 순매수",
+        "기관 순매수"
       ],
       "risk_flags": [
-        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
-        "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
+        "USD/KRW 1447.98 — 외환 리스크",
+        "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
         "ma5": 120240.0,
@@ -2231,7 +2231,7 @@
     },
     {
       "ticker": "018260",
-      "name": "\uc0bc\uc131\uc5d0\uc2a4\ub514\uc5d0\uc2a4",
+      "name": "삼성에스디에스",
       "signal": "HOLD",
       "gate_reason": null,
       "confidence": "MEDIUM",
@@ -2250,13 +2250,13 @@
       "target_price": 230520.0,
       "stop_loss": 177510.0,
       "top_reasons": [
-        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
-        "\uc678\uad6d\uc778 8\uc77c \uc5f0\uc18d \uc21c\ub9e4\uc218",
-        "\ubcf5\ud569 \ub9e4\uc218\uc870\uac74 2/3 \ucda9\uc871"
+        "USD/KRW 1447.98 — 원화 약세 경고",
+        "외국인 8일 연속 순매수",
+        "복합 매수조건 2/3 충족"
       ],
       "risk_flags": [
-        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
-        "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
+        "USD/KRW 1447.98 — 외환 리스크",
+        "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
         "ma5": 208560.0,
@@ -2298,7 +2298,7 @@
     },
     {
       "ticker": "021240",
-      "name": "\ucf54\uc6e8\uc774",
+      "name": "코웨이",
       "signal": "HOLD",
       "gate_reason": null,
       "confidence": "MEDIUM",
@@ -2317,13 +2317,13 @@
       "target_price": 102510.0,
       "stop_loss": 81770.0,
       "top_reasons": [
-        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
-        "PER 9.85 \u2014 \uc800\ud3c9\uac00",
-        "\uc601\uc5c5\uc774\uc775\ub960 18.44%"
+        "USD/KRW 1447.98 — 원화 약세 경고",
+        "PER 9.85 — 저평가",
+        "영업이익률 18.44%"
       ],
       "risk_flags": [
-        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
-        "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
+        "USD/KRW 1447.98 — 외환 리스크",
+        "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
         "ma5": 91320.0,
@@ -2384,13 +2384,13 @@
       "target_price": 150.0,
       "stop_loss": 130.0,
       "top_reasons": [
-        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
+        "USD/KRW 1447.98 — 원화 약세 경고",
         "ROE 51.51%",
-        "\uc601\uc5c5\uc774\uc775\ub960 16.84%"
+        "영업이익률 16.84%"
       ],
       "risk_flags": [
-        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
-        "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
+        "USD/KRW 1447.98 — 외환 리스크",
+        "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
         "ma5": 136.40599670410157,
@@ -2455,13 +2455,13 @@
       "target_price": 320.0,
       "stop_loss": 250.0,
       "top_reasons": [
-        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
+        "USD/KRW 1447.98 — 원화 약세 경고",
         "ROE 22.5%",
-        "\uc601\uc5c5\uc774\uc775\ub960 46.97%"
+        "영업이익률 46.97%"
       ],
       "risk_flags": [
-        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
-        "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
+        "USD/KRW 1447.98 — 외환 리스크",
+        "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
         "ma5": 291.23200073242185,
@@ -2526,13 +2526,13 @@
       "target_price": 20.0,
       "stop_loss": 20.0,
       "top_reasons": [
-        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
-        "\uc601\uc5c5\uc774\uc775\ub960 18.28%",
-        "RSI \uacfc\ub9e4\ub3c4 \ud68c\ubcf5 (42.6)"
+        "USD/KRW 1447.98 — 원화 약세 경고",
+        "영업이익률 18.28%",
+        "RSI 과매도 회복 (42.6)"
       ],
       "risk_flags": [
-        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
-        "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
+        "USD/KRW 1447.98 — 외환 리스크",
+        "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
         "ma5": 16.939999389648438,
@@ -2597,13 +2597,13 @@
       "target_price": 159630.0,
       "stop_loss": 102340.0,
       "top_reasons": [
-        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
-        "\uc678\uad6d\uc778 6\uc77c \uc21c\ub9e4\uc218",
-        "\uae30\uad00 \uc21c\ub9e4\uc218"
+        "USD/KRW 1447.98 — 원화 약세 경고",
+        "외국인 6일 순매수",
+        "기관 순매수"
       ],
       "risk_flags": [
-        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
-        "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
+        "USD/KRW 1447.98 — 외환 리스크",
+        "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
         "ma5": 138660.0,
@@ -2645,7 +2645,7 @@
     },
     {
       "ticker": "086280",
-      "name": "\ud604\ub300\uae00\ub85c\ube44\uc2a4",
+      "name": "현대글로비스",
       "signal": "HOLD",
       "gate_reason": null,
       "confidence": "MEDIUM",
@@ -2664,13 +2664,13 @@
       "target_price": 219300.0,
       "stop_loss": 171590.0,
       "top_reasons": [
-        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
-        "PER 8.43 \u2014 \uc800\ud3c9\uac00",
-        "\uc678\uad6d\uc778 7\uc77c \uc5f0\uc18d \uc21c\ub9e4\uc218"
+        "USD/KRW 1447.98 — 원화 약세 경고",
+        "PER 8.43 — 저평가",
+        "외국인 7일 연속 순매수"
       ],
       "risk_flags": [
-        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
-        "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
+        "USD/KRW 1447.98 — 외환 리스크",
+        "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
         "ma5": 199020.0,
@@ -2731,26 +2731,26 @@
       "target_price": 370.0,
       "stop_loss": 310.0,
       "top_reasons": [
-        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
-        "\uc601\uc5c5\uc774\uc775\ub960 50.39%",
-        "MA \uc815\ubc30\uc5f4"
+        "USD/KRW 1447.98 — 원화 약세 경고",
+        "영업이익률 50.39%",
+        "MA 정배열"
       ],
       "risk_flags": [
-        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
-        "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
+        "USD/KRW 1447.98 — 외환 리스크",
+        "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
         "ma5": 350.55,
         "ma20": 339.950830078125,
         "ma60": 319.72027994791665,
-        "ma120": 309.4547945658366,
+        "ma120": 309.4547950744629,
         "current_price": 356.20001220703125,
         "ma_aligned_up": true,
         "ma_aligned_down": false,
         "pct_vs_ma5": 1.6117564418859587,
         "pct_vs_ma20": 4.77986246574893,
         "pct_vs_ma60": 11.409890002929203,
-        "pct_vs_ma120": 15.105669216331874,
+        "pct_vs_ma120": 15.105669027141833,
         "golden_cross": false,
         "dead_cross": false,
         "rsi": 65.7,
@@ -2802,13 +2802,13 @@
       "target_price": 10.0,
       "stop_loss": 10.0,
       "top_reasons": [
-        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
-        "PER 109.17 \u2014 \uace0\ud3c9\uac00",
-        "MA \uc815\ubc30\uc5f4"
+        "USD/KRW 1447.98 — 원화 약세 경고",
+        "PER 109.17 — 고평가",
+        "MA 정배열"
       ],
       "risk_flags": [
-        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
-        "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
+        "USD/KRW 1447.98 — 외환 리스크",
+        "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
         "ma5": 6.286000156402588,
@@ -2873,13 +2873,13 @@
       "target_price": 80.0,
       "stop_loss": 60.0,
       "top_reasons": [
-        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
+        "USD/KRW 1447.98 — 원화 약세 경고",
         "ROE 35.31%",
-        "MA \uc5ed\ubc30\uc5f4"
+        "MA 역배열"
       ],
       "risk_flags": [
-        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
-        "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
+        "USD/KRW 1447.98 — 외환 리스크",
+        "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
         "ma5": 68.98200225830078,
@@ -2944,13 +2944,13 @@
       "target_price": 200.0,
       "stop_loss": 170.0,
       "top_reasons": [
-        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
+        "USD/KRW 1447.98 — 원화 약세 경고",
         "ROE 33.82%",
-        "\uc601\uc5c5\uc774\uc775\ub960 18.33%"
+        "영업이익률 18.33%"
       ],
       "risk_flags": [
-        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
-        "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
+        "USD/KRW 1447.98 — 외환 리스크",
+        "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
         "ma5": 190.88199768066406,
@@ -3015,13 +3015,13 @@
       "target_price": 410.0,
       "stop_loss": 350.0,
       "top_reasons": [
-        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
+        "USD/KRW 1447.98 — 원화 약세 경고",
         "ROE 34.01%",
-        "\uc601\uc5c5\uc774\uc775\ub960 46.33%"
+        "영업이익률 46.33%"
       ],
       "risk_flags": [
-        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
-        "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
+        "USD/KRW 1447.98 — 외환 리스크",
+        "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
         "ma5": 388.0940002441406,
@@ -3086,12 +3086,12 @@
       "target_price": 10.0,
       "stop_loss": 10.0,
       "top_reasons": [
-        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
-        "\uac15\uc138/\ub20c\ub9bc\ubaa9 \uc139\ud130"
+        "USD/KRW 1447.98 — 원화 약세 경고",
+        "강세/눌림목 섹터"
       ],
       "risk_flags": [
-        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
-        "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
+        "USD/KRW 1447.98 — 외환 리스크",
+        "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
         "ma5": 11.079999923706055,
@@ -3156,13 +3156,13 @@
       "target_price": 160.0,
       "stop_loss": 110.0,
       "top_reasons": [
-        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
+        "USD/KRW 1447.98 — 원화 약세 경고",
         "ROE 53.38%",
-        "\uc601\uc5c5\uc774\uc775\ub960 36.2%"
+        "영업이익률 36.2%"
       ],
       "risk_flags": [
-        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
-        "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
+        "USD/KRW 1447.98 — 외환 리스크",
+        "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
         "ma5": 121.56399993896484,
@@ -3227,13 +3227,13 @@
       "target_price": 290.0,
       "stop_loss": 250.0,
       "top_reasons": [
-        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
-        "\uc601\uc5c5\uc774\uc775\ub960 44.25%",
-        "MA \uc5ed\ubc30\uc5f4"
+        "USD/KRW 1447.98 — 원화 약세 경고",
+        "영업이익률 44.25%",
+        "MA 역배열"
       ],
       "risk_flags": [
-        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
-        "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
+        "USD/KRW 1447.98 — 외환 리스크",
+        "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
         "ma5": 265.1420043945312,
@@ -3298,13 +3298,13 @@
       "target_price": 60.0,
       "stop_loss": 40.0,
       "top_reasons": [
-        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
-        "MA \uc815\ubc30\uc5f4",
-        "MACD \uace8\ub4e0\ud06c\ub85c\uc2a4"
+        "USD/KRW 1447.98 — 원화 약세 경고",
+        "MA 정배열",
+        "MACD 골든크로스"
       ],
       "risk_flags": [
-        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
-        "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
+        "USD/KRW 1447.98 — 외환 리스크",
+        "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
         "ma5": 49.80400009155274,
@@ -3369,13 +3369,13 @@
       "target_price": 190.0,
       "stop_loss": 160.0,
       "top_reasons": [
-        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
-        "\uc601\uc5c5\uc774\uc775\ub960 15.47%",
-        "\ubcfc\ub9b0\uc800\ubc34\ub4dc \ud558\ub2e8"
+        "USD/KRW 1447.98 — 원화 약세 경고",
+        "영업이익률 15.47%",
+        "볼린저밴드 하단"
       ],
       "risk_flags": [
-        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
-        "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
+        "USD/KRW 1447.98 — 외환 리스크",
+        "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
         "ma5": 172.26000366210937,
@@ -3440,13 +3440,13 @@
       "target_price": 20.0,
       "stop_loss": 20.0,
       "top_reasons": [
-        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
-        "MA \uc5ed\ubc30\uc5f4",
-        "RSI \uacfc\ub9e4\ub3c4 \ud68c\ubcf5 (39.7)"
+        "USD/KRW 1447.98 — 원화 약세 경고",
+        "MA 역배열",
+        "RSI 과매도 회복 (39.7)"
       ],
       "risk_flags": [
-        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
-        "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
+        "USD/KRW 1447.98 — 외환 리스크",
+        "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
         "ma5": 17.55800018310547,
@@ -3511,13 +3511,13 @@
       "target_price": 220.0,
       "stop_loss": 180.0,
       "top_reasons": [
-        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
+        "USD/KRW 1447.98 — 원화 약세 경고",
         "ROE 114.29%",
-        "\uc601\uc5c5\uc774\uc775\ub960 65.6%"
+        "영업이익률 65.6%"
       ],
       "risk_flags": [
-        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
-        "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
+        "USD/KRW 1447.98 — 외환 리스크",
+        "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
         "ma5": 206.2919952392578,
@@ -3582,13 +3582,13 @@
       "target_price": 90.0,
       "stop_loss": 80.0,
       "top_reasons": [
-        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
+        "USD/KRW 1447.98 — 원화 약세 경고",
         "ROE 43.37%",
-        "\uc601\uc5c5\uc774\uc775\ub960 35.05%"
+        "영업이익률 35.05%"
       ],
       "risk_flags": [
-        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
-        "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
+        "USD/KRW 1447.98 — 외환 리스크",
+        "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
         "ma5": 82.33199920654297,
@@ -3653,13 +3653,13 @@
       "target_price": 320.0,
       "stop_loss": 190.0,
       "top_reasons": [
-        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
+        "USD/KRW 1447.98 — 원화 약세 경고",
         "ROE 34.46%",
-        "\uc601\uc5c5\uc774\uc775\ub960 16.55%"
+        "영업이익률 16.55%"
       ],
       "risk_flags": [
-        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
-        "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
+        "USD/KRW 1447.98 — 외환 리스크",
+        "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
         "ma5": 210.6779998779297,
@@ -3724,13 +3724,13 @@
       "target_price": 540.0,
       "stop_loss": 450.0,
       "top_reasons": [
-        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
+        "USD/KRW 1447.98 — 원화 약세 경고",
         "ROE 24.2%",
-        "\uc601\uc5c5\uc774\uc775\ub960 38.13%"
+        "영업이익률 38.13%"
       ],
       "risk_flags": [
-        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
-        "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
+        "USD/KRW 1447.98 — 외환 리스크",
+        "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
         "ma5": 477.4320007324219,
@@ -3795,13 +3795,13 @@
       "target_price": 390.0,
       "stop_loss": 340.0,
       "top_reasons": [
-        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
+        "USD/KRW 1447.98 — 원화 약세 경고",
         "ROE 101.32%",
-        "\uc601\uc5c5\uc774\uc775\ub960 33.8%"
+        "영업이익률 33.8%"
       ],
       "risk_flags": [
-        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
-        "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
+        "USD/KRW 1447.98 — 외환 리스크",
+        "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
         "ma5": 368.8440002441406,
@@ -3866,26 +3866,26 @@
       "target_price": 1150.0,
       "stop_loss": 920.0,
       "top_reasons": [
-        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
-        "\uc601\uc5c5\uc774\uc775\ub960 35.08%",
-        "\uac15\uc138/\ub20c\ub9bc\ubaa9 \uc139\ud130"
+        "USD/KRW 1447.98 — 원화 약세 경고",
+        "영업이익률 35.08%",
+        "강세/눌림목 섹터"
       ],
       "risk_flags": [
-        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
-        "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
+        "USD/KRW 1447.98 — 외환 리스크",
+        "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
         "ma5": 1049.656005859375,
         "ma20": 1023.8625030517578,
         "ma60": 1036.0191050211588,
-        "ma120": 1025.0537623087564,
+        "ma120": 1025.0537653605143,
         "current_price": 1062.1400146484375,
         "ma_aligned_up": false,
         "ma_aligned_down": false,
         "pct_vs_ma5": 1.1893428627449687,
         "pct_vs_ma20": 3.738540231973375,
         "pct_vs_ma60": 2.5212768278771502,
-        "pct_vs_ma120": 3.6179811931181804,
+        "pct_vs_ma120": 3.6179808846299677,
         "golden_cross": false,
         "dead_cross": false,
         "rsi": 59.7,
@@ -3937,14 +3937,14 @@
       "target_price": 350.0,
       "stop_loss": 270.0,
       "top_reasons": [
-        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
-        "PER 40.83 \u2014 \uace0\ud3c9\uac00",
+        "USD/KRW 1447.98 — 원화 약세 경고",
+        "PER 40.83 — 고평가",
         "ROE 141.47%"
       ],
       "risk_flags": [
-        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
-        "RSI 72.1 \uacfc\ub9e4\uc218",
-        "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
+        "USD/KRW 1447.98 — 외환 리스크",
+        "RSI 72.1 과매수",
+        "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
         "ma5": 329.04400024414065,
@@ -4009,13 +4009,13 @@
       "target_price": 120.0,
       "stop_loss": 100.0,
       "top_reasons": [
-        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
+        "USD/KRW 1447.98 — 원화 약세 경고",
         "ROE 24.13%",
-        "MA \uc5ed\ubc30\uc5f4"
+        "MA 역배열"
       ],
       "risk_flags": [
-        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
-        "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
+        "USD/KRW 1447.98 — 외환 리스크",
+        "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
         "ma5": 109.86600036621094,
@@ -4080,14 +4080,14 @@
       "target_price": 700.0,
       "stop_loss": 530.0,
       "top_reasons": [
-        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
+        "USD/KRW 1447.98 — 원화 약세 경고",
         "ROE 32.93%",
-        "\uc601\uc5c5\uc774\uc775\ub960 40.62%"
+        "영업이익률 40.62%"
       ],
       "risk_flags": [
-        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
-        "\ub370\ub4dc\ud06c\ub85c\uc2a4 \ubc1c\uc0dd",
-        "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
+        "USD/KRW 1447.98 — 외환 리스크",
+        "데드크로스 발생",
+        "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
         "ma5": 613.2279907226563,
@@ -4152,13 +4152,13 @@
       "target_price": 20.0,
       "stop_loss": 10.0,
       "top_reasons": [
-        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
-        "PER 2.21 \u2014 \uc800\ud3c9\uac00",
+        "USD/KRW 1447.98 — 원화 약세 경고",
+        "PER 2.21 — 저평가",
         "ROE 147.81%"
       ],
       "risk_flags": [
-        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
-        "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
+        "USD/KRW 1447.98 — 외환 리스크",
+        "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
         "ma5": 14.631999969482422,
@@ -4204,7 +4204,7 @@
     },
     {
       "ticker": "009540",
-      "name": "HD\ud55c\uad6d\uc870\uc120\ud574\uc591",
+      "name": "HD한국조선해양",
       "signal": "HOLD",
       "gate_reason": null,
       "confidence": "MEDIUM",
@@ -4223,13 +4223,13 @@
       "target_price": 396780.0,
       "stop_loss": 304580.0,
       "top_reasons": [
-        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
-        "PER 9.42 \u2014 \uc800\ud3c9\uac00",
-        "\uc678\uad6d\uc778 8\uc77c \uc5f0\uc18d \uc21c\ub9e4\uc218"
+        "USD/KRW 1447.98 — 원화 약세 경고",
+        "PER 9.42 — 저평가",
+        "외국인 8일 연속 순매수"
       ],
       "risk_flags": [
-        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
-        "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
+        "USD/KRW 1447.98 — 외환 리스크",
+        "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
         "ma5": 364100.0,
@@ -4271,7 +4271,7 @@
     },
     {
       "ticker": "032640",
-      "name": "LG\uc720\ud50c\ub7ec\uc2a4",
+      "name": "LG유플러스",
       "signal": "HOLD",
       "gate_reason": null,
       "confidence": "MEDIUM",
@@ -4290,13 +4290,13 @@
       "target_price": 15500.0,
       "stop_loss": 13540.0,
       "top_reasons": [
-        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
-        "\uc678\uad6d\uc778 6\uc77c \uc21c\ub9e4\uc218",
-        "\uae30\uad00 \uc21c\ub9e4\uc218"
+        "USD/KRW 1447.98 — 원화 약세 경고",
+        "외국인 6일 순매수",
+        "기관 순매수"
       ],
       "risk_flags": [
-        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
-        "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
+        "USD/KRW 1447.98 — 외환 리스크",
+        "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
         "ma5": 14654.0,
@@ -4338,7 +4338,7 @@
     },
     {
       "ticker": "267270",
-      "name": "HD\uac74\uc124\uae30\uacc4",
+      "name": "HD건설기계",
       "signal": "HOLD",
       "gate_reason": null,
       "confidence": "MEDIUM",
@@ -4357,13 +4357,13 @@
       "target_price": 143310.0,
       "stop_loss": 103890.0,
       "top_reasons": [
-        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
-        "\uc678\uad6d\uc778 9\uc77c \uc5f0\uc18d \uc21c\ub9e4\uc218",
-        "\ubcfc\ub9b0\uc800\ubc34\ub4dc \ud558\ub2e8"
+        "USD/KRW 1447.98 — 원화 약세 경고",
+        "외국인 9일 연속 순매수",
+        "볼린저밴드 하단"
       ],
       "risk_flags": [
-        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
-        "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
+        "USD/KRW 1447.98 — 외환 리스크",
+        "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
         "ma5": 129740.0,
@@ -4424,13 +4424,13 @@
       "target_price": 200.0,
       "stop_loss": 170.0,
       "top_reasons": [
-        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
-        "\uc601\uc5c5\uc774\uc775\ub960 40.0%",
-        "MA \uc815\ubc30\uc5f4"
+        "USD/KRW 1447.98 — 원화 약세 경고",
+        "영업이익률 40.0%",
+        "MA 정배열"
       ],
       "risk_flags": [
-        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
-        "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
+        "USD/KRW 1447.98 — 외환 리스크",
+        "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
         "ma5": 192.4239990234375,
@@ -4476,7 +4476,7 @@
     },
     {
       "ticker": "024110",
-      "name": "\uae30\uc5c5\uc740\ud589",
+      "name": "기업은행",
       "signal": "HOLD",
       "gate_reason": null,
       "confidence": "MEDIUM",
@@ -4495,14 +4495,14 @@
       "target_price": 22590.0,
       "stop_loss": 19240.0,
       "top_reasons": [
-        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
-        "PER 6.08 \u2014 \uc800\ud3c9\uac00",
-        "\ubd80\ucc44\ube44\uc728 1309.41%"
+        "USD/KRW 1447.98 — 원화 약세 경고",
+        "PER 6.08 — 저평가",
+        "부채비율 1309.41%"
       ],
       "risk_flags": [
-        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
-        "\ub370\ub4dc\ud06c\ub85c\uc2a4 \ubc1c\uc0dd",
-        "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
+        "USD/KRW 1447.98 — 외환 리스크",
+        "데드크로스 발생",
+        "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
         "ma5": 20870.0,
@@ -4563,13 +4563,13 @@
       "target_price": 250.0,
       "stop_loss": 190.0,
       "top_reasons": [
-        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
+        "USD/KRW 1447.98 — 원화 약세 경고",
         "ROE 62.95%",
-        "\uc601\uc5c5\uc774\uc775\ub960 35.33%"
+        "영업이익률 35.33%"
       ],
       "risk_flags": [
-        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
-        "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
+        "USD/KRW 1447.98 — 외환 리스크",
+        "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
         "ma5": 224.11000061035156,
@@ -4615,7 +4615,7 @@
     },
     {
       "ticker": "086790",
-      "name": "\ud558\ub098\uae08\uc735\uc9c0\uc8fc",
+      "name": "하나금융지주",
       "signal": "HOLD",
       "gate_reason": null,
       "confidence": "MEDIUM",
@@ -4634,14 +4634,14 @@
       "target_price": 145350.0,
       "stop_loss": 110190.0,
       "top_reasons": [
-        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
-        "PER 8.3 \u2014 \uc800\ud3c9\uac00",
-        "\ubd80\ucc44\ube44\uc728 1373.12%"
+        "USD/KRW 1447.98 — 원화 약세 경고",
+        "PER 8.3 — 저평가",
+        "부채비율 1373.12%"
       ],
       "risk_flags": [
-        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
-        "\ub370\ub4dc\ud06c\ub85c\uc2a4 \ubc1c\uc0dd",
-        "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
+        "USD/KRW 1447.98 — 외환 리스크",
+        "데드크로스 발생",
+        "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
         "ma5": 127380.0,
@@ -4683,7 +4683,7 @@
     },
     {
       "ticker": "047050",
-      "name": "\ud3ec\uc2a4\ucf54\uc778\ud130\ub0b4\uc154\ub110",
+      "name": "포스코인터내셔널",
       "signal": "HOLD",
       "gate_reason": null,
       "confidence": "MEDIUM",
@@ -4702,13 +4702,13 @@
       "target_price": 58960.0,
       "stop_loss": 45640.0,
       "top_reasons": [
-        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
-        "\uc678\uad6d\uc778 7\uc77c \uc5f0\uc18d \uc21c\ub9e4\uc218",
-        "\uc57d\uc138 \uc139\ud130"
+        "USD/KRW 1447.98 — 원화 약세 경고",
+        "외국인 7일 연속 순매수",
+        "약세 섹터"
       ],
       "risk_flags": [
-        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
-        "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
+        "USD/KRW 1447.98 — 외환 리스크",
+        "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
         "ma5": 52910.0,
@@ -4769,26 +4769,26 @@
       "target_price": 420.0,
       "stop_loss": 350.0,
       "top_reasons": [
-        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
-        "PER 63.7 \u2014 \uace0\ud3c9\uac00",
+        "USD/KRW 1447.98 — 원화 약세 경고",
+        "PER 63.7 — 고평가",
         "ROE 37.28%"
       ],
       "risk_flags": [
-        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
-        "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
+        "USD/KRW 1447.98 — 외환 리스크",
+        "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
         "ma5": 388.1840026855469,
         "ma20": 382.31199951171874,
         "ma60": 402.09654286702477,
-        "ma120": 372.17550303141275,
+        "ma120": 372.17550328572594,
         "current_price": 383.2200012207031,
         "ma_aligned_up": false,
         "ma_aligned_down": false,
         "pct_vs_ma5": -1.2787753824221593,
         "pct_vs_ma20": 0.2375028014145686,
         "pct_vs_ma60": -4.69452970466453,
-        "pct_vs_ma120": 2.9675510879495492,
+        "pct_vs_ma120": 2.967551017590253,
         "golden_cross": false,
         "dead_cross": false,
         "rsi": 55.0,
@@ -4840,26 +4840,26 @@
       "target_price": 210.0,
       "stop_loss": 160.0,
       "top_reasons": [
-        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
-        "\uc601\uc5c5\uc774\uc775\ub960 19.78%",
-        "\uac15\uc138/\ub20c\ub9bc\ubaa9 \uc139\ud130"
+        "USD/KRW 1447.98 — 원화 약세 경고",
+        "영업이익률 19.78%",
+        "강세/눌림목 섹터"
       ],
       "risk_flags": [
-        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
-        "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
+        "USD/KRW 1447.98 — 외환 리스크",
+        "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
         "ma5": 189.6519989013672,
         "ma20": 195.09049911499022,
         "ma60": 182.5064493815104,
-        "ma120": 190.23028093973795,
+        "ma120": 190.23028004964192,
         "current_price": 196.5,
         "ma_aligned_up": false,
         "ma_aligned_down": false,
         "pct_vs_ma5": 3.610824635807952,
         "pct_vs_ma20": 0.7224856625021925,
         "pct_vs_ma60": 7.6674280092083436,
-        "pct_vs_ma120": 3.2958575413386537,
+        "pct_vs_ma120": 3.2958580246646108,
         "golden_cross": false,
         "dead_cross": false,
         "rsi": 52.3,
@@ -4892,7 +4892,7 @@
     },
     {
       "ticker": "005935",
-      "name": "\uc0bc\uc131\uc804\uc790\uc6b0",
+      "name": "삼성전자우",
       "signal": "HOLD",
       "gate_reason": null,
       "confidence": "MEDIUM",
@@ -4911,13 +4911,13 @@
       "target_price": 224910.0,
       "stop_loss": 135410.0,
       "top_reasons": [
-        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
-        "\uc678\uad6d\uc778 6\uc77c \uc21c\ub9e4\uc218",
-        "\uc678\uad6d\uc778 \ubcf4\uc720 76.71%"
+        "USD/KRW 1447.98 — 원화 약세 경고",
+        "외국인 6일 순매수",
+        "외국인 보유 76.71%"
       ],
       "risk_flags": [
-        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
-        "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
+        "USD/KRW 1447.98 — 외환 리스크",
+        "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
         "ma5": 171920.0,
@@ -4959,7 +4959,7 @@
     },
     {
       "ticker": "090430",
-      "name": "\uc544\ubaa8\ub808\ud37c\uc2dc\ud53d",
+      "name": "아모레퍼시픽",
       "signal": "HOLD",
       "gate_reason": null,
       "confidence": "MEDIUM",
@@ -4978,13 +4978,13 @@
       "target_price": 133110.0,
       "stop_loss": 102530.0,
       "top_reasons": [
-        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
-        "\uc678\uad6d\uc778 5\uc77c \uc21c\ub9e4\uc218",
-        "\uae30\uad00 \uc21c\ub9e4\uc218"
+        "USD/KRW 1447.98 — 원화 약세 경고",
+        "외국인 5일 순매수",
+        "기관 순매수"
       ],
       "risk_flags": [
-        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
-        "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
+        "USD/KRW 1447.98 — 외환 리스크",
+        "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
         "ma5": 120240.0,
@@ -5026,7 +5026,7 @@
     },
     {
       "ticker": "105560",
-      "name": "KB\uae08\uc735",
+      "name": "KB금융",
       "signal": "HOLD",
       "gate_reason": null,
       "confidence": "MEDIUM",
@@ -5045,13 +5045,13 @@
       "target_price": 198390.0,
       "stop_loss": 149960.0,
       "top_reasons": [
-        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
-        "\ubd80\ucc44\ube44\uc728 1120.62%",
-        "\uc678\uad6d\uc778 6\uc77c \uc21c\ub9e4\uc218"
+        "USD/KRW 1447.98 — 원화 약세 경고",
+        "부채비율 1120.62%",
+        "외국인 6일 순매수"
       ],
       "risk_flags": [
-        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
-        "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
+        "USD/KRW 1447.98 — 외환 리스크",
+        "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
         "ma5": 169140.0,
@@ -5093,7 +5093,7 @@
     },
     {
       "ticker": "161390",
-      "name": "\ud55c\uad6d\ud0c0\uc774\uc5b4\uc564\ud14c\ud06c\ub180\ub85c\uc9c0",
+      "name": "한국타이어앤테크놀로지",
       "signal": "HOLD",
       "gate_reason": null,
       "confidence": "MEDIUM",
@@ -5112,14 +5112,14 @@
       "target_price": 79150.0,
       "stop_loss": 59660.0,
       "top_reasons": [
-        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
-        "PER 7.31 \u2014 \uc800\ud3c9\uac00",
-        "\uc678\uad6d\uc778 9\uc77c \uc5f0\uc18d \uc21c\ub9e4\uc218"
+        "USD/KRW 1447.98 — 원화 약세 경고",
+        "PER 7.31 — 저평가",
+        "외국인 9일 연속 순매수"
       ],
       "risk_flags": [
-        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
-        "\ub370\ub4dc\ud06c\ub85c\uc2a4 \ubc1c\uc0dd",
-        "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
+        "USD/KRW 1447.98 — 외환 리스크",
+        "데드크로스 발생",
+        "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
         "ma5": 69920.0,
@@ -5180,14 +5180,14 @@
       "target_price": 160.0,
       "stop_loss": 130.0,
       "top_reasons": [
-        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
-        "RSI \uacfc\ub9e4\uc218 (74.2)",
-        "\uac15\ud55c \uc0c1\uc2b9 \ubaa8\uba58\ud140"
+        "USD/KRW 1447.98 — 원화 약세 경고",
+        "RSI 과매수 (74.2)",
+        "강한 상승 모멘텀"
       ],
       "risk_flags": [
-        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
-        "RSI 74.2 \uacfc\ub9e4\uc218",
-        "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
+        "USD/KRW 1447.98 — 외환 리스크",
+        "RSI 74.2 과매수",
+        "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
         "ma5": 154.952001953125,
@@ -5252,27 +5252,27 @@
       "target_price": 200.0,
       "stop_loss": 160.0,
       "top_reasons": [
-        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
-        "RSI \uacfc\ub9e4\uc218 (76.1)",
-        "\uac15\ud55c \uc0c1\uc2b9 \ubaa8\uba58\ud140"
+        "USD/KRW 1447.98 — 원화 약세 경고",
+        "RSI 과매수 (76.1)",
+        "강한 상승 모멘텀"
       ],
       "risk_flags": [
-        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
-        "RSI 76.1 \uacfc\ub9e4\uc218",
-        "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
+        "USD/KRW 1447.98 — 외환 리스크",
+        "RSI 76.1 과매수",
+        "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
         "ma5": 192.6519989013672,
         "ma20": 180.37099990844726,
         "ma60": 183.21009267171223,
-        "ma120": 186.01399790445964,
+        "ma120": 186.01399828592938,
         "current_price": 190.0,
         "ma_aligned_up": false,
         "ma_aligned_down": false,
         "pct_vs_ma5": -1.3765748170227687,
         "pct_vs_ma20": 5.338441377183822,
         "pct_vs_ma60": 3.706077121228457,
-        "pct_vs_ma120": 2.142850613633729,
+        "pct_vs_ma120": 2.1428504041634433,
         "golden_cross": false,
         "dead_cross": false,
         "rsi": 76.1,
@@ -5324,13 +5324,13 @@
       "target_price": 200.0,
       "stop_loss": 160.0,
       "top_reasons": [
-        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
+        "USD/KRW 1447.98 — 원화 약세 경고",
         "ROE 36.08%",
-        "\uc601\uc5c5\uc774\uc775\ub960 22.06%"
+        "영업이익률 22.06%"
       ],
       "risk_flags": [
-        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
-        "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
+        "USD/KRW 1447.98 — 외환 리스크",
+        "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
         "ma5": 171.45,
@@ -5395,13 +5395,13 @@
       "target_price": 150.0,
       "stop_loss": 130.0,
       "top_reasons": [
-        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
+        "USD/KRW 1447.98 — 원화 약세 경고",
         "ROE 32.32%",
-        "RSI \uacfc\ub9e4\ub3c4 \ud68c\ubcf5 (48.9)"
+        "RSI 과매도 회복 (48.9)"
       ],
       "risk_flags": [
-        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
-        "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
+        "USD/KRW 1447.98 — 외환 리스크",
+        "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
         "ma5": 142.70400390625,
@@ -5466,13 +5466,13 @@
       "target_price": 190.0,
       "stop_loss": 160.0,
       "top_reasons": [
-        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
-        "\uc601\uc5c5\uc774\uc775\ub960 25.04%",
-        "\ubcfc\ub9b0\uc800\ubc34\ub4dc \uc0c1\ub2e8 \uacfc\uc5f4"
+        "USD/KRW 1447.98 — 원화 약세 경고",
+        "영업이익률 25.04%",
+        "볼린저밴드 상단 과열"
       ],
       "risk_flags": [
-        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
-        "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
+        "USD/KRW 1447.98 — 외환 리스크",
+        "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
         "ma5": 179.26599731445313,
@@ -5537,14 +5537,14 @@
       "target_price": 140.0,
       "stop_loss": 120.0,
       "top_reasons": [
-        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
+        "USD/KRW 1447.98 — 원화 약세 경고",
         "ROE 43.36%",
-        "\uc601\uc5c5\uc774\uc775\ub960 39.28%"
+        "영업이익률 39.28%"
       ],
       "risk_flags": [
-        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
-        "\ub370\ub4dc\ud06c\ub85c\uc2a4 \ubc1c\uc0dd",
-        "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
+        "USD/KRW 1447.98 — 외환 리스크",
+        "데드크로스 발생",
+        "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
         "ma5": 131.04200134277343,
@@ -5590,7 +5590,7 @@
     },
     {
       "ticker": "352820",
-      "name": "\ud558\uc774\ube0c",
+      "name": "하이브",
       "signal": "HOLD",
       "gate_reason": null,
       "confidence": "MEDIUM",
@@ -5609,13 +5609,13 @@
       "target_price": 244290.0,
       "stop_loss": 153160.0,
       "top_reasons": [
-        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
-        "\uc678\uad6d\uc778 6\uc77c \uc21c\ub9e4\uc218",
-        "\uae30\uad00 \uc21c\ub9e4\uc218"
+        "USD/KRW 1447.98 — 원화 약세 경고",
+        "외국인 6일 순매수",
+        "기관 순매수"
       ],
       "risk_flags": [
-        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
-        "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
+        "USD/KRW 1447.98 — 외환 리스크",
+        "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
         "ma5": 201420.0,
@@ -5676,26 +5676,26 @@
       "target_price": 600.0,
       "stop_loss": 480.0,
       "top_reasons": [
-        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
-        "\uc601\uc5c5\uc774\uc775\ub960 18.75%",
-        "\ubcfc\ub9b0\uc800\ubc34\ub4dc \uc0c1\ub2e8 \uacfc\uc5f4"
+        "USD/KRW 1447.98 — 원화 약세 경고",
+        "영업이익률 18.75%",
+        "볼린저밴드 상단 과열"
       ],
       "risk_flags": [
-        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
-        "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
+        "USD/KRW 1447.98 — 외환 리스크",
+        "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
         "ma5": 541.6000122070312,
         "ma20": 526.7615036010742,
         "ma60": 487.3989863077799,
-        "ma120": 495.98192901611327,
+        "ma120": 495.9819272359212,
         "current_price": 559.530029296875,
         "ma_aligned_up": false,
         "ma_aligned_down": false,
         "pct_vs_ma5": 3.310564380672476,
         "pct_vs_ma20": 6.220751795981094,
         "pct_vs_ma60": 14.79917788412186,
-        "pct_vs_ma120": 12.81258379853134,
+        "pct_vs_ma120": 12.812584203441379,
         "golden_cross": false,
         "dead_cross": false,
         "rsi": 67.2,
@@ -5747,13 +5747,13 @@
       "target_price": 260.0,
       "stop_loss": 220.0,
       "top_reasons": [
-        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
+        "USD/KRW 1447.98 — 원화 약세 경고",
         "ROE 24.29%",
-        "\ubcfc\ub9b0\uc800\ubc34\ub4dc \ud558\ub2e8"
+        "볼린저밴드 하단"
       ],
       "risk_flags": [
-        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
-        "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
+        "USD/KRW 1447.98 — 외환 리스크",
+        "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
         "ma5": 237.91200256347656,
@@ -5818,13 +5818,13 @@
       "target_price": 170.0,
       "stop_loss": 150.0,
       "top_reasons": [
-        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
-        "PER 59.28 \u2014 \uace0\ud3c9\uac00",
+        "USD/KRW 1447.98 — 원화 약세 경고",
+        "PER 59.28 — 고평가",
         "ROE 132.39%"
       ],
       "risk_flags": [
-        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
-        "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
+        "USD/KRW 1447.98 — 외환 리스크",
+        "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
         "ma5": 153.88800048828125,
@@ -5889,13 +5889,13 @@
       "target_price": 120.0,
       "stop_loss": 90.0,
       "top_reasons": [
-        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
-        "PER 46.61 \u2014 \uace0\ud3c9\uac00",
+        "USD/KRW 1447.98 — 원화 약세 경고",
+        "PER 46.61 — 고평가",
         "ROE 21.46%"
       ],
       "risk_flags": [
-        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
-        "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
+        "USD/KRW 1447.98 — 외환 리스크",
+        "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
         "ma5": 100.59600219726562,
@@ -5941,7 +5941,7 @@
     },
     {
       "ticker": "267260",
-      "name": "HD\ud604\ub300\uc77c\ub809\ud2b8\ub9ad",
+      "name": "HD현대일렉트릭",
       "signal": "HOLD",
       "gate_reason": null,
       "confidence": "MEDIUM",
@@ -5960,13 +5960,13 @@
       "target_price": 1105680.0,
       "stop_loss": 521860.0,
       "top_reasons": [
-        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
+        "USD/KRW 1447.98 — 원화 약세 경고",
         "ROE 27.71%",
-        "\uc678\uad6d\uc778 4\uc77c \uc21c\ub9e4\uc218"
+        "외국인 4일 순매수"
       ],
       "risk_flags": [
-        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
-        "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
+        "USD/KRW 1447.98 — 외환 리스크",
+        "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
         "ma5": 753400.0,
@@ -6008,7 +6008,7 @@
     },
     {
       "ticker": "017670",
-      "name": "SK\ud154\ub808\ucf64",
+      "name": "SK텔레콤",
       "signal": "HOLD",
       "gate_reason": null,
       "confidence": "MEDIUM",
@@ -6027,13 +6027,13 @@
       "target_price": 107710.0,
       "stop_loss": 73720.0,
       "top_reasons": [
-        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
-        "PER 46.07 \u2014 \uace0\ud3c9\uac00",
-        "\uc678\uad6d\uc778 9\uc77c \uc5f0\uc18d \uc21c\ub9e4\uc218"
+        "USD/KRW 1447.98 — 원화 약세 경고",
+        "PER 46.07 — 고평가",
+        "외국인 9일 연속 순매수"
       ],
       "risk_flags": [
-        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
-        "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
+        "USD/KRW 1447.98 — 외환 리스크",
+        "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
         "ma5": 91640.0,
@@ -6075,7 +6075,7 @@
     },
     {
       "ticker": "180640",
-      "name": "\ud55c\uc9c4\uce7c",
+      "name": "한진칼",
       "signal": "HOLD",
       "gate_reason": null,
       "confidence": "MEDIUM",
@@ -6094,13 +6094,13 @@
       "target_price": 146570.0,
       "stop_loss": 97870.0,
       "top_reasons": [
-        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
-        "PER 44.73 \u2014 \uace0\ud3c9\uac00",
-        "\uc601\uc5c5\uc774\uc775\ub960 15.54%"
+        "USD/KRW 1447.98 — 원화 약세 경고",
+        "PER 44.73 — 고평가",
+        "영업이익률 15.54%"
       ],
       "risk_flags": [
-        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
-        "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
+        "USD/KRW 1447.98 — 외환 리스크",
+        "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
         "ma5": 108180.0,
@@ -6161,26 +6161,26 @@
       "target_price": 140.0,
       "stop_loss": 120.0,
       "top_reasons": [
-        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
-        "\uc601\uc5c5\uc774\uc775\ub960 38.6%",
-        "MA \uc815\ubc30\uc5f4"
+        "USD/KRW 1447.98 — 원화 약세 경고",
+        "영업이익률 38.6%",
+        "MA 정배열"
       ],
       "risk_flags": [
-        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
-        "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
+        "USD/KRW 1447.98 — 외환 리스크",
+        "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
         "ma5": 129.20800018310547,
         "ma20": 126.85200004577636,
         "ma60": 119.47620544433593,
-        "ma120": 118.20502853393555,
+        "ma120": 118.20502866109213,
         "current_price": 130.75999450683594,
         "ma_aligned_up": true,
         "ma_aligned_down": false,
         "pct_vs_ma5": 1.201159619784442,
         "pct_vs_ma20": 3.080751158554307,
         "pct_vs_ma60": 9.444381850373663,
-        "pct_vs_ma120": 10.621346763852756,
+        "pct_vs_ma120": 10.621346644854167,
         "golden_cross": false,
         "dead_cross": false,
         "rsi": 53.6,
@@ -6232,26 +6232,26 @@
       "target_price": 2040.0,
       "stop_loss": 1560.0,
       "top_reasons": [
-        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
-        "PER 57.15 \u2014 \uace0\ud3c9\uac00",
+        "USD/KRW 1447.98 — 원화 약세 경고",
+        "PER 57.15 — 고평가",
         "ROE 53.94%"
       ],
       "risk_flags": [
-        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
-        "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
+        "USD/KRW 1447.98 — 외환 리스크",
+        "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
         "ma5": 1761.452001953125,
         "ma20": 1789.4026306152343,
         "ma60": 1700.7360127766926,
-        "ma120": 1549.1569864908854,
+        "ma120": 1549.1569844563803,
         "current_price": 1653.1090087890625,
         "ma_aligned_up": false,
         "ma_aligned_down": false,
         "pct_vs_ma5": -6.150777486070025,
         "pct_vs_ma20": -7.616710710842711,
         "pct_vs_ma60": -2.8003760507118503,
-        "pct_vs_ma120": 6.710231642413911,
+        "pct_vs_ma120": 6.710231782556253,
         "golden_cross": false,
         "dead_cross": false,
         "rsi": 41.0,
@@ -6303,26 +6303,26 @@
       "target_price": 390.0,
       "stop_loss": 330.0,
       "top_reasons": [
-        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
-        "PER 42.57 \u2014 \uace0\ud3c9\uac00",
+        "USD/KRW 1447.98 — 원화 약세 경고",
+        "PER 42.57 — 고평가",
         "ROE 48.23%"
       ],
       "risk_flags": [
-        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
-        "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
+        "USD/KRW 1447.98 — 외환 리스크",
+        "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
         "ma5": 349.2460021972656,
         "ma20": 358.38113555908205,
         "ma60": 331.6279088338216,
-        "ma120": 319.8864715576172,
+        "ma120": 319.88647130330406,
         "current_price": 361.6099853515625,
         "ma_aligned_up": false,
         "ma_aligned_down": false,
         "pct_vs_ma5": 3.5401931808837883,
         "pct_vs_ma20": 0.9009541719999792,
         "pct_vs_ma60": 9.04087856271616,
-        "pct_vs_ma120": 13.043225488962307,
+        "pct_vs_ma120": 13.043225578832885,
         "golden_cross": false,
         "dead_cross": false,
         "rsi": 46.4,
@@ -6374,26 +6374,26 @@
       "target_price": 470.0,
       "stop_loss": 360.0,
       "top_reasons": [
-        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
-        "\uc601\uc5c5\uc774\uc775\ub960 44.28%",
-        "\uac15\uc138/\ub20c\ub9bc\ubaa9 \uc139\ud130"
+        "USD/KRW 1447.98 — 원화 약세 경고",
+        "영업이익률 44.28%",
+        "강세/눌림목 섹터"
       ],
       "risk_flags": [
-        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
-        "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
+        "USD/KRW 1447.98 — 외환 리스크",
+        "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
         "ma5": 433.7,
         "ma20": 429.7837707519531,
         "ma60": 406.4693318684896,
-        "ma120": 406.55709915161134,
+        "ma120": 406.5570988972982,
         "current_price": 439.8299865722656,
         "ma_aligned_up": false,
         "ma_aligned_down": false,
         "pct_vs_ma5": 1.4134163182535575,
         "pct_vs_ma20": 2.3375046951483514,
         "pct_vs_ma60": 8.207422328868264,
-        "pct_vs_ma120": 8.18406258065274,
+        "pct_vs_ma120": 8.184062648324986,
         "golden_cross": false,
         "dead_cross": false,
         "rsi": 46.5,
@@ -6426,7 +6426,7 @@
     },
     {
       "ticker": "373220",
-      "name": "LG\uc5d0\ub108\uc9c0\uc194\ub8e8\uc158",
+      "name": "LG에너지솔루션",
       "signal": "HOLD",
       "gate_reason": null,
       "confidence": "MEDIUM",
@@ -6445,13 +6445,13 @@
       "target_price": 373830.0,
       "stop_loss": 281780.0,
       "top_reasons": [
-        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
-        "PER 6.0 \u2014 \uc800\ud3c9\uac00",
-        "\uc678\uad6d\uc778 5\uc77c \uc21c\ub9e4\uc218"
+        "USD/KRW 1447.98 — 원화 약세 경고",
+        "PER 6.0 — 저평가",
+        "외국인 5일 순매수"
       ],
       "risk_flags": [
-        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
-        "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
+        "USD/KRW 1447.98 — 외환 리스크",
+        "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
         "ma5": 325000.0,
@@ -6512,13 +6512,13 @@
       "target_price": 1190.0,
       "stop_loss": 780.0,
       "top_reasons": [
-        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
+        "USD/KRW 1447.98 — 원화 약세 경고",
         "ROE 66.64%",
-        "\uc601\uc5c5\uc774\uc775\ub960 80.37%"
+        "영업이익률 80.37%"
       ],
       "risk_flags": [
-        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
-        "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
+        "USD/KRW 1447.98 — 외환 리스크",
+        "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
         "ma5": 948.3320068359375,
@@ -6564,7 +6564,7 @@
     },
     {
       "ticker": "003490",
-      "name": "\ub300\ud55c\ud56d\uacf5",
+      "name": "대한항공",
       "signal": "HOLD",
       "gate_reason": null,
       "confidence": "MEDIUM",
@@ -6583,13 +6583,13 @@
       "target_price": 30290.0,
       "stop_loss": 23230.0,
       "top_reasons": [
-        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
-        "\ubd80\ucc44\ube44\uc728 209.64%",
-        "\uc678\uad6d\uc778 5\uc77c \uc21c\ub9e4\uc218"
+        "USD/KRW 1447.98 — 원화 약세 경고",
+        "부채비율 209.64%",
+        "외국인 5일 순매수"
       ],
       "risk_flags": [
-        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
-        "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
+        "USD/KRW 1447.98 — 외환 리스크",
+        "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
         "ma5": 25540.0,
@@ -6650,13 +6650,13 @@
       "target_price": 270.0,
       "stop_loss": 230.0,
       "top_reasons": [
-        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
-        "PER 126.54 \u2014 \uace0\ud3c9\uac00",
-        "\uc601\uc5c5\uc774\uc775\ub960 32.16%"
+        "USD/KRW 1447.98 — 원화 약세 경고",
+        "PER 126.54 — 고평가",
+        "영업이익률 32.16%"
       ],
       "risk_flags": [
-        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
-        "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
+        "USD/KRW 1447.98 — 외환 리스크",
+        "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
         "ma5": 255.32200622558594,
@@ -6721,13 +6721,13 @@
       "target_price": 10.0,
       "stop_loss": 10.0,
       "top_reasons": [
-        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
-        "ROE \uc801\uc790",
-        "\ubcf5\ud569 \ub9e4\uc218\uc870\uac74 2/3 \ucda9\uc871"
+        "USD/KRW 1447.98 — 원화 약세 경고",
+        "ROE 적자",
+        "복합 매수조건 2/3 충족"
       ],
       "risk_flags": [
-        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
-        "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
+        "USD/KRW 1447.98 — 외환 리스크",
+        "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
         "ma5": 8.379999732971191,
@@ -6773,7 +6773,7 @@
     },
     {
       "ticker": "SOXL",
-      "name": "\ubc18\ub3c4\uccb4 3x ETF",
+      "name": "반도체 3x ETF",
       "signal": "HOLD",
       "gate_reason": null,
       "confidence": "MEDIUM",
@@ -6792,13 +6792,13 @@
       "target_price": 280.0,
       "stop_loss": 110.0,
       "top_reasons": [
-        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
-        "RSI \uacfc\ub9e4\ub3c4 \ud68c\ubcf5 (38.8)",
-        "\ubcfc\ub9b0\uc800\ubc34\ub4dc \ud558\ub2e8"
+        "USD/KRW 1447.98 — 원화 약세 경고",
+        "RSI 과매도 회복 (38.8)",
+        "볼린저밴드 하단"
       ],
       "risk_flags": [
-        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
-        "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
+        "USD/KRW 1447.98 — 외환 리스크",
+        "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
         "ma5": 148.397998046875,
@@ -6863,13 +6863,13 @@
       "target_price": 1270.0,
       "stop_loss": 1100.0,
       "top_reasons": [
-        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
-        "PER 42.55 \u2014 \uace0\ud3c9\uac00",
+        "USD/KRW 1447.98 — 원화 약세 경고",
+        "PER 42.55 — 고평가",
         "ROE 107.46%"
       ],
       "risk_flags": [
-        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
-        "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
+        "USD/KRW 1447.98 — 외환 리스크",
+        "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
         "ma5": 1183.57001953125,
@@ -6915,7 +6915,7 @@
     },
     {
       "ticker": "000720",
-      "name": "\ud604\ub300\uac74\uc124",
+      "name": "현대건설",
       "signal": "HOLD",
       "gate_reason": null,
       "confidence": "MEDIUM",
@@ -6934,13 +6934,13 @@
       "target_price": 125150.0,
       "stop_loss": 75370.0,
       "top_reasons": [
-        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
-        "\uc678\uad6d\uc778 7\uc77c \uc5f0\uc18d \uc21c\ub9e4\uc218",
-        "\uae30\uad00 \uc21c\ub9e4\uc218"
+        "USD/KRW 1447.98 — 원화 약세 경고",
+        "외국인 7일 연속 순매수",
+        "기관 순매수"
       ],
       "risk_flags": [
-        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
-        "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
+        "USD/KRW 1447.98 — 외환 리스크",
+        "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
         "ma5": 99520.0,
@@ -6982,7 +6982,7 @@
     },
     {
       "ticker": "007660",
-      "name": "\uc774\uc218\ud398\ud0c0\uc2dc\uc2a4",
+      "name": "이수페타시스",
       "signal": "HOLD",
       "gate_reason": null,
       "confidence": "MEDIUM",
@@ -7001,13 +7001,13 @@
       "target_price": 137900.0,
       "stop_loss": 58200.0,
       "top_reasons": [
-        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
-        "\uc678\uad6d\uc778 7\uc77c \uc5f0\uc18d \uc21c\ub9e4\uc218",
-        "MA \uc5ed\ubc30\uc5f4"
+        "USD/KRW 1447.98 — 원화 약세 경고",
+        "외국인 7일 연속 순매수",
+        "MA 역배열"
       ],
       "risk_flags": [
-        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
-        "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
+        "USD/KRW 1447.98 — 외환 리스크",
+        "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
         "ma5": 80320.0,
@@ -7068,26 +7068,26 @@
       "target_price": 370.0,
       "stop_loss": 310.0,
       "top_reasons": [
-        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
+        "USD/KRW 1447.98 — 원화 약세 경고",
         "ROE 128.38%",
-        "\ubd80\ucc44\ube44\uc728 459.36%"
+        "부채비율 459.36%"
       ],
       "risk_flags": [
-        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
-        "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
+        "USD/KRW 1447.98 — 외환 리스크",
+        "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
         "ma5": 331.3780029296875,
         "ma20": 341.7629959106445,
         "ma60": 325.0660817464193,
-        "ma120": 337.27886428833006,
+        "ma120": 337.27886327107746,
         "current_price": 336.0899963378906,
         "ma_aligned_up": false,
         "ma_aligned_down": false,
         "pct_vs_ma5": 1.4219391047519014,
         "pct_vs_ma20": -1.6599221216556548,
         "pct_vs_ma60": 3.391284175895959,
-        "pct_vs_ma120": -0.352488126686501,
+        "pct_vs_ma120": -0.35248782614382135,
         "golden_cross": false,
         "dead_cross": false,
         "rsi": 40.1,
@@ -7139,13 +7139,13 @@
       "target_price": 140.0,
       "stop_loss": 110.0,
       "top_reasons": [
-        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
-        "PER 147.06 \u2014 \uace0\ud3c9\uac00",
+        "USD/KRW 1447.98 — 원화 약세 경고",
+        "PER 147.06 — 고평가",
         "ROE 32.59%"
       ],
       "risk_flags": [
-        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
-        "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
+        "USD/KRW 1447.98 — 외환 리스크",
+        "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
         "ma5": 127.01000061035157,
@@ -7210,14 +7210,14 @@
       "target_price": 220.0,
       "stop_loss": 180.0,
       "top_reasons": [
-        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
-        "\ubcf5\ud569 \ub9e4\uc218\uc870\uac74 2/3 \ucda9\uc871",
-        "\ubcfc\ub9b0\uc800\ubc34\ub4dc \uc0c1\ub2e8 \uacfc\uc5f4"
+        "USD/KRW 1447.98 — 원화 약세 경고",
+        "복합 매수조건 2/3 충족",
+        "볼린저밴드 상단 과열"
       ],
       "risk_flags": [
-        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
-        "RSI 71.0 \uacfc\ub9e4\uc218",
-        "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
+        "USD/KRW 1447.98 — 외환 리스크",
+        "RSI 71.0 과매수",
+        "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
         "ma5": 205.78399963378905,
@@ -7263,7 +7263,7 @@
     },
     {
       "ticker": "064400",
-      "name": "LG\uc528\uc5d4\uc5d0\uc2a4",
+      "name": "LG씨엔에스",
       "signal": "HOLD",
       "gate_reason": null,
       "confidence": "MEDIUM",
@@ -7282,13 +7282,13 @@
       "target_price": 83950.0,
       "stop_loss": 56070.0,
       "top_reasons": [
-        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
-        "\uc678\uad6d\uc778 8\uc77c \uc5f0\uc18d \uc21c\ub9e4\uc218",
-        "MA \uc5ed\ubc30\uc5f4"
+        "USD/KRW 1447.98 — 원화 약세 경고",
+        "외국인 8일 연속 순매수",
+        "MA 역배열"
       ],
       "risk_flags": [
-        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
-        "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
+        "USD/KRW 1447.98 — 외환 리스크",
+        "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
         "ma5": 64500.0,
@@ -7330,7 +7330,7 @@
     },
     {
       "ticker": "010130",
-      "name": "\uace0\ub824\uc544\uc5f0",
+      "name": "고려아연",
       "signal": "HOLD",
       "gate_reason": null,
       "confidence": "MEDIUM",
@@ -7349,13 +7349,13 @@
       "target_price": 1171980.0,
       "stop_loss": 850690.0,
       "top_reasons": [
-        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
-        "\uc678\uad6d\uc778 5\uc77c \uc21c\ub9e4\uc218",
-        "MA \uc5ed\ubc30\uc5f4"
+        "USD/KRW 1447.98 — 원화 약세 경고",
+        "외국인 5일 순매수",
+        "MA 역배열"
       ],
       "risk_flags": [
-        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
-        "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
+        "USD/KRW 1447.98 — 외환 리스크",
+        "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
         "ma5": 1004000.0,
@@ -7397,7 +7397,7 @@
     },
     {
       "ticker": "047040",
-      "name": "\ub300\uc6b0\uac74\uc124",
+      "name": "대우건설",
       "signal": "HOLD",
       "gate_reason": null,
       "confidence": "MEDIUM",
@@ -7416,13 +7416,13 @@
       "target_price": 21370.0,
       "stop_loss": 11050.0,
       "top_reasons": [
-        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
-        "PER 1.0 \u2014 \uc800\ud3c9\uac00",
-        "\uc678\uad6d\uc778 5\uc77c \uc21c\ub9e4\uc218"
+        "USD/KRW 1447.98 — 원화 약세 경고",
+        "PER 1.0 — 저평가",
+        "외국인 5일 순매수"
       ],
       "risk_flags": [
-        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
-        "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
+        "USD/KRW 1447.98 — 외환 리스크",
+        "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
         "ma5": 14454.0,
@@ -7483,26 +7483,26 @@
       "target_price": 750.0,
       "stop_loss": 480.0,
       "top_reasons": [
-        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
-        "PER 48.52 \u2014 \uace0\ud3c9\uac00",
+        "USD/KRW 1447.98 — 원화 약세 경고",
+        "PER 48.52 — 고평가",
         "ROE 39.69%"
       ],
       "risk_flags": [
-        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
-        "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
+        "USD/KRW 1447.98 — 외환 리스크",
+        "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
         "ma5": 546.8819946289062,
         "ma20": 584.0879943847656,
         "ma60": 518.6440353393555,
-        "ma120": 439.99831110636393,
+        "ma120": 439.99831034342446,
         "current_price": 516.8900146484375,
         "ma_aligned_up": false,
         "ma_aligned_down": false,
         "pct_vs_ma5": -5.484177624246012,
         "pct_vs_ma20": -11.504769894664479,
         "pct_vs_ma60": -0.33819355307350696,
-        "pct_vs_ma120": 17.47545424634278,
+        "pct_vs_ma120": 17.475454450040505,
         "golden_cross": false,
         "dead_cross": false,
         "rsi": 43.0,
@@ -7554,26 +7554,26 @@
       "target_price": 450.0,
       "stop_loss": 270.0,
       "top_reasons": [
-        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
-        "PER 55.25 \u2014 \uace0\ud3c9\uac00",
+        "USD/KRW 1447.98 — 원화 약세 경고",
+        "PER 55.25 — 고평가",
         "ROE 66.76%"
       ],
       "risk_flags": [
-        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
-        "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
+        "USD/KRW 1447.98 — 외환 리스크",
+        "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
         "ma5": 311.5779968261719,
         "ma20": 340.5125,
         "ma60": 328.6481409708659,
-        "ma120": 281.67004839579266,
+        "ma120": 281.67004776000977,
         "current_price": 291.6099853515625,
         "ma_aligned_up": false,
         "ma_aligned_down": false,
         "pct_vs_ma5": -6.408671882485162,
         "pct_vs_ma20": -14.36144477763298,
         "pct_vs_ma60": -11.269850944505045,
-        "pct_vs_ma120": 3.5289293314575643,
+        "pct_vs_ma120": 3.5289295651420582,
         "golden_cross": false,
         "dead_cross": false,
         "rsi": 38.7,
@@ -7625,13 +7625,13 @@
       "target_price": 400.0,
       "stop_loss": 310.0,
       "top_reasons": [
-        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
-        "PER 78.7 \u2014 \uace0\ud3c9\uac00",
+        "USD/KRW 1447.98 — 원화 약세 경고",
+        "PER 78.7 — 고평가",
         "ROE 20.66%"
       ],
       "risk_flags": [
-        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
-        "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
+        "USD/KRW 1447.98 — 외환 리스크",
+        "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
         "ma5": 335.3919982910156,
@@ -7696,13 +7696,13 @@
       "target_price": 150.0,
       "stop_loss": 130.0,
       "top_reasons": [
-        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
-        "PER 106.6 \u2014 \uace0\ud3c9\uac00",
-        "MA \uc815\ubc30\uc5f4"
+        "USD/KRW 1447.98 — 원화 약세 경고",
+        "PER 106.6 — 고평가",
+        "MA 정배열"
       ],
       "risk_flags": [
-        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
-        "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
+        "USD/KRW 1447.98 — 외환 리스크",
+        "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
         "ma5": 143.21400146484376,
@@ -7748,7 +7748,7 @@
     },
     {
       "ticker": "003230",
-      "name": "\uc0bc\uc591\uc2dd\ud488",
+      "name": "삼양식품",
       "signal": "HOLD",
       "gate_reason": null,
       "confidence": "MEDIUM",
@@ -7767,13 +7767,13 @@
       "target_price": 1348440.0,
       "stop_loss": 998130.0,
       "top_reasons": [
-        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
+        "USD/KRW 1447.98 — 원화 약세 경고",
         "ROE 24.81%",
-        "\uc678\uad6d\uc778 6\uc77c \uc5f0\uc18d \uc21c\ub9e4\ub3c4"
+        "외국인 6일 연속 순매도"
       ],
       "risk_flags": [
-        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
-        "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
+        "USD/KRW 1447.98 — 외환 리스크",
+        "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
         "ma5": 1180200.0,
@@ -7834,13 +7834,13 @@
       "target_price": 440.0,
       "stop_loss": 290.0,
       "top_reasons": [
-        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
-        "PER 284.67 \u2014 \uace0\ud3c9\uac00",
-        "\ubcfc\ub9b0\uc800\ubc34\ub4dc \ud558\ub2e8"
+        "USD/KRW 1447.98 — 원화 약세 경고",
+        "PER 284.67 — 고평가",
+        "볼린저밴드 하단"
       ],
       "risk_flags": [
-        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
-        "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
+        "USD/KRW 1447.98 — 외환 리스크",
+        "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
         "ma5": 338.9760009765625,
@@ -7905,13 +7905,13 @@
       "target_price": 750.0,
       "stop_loss": 660.0,
       "top_reasons": [
-        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
-        "RSI \uacfc\ub9e4\ub3c4 \ud68c\ubcf5 (36.7)",
-        "\ubcfc\ub9b0\uc800\ubc34\ub4dc \ud558\ub2e8"
+        "USD/KRW 1447.98 — 원화 약세 경고",
+        "RSI 과매도 회복 (36.7)",
+        "볼린저밴드 하단"
       ],
       "risk_flags": [
-        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
-        "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
+        "USD/KRW 1447.98 — 외환 리스크",
+        "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
         "ma5": 694.5259887695313,
@@ -7957,7 +7957,7 @@
     },
     {
       "ticker": "012450",
-      "name": "\ud55c\ud654\uc5d0\uc5b4\ub85c\uc2a4\ud398\uc774\uc2a4",
+      "name": "한화에어로스페이스",
       "signal": "HOLD",
       "gate_reason": null,
       "confidence": "MEDIUM",
@@ -7976,13 +7976,13 @@
       "target_price": 1264800.0,
       "stop_loss": 759510.0,
       "top_reasons": [
-        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
+        "USD/KRW 1447.98 — 원화 약세 경고",
         "ROE 25.6%",
-        "\ubd80\ucc44\ube44\uc728 317.21%"
+        "부채비율 317.21%"
       ],
       "risk_flags": [
-        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
-        "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
+        "USD/KRW 1447.98 — 외환 리스크",
+        "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
         "ma5": 904200.0,
@@ -8024,7 +8024,7 @@
     },
     {
       "ticker": "000880",
-      "name": "\ud55c\ud654",
+      "name": "한화",
       "signal": "HOLD",
       "gate_reason": null,
       "confidence": "MEDIUM",
@@ -8043,13 +8043,13 @@
       "target_price": 117610.0,
       "stop_loss": 77020.0,
       "top_reasons": [
-        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
-        "\ubd80\ucc44\ube44\uc728 531.77%",
-        "\uc678\uad6d\uc778 8\uc77c \uc5f0\uc18d \uc21c\ub9e4\uc218"
+        "USD/KRW 1447.98 — 원화 약세 경고",
+        "부채비율 531.77%",
+        "외국인 8일 연속 순매수"
       ],
       "risk_flags": [
-        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
-        "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
+        "USD/KRW 1447.98 — 외환 리스크",
+        "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
         "ma5": 91020.0,
@@ -8091,7 +8091,7 @@
     },
     {
       "ticker": "278470",
-      "name": "\uc5d0\uc774\ud53c\uc54c",
+      "name": "에이피알",
       "signal": "HOLD",
       "gate_reason": null,
       "confidence": "MEDIUM",
@@ -8110,13 +8110,13 @@
       "target_price": 442170.0,
       "stop_loss": 297300.0,
       "top_reasons": [
-        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
+        "USD/KRW 1447.98 — 원화 약세 경고",
         "ROE 54.87%",
-        "\uc601\uc5c5\uc774\uc775\ub960 19.89%"
+        "영업이익률 19.89%"
       ],
       "risk_flags": [
-        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
-        "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
+        "USD/KRW 1447.98 — 외환 리스크",
+        "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
         "ma5": 347400.0,
@@ -8177,14 +8177,14 @@
       "target_price": 160.0,
       "stop_loss": 140.0,
       "top_reasons": [
-        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
+        "USD/KRW 1447.98 — 원화 약세 경고",
         "ROE 31.11%",
-        "\uc601\uc5c5\uc774\uc775\ub960 23.05%"
+        "영업이익률 23.05%"
       ],
       "risk_flags": [
-        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
-        "\ub370\ub4dc\ud06c\ub85c\uc2a4 \ubc1c\uc0dd",
-        "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
+        "USD/KRW 1447.98 — 외환 리스크",
+        "데드크로스 발생",
+        "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
         "ma5": 147.51272277832032,
@@ -8249,13 +8249,13 @@
       "target_price": 1940.0,
       "stop_loss": 1550.0,
       "top_reasons": [
-        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
-        "PER 48.08 \u2014 \uace0\ud3c9\uac00",
+        "USD/KRW 1447.98 — 원화 약세 경고",
+        "PER 48.08 — 고평가",
         "ROE 31.26%"
       ],
       "risk_flags": [
-        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
-        "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
+        "USD/KRW 1447.98 — 외환 리스크",
+        "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
         "ma5": 1814.543994140625,
@@ -8320,13 +8320,13 @@
       "target_price": 200.0,
       "stop_loss": 160.0,
       "top_reasons": [
-        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
+        "USD/KRW 1447.98 — 원화 약세 경고",
         "ROE 21.96%",
-        "\uc601\uc5c5\uc774\uc775\ub960 23.46%"
+        "영업이익률 23.46%"
       ],
       "risk_flags": [
-        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
-        "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
+        "USD/KRW 1447.98 — 외환 리스크",
+        "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
         "ma5": 169.247998046875,
@@ -8391,13 +8391,13 @@
       "target_price": 200.0,
       "stop_loss": 160.0,
       "top_reasons": [
-        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
-        "PER 87.68 \u2014 \uace0\ud3c9\uac00",
-        "RSI \uacfc\ub9e4\ub3c4 \ud68c\ubcf5 (47.0)"
+        "USD/KRW 1447.98 — 원화 약세 경고",
+        "PER 87.68 — 고평가",
+        "RSI 과매도 회복 (47.0)"
       ],
       "risk_flags": [
-        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
-        "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
+        "USD/KRW 1447.98 — 외환 리스크",
+        "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
         "ma5": 181.78599853515624,
@@ -8443,7 +8443,7 @@
     },
     {
       "ticker": "055550",
-      "name": "\uc2e0\ud55c\uc9c0\uc8fc",
+      "name": "신한지주",
       "signal": "HOLD",
       "gate_reason": null,
       "confidence": "MEDIUM",
@@ -8462,13 +8462,13 @@
       "target_price": 115570.0,
       "stop_loss": 91180.0,
       "top_reasons": [
-        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
-        "PER 9.37 \u2014 \uc800\ud3c9\uac00",
-        "\ubd80\ucc44\ube44\uc728 1128.29%"
+        "USD/KRW 1447.98 — 원화 약세 경고",
+        "PER 9.37 — 저평가",
+        "부채비율 1128.29%"
       ],
       "risk_flags": [
-        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
-        "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
+        "USD/KRW 1447.98 — 외환 리스크",
+        "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
         "ma5": 102480.0,
@@ -8529,26 +8529,26 @@
       "target_price": 770.0,
       "stop_loss": 710.0,
       "top_reasons": [
-        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
-        "\ubcf5\ud569 \ub9e4\uc218\uc870\uac74 2/3 \ucda9\uc871",
-        "\ubcfc\ub9b0\uc800\ubc34\ub4dc \ud558\ub2e8"
+        "USD/KRW 1447.98 — 원화 약세 경고",
+        "복합 매수조건 2/3 충족",
+        "볼린저밴드 하단"
       ],
       "risk_flags": [
-        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
-        "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
+        "USD/KRW 1447.98 — 외환 리스크",
+        "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
         "ma5": 742.3780029296875,
         "ma20": 746.6580078125,
         "ma60": 741.488944498698,
-        "ma120": 709.4616490681966,
+        "ma120": 709.4616511027018,
         "current_price": 739.0900268554688,
         "ma_aligned_up": false,
         "ma_aligned_down": false,
         "pct_vs_ma5": -0.4428978311915466,
         "pct_vs_ma20": -1.013580632343769,
         "pct_vs_ma60": -0.32352709518157496,
-        "pct_vs_ma120": 4.176177503912415,
+        "pct_vs_ma120": 4.1761772051690516,
         "golden_cross": false,
         "dead_cross": false,
         "rsi": 41.9,
@@ -8581,7 +8581,7 @@
     },
     {
       "ticker": "062040",
-      "name": "\uc0b0\uc77c\uc804\uae30",
+      "name": "산일전기",
       "signal": "HOLD",
       "gate_reason": null,
       "confidence": "MEDIUM",
@@ -8600,13 +8600,13 @@
       "target_price": 277950.0,
       "stop_loss": 112330.0,
       "top_reasons": [
-        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
+        "USD/KRW 1447.98 — 원화 약세 경고",
         "ROE 46.2%",
-        "\uc601\uc5c5\uc774\uc775\ub960 21.72%"
+        "영업이익률 21.72%"
       ],
       "risk_flags": [
-        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
-        "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
+        "USD/KRW 1447.98 — 외환 리스크",
+        "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
         "ma5": 158880.0,
@@ -8667,13 +8667,13 @@
       "target_price": 320.0,
       "stop_loss": 270.0,
       "top_reasons": [
-        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
-        "PER 42.56 \u2014 \uace0\ud3c9\uac00",
+        "USD/KRW 1447.98 — 원화 약세 경고",
+        "PER 42.56 — 고평가",
         "ROE 35.18%"
       ],
       "risk_flags": [
-        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
-        "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
+        "USD/KRW 1447.98 — 외환 리스크",
+        "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
         "ma5": 285.893994140625,
@@ -8738,13 +8738,13 @@
       "target_price": 280.0,
       "stop_loss": 230.0,
       "top_reasons": [
-        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
-        "52\uc8fc \uace0\uc810 \uadfc\ubc29",
-        "\uac15\uc138/\ub20c\ub9bc\ubaa9 \uc139\ud130"
+        "USD/KRW 1447.98 — 원화 약세 경고",
+        "52주 고점 근방",
+        "강세/눌림목 섹터"
       ],
       "risk_flags": [
-        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
-        "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
+        "USD/KRW 1447.98 — 외환 리스크",
+        "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
         "ma5": 248.73399963378907,
@@ -8809,13 +8809,13 @@
       "target_price": 120.0,
       "stop_loss": 90.0,
       "top_reasons": [
-        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
-        "PER 65.85 \u2014 \uace0\ud3c9\uac00",
-        "\ubcf5\ud569 \ub9e4\uc218\uc870\uac74 2/3 \ucda9\uc871"
+        "USD/KRW 1447.98 — 원화 약세 경고",
+        "PER 65.85 — 고평가",
+        "복합 매수조건 2/3 충족"
       ],
       "risk_flags": [
-        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
-        "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
+        "USD/KRW 1447.98 — 외환 리스크",
+        "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
         "ma5": 98.75999908447265,
@@ -8880,13 +8880,13 @@
       "target_price": 110.0,
       "stop_loss": 90.0,
       "top_reasons": [
-        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
-        "\ubcfc\ub9b0\uc800\ubc34\ub4dc \uc0c1\ub2e8 \uacfc\uc5f4",
-        "\uac15\uc138/\ub20c\ub9bc\ubaa9 \uc139\ud130"
+        "USD/KRW 1447.98 — 원화 약세 경고",
+        "볼린저밴드 상단 과열",
+        "강세/눌림목 섹터"
       ],
       "risk_flags": [
-        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
-        "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
+        "USD/KRW 1447.98 — 외환 리스크",
+        "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
         "ma5": 101.4279998779297,
@@ -8951,13 +8951,13 @@
       "target_price": 470.0,
       "stop_loss": 360.0,
       "top_reasons": [
-        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
-        "PER 89.26 \u2014 \uace0\ud3c9\uac00",
-        "\ubcf5\ud569 \ub9e4\uc218\uc870\uac74 2/3 \ucda9\uc871"
+        "USD/KRW 1447.98 — 원화 약세 경고",
+        "PER 89.26 — 고평가",
+        "복합 매수조건 2/3 충족"
       ],
       "risk_flags": [
-        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
-        "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
+        "USD/KRW 1447.98 — 외환 리스크",
+        "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
         "ma5": 380.53199462890626,
@@ -9022,13 +9022,13 @@
       "target_price": 590.0,
       "stop_loss": 500.0,
       "top_reasons": [
-        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
-        "PER 40.97 \u2014 \uace0\ud3c9\uac00",
+        "USD/KRW 1447.98 — 원화 약세 경고",
+        "PER 40.97 — 고평가",
         "ROE 72.91%"
       ],
       "risk_flags": [
-        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
-        "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
+        "USD/KRW 1447.98 — 외환 리스크",
+        "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
         "ma5": 551.3680053710938,
@@ -9093,26 +9093,26 @@
       "target_price": 560.0,
       "stop_loss": 490.0,
       "top_reasons": [
-        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
-        "\uc601\uc5c5\uc774\uc775\ub960 28.47%",
-        "\uac15\ud55c \ud558\ub77d \ubaa8\uba58\ud140"
+        "USD/KRW 1447.98 — 원화 약세 경고",
+        "영업이익률 28.47%",
+        "강한 하락 모멘텀"
       ],
       "risk_flags": [
-        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
-        "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
+        "USD/KRW 1447.98 — 외환 리스크",
+        "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
         "ma5": 507.8179992675781,
         "ma20": 521.2689956665039,
         "ma60": 511.9350824991862,
-        "ma120": 500.1699836730957,
+        "ma120": 500.16998392740885,
         "current_price": 507.0199890136719,
         "ma_aligned_up": false,
         "ma_aligned_down": false,
         "pct_vs_ma5": -0.1571449328415242,
         "pct_vs_ma20": -2.7335227629667447,
         "pct_vs_ma60": -0.9601009295005958,
-        "pct_vs_ma120": 1.369535470775718,
+        "pct_vs_ma120": 1.3695354192340359,
         "golden_cross": false,
         "dead_cross": false,
         "rsi": 23.8,
@@ -9145,7 +9145,7 @@
     },
     {
       "ticker": "TLT",
-      "name": "\ubbf8\uad6d\uc7a5\uae30\ucc44 ETF",
+      "name": "미국장기채 ETF",
       "signal": "HOLD",
       "gate_reason": null,
       "confidence": "MEDIUM",
@@ -9164,26 +9164,26 @@
       "target_price": 90.0,
       "stop_loss": 80.0,
       "top_reasons": [
-        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
-        "PBR 0.57 \u2014 \uc790\uc0b0 \uc800\ud3c9\uac00",
-        "MA \uc5ed\ubc30\uc5f4"
+        "USD/KRW 1447.98 — 원화 약세 경고",
+        "PBR 0.57 — 자산 저평가",
+        "MA 역배열"
       ],
       "risk_flags": [
-        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
-        "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
+        "USD/KRW 1447.98 — 외환 리스크",
+        "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
         "ma5": 83.4540008544922,
         "ma20": 84.48801002502441,
         "ma60": 84.78810450236003,
-        "ma120": 85.54299933115641,
+        "ma120": 85.54299952189128,
         "current_price": 83.75,
         "ma_aligned_up": false,
         "ma_aligned_down": true,
         "pct_vs_ma5": 0.3546853865327604,
         "pct_vs_ma20": -0.8735085899239659,
         "pct_vs_ma60": -1.2243515861722454,
-        "pct_vs_ma120": -2.0960211182393773,
+        "pct_vs_ma120": -2.0960213365354696,
         "golden_cross": false,
         "dead_cross": false,
         "rsi": 38.2,
@@ -9235,14 +9235,14 @@
       "target_price": 100.0,
       "stop_loss": 70.0,
       "top_reasons": [
-        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
-        "ROE \uc801\uc790",
-        "\ub370\ub4dc\ud06c\ub85c\uc2a4"
+        "USD/KRW 1447.98 — 원화 약세 경고",
+        "ROE 적자",
+        "데드크로스"
       ],
       "risk_flags": [
-        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
-        "\ub370\ub4dc\ud06c\ub85c\uc2a4 \ubc1c\uc0dd",
-        "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
+        "USD/KRW 1447.98 — 외환 리스크",
+        "데드크로스 발생",
+        "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
         "ma5": 87.78000030517578,
@@ -9307,13 +9307,13 @@
       "target_price": 1090.0,
       "stop_loss": 810.0,
       "top_reasons": [
-        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
-        "PER 43.48 \u2014 \uace0\ud3c9\uac00",
+        "USD/KRW 1447.98 — 원화 약세 경고",
+        "PER 43.48 — 고평가",
         "ROE 51.33%"
       ],
       "risk_flags": [
-        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
-        "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
+        "USD/KRW 1447.98 — 외환 리스크",
+        "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
         "ma5": 887.1659912109375,
@@ -9378,14 +9378,14 @@
       "target_price": 150.0,
       "stop_loss": 120.0,
       "top_reasons": [
-        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
-        "PER 45.89 \u2014 \uace0\ud3c9\uac00",
-        "\ub370\ub4dc\ud06c\ub85c\uc2a4"
+        "USD/KRW 1447.98 — 원화 약세 경고",
+        "PER 45.89 — 고평가",
+        "데드크로스"
       ],
       "risk_flags": [
-        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
-        "\ub370\ub4dc\ud06c\ub85c\uc2a4 \ubc1c\uc0dd",
-        "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
+        "USD/KRW 1447.98 — 외환 리스크",
+        "데드크로스 발생",
+        "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
         "ma5": 136.8679977416992,
@@ -9450,13 +9450,13 @@
       "target_price": 10.0,
       "stop_loss": 0.0,
       "top_reasons": [
-        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
-        "ROE \uc801\uc790",
-        "MACD \uac15\uc138 \ub2e4\uc774\ubc84\uc804\uc2a4"
+        "USD/KRW 1447.98 — 원화 약세 경고",
+        "ROE 적자",
+        "MACD 강세 다이버전스"
       ],
       "risk_flags": [
-        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
-        "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
+        "USD/KRW 1447.98 — 외환 리스크",
+        "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
         "ma5": 6.670000076293945,
@@ -9521,26 +9521,26 @@
       "target_price": 570.0,
       "stop_loss": 470.0,
       "top_reasons": [
-        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
+        "USD/KRW 1447.98 — 원화 약세 경고",
         "ROE 232.08%",
-        "\uc601\uc5c5\uc774\uc775\ub960 60.84%"
+        "영업이익률 60.84%"
       ],
       "risk_flags": [
-        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
-        "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
+        "USD/KRW 1447.98 — 외환 리스크",
+        "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
         "ma5": 539.943994140625,
         "ma20": 530.8711791992188,
         "ma60": 505.7001485188802,
-        "ma120": 508.7865178426107,
+        "ma120": 508.7865160624186,
         "current_price": 551.7100219726562,
         "ma_aligned_up": false,
         "ma_aligned_down": false,
         "pct_vs_ma5": 2.1791200494336582,
         "pct_vs_ma20": 3.9254048043955603,
         "pct_vs_ma60": 9.098251916384047,
-        "pct_vs_ma120": 8.436446844553313,
+        "pct_vs_ma120": 8.436447223961352,
         "golden_cross": false,
         "dead_cross": false,
         "rsi": 59.6,
@@ -9573,7 +9573,7 @@
     },
     {
       "ticker": "042700",
-      "name": "\ud55c\ubbf8\ubc18\ub3c4\uccb4",
+      "name": "한미반도체",
       "signal": "HOLD",
       "gate_reason": null,
       "confidence": "MEDIUM",
@@ -9592,13 +9592,13 @@
       "target_price": 280500.0,
       "stop_loss": 144430.0,
       "top_reasons": [
-        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
-        "PER 89.77 \u2014 \uace0\ud3c9\uac00",
+        "USD/KRW 1447.98 — 원화 약세 경고",
+        "PER 89.77 — 고평가",
         "ROE 55.54%"
       ],
       "risk_flags": [
-        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
-        "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
+        "USD/KRW 1447.98 — 외환 리스크",
+        "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
         "ma5": 193520.0,
@@ -9640,7 +9640,7 @@
     },
     {
       "ticker": "001440",
-      "name": "\ub300\ud55c\uc804\uc120",
+      "name": "대한전선",
       "signal": "HOLD",
       "gate_reason": null,
       "confidence": "MEDIUM",
@@ -9659,13 +9659,13 @@
       "target_price": 39220.0,
       "stop_loss": 20180.0,
       "top_reasons": [
-        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
-        "PER 84.73 \u2014 \uace0\ud3c9\uac00",
-        "\uc678\uad6d\uc778 7\uc77c \uc5f0\uc18d \uc21c\ub9e4\uc218"
+        "USD/KRW 1447.98 — 원화 약세 경고",
+        "PER 84.73 — 고평가",
+        "외국인 7일 연속 순매수"
       ],
       "risk_flags": [
-        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
-        "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
+        "USD/KRW 1447.98 — 외환 리스크",
+        "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
         "ma5": 26990.0,
@@ -9726,26 +9726,26 @@
       "target_price": 120.0,
       "stop_loss": 100.0,
       "top_reasons": [
-        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
+        "USD/KRW 1447.98 — 원화 약세 경고",
         "ROE 25.23%",
-        "\uc601\uc5c5\uc774\uc775\ub960 24.99%"
+        "영업이익률 24.99%"
       ],
       "risk_flags": [
-        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
-        "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
+        "USD/KRW 1447.98 — 외환 리스크",
+        "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
         "ma5": 113.1779998779297,
         "ma20": 114.43187294006347,
         "ma60": 113.7614091237386,
-        "ma120": 97.23427054087321,
+        "ma120": 97.2342700958252,
         "current_price": 114.56999969482422,
         "ma_aligned_up": false,
         "ma_aligned_down": false,
         "pct_vs_ma5": 1.229920848924615,
         "pct_vs_ma20": 0.12070654024258776,
         "pct_vs_ma60": 0.7107775627199775,
-        "pct_vs_ma120": 17.828826253870833,
+        "pct_vs_ma120": 17.828826793181584,
         "golden_cross": false,
         "dead_cross": false,
         "rsi": 54.9,
@@ -9797,13 +9797,13 @@
       "target_price": 310.0,
       "stop_loss": 190.0,
       "top_reasons": [
-        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
-        "PER 57.47 \u2014 \uace0\ud3c9\uac00",
+        "USD/KRW 1447.98 — 원화 약세 경고",
+        "PER 57.47 — 고평가",
         "ROE 94.98%"
       ],
       "risk_flags": [
-        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
-        "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
+        "USD/KRW 1447.98 — 외환 리스크",
+        "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
         "ma5": 212.9720001220703,
@@ -9849,7 +9849,7 @@
     },
     {
       "ticker": "323410",
-      "name": "\uce74\uce74\uc624\ubc45\ud06c",
+      "name": "카카오뱅크",
       "signal": "HOLD",
       "gate_reason": null,
       "confidence": "MEDIUM",
@@ -9868,13 +9868,13 @@
       "target_price": 24330.0,
       "stop_loss": 19740.0,
       "top_reasons": [
-        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
-        "\uc601\uc5c5\uc774\uc775\ub960 19.18%",
-        "\ubd80\ucc44\ube44\uc728 790.66%"
+        "USD/KRW 1447.98 — 원화 약세 경고",
+        "영업이익률 19.18%",
+        "부채비율 790.66%"
       ],
       "risk_flags": [
-        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
-        "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
+        "USD/KRW 1447.98 — 외환 리스크",
+        "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
         "ma5": 21750.0,
@@ -9935,13 +9935,13 @@
       "target_price": 180.0,
       "stop_loss": 140.0,
       "top_reasons": [
-        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
-        "PER 61.73 \u2014 \uace0\ud3c9\uac00",
-        "\uac15\uc138/\ub20c\ub9bc\ubaa9 \uc139\ud130"
+        "USD/KRW 1447.98 — 원화 약세 경고",
+        "PER 61.73 — 고평가",
+        "강세/눌림목 섹터"
       ],
       "risk_flags": [
-        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
-        "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
+        "USD/KRW 1447.98 — 외환 리스크",
+        "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
         "ma5": 165.78200073242186,
@@ -10006,13 +10006,13 @@
       "target_price": 20.0,
       "stop_loss": 10.0,
       "top_reasons": [
-        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
-        "ROE \uc801\uc790",
-        "RSI \uacfc\ub9e4\ub3c4 \ud68c\ubcf5 (49.9)"
+        "USD/KRW 1447.98 — 원화 약세 경고",
+        "ROE 적자",
+        "RSI 과매도 회복 (49.9)"
       ],
       "risk_flags": [
-        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
-        "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
+        "USD/KRW 1447.98 — 외환 리스크",
+        "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
         "ma5": 16.743999862670897,
@@ -10077,13 +10077,13 @@
       "target_price": 279480.0,
       "stop_loss": 196910.0,
       "top_reasons": [
-        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
-        "\uc678\uad6d\uc778 7\uc77c \uc5f0\uc18d \uc21c\ub9e4\ub3c4",
-        "\uae30\uad00 \uc21c\ub9e4\uc218"
+        "USD/KRW 1447.98 — 원화 약세 경고",
+        "외국인 7일 연속 순매도",
+        "기관 순매수"
       ],
       "risk_flags": [
-        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
-        "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
+        "USD/KRW 1447.98 — 외환 리스크",
+        "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
         "ma5": 226600.0,
@@ -10144,13 +10144,13 @@
       "target_price": 280.0,
       "stop_loss": 240.0,
       "top_reasons": [
-        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
-        "ROE \uc801\uc790",
-        "MA \uc815\ubc30\uc5f4"
+        "USD/KRW 1447.98 — 원화 약세 경고",
+        "ROE 적자",
+        "MA 정배열"
       ],
       "risk_flags": [
-        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
-        "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
+        "USD/KRW 1447.98 — 외환 리스크",
+        "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
         "ma5": 269.1280029296875,
@@ -10196,7 +10196,7 @@
     },
     {
       "ticker": "241560",
-      "name": "\ub450\uc0b0\ubc25\ucea3",
+      "name": "두산밥캣",
       "signal": "HOLD",
       "gate_reason": null,
       "confidence": "MEDIUM",
@@ -10215,13 +10215,13 @@
       "target_price": 70690.0,
       "stop_loss": 54510.0,
       "top_reasons": [
-        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
-        "\uc678\uad6d\uc778 5\uc77c \uc5f0\uc18d \uc21c\ub9e4\ub3c4",
-        "\uae30\uad00 \uc21c\ub9e4\uc218"
+        "USD/KRW 1447.98 — 원화 약세 경고",
+        "외국인 5일 연속 순매도",
+        "기관 순매수"
       ],
       "risk_flags": [
-        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
-        "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
+        "USD/KRW 1447.98 — 외환 리스크",
+        "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
         "ma5": 62940.0,
@@ -10282,13 +10282,13 @@
       "target_price": 110060.0,
       "stop_loss": 85460.0,
       "top_reasons": [
-        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
-        "\uc601\uc5c5\uc774\uc775\ub960 21.34%",
-        "\uc678\uad6d\uc778 6\uc77c \uc5f0\uc18d \uc21c\ub9e4\ub3c4"
+        "USD/KRW 1447.98 — 원화 약세 경고",
+        "영업이익률 21.34%",
+        "외국인 6일 연속 순매도"
       ],
       "risk_flags": [
-        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
-        "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
+        "USD/KRW 1447.98 — 외환 리스크",
+        "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
         "ma5": 96500.0,
@@ -10349,13 +10349,13 @@
       "target_price": 871080.0,
       "stop_loss": 436500.0,
       "top_reasons": [
-        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
-        "ROE \uc801\uc790",
-        "\uc678\uad6d\uc778 8\uc77c \uc5f0\uc18d \uc21c\ub9e4\uc218"
+        "USD/KRW 1447.98 — 원화 약세 경고",
+        "ROE 적자",
+        "외국인 8일 연속 순매수"
       ],
       "risk_flags": [
-        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
-        "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
+        "USD/KRW 1447.98 — 외환 리스크",
+        "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
         "ma5": 587600.0,
@@ -10397,7 +10397,7 @@
     },
     {
       "ticker": "000270",
-      "name": "\uae30\uc544",
+      "name": "기아",
       "signal": "HOLD",
       "gate_reason": null,
       "confidence": "MEDIUM",
@@ -10416,13 +10416,13 @@
       "target_price": 166160.0,
       "stop_loss": 111260.0,
       "top_reasons": [
-        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
-        "PER 6.77 \u2014 \uc800\ud3c9\uac00",
+        "USD/KRW 1447.98 — 원화 약세 경고",
+        "PER 6.77 — 저평가",
         "ROE 20.44%"
       ],
       "risk_flags": [
-        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
-        "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
+        "USD/KRW 1447.98 — 외환 리스크",
+        "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
         "ma5": 130580.0,
@@ -10464,7 +10464,7 @@
     },
     {
       "ticker": "005490",
-      "name": "POSCO\ud640\ub529\uc2a4",
+      "name": "POSCO홀딩스",
       "signal": "HOLD",
       "gate_reason": null,
       "confidence": "MEDIUM",
@@ -10483,13 +10483,13 @@
       "target_price": 332520.0,
       "stop_loss": 266750.0,
       "top_reasons": [
-        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
-        "\uc678\uad6d\uc778 8\uc77c \uc5f0\uc18d \uc21c\ub9e4\ub3c4",
-        "\uae30\uad00 \uc21c\ub9e4\uc218"
+        "USD/KRW 1447.98 — 원화 약세 경고",
+        "외국인 8일 연속 순매도",
+        "기관 순매수"
       ],
       "risk_flags": [
-        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
-        "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
+        "USD/KRW 1447.98 — 외환 리스크",
+        "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
         "ma5": 308000.0,
@@ -10531,7 +10531,7 @@
     },
     {
       "ticker": "071050",
-      "name": "\ud55c\uad6d\uae08\uc735\uc9c0\uc8fc",
+      "name": "한국금융지주",
       "signal": "HOLD",
       "gate_reason": null,
       "confidence": "MEDIUM",
@@ -10550,13 +10550,13 @@
       "target_price": 268770.0,
       "stop_loss": 167230.0,
       "top_reasons": [
-        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
-        "PER 4.56 \u2014 \uc800\ud3c9\uac00",
-        "\ubd80\ucc44\ube44\uc728 1035.59%"
+        "USD/KRW 1447.98 — 원화 약세 경고",
+        "PER 4.56 — 저평가",
+        "부채비율 1035.59%"
       ],
       "risk_flags": [
-        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
-        "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
+        "USD/KRW 1447.98 — 외환 리스크",
+        "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
         "ma5": 204840.0,
@@ -10598,7 +10598,7 @@
     },
     {
       "ticker": "005940",
-      "name": "NH\ud22c\uc790\uc99d\uad8c",
+      "name": "NH투자증권",
       "signal": "HOLD",
       "gate_reason": null,
       "confidence": "MEDIUM",
@@ -10617,13 +10617,13 @@
       "target_price": 34780.0,
       "stop_loss": 24150.0,
       "top_reasons": [
-        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
-        "PER 7.28 \u2014 \uc800\ud3c9\uac00",
-        "\ubd80\ucc44\ube44\uc728 644.71%"
+        "USD/KRW 1447.98 — 원화 약세 경고",
+        "PER 7.28 — 저평가",
+        "부채비율 644.71%"
       ],
       "risk_flags": [
-        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
-        "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
+        "USD/KRW 1447.98 — 외환 리스크",
+        "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
         "ma5": 28350.0,
@@ -10665,7 +10665,7 @@
     },
     {
       "ticker": "000990",
-      "name": "DB\ud558\uc774\ud14d",
+      "name": "DB하이텍",
       "signal": "HOLD",
       "gate_reason": null,
       "confidence": "MEDIUM",
@@ -10684,13 +10684,13 @@
       "target_price": 149120.0,
       "stop_loss": 66830.0,
       "top_reasons": [
-        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
-        "\uc601\uc5c5\uc774\uc775\ub960 23.0%",
-        "\uc678\uad6d\uc778 6\uc77c \uc5f0\uc18d \uc21c\ub9e4\ub3c4"
+        "USD/KRW 1447.98 — 원화 약세 경고",
+        "영업이익률 23.0%",
+        "외국인 6일 연속 순매도"
       ],
       "risk_flags": [
-        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
-        "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
+        "USD/KRW 1447.98 — 외환 리스크",
+        "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
         "ma5": 93700.0,
@@ -10751,13 +10751,13 @@
       "target_price": 990.0,
       "stop_loss": 880.0,
       "top_reasons": [
-        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
-        "PER 47.85 \u2014 \uace0\ud3c9\uac00",
+        "USD/KRW 1447.98 — 원화 약세 경고",
+        "PER 47.85 — 고평가",
         "ROE 29.15%"
       ],
       "risk_flags": [
-        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
-        "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
+        "USD/KRW 1447.98 — 외환 리스크",
+        "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
         "ma5": 932.8134887695312,
@@ -10822,13 +10822,13 @@
       "target_price": 90.0,
       "stop_loss": 70.0,
       "top_reasons": [
-        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
-        "PER 66.42 \u2014 \uace0\ud3c9\uac00",
-        "\ubd80\ucc44\ube44\uc728 240.28%"
+        "USD/KRW 1447.98 — 원화 약세 경고",
+        "PER 66.42 — 고평가",
+        "부채비율 240.28%"
       ],
       "risk_flags": [
-        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
-        "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
+        "USD/KRW 1447.98 — 외환 리스크",
+        "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
         "ma5": 72.6250015258789,
@@ -10893,13 +10893,13 @@
       "target_price": 600.0,
       "stop_loss": 450.0,
       "top_reasons": [
-        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
-        "PER 164.12 \u2014 \uace0\ud3c9\uac00",
-        "\ubcfc\ub9b0\uc800\ubc34\ub4dc \ud558\ub2e8"
+        "USD/KRW 1447.98 — 원화 약세 경고",
+        "PER 164.12 — 고평가",
+        "볼린저밴드 하단"
       ],
       "risk_flags": [
-        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
-        "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
+        "USD/KRW 1447.98 — 외환 리스크",
+        "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
         "ma5": 530.6700073242188,
@@ -10964,13 +10964,13 @@
       "target_price": 220.0,
       "stop_loss": 170.0,
       "top_reasons": [
-        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
-        "ROE \uc801\uc790",
-        "\ubcfc\ub9b0\uc800\ubc34\ub4dc \ud558\ub2e8"
+        "USD/KRW 1447.98 — 원화 약세 경고",
+        "ROE 적자",
+        "볼린저밴드 하단"
       ],
       "risk_flags": [
-        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
-        "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
+        "USD/KRW 1447.98 — 외환 리스크",
+        "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
         "ma5": 185.2759979248047,
@@ -11035,13 +11035,13 @@
       "target_price": 420750.0,
       "stop_loss": 217760.0,
       "top_reasons": [
-        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
-        "\uc678\uad6d\uc778 7\uc77c \uc5f0\uc18d \uc21c\ub9e4\uc218",
-        "MA \uc5ed\ubc30\uc5f4"
+        "USD/KRW 1447.98 — 원화 약세 경고",
+        "외국인 7일 연속 순매수",
+        "MA 역배열"
       ],
       "risk_flags": [
-        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
-        "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
+        "USD/KRW 1447.98 — 외환 리스크",
+        "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
         "ma5": 289000.0,
@@ -11083,7 +11083,7 @@
     },
     {
       "ticker": "066570",
-      "name": "LG\uc804\uc790",
+      "name": "LG전자",
       "signal": "HOLD",
       "gate_reason": null,
       "confidence": "MEDIUM",
@@ -11102,13 +11102,13 @@
       "target_price": 212670.0,
       "stop_loss": 137640.0,
       "top_reasons": [
-        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
-        "\uc678\uad6d\uc778 6\uc77c \uc21c\ub9e4\uc218",
-        "\uae30\uad00 \uc21c\ub9e4\uc218"
+        "USD/KRW 1447.98 — 원화 약세 경고",
+        "외국인 6일 순매수",
+        "기관 순매수"
       ],
       "risk_flags": [
-        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
-        "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
+        "USD/KRW 1447.98 — 외환 리스크",
+        "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
         "ma5": 167400.0,
@@ -11150,7 +11150,7 @@
     },
     {
       "ticker": "039490",
-      "name": "\ud0a4\uc6c0\uc99d\uad8c",
+      "name": "키움증권",
       "signal": "HOLD",
       "gate_reason": null,
       "confidence": "MEDIUM",
@@ -11169,13 +11169,13 @@
       "target_price": 380970.0,
       "stop_loss": 235710.0,
       "top_reasons": [
-        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
-        "PER 5.16 \u2014 \uc800\ud3c9\uac00",
-        "\ubd80\ucc44\ube44\uc728 961.28%"
+        "USD/KRW 1447.98 — 원화 약세 경고",
+        "PER 5.16 — 저평가",
+        "부채비율 961.28%"
       ],
       "risk_flags": [
-        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
-        "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
+        "USD/KRW 1447.98 — 외환 리스크",
+        "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
         "ma5": 288300.0,
@@ -11217,7 +11217,7 @@
     },
     {
       "ticker": "353200",
-      "name": "\ub300\ub355\uc804\uc790",
+      "name": "대덕전자",
       "signal": "HOLD",
       "gate_reason": null,
       "confidence": "MEDIUM",
@@ -11236,13 +11236,13 @@
       "target_price": 163000.0,
       "stop_loss": 69650.0,
       "top_reasons": [
-        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
-        "PER 42.18 \u2014 \uace0\ud3c9\uac00",
-        "\uc678\uad6d\uc778 5\uc77c \uc21c\ub9e4\uc218"
+        "USD/KRW 1447.98 — 원화 약세 경고",
+        "PER 42.18 — 고평가",
+        "외국인 5일 순매수"
       ],
       "risk_flags": [
-        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
-        "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
+        "USD/KRW 1447.98 — 외환 리스크",
+        "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
         "ma5": 102860.0,
@@ -11284,7 +11284,7 @@
     },
     {
       "ticker": "005930",
-      "name": "\uc0bc\uc131\uc804\uc790",
+      "name": "삼성전자",
       "signal": "HOLD",
       "gate_reason": null,
       "confidence": "MEDIUM",
@@ -11303,13 +11303,13 @@
       "target_price": 345780.0,
       "stop_loss": 183520.0,
       "top_reasons": [
-        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
-        "\uc678\uad6d\uc778 7\uc77c \uc5f0\uc18d \uc21c\ub9e4\ub3c4",
-        "\uae30\uad00 \uc21c\ub9e4\ub3c4"
+        "USD/KRW 1447.98 — 원화 약세 경고",
+        "외국인 7일 연속 순매도",
+        "기관 순매도"
       ],
       "risk_flags": [
-        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
-        "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
+        "USD/KRW 1447.98 — 외환 리스크",
+        "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
         "ma5": 240400.0,
@@ -11370,14 +11370,14 @@
       "target_price": 180.0,
       "stop_loss": 150.0,
       "top_reasons": [
-        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
-        "\uc601\uc5c5\uc774\uc775\ub960 21.8%",
-        "MA \uc5ed\ubc30\uc5f4"
+        "USD/KRW 1447.98 — 원화 약세 경고",
+        "영업이익률 21.8%",
+        "MA 역배열"
       ],
       "risk_flags": [
-        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
-        "\ub370\ub4dc\ud06c\ub85c\uc2a4 \ubc1c\uc0dd",
-        "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
+        "USD/KRW 1447.98 — 외환 리스크",
+        "데드크로스 발생",
+        "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
         "ma5": 165.45,
@@ -11423,7 +11423,7 @@
     },
     {
       "ticker": "006400",
-      "name": "\uc0bc\uc131SDI",
+      "name": "삼성SDI",
       "signal": "HOLD",
       "gate_reason": null,
       "confidence": "MEDIUM",
@@ -11442,13 +11442,13 @@
       "target_price": 514080.0,
       "stop_loss": 331260.0,
       "top_reasons": [
-        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
-        "PER 5.0 \u2014 \uc800\ud3c9\uac00",
-        "\uc678\uad6d\uc778 7\uc77c \uc5f0\uc18d \uc21c\ub9e4\ub3c4"
+        "USD/KRW 1447.98 — 원화 약세 경고",
+        "PER 5.0 — 저평가",
+        "외국인 7일 연속 순매도"
       ],
       "risk_flags": [
-        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
-        "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
+        "USD/KRW 1447.98 — 외환 리스크",
+        "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
         "ma5": 414400.0,
@@ -11490,7 +11490,7 @@
     },
     {
       "ticker": "009830",
-      "name": "\ud55c\ud654\uc194\ub8e8\uc158",
+      "name": "한화솔루션",
       "signal": "HOLD",
       "gate_reason": null,
       "confidence": "MEDIUM",
@@ -11509,13 +11509,13 @@
       "target_price": 38710.0,
       "stop_loss": 21630.0,
       "top_reasons": [
-        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
-        "PER 3.0 \u2014 \uc800\ud3c9\uac00",
-        "ROE \uc801\uc790"
+        "USD/KRW 1447.98 — 원화 약세 경고",
+        "PER 3.0 — 저평가",
+        "ROE 적자"
       ],
       "risk_flags": [
-        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
-        "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
+        "USD/KRW 1447.98 — 외환 리스크",
+        "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
         "ma5": 26600.0,
@@ -11576,13 +11576,13 @@
       "target_price": 310.0,
       "stop_loss": 170.0,
       "top_reasons": [
-        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
-        "PER 64.86 \u2014 \uace0\ud3c9\uac00",
-        "\uc57d\uc138 \uc139\ud130"
+        "USD/KRW 1447.98 — 원화 약세 경고",
+        "PER 64.86 — 고평가",
+        "약세 섹터"
       ],
       "risk_flags": [
-        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
-        "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
+        "USD/KRW 1447.98 — 외환 리스크",
+        "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
         "ma5": 202.33400268554686,
@@ -11628,7 +11628,7 @@
     },
     {
       "ticker": "010140",
-      "name": "\uc0bc\uc131\uc911\uacf5\uc5c5",
+      "name": "삼성중공업",
       "signal": "HOLD",
       "gate_reason": null,
       "confidence": "MEDIUM",
@@ -11647,14 +11647,14 @@
       "target_price": 24990.0,
       "stop_loss": 17890.0,
       "top_reasons": [
-        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
-        "ROE \uc801\uc790",
-        "\ubd80\ucc44\ube44\uc728 357.39%"
+        "USD/KRW 1447.98 — 원화 약세 경고",
+        "ROE 적자",
+        "부채비율 357.39%"
       ],
       "risk_flags": [
-        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
-        "\ub370\ub4dc\ud06c\ub85c\uc2a4 \ubc1c\uc0dd",
-        "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
+        "USD/KRW 1447.98 — 외환 리스크",
+        "데드크로스 발생",
+        "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
         "ma5": 21860.0,
@@ -11715,13 +11715,13 @@
       "target_price": 160.0,
       "stop_loss": 130.0,
       "top_reasons": [
-        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
-        "ROE \uc801\uc790",
-        "\uac15\uc138/\ub20c\ub9bc\ubaa9 \uc139\ud130"
+        "USD/KRW 1447.98 — 원화 약세 경고",
+        "ROE 적자",
+        "강세/눌림목 섹터"
       ],
       "risk_flags": [
-        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
-        "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
+        "USD/KRW 1447.98 — 외환 리스크",
+        "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
         "ma5": 144.06000061035155,
@@ -11786,13 +11786,13 @@
       "target_price": 30.0,
       "stop_loss": 30.0,
       "top_reasons": [
-        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
-        "ROE \uc801\uc790",
-        "\uac15\uc138/\ub20c\ub9bc\ubaa9 \uc139\ud130"
+        "USD/KRW 1447.98 — 원화 약세 경고",
+        "ROE 적자",
+        "강세/눌림목 섹터"
       ],
       "risk_flags": [
-        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
-        "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
+        "USD/KRW 1447.98 — 외환 리스크",
+        "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
         "ma5": 29.42800064086914,
@@ -11838,7 +11838,7 @@
     },
     {
       "ticker": "006800",
-      "name": "\ubbf8\ub798\uc5d0\uc14b\uc99d\uad8c",
+      "name": "미래에셋증권",
       "signal": "HOLD",
       "gate_reason": null,
       "confidence": "MEDIUM",
@@ -11857,13 +11857,13 @@
       "target_price": 47740.0,
       "stop_loss": 28030.0,
       "top_reasons": [
-        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
-        "PER 9.63 \u2014 \uc800\ud3c9\uac00",
-        "\ubd80\ucc44\ube44\uc728 1037.75%"
+        "USD/KRW 1447.98 — 원화 약세 경고",
+        "PER 9.63 — 저평가",
+        "부채비율 1037.75%"
       ],
       "risk_flags": [
-        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
-        "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
+        "USD/KRW 1447.98 — 외환 리스크",
+        "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
         "ma5": 35380.0,
@@ -11905,7 +11905,7 @@
     },
     {
       "ticker": "047810",
-      "name": "\ud55c\uad6d\ud56d\uacf5\uc6b0\uc8fc",
+      "name": "한국항공우주",
       "signal": "HOLD",
       "gate_reason": null,
       "confidence": "MEDIUM",
@@ -11924,14 +11924,14 @@
       "target_price": 169520.0,
       "stop_loss": 109800.0,
       "top_reasons": [
-        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
-        "PER 57.91 \u2014 \uace0\ud3c9\uac00",
-        "\ubd80\ucc44\ube44\uc728 340.73%"
+        "USD/KRW 1447.98 — 원화 약세 경고",
+        "PER 57.91 — 고평가",
+        "부채비율 340.73%"
       ],
       "risk_flags": [
-        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
-        "\ub370\ub4dc\ud06c\ub85c\uc2a4 \ubc1c\uc0dd",
-        "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
+        "USD/KRW 1447.98 — 외환 리스크",
+        "데드크로스 발생",
+        "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
         "ma5": 145780.0,
@@ -11992,13 +11992,13 @@
       "target_price": 380.0,
       "stop_loss": 300.0,
       "top_reasons": [
-        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
-        "PER 277.39 \u2014 \uace0\ud3c9\uac00",
-        "\ubcfc\ub9b0\uc800\ubc34\ub4dc \ud558\ub2e8"
+        "USD/KRW 1447.98 — 원화 약세 경고",
+        "PER 277.39 — 고평가",
+        "볼린저밴드 하단"
       ],
       "risk_flags": [
-        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
-        "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
+        "USD/KRW 1447.98 — 외환 리스크",
+        "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
         "ma5": 328.83400268554686,
@@ -12044,7 +12044,7 @@
     },
     {
       "ticker": "005387",
-      "name": "\ud604\ub300\ucc282\uc6b0B",
+      "name": "현대차2우B",
       "signal": "HOLD",
       "gate_reason": null,
       "confidence": "MEDIUM",
@@ -12063,13 +12063,13 @@
       "target_price": 229500.0,
       "stop_loss": 165000.0,
       "top_reasons": [
-        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
-        "PER 5.52 \u2014 \uc800\ud3c9\uac00",
-        "\uc678\uad6d\uc778 8\uc77c \uc5f0\uc18d \uc21c\ub9e4\ub3c4"
+        "USD/KRW 1447.98 — 원화 약세 경고",
+        "PER 5.52 — 저평가",
+        "외국인 8일 연속 순매도"
       ],
       "risk_flags": [
-        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
-        "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
+        "USD/KRW 1447.98 — 외환 리스크",
+        "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
         "ma5": 191780.0,
@@ -12111,7 +12111,7 @@
     },
     {
       "ticker": "016360",
-      "name": "\uc0bc\uc131\uc99d\uad8c",
+      "name": "삼성증권",
       "signal": "HOLD",
       "gate_reason": null,
       "confidence": "LOW",
@@ -12130,13 +12130,13 @@
       "target_price": 129540.0,
       "stop_loss": 80220.0,
       "top_reasons": [
-        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
-        "PER 6.49 \u2014 \uc800\ud3c9\uac00",
-        "\ubd80\ucc44\ube44\uc728 753.25%"
+        "USD/KRW 1447.98 — 원화 약세 경고",
+        "PER 6.49 — 저평가",
+        "부채비율 753.25%"
       ],
       "risk_flags": [
-        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
-        "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
+        "USD/KRW 1447.98 — 외환 리스크",
+        "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
         "ma5": 97500.0,
@@ -12178,7 +12178,7 @@
     },
     {
       "ticker": "005380",
-      "name": "\ud604\ub300\ucc28",
+      "name": "현대차",
       "signal": "HOLD",
       "gate_reason": null,
       "confidence": "LOW",
@@ -12197,13 +12197,13 @@
       "target_price": 524280.0,
       "stop_loss": 328340.0,
       "top_reasons": [
-        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
-        "\uc678\uad6d\uc778 6\uc77c \uc5f0\uc18d \uc21c\ub9e4\ub3c4",
-        "MA \uc5ed\ubc30\uc5f4"
+        "USD/KRW 1447.98 — 원화 약세 경고",
+        "외국인 6일 연속 순매도",
+        "MA 역배열"
       ],
       "risk_flags": [
-        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
-        "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
+        "USD/KRW 1447.98 — 외환 리스크",
+        "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
         "ma5": 390700.0,
@@ -12245,7 +12245,7 @@
     },
     {
       "ticker": "064350",
-      "name": "\ud604\ub300\ub85c\ud15c",
+      "name": "현대로템",
       "signal": "HOLD",
       "gate_reason": null,
       "confidence": "LOW",
@@ -12264,13 +12264,13 @@
       "target_price": 213180.0,
       "stop_loss": 109710.0,
       "top_reasons": [
-        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
-        "\ubd80\ucc44\ube44\uc728 218.25%",
-        "\uc678\uad6d\uc778 9\uc77c \uc5f0\uc18d \uc21c\ub9e4\ub3c4"
+        "USD/KRW 1447.98 — 원화 약세 경고",
+        "부채비율 218.25%",
+        "외국인 9일 연속 순매도"
       ],
       "risk_flags": [
-        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
-        "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
+        "USD/KRW 1447.98 — 외환 리스크",
+        "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
         "ma5": 140020.0,
@@ -12312,7 +12312,7 @@
     },
     {
       "ticker": "012330",
-      "name": "\ud604\ub300\ubaa8\ube44\uc2a4",
+      "name": "현대모비스",
       "signal": "HOLD",
       "gate_reason": null,
       "confidence": "LOW",
@@ -12331,13 +12331,13 @@
       "target_price": 551820.0,
       "stop_loss": 407880.0,
       "top_reasons": [
-        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
-        "\uc678\uad6d\uc778 8\uc77c \uc5f0\uc18d \uc21c\ub9e4\ub3c4",
-        "\uae30\uad00 \uc21c\ub9e4\uc218"
+        "USD/KRW 1447.98 — 원화 약세 경고",
+        "외국인 8일 연속 순매도",
+        "기관 순매수"
       ],
       "risk_flags": [
-        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
-        "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
+        "USD/KRW 1447.98 — 외환 리스크",
+        "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
         "ma5": 470900.0,
@@ -12379,7 +12379,7 @@
     },
     {
       "ticker": "042660",
-      "name": "\ud55c\ud654\uc624\uc158",
+      "name": "한화오션",
       "signal": "HOLD",
       "gate_reason": null,
       "confidence": "LOW",
@@ -12398,13 +12398,13 @@
       "target_price": 125460.0,
       "stop_loss": 69160.0,
       "top_reasons": [
-        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
-        "\ubd80\ucc44\ube44\uc728 223.38%",
-        "\uc678\uad6d\uc778 5\uc77c \uc21c\ub9e4\uc218"
+        "USD/KRW 1447.98 — 원화 약세 경고",
+        "부채비율 223.38%",
+        "외국인 5일 순매수"
       ],
       "risk_flags": [
-        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
-        "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
+        "USD/KRW 1447.98 — 외환 리스크",
+        "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
         "ma5": 84440.0,
@@ -12446,7 +12446,7 @@
     },
     {
       "ticker": "298040",
-      "name": "\ud6a8\uc131\uc911\uacf5\uc5c5",
+      "name": "효성중공업",
       "signal": "HOLD",
       "gate_reason": null,
       "confidence": "LOW",
@@ -12465,13 +12465,13 @@
       "target_price": 3950460.0,
       "stop_loss": 1822630.0,
       "top_reasons": [
-        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
-        "\ubd80\ucc44\ube44\uc728 288.94%",
-        "\uc678\uad6d\uc778 8\uc77c \uc5f0\uc18d \uc21c\ub9e4\ub3c4"
+        "USD/KRW 1447.98 — 원화 약세 경고",
+        "부채비율 288.94%",
+        "외국인 8일 연속 순매도"
       ],
       "risk_flags": [
-        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
-        "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
+        "USD/KRW 1447.98 — 외환 리스크",
+        "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
         "ma5": 2500400.0,
@@ -12513,7 +12513,7 @@
     },
     {
       "ticker": "051910",
-      "name": "LG\ud654\ud559",
+      "name": "LG화학",
       "signal": "HOLD",
       "gate_reason": null,
       "confidence": "LOW",
@@ -12532,13 +12532,13 @@
       "target_price": 294780.0,
       "stop_loss": 217280.0,
       "top_reasons": [
-        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
-        "\uc678\uad6d\uc778 6\uc77c \uc5f0\uc18d \uc21c\ub9e4\ub3c4",
-        "\uae30\uad00 \uc21c\ub9e4\uc218"
+        "USD/KRW 1447.98 — 원화 약세 경고",
+        "외국인 6일 연속 순매도",
+        "기관 순매수"
       ],
       "risk_flags": [
-        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
-        "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
+        "USD/KRW 1447.98 — 외환 리스크",
+        "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
         "ma5": 252700.0,
@@ -12580,7 +12580,7 @@
     },
     {
       "ticker": "028260",
-      "name": "\uc0bc\uc131\ubb3c\uc0b0",
+      "name": "삼성물산",
       "signal": "HOLD",
       "gate_reason": null,
       "confidence": "LOW",
@@ -12599,13 +12599,13 @@
       "target_price": 488580.0,
       "stop_loss": 254140.0,
       "top_reasons": [
-        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
-        "\uc678\uad6d\uc778 7\uc77c \uc5f0\uc18d \uc21c\ub9e4\ub3c4",
-        "\uae30\uad00 \uc21c\ub9e4\uc218"
+        "USD/KRW 1447.98 — 원화 약세 경고",
+        "외국인 7일 연속 순매도",
+        "기관 순매수"
       ],
       "risk_flags": [
-        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
-        "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
+        "USD/KRW 1447.98 — 외환 리스크",
+        "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
         "ma5": 326400.0,
@@ -12647,7 +12647,7 @@
     },
     {
       "ticker": "011070",
-      "name": "LG\uc774\ub178\ud14d",
+      "name": "LG이노텍",
       "signal": "HOLD",
       "gate_reason": null,
       "confidence": "LOW",
@@ -12666,13 +12666,13 @@
       "target_price": 1004700.0,
       "stop_loss": 409820.0,
       "top_reasons": [
-        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
-        "\uc678\uad6d\uc778 9\uc77c \uc5f0\uc18d \uc21c\ub9e4\ub3c4",
-        "\uae30\uad00 \uc21c\ub9e4\uc218"
+        "USD/KRW 1447.98 — 원화 약세 경고",
+        "외국인 9일 연속 순매도",
+        "기관 순매수"
       ],
       "risk_flags": [
-        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
-        "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
+        "USD/KRW 1447.98 — 외환 리스크",
+        "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
         "ma5": 578000.0,
@@ -12714,7 +12714,7 @@
     },
     {
       "ticker": "015760",
-      "name": "\ud55c\uad6d\uc804\ub825",
+      "name": "한국전력",
       "signal": "HOLD",
       "gate_reason": null,
       "confidence": "LOW",
@@ -12733,13 +12733,13 @@
       "target_price": 40290.0,
       "stop_loss": 31040.0,
       "top_reasons": [
-        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
-        "PER 2.44 \u2014 \uc800\ud3c9\uac00",
-        "ROE \uc801\uc790"
+        "USD/KRW 1447.98 — 원화 약세 경고",
+        "PER 2.44 — 저평가",
+        "ROE 적자"
       ],
       "risk_flags": [
-        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
-        "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
+        "USD/KRW 1447.98 — 외환 리스크",
+        "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
         "ma5": 34790.0,
@@ -12781,7 +12781,7 @@
     },
     {
       "ticker": "004170",
-      "name": "\uc2e0\uc138\uacc4",
+      "name": "신세계",
       "signal": "HOLD",
       "gate_reason": null,
       "confidence": "LOW",
@@ -12800,13 +12800,13 @@
       "target_price": 791520.0,
       "stop_loss": 404980.0,
       "top_reasons": [
-        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
-        "PER 55.97 \u2014 \uace0\ud3c9\uac00",
-        "\uc678\uad6d\uc778 6\uc77c \uc5f0\uc18d \uc21c\ub9e4\ub3c4"
+        "USD/KRW 1447.98 — 원화 약세 경고",
+        "PER 55.97 — 고평가",
+        "외국인 6일 연속 순매도"
       ],
       "risk_flags": [
-        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
-        "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
+        "USD/KRW 1447.98 — 외환 리스크",
+        "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
         "ma5": 495000.0,
@@ -12848,7 +12848,7 @@
     },
     {
       "ticker": "000500",
-      "name": "\uac00\uc628\uc804\uc120",
+      "name": "가온전선",
       "signal": "HOLD",
       "gate_reason": null,
       "confidence": "LOW",
@@ -12867,13 +12867,13 @@
       "target_price": 332520.0,
       "stop_loss": 108830.0,
       "top_reasons": [
-        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
-        "PER 65.38 \u2014 \uace0\ud3c9\uac00",
-        "\uc678\uad6d\uc778 6\uc77c \uc5f0\uc18d \uc21c\ub9e4\ub3c4"
+        "USD/KRW 1447.98 — 원화 약세 경고",
+        "PER 65.38 — 고평가",
+        "외국인 6일 연속 순매도"
       ],
       "risk_flags": [
-        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
-        "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
+        "USD/KRW 1447.98 — 외환 리스크",
+        "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
         "ma5": 172540.0,
@@ -12915,7 +12915,7 @@
     },
     {
       "ticker": "402340",
-      "name": "SK\uc2a4\ud018\uc5b4",
+      "name": "SK스퀘어",
       "signal": "HOLD",
       "gate_reason": null,
       "confidence": "LOW",
@@ -12934,13 +12934,13 @@
       "target_price": 1827840.0,
       "stop_loss": 744960.0,
       "top_reasons": [
-        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
-        "PER 7.22 \u2014 \uc800\ud3c9\uac00",
-        "ROE \uc801\uc790"
+        "USD/KRW 1447.98 — 원화 약세 경고",
+        "PER 7.22 — 저평가",
+        "ROE 적자"
       ],
       "risk_flags": [
-        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
-        "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
+        "USD/KRW 1447.98 — 외환 리스크",
+        "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
         "ma5": 1040200.0,
@@ -12982,7 +12982,7 @@
     },
     {
       "ticker": "272210",
-      "name": "\ud55c\ud654\uc2dc\uc2a4\ud15c",
+      "name": "한화시스템",
       "signal": "HOLD",
       "gate_reason": null,
       "confidence": "LOW",
@@ -13001,13 +13001,13 @@
       "target_price": 89660.0,
       "stop_loss": 49180.0,
       "top_reasons": [
-        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
-        "PER 64.22 \u2014 \uace0\ud3c9\uac00",
-        "\uc678\uad6d\uc778 5\uc77c \uc5f0\uc18d \uc21c\ub9e4\ub3c4"
+        "USD/KRW 1447.98 — 원화 약세 경고",
+        "PER 64.22 — 고평가",
+        "외국인 5일 연속 순매도"
       ],
       "risk_flags": [
-        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
-        "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
+        "USD/KRW 1447.98 — 외환 리스크",
+        "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
         "ma5": 63260.0,
@@ -13049,7 +13049,7 @@
     },
     {
       "ticker": "326030",
-      "name": "SK\ubc14\uc774\uc624\ud31c",
+      "name": "SK바이오팜",
       "signal": "HOLD",
       "gate_reason": null,
       "confidence": "LOW",
@@ -13068,13 +13068,13 @@
       "target_price": 91290.0,
       "stop_loss": 71390.0,
       "top_reasons": [
-        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
-        "ROE \uc801\uc790",
-        "\uc678\uad6d\uc778 6\uc77c \uc5f0\uc18d \uc21c\ub9e4\ub3c4"
+        "USD/KRW 1447.98 — 원화 약세 경고",
+        "ROE 적자",
+        "외국인 6일 연속 순매도"
       ],
       "risk_flags": [
-        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
-        "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
+        "USD/KRW 1447.98 — 외환 리스크",
+        "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
         "ma5": 79460.0,
@@ -13116,7 +13116,7 @@
     },
     {
       "ticker": "329180",
-      "name": "HD\ud604\ub300\uc911\uacf5\uc5c5",
+      "name": "HD현대중공업",
       "signal": "HOLD",
       "gate_reason": null,
       "confidence": "LOW",
@@ -13135,13 +13135,13 @@
       "target_price": 634440.0,
       "stop_loss": 399160.0,
       "top_reasons": [
-        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
-        "\ubd80\ucc44\ube44\uc728 229.02%",
-        "\uc678\uad6d\uc778 3\uc77c \uc5f0\uc18d \uc21c\ub9e4\ub3c4"
+        "USD/KRW 1447.98 — 원화 약세 경고",
+        "부채비율 229.02%",
+        "외국인 3일 연속 순매도"
       ],
       "risk_flags": [
-        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
-        "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
+        "USD/KRW 1447.98 — 외환 리스크",
+        "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
         "ma5": 471000.0,
@@ -13183,7 +13183,7 @@
     },
     {
       "ticker": "307950",
-      "name": "\ud604\ub300\uc624\ud1a0\uc5d0\ubc84",
+      "name": "현대오토에버",
       "signal": "HOLD",
       "gate_reason": null,
       "confidence": "LOW",
@@ -13202,13 +13202,13 @@
       "target_price": 570180.0,
       "stop_loss": 295850.0,
       "top_reasons": [
-        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
-        "PER 51.27 \u2014 \uace0\ud3c9\uac00",
-        "\uc678\uad6d\uc778 7\uc77c \uc5f0\uc18d \uc21c\ub9e4\ub3c4"
+        "USD/KRW 1447.98 — 원화 약세 경고",
+        "PER 51.27 — 고평가",
+        "외국인 7일 연속 순매도"
       ],
       "risk_flags": [
-        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
-        "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
+        "USD/KRW 1447.98 — 외환 리스크",
+        "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
         "ma5": 376500.0,
@@ -13250,7 +13250,7 @@
     },
     {
       "ticker": "032830",
-      "name": "\uc0bc\uc131\uc0dd\uba85",
+      "name": "삼성생명",
       "signal": "HOLD",
       "gate_reason": null,
       "confidence": "LOW",
@@ -13269,13 +13269,13 @@
       "target_price": 417180.0,
       "stop_loss": 238620.0,
       "top_reasons": [
-        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
-        "\ubd80\ucc44\ube44\uc728 609.68%",
-        "\uc678\uad6d\uc778 7\uc77c \uc5f0\uc18d \uc21c\ub9e4\ub3c4"
+        "USD/KRW 1447.98 — 원화 약세 경고",
+        "부채비율 609.68%",
+        "외국인 7일 연속 순매도"
       ],
       "risk_flags": [
-        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
-        "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
+        "USD/KRW 1447.98 — 외환 리스크",
+        "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
         "ma5": 301900.0,
@@ -13317,7 +13317,7 @@
     },
     {
       "ticker": "000660",
-      "name": "SK\ud558\uc774\ub2c9\uc2a4",
+      "name": "SK하이닉스",
       "signal": "HOLD",
       "gate_reason": null,
       "confidence": "LOW",
@@ -13336,13 +13336,13 @@
       "target_price": 2777460.0,
       "stop_loss": 1208620.0,
       "top_reasons": [
-        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
-        "ROE \uc801\uc790",
-        "\uc678\uad6d\uc778 5\uc77c \uc5f0\uc18d \uc21c\ub9e4\ub3c4"
+        "USD/KRW 1447.98 — 원화 약세 경고",
+        "ROE 적자",
+        "외국인 5일 연속 순매도"
       ],
       "risk_flags": [
-        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
-        "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
+        "USD/KRW 1447.98 — 외환 리스크",
+        "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
         "ma5": 1689000.0,
@@ -13384,7 +13384,7 @@
     },
     {
       "ticker": "003670",
-      "name": "\ud3ec\uc2a4\ucf54\ud4e8\ucc98\uc5e0",
+      "name": "포스코퓨처엠",
       "signal": "HOLD",
       "gate_reason": null,
       "confidence": "LOW",
@@ -13403,13 +13403,13 @@
       "target_price": 181760.0,
       "stop_loss": 111940.0,
       "top_reasons": [
-        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
-        "PER 165.0 \u2014 \uace0\ud3c9\uac00",
-        "\uc678\uad6d\uc778 5\uc77c \uc5f0\uc18d \uc21c\ub9e4\ub3c4"
+        "USD/KRW 1447.98 — 원화 약세 경고",
+        "PER 165.0 — 고평가",
+        "외국인 5일 연속 순매도"
       ],
       "risk_flags": [
-        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
-        "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
+        "USD/KRW 1447.98 — 외환 리스크",
+        "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
         "ma5": 138480.0,
@@ -13451,7 +13451,7 @@
     },
     {
       "ticker": "443060",
-      "name": "HD\ud604\ub300\ub9c8\ub9b0\uc194\ub8e8\uc158",
+      "name": "HD현대마린솔루션",
       "signal": "HOLD",
       "gate_reason": null,
       "confidence": "LOW",
@@ -13470,14 +13470,14 @@
       "target_price": 237150.0,
       "stop_loss": 169750.0,
       "top_reasons": [
-        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
+        "USD/KRW 1447.98 — 원화 약세 경고",
         "ROE 71.59%",
-        "\uc678\uad6d\uc778 4\uc77c \uc5f0\uc18d \uc21c\ub9e4\ub3c4"
+        "외국인 4일 연속 순매도"
       ],
       "risk_flags": [
-        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
-        "\ub370\ub4dc\ud06c\ub85c\uc2a4 \ubc1c\uc0dd",
-        "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
+        "USD/KRW 1447.98 — 외환 리스크",
+        "데드크로스 발생",
+        "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
         "ma5": 200740.0,
@@ -13519,7 +13519,7 @@
     },
     {
       "ticker": "009150",
-      "name": "\uc0bc\uc131\uc804\uae30",
+      "name": "삼성전기",
       "signal": "HOLD",
       "gate_reason": null,
       "confidence": "LOW",
@@ -13538,13 +13538,13 @@
       "target_price": 2337840.0,
       "stop_loss": 898220.0,
       "top_reasons": [
-        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
-        "PER 97.19 \u2014 \uace0\ud3c9\uac00",
-        "\uc678\uad6d\uc778 5\uc77c \uc5f0\uc18d \uc21c\ub9e4\ub3c4"
+        "USD/KRW 1447.98 — 원화 약세 경고",
+        "PER 97.19 — 고평가",
+        "외국인 5일 연속 순매도"
       ],
       "risk_flags": [
-        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
-        "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
+        "USD/KRW 1447.98 — 외환 리스크",
+        "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
         "ma5": 1248400.0,
@@ -13586,7 +13586,7 @@
     },
     {
       "ticker": "034020",
-      "name": "\ub450\uc0b0\uc5d0\ub108\ube4c\ub9ac\ud2f0",
+      "name": "두산에너빌리티",
       "signal": "HOLD",
       "gate_reason": null,
       "confidence": "LOW",
@@ -13605,13 +13605,13 @@
       "target_price": 92620.0,
       "stop_loss": 55290.0,
       "top_reasons": [
-        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
-        "PER 252.28 \u2014 \uace0\ud3c9\uac00",
-        "\uc678\uad6d\uc778 6\uc77c \uc5f0\uc18d \uc21c\ub9e4\ub3c4"
+        "USD/KRW 1447.98 — 원화 약세 경고",
+        "PER 252.28 — 고평가",
+        "외국인 6일 연속 순매도"
       ],
       "risk_flags": [
-        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
-        "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
+        "USD/KRW 1447.98 — 외환 리스크",
+        "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
         "ma5": 68340.0,
@@ -13653,7 +13653,7 @@
     },
     {
       "ticker": "454910",
-      "name": "\ub450\uc0b0\ub85c\ubcf4\ud2f1\uc2a4",
+      "name": "두산로보틱스",
       "signal": "HOLD",
       "gate_reason": null,
       "confidence": "LOW",
@@ -13672,13 +13672,13 @@
       "target_price": 95680.0,
       "stop_loss": 52570.0,
       "top_reasons": [
-        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
-        "ROE \uc801\uc790",
-        "\uc678\uad6d\uc778 4\uc77c \uc5f0\uc18d \uc21c\ub9e4\ub3c4"
+        "USD/KRW 1447.98 — 원화 약세 경고",
+        "ROE 적자",
+        "외국인 4일 연속 순매도"
       ],
       "risk_flags": [
-        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
-        "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
+        "USD/KRW 1447.98 — 외환 리스크",
+        "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
         "ma5": 63720.0,
@@ -13739,13 +13739,13 @@
       "target_price": 60.0,
       "stop_loss": 40.0,
       "top_reasons": [
-        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
-        "ROE \uc801\uc790",
-        "\ubd80\ucc44\ube44\uc728 435.04%"
+        "USD/KRW 1447.98 — 원화 약세 경고",
+        "ROE 적자",
+        "부채비율 435.04%"
       ],
       "risk_flags": [
-        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
-        "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
+        "USD/KRW 1447.98 — 외환 리스크",
+        "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
         "ma5": 49.13199920654297,
@@ -13791,7 +13791,7 @@
     },
     {
       "ticker": "079550",
-      "name": "LIG\ub514\ud39c\uc2a4\uc564\uc5d0\uc5b4\ub85c\uc2a4\ud398\uc774\uc2a4",
+      "name": "LIG디펜스앤에어로스페이스",
       "signal": "HOLD",
       "gate_reason": null,
       "confidence": "LOW",
@@ -13810,13 +13810,13 @@
       "target_price": 870060.0,
       "stop_loss": 582970.0,
       "top_reasons": [
-        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
-        "PER 43.87 \u2014 \uace0\ud3c9\uac00",
-        "\ubd80\ucc44\ube44\uc728 262.59%"
+        "USD/KRW 1447.98 — 원화 약세 경고",
+        "PER 43.87 — 고평가",
+        "부채비율 262.59%"
       ],
       "risk_flags": [
-        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
-        "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
+        "USD/KRW 1447.98 — 외환 리스크",
+        "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
         "ma5": 702200.0,
@@ -13877,13 +13877,13 @@
       "target_price": 275400.0,
       "stop_loss": 145980.0,
       "top_reasons": [
-        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
-        "PER 72.86 \u2014 \uace0\ud3c9\uac00",
-        "\uc678\uad6d\uc778 5\uc77c \uc5f0\uc18d \uc21c\ub9e4\ub3c4"
+        "USD/KRW 1447.98 — 원화 약세 경고",
+        "PER 72.86 — 고평가",
+        "외국인 5일 연속 순매도"
       ],
       "risk_flags": [
-        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
-        "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
+        "USD/KRW 1447.98 — 외환 리스크",
+        "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
         "ma5": 192960.0,
@@ -13925,7 +13925,7 @@
     },
     {
       "ticker": "000150",
-      "name": "\ub450\uc0b0",
+      "name": "두산",
       "signal": "HOLD",
       "gate_reason": null,
       "confidence": "LOW",
@@ -13944,13 +13944,13 @@
       "target_price": 1656480.0,
       "stop_loss": 882700.0,
       "top_reasons": [
-        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
-        "PER 233.08 \u2014 \uace0\ud3c9\uac00",
-        "ROE \uc801\uc790"
+        "USD/KRW 1447.98 — 원화 약세 경고",
+        "PER 233.08 — 고평가",
+        "ROE 적자"
       ],
       "risk_flags": [
-        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
-        "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
+        "USD/KRW 1447.98 — 외환 리스크",
+        "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
         "ma5": 1141800.0,
@@ -13992,7 +13992,7 @@
     },
     {
       "ticker": "034220",
-      "name": "LG\ub514\uc2a4\ud50c\ub808\uc774",
+      "name": "LG디스플레이",
       "signal": "HOLD",
       "gate_reason": null,
       "confidence": "LOW",
@@ -14011,13 +14011,13 @@
       "target_price": 12140.0,
       "stop_loss": 8020.0,
       "top_reasons": [
-        "USD/KRW 1447.3 \u2014 \uc6d0\ud654 \uc57d\uc138 \uacbd\uace0",
-        "PER 163.0 \u2014 \uace0\ud3c9\uac00",
-        "ROE \uc801\uc790"
+        "USD/KRW 1447.98 — 원화 약세 경고",
+        "PER 163.0 — 고평가",
+        "ROE 적자"
       ],
       "risk_flags": [
-        "USD/KRW 1447.3 \u2014 \uc678\ud658 \ub9ac\uc2a4\ud06c",
-        "\ub9e4\ud06c\ub85c RISK-OFF \u2014 \ubcf4\uc218\uc801 \uc811\uadfc \uad8c\uace0"
+        "USD/KRW 1447.98 — 외환 리스크",
+        "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
         "ma5": 9502.0,
@@ -14058,5 +14058,5 @@
       "current_price": "8570"
     }
   ],
-  "updated": "2026-07-29 16:45 KST"
+  "updated": "2026-07-29 17:05 KST"
 }
