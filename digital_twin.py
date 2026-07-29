@@ -141,7 +141,10 @@ def get_macro_on_date(date_str, macro_cache):
 
 def simulate_signals_on_date(date_str, historical, watchlist, macro_snap, weights, lookback=120):
     from signal_engine import generate_signal
+    from sector_engine import get_dynamic_sector_sets
     date = pd.Timestamp(date_str)
+    # 그날 시점 기준 동적 섹터 계산 (미래정보 차단: as_of=date)
+    dyn_strong, dyn_weak = get_dynamic_sector_sets(historical, as_of=date_str)
     rows = []
     for ticker, name in watchlist.items():
         data     = historical.get(ticker, {})
@@ -159,7 +162,7 @@ def simulate_signals_on_date(date_str, historical, watchlist, macro_snap, weight
             "foreign_ratio": 0.0,
         }
         try:
-            sig = generate_signal(ticker, name, stock_data, macro_snap)
+            sig = generate_signal(ticker, name, stock_data, macro_snap, dyn_strong, dyn_weak)
             rows.append({
                 "date":   date_str,
                 "ticker": ticker,

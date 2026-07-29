@@ -336,7 +336,8 @@ def score_technical(ind: dict) -> tuple:
 # F. 모멘텀 점수 + Rule4 섹터
 # ════════════════════════════════════════════════════════════════════════════
 
-def score_momentum(ind: dict, macro_snap: dict, ticker: str = "") -> tuple:
+def score_momentum(ind: dict, macro_snap: dict, ticker: str = "",
+                   dyn_strong: set = None, dyn_weak: set = None) -> tuple:
     score = 7.5
     reasons = []
 
@@ -365,10 +366,12 @@ def score_momentum(ind: dict, macro_snap: dict, ticker: str = "") -> tuple:
     if kospi_chg > 0.5:  score += 0.5
     elif kospi_chg < -1: score -= 0.5
 
-    # Rule 4 — 섹터 모멘텀
-    if ticker in SECTOR_STRONG:
-        score *= 1.3; reasons.append("강세 섹터")
-    elif ticker in SECTOR_WEAK:
+    # Rule 4 — 섹터 모멘텀 (동적 계산, 하드코딩 폴백)
+    strong_set = dyn_strong if dyn_strong is not None else SECTOR_STRONG
+    weak_set   = dyn_weak   if dyn_weak   is not None else SECTOR_WEAK
+    if ticker in strong_set:
+        score *= 1.3; reasons.append("강세/눌림목 섹터")
+    elif ticker in weak_set:
         score *= 0.7; reasons.append("약세 섹터")
 
     return round(max(0, min(15, score)), 1), reasons
@@ -385,7 +388,8 @@ def _band(val, bands):
     return bands[-1][2]
 
 
-def generate_signal(ticker, name, stock_data, macro_snap):
+def generate_signal(ticker, name, stock_data, macro_snap,
+                    dyn_strong=None, dyn_weak=None):
     ohlcv    = stock_data.get("ohlcv", pd.DataFrame())
     fund     = stock_data.get("fundamental", {})
     investor = stock_data.get("investor", pd.DataFrame())
@@ -399,7 +403,7 @@ def generate_signal(ticker, name, stock_data, macro_snap):
     s_fun, r_fun = score_fundamental(fund, naver)
     s_snd, r_snd = score_supply_demand(investor, f_ratio)
     s_tec, r_tec = score_technical(ind)
-    s_mom, r_mom = score_momentum(ind, macro_snap, ticker)
+    s_mom, r_mom = score_momentum(ind, macro_snap, ticker, dyn_strong, dyn_weak)
 
     overall = (
         s_mac/25*100*WEIGHTS["macro"] +

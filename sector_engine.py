@@ -48,9 +48,10 @@ def calc_sector_strength(historical, as_of=None):
     sec["rs_20d"] = sec["ret_20d"] - df["ret_20d"].median()
     sec["rs_60d"] = sec["ret_60d"] - df["ret_60d"].median()
     # 이중 확인: 20일·60일 모두 양수 = 확정 강세 / 모두 음수 = 확정 약세
-    sec["trend"] = "중립"
+    sec["trend"] = "반등시도"
     sec.loc[(sec["rs_20d"] > 0) & (sec["rs_60d"] > 0), "trend"] = "강세"
     sec.loc[(sec["rs_20d"] < 0) & (sec["rs_60d"] < 0), "trend"] = "약세"
+    sec.loc[(sec["rs_20d"] < 0) & (sec["rs_60d"] > 0), "trend"] = "눌림목"
     return sec.sort_values("rs_20d", ascending=False).reset_index(drop=True)
 
 def get_dynamic_sector_sets(historical, as_of=None):
@@ -58,7 +59,8 @@ def get_dynamic_sector_sets(historical, as_of=None):
     sec = calc_sector_strength(historical, as_of)
     if sec.empty:
         return set(), set()
-    strong_sectors = set(sec[sec["trend"] == "강세"]["sector"])
+    # 강세 + 눌림목(장기상승 중 단기조정 = R6+F5 최적 구간) 모두 매수 우호
+    strong_sectors = set(sec[sec["trend"].isin(["강세","눌림목"])]["sector"])
     weak_sectors   = set(sec[sec["trend"] == "약세"]["sector"])
     strong = {t for t, s in SECTOR_MAP.items() if s in strong_sectors}
     weak   = {t for t, s in SECTOR_MAP.items() if s in weak_sectors}
