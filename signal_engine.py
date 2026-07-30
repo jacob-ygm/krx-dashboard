@@ -8,18 +8,8 @@ from sector_map import get_sector
 MOMENTUM_UNFIT_SECTORS = {"KR_플랫폼","KR_바이오","KR_내수소비","KR_에너지화학"}
 
 # ── 섹터 분류 ────────────────────────────────────────────────────────────────
-SECTOR_STRONG = {
-    "012450","329180","042660","034020","047810","272210",  # 방산/조선
-    "003490","180640",                                       # 항공
-    "105560","055550","086790","316140","138040",            # 금융
-    "000660","NVDA","AMD","AMAT","LRCX","KLAC","MU","MRVL", # AI반도체
-    "MSFT","META","GOOGL","AAPL",                           # 빅테크
-}
-SECTOR_WEAK = {
-    "051910","006400","373220","003670",  # 2차전지/화학
-    "000720","047040","028050",           # 건설
-    "011170","030200",                    # 통신
-}
+SECTOR_STRONG = set()  # 폐기 (look-ahead)
+SECTOR_WEAK = set()  # 폐기 (look-ahead)
 
 # Twin 검증: 저변동 방어주는 기술 반등신호 미작동 (승률 20~37%)
 BUY_BLACKLIST = {
@@ -379,13 +369,9 @@ def score_momentum(ind: dict, macro_snap: dict, ticker: str = "",
     if kospi_chg > 0.5:  score += 0.5
     elif kospi_chg < -1: score -= 0.5
 
-    # Rule 4 — 섹터 모멘텀 (동적 계산, 하드코딩 폴백)
-    strong_set = dyn_strong if dyn_strong is not None else SECTOR_STRONG
-    weak_set   = dyn_weak   if dyn_weak   is not None else SECTOR_WEAK
-    if ticker in strong_set:
-        score *= 1.3; reasons.append("강세/눌림목 섹터")
-    elif ticker in weak_set:
-        score *= 0.7; reasons.append("약세 섹터")
+    # Rule 4 — 섹터 부스트 제거 (2026-07-30)
+    # 사유: 하드코딩 폴백 리스트가 2024~25 성과를 알고 만든 것이라 look-ahead 오염.
+    #       섹터는 점수 배수가 아니라 게이트(강세/반등시도만 통과)로만 사용.
 
     return round(max(0, min(15, score)), 1), reasons
 
