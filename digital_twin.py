@@ -341,7 +341,8 @@ def run_digital_twin(watchlist, years=2, sim_interval_days=5, holding_days_list=
 
     best = opt_20d or opt_5d
     if best:
-        update_config_weights(best)
+        print("  (자동 가중치 덮어쓰기 비활성 — 수동 설정 유지)")
+        # update_config_weights(best)
 
     result_df.to_csv("/content/twin_results.csv", index=False, encoding="utf-8-sig")
     print("\n완료! 결과: /content/twin_results.csv")
