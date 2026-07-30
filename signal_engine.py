@@ -499,20 +499,39 @@ def generate_signal(ticker, name, stock_data, macro_snap,
         entry_low = entry_high = target = stop_loss = None
 
     # 리스크 플래그
+    # 종목 고유 리스크만
     risk_flags = []
-    if krw > 1380:
-        risk_flags.append("USD/KRW " + str(krw) + " — 외환 리스크")
     if ind.get("rsi_overbought"):
         risk_flags.append("RSI " + str(ind.get("rsi",0)) + " 과매수")
     if ind.get("dead_cross"):
         risk_flags.append("데드크로스 발생")
-    if vix > 25:
-        risk_flags.append("VIX " + str(vix) + " — 변동성 확대")
-    if regime == "RISK-OFF":
-        risk_flags.append("매크로 RISK-OFF — 보수적 접근 권고")
+    if ind.get("ma_aligned_down"):
+        risk_flags.append("MA 역배열 — 하락 추세")
+    if ind.get("is_crash"):
+        risk_flags.append("10일 -15% 급락 — 추가 하락 주의")
+    if ind.get("trend_strength", 0) < -0.3:
+        risk_flags.append("추세 강도 " + str(ind.get("trend_strength")) + " — 하락 추세 진행")
+    if ind.get("bb_pct", 50) < 0:
+        risk_flags.append("볼린저 하단 이탈 (" + str(ind.get("bb_pct")) + "%)")
+    if not ind.get("vol_surge") and ind.get("rsi", 50) < 35:
+        risk_flags.append("과매도이나 거래량 미확인 — 바닥 신호 아님")
+    per_v = naver.get("PER", 0)
+    if per_v and per_v > 60:
+        risk_flags.append("PER " + str(per_v) + " — 밸류에이션 부담")
 
-    all_reasons = r_mac + r_fun + r_snd + r_tec + r_mom
-    top_reasons = all_reasons[:3] if all_reasons else ["데이터 부족"]
+    # 시장 전체 리스크 (대시보드 상단 표시용, 종목 카드엔 미표시)
+    market_risks = []
+    if krw > 1380:
+        market_risks.append("USD/KRW " + str(krw) + " — 외환 리스크")
+    if vix > 25:
+        market_risks.append("VIX " + str(vix) + " — 변동성 확대")
+    if regime == "RISK-OFF":
+        market_risks.append("매크로 RISK-OFF — 보수적 접근 권고")
+
+    # 종목 고유 근거만 (매크로는 전 종목 공통이라 제외 → 대시보드 상단에서 1회 표시)
+    stock_reasons = r_tec + r_mom + r_snd + r_fun
+    top_reasons = stock_reasons[:3] if stock_reasons else ["특이 신호 없음"]
+    macro_reasons = r_mac
 
     return {
         "ticker":        ticker,
@@ -533,6 +552,8 @@ def generate_signal(ticker, name, stock_data, macro_snap,
         "stop_loss":    stop_loss,
         "top_reasons":  top_reasons,
         "risk_flags":   risk_flags,
+        "macro_reasons": macro_reasons,
+        "market_risks":  market_risks,
         "indicators":   ind,
         "current_price": cur,
     }
