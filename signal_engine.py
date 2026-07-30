@@ -445,9 +445,9 @@ def generate_signal(ticker, name, stock_data, macro_snap,
 
     gate_reason = None
     if overall >= 60:
-        if s_mac > 16.5:
-            gate_reason = "매크로 낙관 구간 (역사 승률 47.5%)"
-        elif ticker in BUY_BLACKLIST:
+        # 매크로 R6 게이트 제거(2026-07-30): 부스트 오염 상태의 산물.
+        # 오염 제거 후 mac_cut 완화할수록 성과 개선(14.5→18.5에서 57.9→75.4%)
+        if ticker in BUY_BLACKLIST:
             gate_reason = "저변동 방어주 (반등신호 미작동 업종)"
         elif s_mom < 9.0:
             gate_reason = "모멘텀 미달 (s_mom " + str(s_mom) + " < 9.0)"
@@ -455,8 +455,8 @@ def generate_signal(ticker, name, stock_data, macro_snap,
             gate_reason = "섹터 약세/눌림목 (해당 구간 승률 51%)"
         elif get_sector(ticker) in MOMENTUM_UNFIT_SECTORS:
             gate_reason = "모멘텀 부적합 업종 (개별재료 장세, 반기별 25/75/14/54%)"
-        elif not investor.empty and "foreign" in investor.columns and (investor.tail(3)["foreign"] < 0).all():
-            gate_reason = "외국인 3일 연속 순매도"
+        # 외국인 3일 순매도 게이트 제거(2026-07-30): 끄면 73.3%/+9.13%로 개선.
+        # 수급은 점수·게이트 양쪽 모두 무효로 검증됨
         if gate_reason is not None:
             overall = 57.0
 
