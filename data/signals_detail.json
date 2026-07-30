@@ -10,20 +10,20 @@
       "chg_pct": -1.74
     },
     "VIX": {
-      "value": 19.8,
-      "chg_pct": -4.16
+      "value": 19.84,
+      "chg_pct": -3.97
     },
     "DXY": {
-      "value": 100.972,
-      "chg_pct": 0.17
+      "value": 100.959,
+      "chg_pct": 0.16
     },
     "WTI": {
-      "value": 85.19,
-      "chg_pct": 0.86
+      "value": 85.18,
+      "chg_pct": 0.85
     },
     "Copper": {
-      "value": 6.3965,
-      "chg_pct": 1.96
+      "value": 6.4095,
+      "chg_pct": 2.17
     },
     "KOSPI": {
       "value": 5593.56,
@@ -34,8 +34,8 @@
       "chg_pct": -2.7
     },
     "USD/KRW": {
-      "value": 1437.38,
-      "chg_pct": -1.09
+      "value": 1438.1,
+      "chg_pct": -1.04
     }
   },
   "sector_strength": [
@@ -195,10 +195,10 @@
       "risk_flags": [],
       "macro_reasons": [
         "S&P500 -1.52%",
-        "USD/KRW 1437.38 — 원화 약세 경고"
+        "USD/KRW 1438.1 — 원화 약세 경고"
       ],
       "market_risks": [
-        "USD/KRW 1437.38 — 외환 리스크",
+        "USD/KRW 1438.1 — 외환 리스크",
         "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
@@ -271,10 +271,10 @@
       "risk_flags": [],
       "macro_reasons": [
         "S&P500 -1.52%",
-        "USD/KRW 1437.38 — 원화 약세 경고"
+        "USD/KRW 1438.1 — 원화 약세 경고"
       ],
       "market_risks": [
-        "USD/KRW 1437.38 — 외환 리스크",
+        "USD/KRW 1438.1 — 외환 리스크",
         "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
@@ -337,16 +337,16 @@
       "stop_loss": 17720.0,
       "top_reasons": [
         "MA 정배열",
-        "구리 +1.96%",
+        "구리 +2.17%",
         "외국인 9일 연속 순매수"
       ],
       "risk_flags": [],
       "macro_reasons": [
         "S&P500 -1.52%",
-        "USD/KRW 1437.38 — 원화 약세 경고"
+        "USD/KRW 1438.1 — 원화 약세 경고"
       ],
       "market_risks": [
-        "USD/KRW 1437.38 — 외환 리스크",
+        "USD/KRW 1438.1 — 외환 리스크",
         "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
@@ -415,10 +415,10 @@
       "risk_flags": [],
       "macro_reasons": [
         "S&P500 -1.52%",
-        "USD/KRW 1437.38 — 원화 약세 경고"
+        "USD/KRW 1438.1 — 원화 약세 경고"
       ],
       "market_risks": [
-        "USD/KRW 1437.38 — 외환 리스크",
+        "USD/KRW 1438.1 — 외환 리스크",
         "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
@@ -482,15 +482,15 @@
       "top_reasons": [
         "복합 매수조건 2/3 충족",
         "볼린저밴드 상단 과열",
-        "구리 +1.96%"
+        "구리 +2.17%"
       ],
       "risk_flags": [],
       "macro_reasons": [
         "S&P500 -1.52%",
-        "USD/KRW 1437.38 — 원화 약세 경고"
+        "USD/KRW 1438.1 — 원화 약세 경고"
       ],
       "market_risks": [
-        "USD/KRW 1437.38 — 외환 리스크",
+        "USD/KRW 1438.1 — 외환 리스크",
         "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
@@ -559,10 +559,10 @@
       "risk_flags": [],
       "macro_reasons": [
         "S&P500 -1.52%",
-        "USD/KRW 1437.38 — 원화 약세 경고"
+        "USD/KRW 1438.1 — 원화 약세 경고"
       ],
       "market_risks": [
-        "USD/KRW 1437.38 — 외환 리스크",
+        "USD/KRW 1438.1 — 외환 리스크",
         "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
@@ -625,16 +625,16 @@
       "stop_loss": 68770.0,
       "top_reasons": [
         "MA 정배열",
-        "구리 +1.96%",
+        "구리 +2.17%",
         "외국인 9일 연속 순매수"
       ],
       "risk_flags": [],
       "macro_reasons": [
         "S&P500 -1.52%",
-        "USD/KRW 1437.38 — 원화 약세 경고"
+        "USD/KRW 1438.1 — 원화 약세 경고"
       ],
       "market_risks": [
-        "USD/KRW 1437.38 — 외환 리스크",
+        "USD/KRW 1438.1 — 외환 리스크",
         "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
@@ -705,10 +705,10 @@
       ],
       "macro_reasons": [
         "S&P500 -1.52%",
-        "USD/KRW 1437.38 — 원화 약세 경고"
+        "USD/KRW 1438.1 — 원화 약세 경고"
       ],
       "market_risks": [
-        "USD/KRW 1437.38 — 외환 리스크",
+        "USD/KRW 1438.1 — 외환 리스크",
         "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
@@ -770,17 +770,17 @@
       "target_price": 102510.0,
       "stop_loss": 81770.0,
       "top_reasons": [
-        "구리 +1.96%",
+        "구리 +2.17%",
         "외국인 5일 순매수",
         "기관 순매수"
       ],
       "risk_flags": [],
       "macro_reasons": [
         "S&P500 -1.52%",
-        "USD/KRW 1437.38 — 원화 약세 경고"
+        "USD/KRW 1438.1 — 원화 약세 경고"
       ],
       "market_risks": [
-        "USD/KRW 1437.38 — 외환 리스크",
+        "USD/KRW 1438.1 — 외환 리스크",
         "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
@@ -849,10 +849,10 @@
       "risk_flags": [],
       "macro_reasons": [
         "S&P500 -1.52%",
-        "USD/KRW 1437.38 — 원화 약세 경고"
+        "USD/KRW 1438.1 — 원화 약세 경고"
       ],
       "market_risks": [
-        "USD/KRW 1437.38 — 외환 리스크",
+        "USD/KRW 1438.1 — 외환 리스크",
         "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
@@ -914,17 +914,17 @@
       "target_price": 138520.0,
       "stop_loss": 88270.0,
       "top_reasons": [
-        "구리 +1.96%",
+        "구리 +2.17%",
         "외국인 10일 연속 순매수",
         "기관 순매수"
       ],
       "risk_flags": [],
       "macro_reasons": [
         "S&P500 -1.52%",
-        "USD/KRW 1437.38 — 원화 약세 경고"
+        "USD/KRW 1438.1 — 원화 약세 경고"
       ],
       "market_risks": [
-        "USD/KRW 1437.38 — 외환 리스크",
+        "USD/KRW 1438.1 — 외환 리스크",
         "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
@@ -987,16 +987,16 @@
       "stop_loss": 80.0,
       "top_reasons": [
         "골든크로스",
-        "구리 +1.96%",
+        "구리 +2.17%",
         "ROE 21.95%"
       ],
       "risk_flags": [],
       "macro_reasons": [
         "S&P500 -1.52%",
-        "USD/KRW 1437.38 — 원화 약세 경고"
+        "USD/KRW 1438.1 — 원화 약세 경고"
       ],
       "market_risks": [
-        "USD/KRW 1437.38 — 외환 리스크",
+        "USD/KRW 1438.1 — 외환 리스크",
         "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
@@ -1063,7 +1063,7 @@
       "stop_loss": 49960.0,
       "top_reasons": [
         "복합 매수조건 2/3 충족",
-        "구리 +1.96%",
+        "구리 +2.17%",
         "외국인 9일 연속 순매수"
       ],
       "risk_flags": [
@@ -1071,10 +1071,10 @@
       ],
       "macro_reasons": [
         "S&P500 -1.52%",
-        "USD/KRW 1437.38 — 원화 약세 경고"
+        "USD/KRW 1438.1 — 원화 약세 경고"
       ],
       "market_risks": [
-        "USD/KRW 1437.38 — 외환 리스크",
+        "USD/KRW 1438.1 — 외환 리스크",
         "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
@@ -1137,16 +1137,16 @@
       "stop_loss": 102340.0,
       "top_reasons": [
         "MA 정배열",
-        "구리 +1.96%",
+        "구리 +2.17%",
         "외국인 6일 순매수"
       ],
       "risk_flags": [],
       "macro_reasons": [
         "S&P500 -1.52%",
-        "USD/KRW 1437.38 — 원화 약세 경고"
+        "USD/KRW 1438.1 — 원화 약세 경고"
       ],
       "market_risks": [
-        "USD/KRW 1437.38 — 외환 리스크",
+        "USD/KRW 1438.1 — 외환 리스크",
         "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
@@ -1209,16 +1209,16 @@
       "stop_loss": 304580.0,
       "top_reasons": [
         "복합 매수조건 2/3 충족",
-        "구리 +1.96%",
+        "구리 +2.17%",
         "외국인 8일 연속 순매수"
       ],
       "risk_flags": [],
       "macro_reasons": [
         "S&P500 -1.52%",
-        "USD/KRW 1437.38 — 원화 약세 경고"
+        "USD/KRW 1438.1 — 원화 약세 경고"
       ],
       "market_risks": [
-        "USD/KRW 1437.38 — 외환 리스크",
+        "USD/KRW 1438.1 — 외환 리스크",
         "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
@@ -1280,17 +1280,17 @@
       "target_price": 219300.0,
       "stop_loss": 171590.0,
       "top_reasons": [
-        "구리 +1.96%",
+        "구리 +2.17%",
         "외국인 8일 연속 순매수",
         "기관 순매수"
       ],
       "risk_flags": [],
       "macro_reasons": [
         "S&P500 -1.52%",
-        "USD/KRW 1437.38 — 원화 약세 경고"
+        "USD/KRW 1438.1 — 원화 약세 경고"
       ],
       "market_risks": [
-        "USD/KRW 1437.38 — 외환 리스크",
+        "USD/KRW 1438.1 — 외환 리스크",
         "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
@@ -1352,17 +1352,17 @@
       "target_price": 239190.0,
       "stop_loss": 175670.0,
       "top_reasons": [
-        "구리 +1.96%",
+        "구리 +2.17%",
         "외국인 8일 연속 순매수",
         "영업이익률 15.39%"
       ],
       "risk_flags": [],
       "macro_reasons": [
         "S&P500 -1.52%",
-        "USD/KRW 1437.38 — 원화 약세 경고"
+        "USD/KRW 1438.1 — 원화 약세 경고"
       ],
       "market_risks": [
-        "USD/KRW 1437.38 — 외환 리스크",
+        "USD/KRW 1438.1 — 외환 리스크",
         "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
@@ -1431,10 +1431,10 @@
       "risk_flags": [],
       "macro_reasons": [
         "S&P500 -1.52%",
-        "USD/KRW 1437.38 — 원화 약세 경고"
+        "USD/KRW 1438.1 — 원화 약세 경고"
       ],
       "market_risks": [
-        "USD/KRW 1437.38 — 외환 리스크",
+        "USD/KRW 1438.1 — 외환 리스크",
         "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
@@ -1497,16 +1497,16 @@
       "stop_loss": 59850.0,
       "top_reasons": [
         "볼린저밴드 하단",
-        "구리 +1.96%",
+        "구리 +2.17%",
         "외국인 9일 연속 순매수"
       ],
       "risk_flags": [],
       "macro_reasons": [
         "S&P500 -1.52%",
-        "USD/KRW 1437.38 — 원화 약세 경고"
+        "USD/KRW 1438.1 — 원화 약세 경고"
       ],
       "market_risks": [
-        "USD/KRW 1437.38 — 외환 리스크",
+        "USD/KRW 1438.1 — 외환 리스크",
         "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
@@ -1568,17 +1568,17 @@
       "target_price": 52730.0,
       "stop_loss": 37150.0,
       "top_reasons": [
-        "구리 +1.96%",
+        "구리 +2.17%",
         "외국인 8일 연속 순매수",
         "기관 순매수"
       ],
       "risk_flags": [],
       "macro_reasons": [
         "S&P500 -1.52%",
-        "USD/KRW 1437.38 — 원화 약세 경고"
+        "USD/KRW 1438.1 — 원화 약세 경고"
       ],
       "market_risks": [
-        "USD/KRW 1437.38 — 외환 리스크",
+        "USD/KRW 1438.1 — 외환 리스크",
         "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
@@ -1641,30 +1641,30 @@
       "stop_loss": 310.0,
       "top_reasons": [
         "MA 정배열",
-        "구리 +1.96%",
+        "구리 +2.17%",
         "영업이익률 50.39%"
       ],
       "risk_flags": [],
       "macro_reasons": [
         "S&P500 -1.52%",
-        "USD/KRW 1437.38 — 원화 약세 경고"
+        "USD/KRW 1438.1 — 원화 약세 경고"
       ],
       "market_risks": [
-        "USD/KRW 1437.38 — 외환 리스크",
+        "USD/KRW 1438.1 — 외환 리스크",
         "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
         "ma5": 352.2659973144531,
         "ma20": 342.3630905151367,
         "ma60": 321.03904774983727,
-        "ma120": 310.087619527181,
+        "ma120": 310.08761978149414,
         "current_price": 344.7099914550781,
         "ma_aligned_up": true,
         "ma_aligned_down": false,
         "pct_vs_ma5": -2.144971673956386,
         "pct_vs_ma20": 0.6855005708734874,
         "pct_vs_ma60": 7.373228855228198,
-        "pct_vs_ma120": 11.16535125803766,
+        "pct_vs_ma120": 11.165351166867254,
         "golden_cross": false,
         "dead_cross": false,
         "rsi": 58.5,
@@ -1716,16 +1716,16 @@
       "target_price": 58960.0,
       "stop_loss": 45640.0,
       "top_reasons": [
-        "구리 +1.96%",
+        "구리 +2.17%",
         "외국인 7일 연속 순매수"
       ],
       "risk_flags": [],
       "macro_reasons": [
         "S&P500 -1.52%",
-        "USD/KRW 1437.38 — 원화 약세 경고"
+        "USD/KRW 1438.1 — 원화 약세 경고"
       ],
       "market_risks": [
-        "USD/KRW 1437.38 — 외환 리스크",
+        "USD/KRW 1438.1 — 외환 리스크",
         "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
@@ -1788,16 +1788,16 @@
       "stop_loss": 160340.0,
       "top_reasons": [
         "볼린저밴드 상단 과열",
-        "구리 +1.96%",
+        "구리 +2.17%",
         "외국인 5일 순매수"
       ],
       "risk_flags": [],
       "macro_reasons": [
         "S&P500 -1.52%",
-        "USD/KRW 1437.38 — 원화 약세 경고"
+        "USD/KRW 1438.1 — 원화 약세 경고"
       ],
       "market_risks": [
-        "USD/KRW 1437.38 — 외환 리스크",
+        "USD/KRW 1438.1 — 외환 리스크",
         "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
@@ -1866,10 +1866,10 @@
       "risk_flags": [],
       "macro_reasons": [
         "S&P500 -1.52%",
-        "USD/KRW 1437.38 — 원화 약세 경고"
+        "USD/KRW 1438.1 — 원화 약세 경고"
       ],
       "market_risks": [
-        "USD/KRW 1437.38 — 외환 리스크",
+        "USD/KRW 1438.1 — 외환 리스크",
         "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
@@ -1936,16 +1936,16 @@
       "stop_loss": 240.0,
       "top_reasons": [
         "MA 정배열",
-        "구리 +1.96%",
+        "구리 +2.17%",
         "ROE 25.74%"
       ],
       "risk_flags": [],
       "macro_reasons": [
         "S&P500 -1.52%",
-        "USD/KRW 1437.38 — 원화 약세 경고"
+        "USD/KRW 1438.1 — 원화 약세 경고"
       ],
       "market_risks": [
-        "USD/KRW 1437.38 — 외환 리스크",
+        "USD/KRW 1438.1 — 외환 리스크",
         "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
@@ -2013,15 +2013,15 @@
       "top_reasons": [
         "MA 정배열",
         "볼린저밴드 상단 과열",
-        "구리 +1.96%"
+        "구리 +2.17%"
       ],
       "risk_flags": [],
       "macro_reasons": [
         "S&P500 -1.52%",
-        "USD/KRW 1437.38 — 원화 약세 경고"
+        "USD/KRW 1438.1 — 원화 약세 경고"
       ],
       "market_risks": [
-        "USD/KRW 1437.38 — 외환 리스크",
+        "USD/KRW 1438.1 — 외환 리스크",
         "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
@@ -2084,16 +2084,16 @@
       "stop_loss": 177510.0,
       "top_reasons": [
         "MACD 강세 다이버전스",
-        "구리 +1.96%",
+        "구리 +2.17%",
         "외국인 8일 연속 순매수"
       ],
       "risk_flags": [],
       "macro_reasons": [
         "S&P500 -1.52%",
-        "USD/KRW 1437.38 — 원화 약세 경고"
+        "USD/KRW 1438.1 — 원화 약세 경고"
       ],
       "market_risks": [
-        "USD/KRW 1437.38 — 외환 리스크",
+        "USD/KRW 1438.1 — 외환 리스크",
         "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
@@ -2156,16 +2156,16 @@
       "stop_loss": 97870.0,
       "top_reasons": [
         "RSI 과매도 회복 (35.9)",
-        "구리 +1.96%",
+        "구리 +2.17%",
         "외국인 8일 연속 순매수"
       ],
       "risk_flags": [],
       "macro_reasons": [
         "S&P500 -1.52%",
-        "USD/KRW 1437.38 — 원화 약세 경고"
+        "USD/KRW 1438.1 — 원화 약세 경고"
       ],
       "market_risks": [
-        "USD/KRW 1437.38 — 외환 리스크",
+        "USD/KRW 1438.1 — 외환 리스크",
         "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
@@ -2228,16 +2228,16 @@
       "stop_loss": 450.0,
       "top_reasons": [
         "복합 매수조건 2/3 충족",
-        "구리 +1.96%",
+        "구리 +2.17%",
         "ROE 24.2%"
       ],
       "risk_flags": [],
       "macro_reasons": [
         "S&P500 -1.52%",
-        "USD/KRW 1437.38 — 원화 약세 경고"
+        "USD/KRW 1438.1 — 원화 약세 경고"
       ],
       "market_risks": [
-        "USD/KRW 1437.38 — 외환 리스크",
+        "USD/KRW 1438.1 — 외환 리스크",
         "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
@@ -2304,16 +2304,16 @@
       "stop_loss": 160.0,
       "top_reasons": [
         "복합 매수조건 2/3 충족",
-        "구리 +1.96%",
+        "구리 +2.17%",
         "영업이익률 15.47%"
       ],
       "risk_flags": [],
       "macro_reasons": [
         "S&P500 -1.52%",
-        "USD/KRW 1437.38 — 원화 약세 경고"
+        "USD/KRW 1438.1 — 원화 약세 경고"
       ],
       "market_risks": [
-        "USD/KRW 1437.38 — 외환 리스크",
+        "USD/KRW 1438.1 — 외환 리스크",
         "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
@@ -2379,17 +2379,17 @@
       "target_price": 38660.0,
       "stop_loss": 32400.0,
       "top_reasons": [
-        "구리 +1.96%",
+        "구리 +2.17%",
         "외국인 8일 연속 순매수",
         "기관 순매수"
       ],
       "risk_flags": [],
       "macro_reasons": [
         "S&P500 -1.52%",
-        "USD/KRW 1437.38 — 원화 약세 경고"
+        "USD/KRW 1438.1 — 원화 약세 경고"
       ],
       "market_risks": [
-        "USD/KRW 1437.38 — 외환 리스크",
+        "USD/KRW 1438.1 — 외환 리스크",
         "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
@@ -2453,15 +2453,15 @@
       "top_reasons": [
         "MA 정배열",
         "52주 고점 근방",
-        "구리 +1.96%"
+        "구리 +2.17%"
       ],
       "risk_flags": [],
       "macro_reasons": [
         "S&P500 -1.52%",
-        "USD/KRW 1437.38 — 원화 약세 경고"
+        "USD/KRW 1438.1 — 원화 약세 경고"
       ],
       "market_risks": [
-        "USD/KRW 1437.38 — 외환 리스크",
+        "USD/KRW 1438.1 — 외환 리스크",
         "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
@@ -2536,10 +2536,10 @@
       ],
       "macro_reasons": [
         "S&P500 -1.52%",
-        "USD/KRW 1437.38 — 원화 약세 경고"
+        "USD/KRW 1438.1 — 원화 약세 경고"
       ],
       "market_risks": [
-        "USD/KRW 1437.38 — 외환 리스크",
+        "USD/KRW 1438.1 — 외환 리스크",
         "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
@@ -2607,15 +2607,15 @@
       "top_reasons": [
         "복합 매수조건 2/3 충족",
         "볼린저밴드 상단 과열",
-        "구리 +1.96%"
+        "구리 +2.17%"
       ],
       "risk_flags": [],
       "macro_reasons": [
         "S&P500 -1.52%",
-        "USD/KRW 1437.38 — 원화 약세 경고"
+        "USD/KRW 1438.1 — 원화 약세 경고"
       ],
       "market_risks": [
-        "USD/KRW 1437.38 — 외환 리스크",
+        "USD/KRW 1438.1 — 외환 리스크",
         "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
@@ -2678,30 +2678,30 @@
       "stop_loss": 560.0,
       "top_reasons": [
         "볼린저밴드 하단",
-        "구리 +1.96%",
+        "구리 +2.17%",
         "ROE 32.93%"
       ],
       "risk_flags": [],
       "macro_reasons": [
         "S&P500 -1.52%",
-        "USD/KRW 1437.38 — 원화 약세 경고"
+        "USD/KRW 1438.1 — 원화 약세 경고"
       ],
       "market_risks": [
-        "USD/KRW 1437.38 — 외환 리스크",
+        "USD/KRW 1438.1 — 외환 리스크",
         "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
         "ma5": 594.835986328125,
         "ma20": 625.8064910888672,
         "ma60": 605.2809193929037,
-        "ma120": 619.5667566935222,
+        "ma120": 619.5667551676432,
         "current_price": 585.6099853515625,
         "ma_aligned_up": false,
         "ma_aligned_down": false,
         "pct_vs_ma5": -1.5510159419765301,
         "pct_vs_ma20": -6.423152573468061,
         "pct_vs_ma60": -3.2498850386810663,
-        "pct_vs_ma120": -5.4807284243555525,
+        "pct_vs_ma120": -5.480728191571971,
         "golden_cross": false,
         "dead_cross": false,
         "rsi": 36.5,
@@ -2754,30 +2754,30 @@
       "stop_loss": 120.0,
       "top_reasons": [
         "MA 정배열",
-        "구리 +1.96%",
+        "구리 +2.17%",
         "영업이익률 38.6%"
       ],
       "risk_flags": [],
       "macro_reasons": [
         "S&P500 -1.52%",
-        "USD/KRW 1437.38 — 원화 약세 경고"
+        "USD/KRW 1438.1 — 원화 약세 경고"
       ],
       "market_risks": [
-        "USD/KRW 1437.38 — 외환 리스크",
+        "USD/KRW 1438.1 — 외환 리스크",
         "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
         "ma5": 130.89800109863282,
         "ma20": 127.06700019836425,
         "ma60": 120.18321113586425,
-        "ma120": 118.46662305196126,
+        "ma120": 118.46662317911783,
         "current_price": 130.36000061035156,
         "ma_aligned_up": true,
         "ma_aligned_down": false,
         "pct_vs_ma5": -0.4110074132269381,
         "pct_vs_ma20": 2.5915465123490744,
         "pct_vs_ma60": 8.4677297089214,
-        "pct_vs_ma120": 10.039433261445874,
+        "pct_vs_ma120": 10.039433143334664,
         "golden_cross": false,
         "dead_cross": false,
         "rsi": 60.6,
@@ -2830,30 +2830,30 @@
       "stop_loss": 930.0,
       "top_reasons": [
         "MA 정배열",
-        "구리 +1.96%",
+        "구리 +2.17%",
         "영업이익률 35.08%"
       ],
       "risk_flags": [],
       "macro_reasons": [
         "S&P500 -1.52%",
-        "USD/KRW 1437.38 — 원화 약세 경고"
+        "USD/KRW 1438.1 — 원화 약세 경고"
       ],
       "market_risks": [
-        "USD/KRW 1437.38 — 외환 리스크",
+        "USD/KRW 1438.1 — 외환 리스크",
         "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
         "ma5": 1066.3420166015626,
         "ma20": 1041.6610046386718,
         "ma60": 1037.4106842041015,
-        "ma120": 1025.077015686035,
+        "ma120": 1025.0770177205404,
         "current_price": 1079.18994140625,
         "ma_aligned_up": true,
         "ma_aligned_down": false,
         "pct_vs_ma5": 1.2048596608463136,
         "pct_vs_ma20": 3.602797512862277,
         "pct_vs_ma60": 4.0272630538986,
-        "pct_vs_ma120": 5.27891318331819,
+        "pct_vs_ma120": 5.278912974367556,
         "golden_cross": false,
         "dead_cross": false,
         "rsi": 61.2,
@@ -2912,10 +2912,10 @@
       "risk_flags": [],
       "macro_reasons": [
         "S&P500 -1.52%",
-        "USD/KRW 1437.38 — 원화 약세 경고"
+        "USD/KRW 1438.1 — 원화 약세 경고"
       ],
       "market_risks": [
-        "USD/KRW 1437.38 — 외환 리스크",
+        "USD/KRW 1438.1 — 외환 리스크",
         "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
@@ -2983,7 +2983,7 @@
       "top_reasons": [
         "볼린저밴드 하단",
         "강한 하락 모멘텀",
-        "구리 +1.96%"
+        "구리 +2.17%"
       ],
       "risk_flags": [
         "10일 -15% 급락 — 추가 하락 주의",
@@ -2993,24 +2993,24 @@
       ],
       "macro_reasons": [
         "S&P500 -1.52%",
-        "USD/KRW 1437.38 — 원화 약세 경고"
+        "USD/KRW 1438.1 — 원화 약세 경고"
       ],
       "market_risks": [
-        "USD/KRW 1437.38 — 외환 리스크",
+        "USD/KRW 1438.1 — 외환 리스크",
         "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
         "ma5": 874.1780151367187,
         "ma20": 927.1800720214844,
         "ma60": 917.6969156901042,
-        "ma120": 669.5282468159993,
+        "ma120": 669.5282470703125,
         "current_price": 739.0,
         "ma_aligned_up": false,
         "ma_aligned_down": false,
         "pct_vs_ma5": -15.463442547863359,
         "pct_vs_ma20": -20.295957354994144,
         "pct_vs_ma60": -19.472323883286112,
-        "pct_vs_ma120": 10.376224381029452,
+        "pct_vs_ma120": 10.37622433910419,
         "golden_cross": false,
         "dead_cross": false,
         "rsi": 30.6,
@@ -3063,16 +3063,16 @@
       "stop_loss": 610.0,
       "top_reasons": [
         "볼린저밴드 상단 과열",
-        "구리 +1.96%",
+        "구리 +2.17%",
         "영업이익률 20.66%"
       ],
       "risk_flags": [],
       "macro_reasons": [
         "S&P500 -1.52%",
-        "USD/KRW 1437.38 — 원화 약세 경고"
+        "USD/KRW 1438.1 — 원화 약세 경고"
       ],
       "market_risks": [
-        "USD/KRW 1437.38 — 외환 리스크",
+        "USD/KRW 1438.1 — 외환 리스크",
         "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
@@ -3138,17 +3138,17 @@
       "target_price": 380.0,
       "stop_loss": 310.0,
       "top_reasons": [
-        "구리 +1.96%",
+        "구리 +2.17%",
         "ROE 48.68%",
         "영업이익률 34.03%"
       ],
       "risk_flags": [],
       "macro_reasons": [
         "S&P500 -1.52%",
-        "USD/KRW 1437.38 — 원화 약세 경고"
+        "USD/KRW 1438.1 — 원화 약세 경고"
       ],
       "market_risks": [
-        "USD/KRW 1437.38 — 외환 리스크",
+        "USD/KRW 1438.1 — 외환 리스크",
         "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
@@ -3221,10 +3221,10 @@
       "risk_flags": [],
       "macro_reasons": [
         "S&P500 -1.52%",
-        "USD/KRW 1437.38 — 원화 약세 경고"
+        "USD/KRW 1438.1 — 원화 약세 경고"
       ],
       "market_risks": [
-        "USD/KRW 1437.38 — 외환 리스크",
+        "USD/KRW 1438.1 — 외환 리스크",
         "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
@@ -3299,10 +3299,10 @@
       ],
       "macro_reasons": [
         "S&P500 -1.52%",
-        "USD/KRW 1437.38 — 원화 약세 경고"
+        "USD/KRW 1438.1 — 원화 약세 경고"
       ],
       "market_risks": [
-        "USD/KRW 1437.38 — 외환 리스크",
+        "USD/KRW 1438.1 — 외환 리스크",
         "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
@@ -3370,15 +3370,15 @@
       "top_reasons": [
         "골든크로스",
         "MACD 강세 다이버전스",
-        "구리 +1.96%"
+        "구리 +2.17%"
       ],
       "risk_flags": [],
       "macro_reasons": [
         "S&P500 -1.52%",
-        "USD/KRW 1437.38 — 원화 약세 경고"
+        "USD/KRW 1438.1 — 원화 약세 경고"
       ],
       "market_risks": [
-        "USD/KRW 1437.38 — 외환 리스크",
+        "USD/KRW 1438.1 — 외환 리스크",
         "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
@@ -3451,24 +3451,24 @@
       "risk_flags": [],
       "macro_reasons": [
         "S&P500 -1.52%",
-        "USD/KRW 1437.38 — 원화 약세 경고"
+        "USD/KRW 1438.1 — 원화 약세 경고"
       ],
       "market_risks": [
-        "USD/KRW 1437.38 — 외환 리스크",
+        "USD/KRW 1438.1 — 외환 리스크",
         "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
         "ma5": 195.6779998779297,
         "ma20": 187.78299942016602,
         "ma60": 181.94333012898764,
-        "ma120": 175.1490042368571,
+        "ma120": 175.14900436401368,
         "current_price": 198.44000244140625,
         "ma_aligned_up": true,
         "ma_aligned_down": false,
         "pct_vs_ma5": 1.4115038814785485,
         "pct_vs_ma20": 5.675169240105227,
         "pct_vs_ma60": 9.066928862258038,
-        "pct_vs_ma120": 13.297819365876794,
+        "pct_vs_ma120": 13.297819283623614,
         "golden_cross": false,
         "dead_cross": false,
         "rsi": 67.9,
@@ -3522,7 +3522,7 @@
       "top_reasons": [
         "볼린저밴드 하단",
         "강한 하락 모멘텀",
-        "구리 +1.96%"
+        "구리 +2.17%"
       ],
       "risk_flags": [
         "추세 강도 -0.632 — 하락 추세 진행",
@@ -3531,10 +3531,10 @@
       ],
       "macro_reasons": [
         "S&P500 -1.52%",
-        "USD/KRW 1437.38 — 원화 약세 경고"
+        "USD/KRW 1438.1 — 원화 약세 경고"
       ],
       "market_risks": [
-        "USD/KRW 1437.38 — 외환 리스크",
+        "USD/KRW 1438.1 — 외환 리스크",
         "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
@@ -3609,10 +3609,10 @@
       ],
       "macro_reasons": [
         "S&P500 -1.52%",
-        "USD/KRW 1437.38 — 원화 약세 경고"
+        "USD/KRW 1438.1 — 원화 약세 경고"
       ],
       "market_risks": [
-        "USD/KRW 1437.38 — 외환 리스크",
+        "USD/KRW 1438.1 — 외환 리스크",
         "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
@@ -3688,10 +3688,10 @@
       ],
       "macro_reasons": [
         "S&P500 -1.52%",
-        "USD/KRW 1437.38 — 원화 약세 경고"
+        "USD/KRW 1438.1 — 원화 약세 경고"
       ],
       "market_risks": [
-        "USD/KRW 1437.38 — 외환 리스크",
+        "USD/KRW 1438.1 — 외환 리스크",
         "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
@@ -3770,10 +3770,10 @@
       ],
       "macro_reasons": [
         "S&P500 -1.52%",
-        "USD/KRW 1437.38 — 원화 약세 경고"
+        "USD/KRW 1438.1 — 원화 약세 경고"
       ],
       "market_risks": [
-        "USD/KRW 1437.38 — 외환 리스크",
+        "USD/KRW 1438.1 — 외환 리스크",
         "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
@@ -3836,16 +3836,16 @@
       "stop_loss": 64210.0,
       "top_reasons": [
         "볼린저밴드 상단 과열",
-        "구리 +1.96%",
+        "구리 +2.17%",
         "외국인 7일 연속 순매수"
       ],
       "risk_flags": [],
       "macro_reasons": [
         "S&P500 -1.52%",
-        "USD/KRW 1437.38 — 원화 약세 경고"
+        "USD/KRW 1438.1 — 원화 약세 경고"
       ],
       "market_risks": [
-        "USD/KRW 1437.38 — 외환 리스크",
+        "USD/KRW 1438.1 — 외환 리스크",
         "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
@@ -3916,10 +3916,10 @@
       ],
       "macro_reasons": [
         "S&P500 -1.52%",
-        "USD/KRW 1437.38 — 원화 약세 경고"
+        "USD/KRW 1438.1 — 원화 약세 경고"
       ],
       "market_risks": [
-        "USD/KRW 1437.38 — 외환 리스크",
+        "USD/KRW 1438.1 — 외환 리스크",
         "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
@@ -3994,24 +3994,24 @@
       ],
       "macro_reasons": [
         "S&P500 -1.52%",
-        "USD/KRW 1437.38 — 원화 약세 경고"
+        "USD/KRW 1438.1 — 원화 약세 경고"
       ],
       "market_risks": [
-        "USD/KRW 1437.38 — 외환 리스크",
+        "USD/KRW 1438.1 — 외환 리스크",
         "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
         "ma5": 268.5539978027344,
         "ma20": 271.3334991455078,
         "ma60": 275.33357696533204,
-        "ma120": 294.3297485351562,
+        "ma120": 294.3297492980957,
         "current_price": 271.5199890136719,
         "ma_aligned_up": false,
         "ma_aligned_down": true,
         "pct_vs_ma5": 1.1044301091045927,
         "pct_vs_ma20": 0.06873086764125347,
         "pct_vs_ma60": -1.385079144248491,
-        "pct_vs_ma120": -7.749729558430907,
+        "pct_vs_ma120": -7.749729797555127,
         "golden_cross": false,
         "dead_cross": false,
         "rsi": 44.1,
@@ -4065,15 +4065,15 @@
       "top_reasons": [
         "MA 정배열",
         "52주 고점 근방",
-        "구리 +1.96%"
+        "구리 +2.17%"
       ],
       "risk_flags": [],
       "macro_reasons": [
         "S&P500 -1.52%",
-        "USD/KRW 1437.38 — 원화 약세 경고"
+        "USD/KRW 1438.1 — 원화 약세 경고"
       ],
       "market_risks": [
-        "USD/KRW 1437.38 — 외환 리스크",
+        "USD/KRW 1438.1 — 외환 리스크",
         "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
@@ -4148,10 +4148,10 @@
       ],
       "macro_reasons": [
         "S&P500 -1.52%",
-        "USD/KRW 1437.38 — 원화 약세 경고"
+        "USD/KRW 1438.1 — 원화 약세 경고"
       ],
       "market_risks": [
-        "USD/KRW 1437.38 — 외환 리스크",
+        "USD/KRW 1438.1 — 외환 리스크",
         "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
@@ -4219,17 +4219,17 @@
       "top_reasons": [
         "MA 역배열",
         "RSI 과매도 회복 (42.6)",
-        "구리 +1.96%"
+        "구리 +2.17%"
       ],
       "risk_flags": [
         "MA 역배열 — 하락 추세"
       ],
       "macro_reasons": [
         "S&P500 -1.52%",
-        "USD/KRW 1437.38 — 원화 약세 경고"
+        "USD/KRW 1438.1 — 원화 약세 경고"
       ],
       "market_risks": [
-        "USD/KRW 1437.38 — 외환 리스크",
+        "USD/KRW 1438.1 — 외환 리스크",
         "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
@@ -4302,10 +4302,10 @@
       ],
       "macro_reasons": [
         "S&P500 -1.52%",
-        "USD/KRW 1437.38 — 원화 약세 경고"
+        "USD/KRW 1438.1 — 원화 약세 경고"
       ],
       "market_risks": [
-        "USD/KRW 1437.38 — 외환 리스크",
+        "USD/KRW 1438.1 — 외환 리스크",
         "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
@@ -4367,17 +4367,17 @@
       "target_price": 410.0,
       "stop_loss": 360.0,
       "top_reasons": [
-        "구리 +1.96%",
+        "구리 +2.17%",
         "ROE 34.01%",
         "영업이익률 46.33%"
       ],
       "risk_flags": [],
       "macro_reasons": [
         "S&P500 -1.52%",
-        "USD/KRW 1437.38 — 원화 약세 경고"
+        "USD/KRW 1438.1 — 원화 약세 경고"
       ],
       "market_risks": [
-        "USD/KRW 1437.38 — 외환 리스크",
+        "USD/KRW 1438.1 — 외환 리스크",
         "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
@@ -4450,10 +4450,10 @@
       "risk_flags": [],
       "macro_reasons": [
         "S&P500 -1.52%",
-        "USD/KRW 1437.38 — 원화 약세 경고"
+        "USD/KRW 1438.1 — 원화 약세 경고"
       ],
       "market_risks": [
-        "USD/KRW 1437.38 — 외환 리스크",
+        "USD/KRW 1438.1 — 외환 리스크",
         "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
@@ -4520,16 +4520,16 @@
       "stop_loss": 390.0,
       "top_reasons": [
         "볼린저밴드 하단",
-        "구리 +1.96%",
+        "구리 +2.17%",
         "영업이익률 43.44%"
       ],
       "risk_flags": [],
       "macro_reasons": [
         "S&P500 -1.52%",
-        "USD/KRW 1437.38 — 원화 약세 경고"
+        "USD/KRW 1438.1 — 원화 약세 경고"
       ],
       "market_risks": [
-        "USD/KRW 1437.38 — 외환 리스크",
+        "USD/KRW 1438.1 — 외환 리스크",
         "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
@@ -4595,17 +4595,17 @@
       "target_price": 140.0,
       "stop_loss": 120.0,
       "top_reasons": [
-        "구리 +1.96%",
+        "구리 +2.17%",
         "ROE 43.36%",
         "영업이익률 39.28%"
       ],
       "risk_flags": [],
       "macro_reasons": [
         "S&P500 -1.52%",
-        "USD/KRW 1437.38 — 원화 약세 경고"
+        "USD/KRW 1438.1 — 원화 약세 경고"
       ],
       "market_risks": [
-        "USD/KRW 1437.38 — 외환 리스크",
+        "USD/KRW 1438.1 — 외환 리스크",
         "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
@@ -4671,17 +4671,17 @@
       "target_price": 80.0,
       "stop_loss": 70.0,
       "top_reasons": [
-        "구리 +1.96%",
+        "구리 +2.17%",
         "ROE 35.62%",
         "영업이익률 21.42%"
       ],
       "risk_flags": [],
       "macro_reasons": [
         "S&P500 -1.52%",
-        "USD/KRW 1437.38 — 원화 약세 경고"
+        "USD/KRW 1438.1 — 원화 약세 경고"
       ],
       "market_risks": [
-        "USD/KRW 1437.38 — 외환 리스크",
+        "USD/KRW 1438.1 — 외환 리스크",
         "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
@@ -4748,16 +4748,16 @@
       "stop_loss": 19240.0,
       "top_reasons": [
         "볼린저밴드 하단",
-        "구리 +1.96%",
+        "구리 +2.17%",
         "외국인 6일 순매수"
       ],
       "risk_flags": [],
       "macro_reasons": [
         "S&P500 -1.52%",
-        "USD/KRW 1437.38 — 원화 약세 경고"
+        "USD/KRW 1438.1 — 원화 약세 경고"
       ],
       "market_risks": [
-        "USD/KRW 1437.38 — 외환 리스크",
+        "USD/KRW 1438.1 — 외환 리스크",
         "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
@@ -4828,10 +4828,10 @@
       ],
       "macro_reasons": [
         "S&P500 -1.52%",
-        "USD/KRW 1437.38 — 원화 약세 경고"
+        "USD/KRW 1438.1 — 원화 약세 경고"
       ],
       "market_risks": [
-        "USD/KRW 1437.38 — 외환 리스크",
+        "USD/KRW 1438.1 — 외환 리스크",
         "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
@@ -4895,15 +4895,15 @@
       "top_reasons": [
         "MA 정배열",
         "52주 고점 근방",
-        "구리 +1.96%"
+        "구리 +2.17%"
       ],
       "risk_flags": [],
       "macro_reasons": [
         "S&P500 -1.52%",
-        "USD/KRW 1437.38 — 원화 약세 경고"
+        "USD/KRW 1438.1 — 원화 약세 경고"
       ],
       "market_risks": [
-        "USD/KRW 1437.38 — 외환 리스크",
+        "USD/KRW 1438.1 — 외환 리스크",
         "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
@@ -4978,10 +4978,10 @@
       ],
       "macro_reasons": [
         "S&P500 -1.52%",
-        "USD/KRW 1437.38 — 원화 약세 경고"
+        "USD/KRW 1438.1 — 원화 약세 경고"
       ],
       "market_risks": [
-        "USD/KRW 1437.38 — 외환 리스크",
+        "USD/KRW 1438.1 — 외환 리스크",
         "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
@@ -5057,10 +5057,10 @@
       ],
       "macro_reasons": [
         "S&P500 -1.52%",
-        "USD/KRW 1437.38 — 원화 약세 경고"
+        "USD/KRW 1438.1 — 원화 약세 경고"
       ],
       "market_risks": [
-        "USD/KRW 1437.38 — 외환 리스크",
+        "USD/KRW 1438.1 — 외환 리스크",
         "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
@@ -5133,10 +5133,10 @@
       "risk_flags": [],
       "macro_reasons": [
         "S&P500 -1.52%",
-        "USD/KRW 1437.38 — 원화 약세 경고"
+        "USD/KRW 1438.1 — 원화 약세 경고"
       ],
       "market_risks": [
-        "USD/KRW 1437.38 — 외환 리스크",
+        "USD/KRW 1438.1 — 외환 리스크",
         "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
@@ -5211,24 +5211,24 @@
       ],
       "macro_reasons": [
         "S&P500 -1.52%",
-        "USD/KRW 1437.38 — 원화 약세 경고"
+        "USD/KRW 1438.1 — 원화 약세 경고"
       ],
       "market_risks": [
-        "USD/KRW 1437.38 — 외환 리스크",
+        "USD/KRW 1438.1 — 외환 리스크",
         "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
         "ma5": 83.45199890136719,
         "ma20": 84.18099975585938,
         "ma60": 84.74595591227214,
-        "ma120": 85.51786988576254,
+        "ma120": 85.51786956787109,
         "current_price": 82.8499984741211,
         "ma_aligned_up": false,
         "ma_aligned_down": true,
         "pct_vs_ma5": -0.7213732866454214,
         "pct_vs_ma20": -1.5811184062893502,
         "pct_vs_ma60": -2.2372246766721338,
-        "pct_vs_ma120": -3.119665416368844,
+        "pct_vs_ma120": -3.1196650562402506,
         "golden_cross": false,
         "dead_cross": false,
         "rsi": 33.4,
@@ -5282,7 +5282,7 @@
       "top_reasons": [
         "MA 역배열",
         "볼린저밴드 하단",
-        "구리 +1.96%"
+        "구리 +2.17%"
       ],
       "risk_flags": [
         "MA 역배열 — 하락 추세",
@@ -5290,10 +5290,10 @@
       ],
       "macro_reasons": [
         "S&P500 -1.52%",
-        "USD/KRW 1437.38 — 원화 약세 경고"
+        "USD/KRW 1438.1 — 원화 약세 경고"
       ],
       "market_risks": [
-        "USD/KRW 1437.38 — 외환 리스크",
+        "USD/KRW 1438.1 — 외환 리스크",
         "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
@@ -5355,17 +5355,17 @@
       "target_price": 145350.0,
       "stop_loss": 110290.0,
       "top_reasons": [
-        "구리 +1.96%",
+        "구리 +2.17%",
         "외국인 5일 순매수",
         "외국인 보유 68.37%"
       ],
       "risk_flags": [],
       "macro_reasons": [
         "S&P500 -1.52%",
-        "USD/KRW 1437.38 — 원화 약세 경고"
+        "USD/KRW 1438.1 — 원화 약세 경고"
       ],
       "market_risks": [
-        "USD/KRW 1437.38 — 외환 리스크",
+        "USD/KRW 1438.1 — 외환 리스크",
         "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
@@ -5437,10 +5437,10 @@
       ],
       "macro_reasons": [
         "S&P500 -1.52%",
-        "USD/KRW 1437.38 — 원화 약세 경고"
+        "USD/KRW 1438.1 — 원화 약세 경고"
       ],
       "market_risks": [
-        "USD/KRW 1437.38 — 외환 리스크",
+        "USD/KRW 1438.1 — 외환 리스크",
         "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
@@ -5508,7 +5508,7 @@
       "top_reasons": [
         "볼린저밴드 하단",
         "강한 하락 모멘텀",
-        "구리 +1.96%"
+        "구리 +2.17%"
       ],
       "risk_flags": [
         "10일 -15% 급락 — 추가 하락 주의",
@@ -5518,10 +5518,10 @@
       ],
       "macro_reasons": [
         "S&P500 -1.52%",
-        "USD/KRW 1437.38 — 원화 약세 경고"
+        "USD/KRW 1438.1 — 원화 약세 경고"
       ],
       "market_risks": [
-        "USD/KRW 1437.38 — 외환 리스크",
+        "USD/KRW 1438.1 — 외환 리스크",
         "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
@@ -5589,7 +5589,7 @@
       "top_reasons": [
         "볼린저밴드 하단",
         "강한 하락 모멘텀",
-        "구리 +1.96%"
+        "구리 +2.17%"
       ],
       "risk_flags": [
         "10일 -15% 급락 — 추가 하락 주의",
@@ -5599,24 +5599,24 @@
       ],
       "macro_reasons": [
         "S&P500 -1.52%",
-        "USD/KRW 1437.38 — 원화 약세 경고"
+        "USD/KRW 1438.1 — 원화 약세 경고"
       ],
       "market_risks": [
-        "USD/KRW 1437.38 — 외환 리스크",
+        "USD/KRW 1438.1 — 외환 리스크",
         "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
         "ma5": 287.7119934082031,
         "ma20": 324.3985000610352,
         "ma60": 328.77717844645184,
-        "ma120": 282.36101214090985,
+        "ma120": 282.3610116322835,
         "current_price": 252.35000610351562,
         "ma_aligned_up": false,
         "ma_aligned_down": false,
         "pct_vs_ma5": -12.290758854295037,
         "pct_vs_ma20": -22.2098727164163,
         "pct_vs_ma60": -23.245887291834634,
-        "pct_vs_ma120": -10.628594156766047,
+        "pct_vs_ma120": -10.628593995778346,
         "golden_cross": false,
         "dead_cross": false,
         "rsi": 19.4,
@@ -5675,10 +5675,10 @@
       "risk_flags": [],
       "macro_reasons": [
         "S&P500 -1.52%",
-        "USD/KRW 1437.38 — 원화 약세 경고"
+        "USD/KRW 1438.1 — 원화 약세 경고"
       ],
       "market_risks": [
-        "USD/KRW 1437.38 — 외환 리스크",
+        "USD/KRW 1438.1 — 외환 리스크",
         "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
@@ -5751,10 +5751,10 @@
       "risk_flags": [],
       "macro_reasons": [
         "S&P500 -1.52%",
-        "USD/KRW 1437.38 — 원화 약세 경고"
+        "USD/KRW 1438.1 — 원화 약세 경고"
       ],
       "market_risks": [
-        "USD/KRW 1437.38 — 외환 리스크",
+        "USD/KRW 1438.1 — 외환 리스크",
         "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
@@ -5820,17 +5820,17 @@
       "target_price": 715020.0,
       "stop_loss": 553870.0,
       "top_reasons": [
-        "구리 +1.96%",
+        "구리 +2.17%",
         "외국인 6일 순매수",
         "외국인 보유 58.14%"
       ],
       "risk_flags": [],
       "macro_reasons": [
         "S&P500 -1.52%",
-        "USD/KRW 1437.38 — 원화 약세 경고"
+        "USD/KRW 1438.1 — 원화 약세 경고"
       ],
       "market_risks": [
-        "USD/KRW 1437.38 — 외환 리스크",
+        "USD/KRW 1438.1 — 외환 리스크",
         "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
@@ -5903,10 +5903,10 @@
       ],
       "macro_reasons": [
         "S&P500 -1.52%",
-        "USD/KRW 1437.38 — 원화 약세 경고"
+        "USD/KRW 1438.1 — 원화 약세 경고"
       ],
       "market_risks": [
-        "USD/KRW 1437.38 — 외환 리스크",
+        "USD/KRW 1438.1 — 외환 리스크",
         "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
@@ -5974,15 +5974,15 @@
       "top_reasons": [
         "MA 정배열",
         "52주 고점 근방",
-        "구리 +1.96%"
+        "구리 +2.17%"
       ],
       "risk_flags": [],
       "macro_reasons": [
         "S&P500 -1.52%",
-        "USD/KRW 1437.38 — 원화 약세 경고"
+        "USD/KRW 1438.1 — 원화 약세 경고"
       ],
       "market_risks": [
-        "USD/KRW 1437.38 — 외환 리스크",
+        "USD/KRW 1438.1 — 외환 리스크",
         "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
@@ -6057,24 +6057,24 @@
       ],
       "macro_reasons": [
         "S&P500 -1.52%",
-        "USD/KRW 1437.38 — 원화 약세 경고"
+        "USD/KRW 1438.1 — 원화 약세 경고"
       ],
       "market_risks": [
-        "USD/KRW 1437.38 — 외환 리스크",
+        "USD/KRW 1438.1 — 외환 리스크",
         "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
         "ma5": 259.93800048828126,
         "ma20": 253.22508163452147,
         "ma60": 230.0690668741862,
-        "ma120": 221.74045422871907,
+        "ma120": 221.7404534657796,
         "current_price": 263.29998779296875,
         "ma_aligned_up": true,
         "ma_aligned_down": false,
         "pct_vs_ma5": 1.293380459329585,
         "pct_vs_ma20": 3.9786367501258635,
         "pct_vs_ma60": 14.443889120024522,
-        "pct_vs_ma120": 18.74242285143972,
+        "pct_vs_ma120": 18.74242325999522,
         "golden_cross": false,
         "dead_cross": false,
         "rsi": 69.9,
@@ -6127,16 +6127,16 @@
       "stop_loss": 140.0,
       "top_reasons": [
         "복합 매수조건 2/3 충족",
-        "구리 +1.96%",
+        "구리 +2.17%",
         "PER 58.04 — 고평가"
       ],
       "risk_flags": [],
       "macro_reasons": [
         "S&P500 -1.52%",
-        "USD/KRW 1437.38 — 원화 약세 경고"
+        "USD/KRW 1438.1 — 원화 약세 경고"
       ],
       "market_risks": [
-        "USD/KRW 1437.38 — 외환 리스크",
+        "USD/KRW 1438.1 — 외환 리스크",
         "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
@@ -6202,17 +6202,17 @@
       "target_price": 20.0,
       "stop_loss": 10.0,
       "top_reasons": [
-        "구리 +1.96%",
+        "구리 +2.17%",
         "PER 2.26 — 저평가",
         "ROE 147.81%"
       ],
       "risk_flags": [],
       "macro_reasons": [
         "S&P500 -1.52%",
-        "USD/KRW 1437.38 — 원화 약세 경고"
+        "USD/KRW 1438.1 — 원화 약세 경고"
       ],
       "market_risks": [
-        "USD/KRW 1437.38 — 외환 리스크",
+        "USD/KRW 1438.1 — 외환 리스크",
         "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
@@ -6289,10 +6289,10 @@
       ],
       "macro_reasons": [
         "S&P500 -1.52%",
-        "USD/KRW 1437.38 — 원화 약세 경고"
+        "USD/KRW 1438.1 — 원화 약세 경고"
       ],
       "market_risks": [
-        "USD/KRW 1437.38 — 외환 리스크",
+        "USD/KRW 1438.1 — 외환 리스크",
         "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
@@ -6367,10 +6367,10 @@
       ],
       "macro_reasons": [
         "S&P500 -1.52%",
-        "USD/KRW 1437.38 — 원화 약세 경고"
+        "USD/KRW 1438.1 — 원화 약세 경고"
       ],
       "market_risks": [
-        "USD/KRW 1437.38 — 외환 리스크",
+        "USD/KRW 1438.1 — 외환 리스크",
         "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
@@ -6443,10 +6443,10 @@
       ],
       "macro_reasons": [
         "S&P500 -1.52%",
-        "USD/KRW 1437.38 — 원화 약세 경고"
+        "USD/KRW 1438.1 — 원화 약세 경고"
       ],
       "market_risks": [
-        "USD/KRW 1437.38 — 외환 리스크",
+        "USD/KRW 1438.1 — 외환 리스크",
         "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
@@ -6517,10 +6517,10 @@
       ],
       "macro_reasons": [
         "S&P500 -1.52%",
-        "USD/KRW 1437.38 — 원화 약세 경고"
+        "USD/KRW 1438.1 — 원화 약세 경고"
       ],
       "market_risks": [
-        "USD/KRW 1437.38 — 외환 리스크",
+        "USD/KRW 1438.1 — 외환 리스크",
         "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
@@ -6583,30 +6583,30 @@
       "stop_loss": 330.0,
       "top_reasons": [
         "복합 매수조건 2/3 충족",
-        "구리 +1.96%",
+        "구리 +2.17%",
         "PER 42.92 — 고평가"
       ],
       "risk_flags": [],
       "macro_reasons": [
         "S&P500 -1.52%",
-        "USD/KRW 1437.38 — 원화 약세 경고"
+        "USD/KRW 1438.1 — 원화 약세 경고"
       ],
       "market_risks": [
-        "USD/KRW 1437.38 — 외환 리스크",
+        "USD/KRW 1438.1 — 외환 리스크",
         "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
         "ma5": 355.7119995117188,
         "ma20": 356.7666610717773,
         "ma60": 333.9362030029297,
-        "ma120": 320.69995447794594,
+        "ma120": 320.6999542236328,
         "current_price": 350.6300048828125,
         "ma_aligned_up": false,
         "ma_aligned_down": false,
         "pct_vs_ma5": -1.4286823710985996,
         "pct_vs_ma20": -1.7200755727930006,
         "pct_vs_ma60": 4.9990991482095515,
-        "pct_vs_ma120": 9.332726739418607,
+        "pct_vs_ma120": 9.332726826118808,
         "golden_cross": false,
         "dead_cross": false,
         "rsi": 44.4,
@@ -6660,7 +6660,7 @@
       "top_reasons": [
         "볼린저밴드 하단",
         "강한 하락 모멘텀",
-        "구리 +1.96%"
+        "구리 +2.17%"
       ],
       "risk_flags": [
         "추세 강도 -0.426 — 하락 추세 진행",
@@ -6668,10 +6668,10 @@
       ],
       "macro_reasons": [
         "S&P500 -1.52%",
-        "USD/KRW 1437.38 — 원화 약세 경고"
+        "USD/KRW 1438.1 — 원화 약세 경고"
       ],
       "market_risks": [
-        "USD/KRW 1437.38 — 외환 리스크",
+        "USD/KRW 1438.1 — 외환 리스크",
         "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
@@ -6737,16 +6737,16 @@
       "target_price": 210.0,
       "stop_loss": 160.0,
       "top_reasons": [
-        "구리 +1.96%",
+        "구리 +2.17%",
         "영업이익률 19.78%"
       ],
       "risk_flags": [],
       "macro_reasons": [
         "S&P500 -1.52%",
-        "USD/KRW 1437.38 — 원화 약세 경고"
+        "USD/KRW 1438.1 — 원화 약세 경고"
       ],
       "market_risks": [
-        "USD/KRW 1437.38 — 외환 리스크",
+        "USD/KRW 1438.1 — 외환 리스크",
         "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
@@ -6814,7 +6814,7 @@
       "top_reasons": [
         "볼린저밴드 하단",
         "강한 하락 모멘텀",
-        "구리 +1.96%"
+        "구리 +2.17%"
       ],
       "risk_flags": [
         "10일 -15% 급락 — 추가 하락 주의",
@@ -6823,24 +6823,24 @@
       ],
       "macro_reasons": [
         "S&P500 -1.52%",
-        "USD/KRW 1437.38 — 원화 약세 경고"
+        "USD/KRW 1438.1 — 원화 약세 경고"
       ],
       "market_risks": [
-        "USD/KRW 1437.38 — 외환 리스크",
+        "USD/KRW 1438.1 — 외환 리스크",
         "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
         "ma5": 198.72000122070312,
         "ma20": 218.8215003967285,
         "ma60": 214.2708834330241,
-        "ma120": 185.34685300191242,
+        "ma120": 185.34685262044272,
         "current_price": 170.19000244140625,
         "ma_aligned_up": false,
         "ma_aligned_down": false,
         "pct_vs_ma5": -14.356883355496153,
         "pct_vs_ma20": -22.224277718209684,
         "pct_vs_ma60": -20.572501632213815,
-        "pct_vs_ma120": -8.177560241796922,
+        "pct_vs_ma120": -8.177560052813515,
         "golden_cross": false,
         "dead_cross": false,
         "rsi": 22.4,
@@ -6894,7 +6894,7 @@
       "top_reasons": [
         "볼린저밴드 하단",
         "강한 하락 모멘텀",
-        "구리 +1.96%"
+        "구리 +2.17%"
       ],
       "risk_flags": [
         "추세 강도 -0.378 — 하락 추세 진행",
@@ -6903,24 +6903,24 @@
       ],
       "macro_reasons": [
         "S&P500 -1.52%",
-        "USD/KRW 1437.38 — 원화 약세 경고"
+        "USD/KRW 1438.1 — 원화 약세 경고"
       ],
       "market_risks": [
-        "USD/KRW 1437.38 — 외환 리스크",
+        "USD/KRW 1438.1 — 외환 리스크",
         "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
         "ma5": 1668.4425048828125,
         "ma20": 1752.7087524414062,
         "ma60": 1705.258583577474,
-        "ma120": 1552.588047281901,
+        "ma120": 1552.5880462646485,
         "current_price": 1550.68994140625,
         "ma_aligned_up": false,
         "ma_aligned_down": false,
         "pct_vs_ma5": -7.057633879018999,
         "pct_vs_ma20": -11.526091300323426,
         "pct_vs_ma60": -9.064234812233185,
-        "pct_vs_ma120": -0.12225431459259584,
+        "pct_vs_ma120": -0.12225424915289773,
         "golden_cross": false,
         "dead_cross": false,
         "rsi": 27.5,
@@ -6974,15 +6974,15 @@
       "top_reasons": [
         "RSI 과매도 회복 (42.7)",
         "볼린저밴드 하단",
-        "구리 +1.96%"
+        "구리 +2.17%"
       ],
       "risk_flags": [],
       "macro_reasons": [
         "S&P500 -1.52%",
-        "USD/KRW 1437.38 — 원화 약세 경고"
+        "USD/KRW 1438.1 — 원화 약세 경고"
       ],
       "market_risks": [
-        "USD/KRW 1437.38 — 외환 리스크",
+        "USD/KRW 1438.1 — 외환 리스크",
         "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
@@ -7044,17 +7044,17 @@
       "target_price": 198390.0,
       "stop_loss": 151320.0,
       "top_reasons": [
-        "구리 +1.96%",
+        "구리 +2.17%",
         "외국인 6일 순매수",
         "외국인 보유 79.24%"
       ],
       "risk_flags": [],
       "macro_reasons": [
         "S&P500 -1.52%",
-        "USD/KRW 1437.38 — 원화 약세 경고"
+        "USD/KRW 1438.1 — 원화 약세 경고"
       ],
       "market_risks": [
-        "USD/KRW 1437.38 — 외환 리스크",
+        "USD/KRW 1438.1 — 외환 리스크",
         "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
@@ -7127,10 +7127,10 @@
       ],
       "macro_reasons": [
         "S&P500 -1.52%",
-        "USD/KRW 1437.38 — 원화 약세 경고"
+        "USD/KRW 1438.1 — 원화 약세 경고"
       ],
       "market_risks": [
-        "USD/KRW 1437.38 — 외환 리스크",
+        "USD/KRW 1438.1 — 외환 리스크",
         "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
@@ -7201,10 +7201,10 @@
       ],
       "macro_reasons": [
         "S&P500 -1.52%",
-        "USD/KRW 1437.38 — 원화 약세 경고"
+        "USD/KRW 1438.1 — 원화 약세 경고"
       ],
       "market_risks": [
-        "USD/KRW 1437.38 — 외환 리스크",
+        "USD/KRW 1438.1 — 외환 리스크",
         "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
@@ -7268,17 +7268,17 @@
       "top_reasons": [
         "데드크로스",
         "복합 매수조건 2/3 충족",
-        "구리 +1.96%"
+        "구리 +2.17%"
       ],
       "risk_flags": [
         "데드크로스 발생"
       ],
       "macro_reasons": [
         "S&P500 -1.52%",
-        "USD/KRW 1437.38 — 원화 약세 경고"
+        "USD/KRW 1438.1 — 원화 약세 경고"
       ],
       "market_risks": [
-        "USD/KRW 1437.38 — 외환 리스크",
+        "USD/KRW 1438.1 — 외환 리스크",
         "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
@@ -7345,16 +7345,16 @@
       "stop_loss": 490.0,
       "top_reasons": [
         "복합 매수조건 2/3 충족",
-        "구리 +1.96%",
+        "구리 +2.17%",
         "영업이익률 28.47%"
       ],
       "risk_flags": [],
       "macro_reasons": [
         "S&P500 -1.52%",
-        "USD/KRW 1437.38 — 원화 약세 경고"
+        "USD/KRW 1438.1 — 원화 약세 경고"
       ],
       "market_risks": [
-        "USD/KRW 1437.38 — 외환 리스크",
+        "USD/KRW 1438.1 — 외환 리스크",
         "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
@@ -7422,17 +7422,17 @@
       "top_reasons": [
         "복합 매수조건 2/3 충족",
         "52주 고점 근방",
-        "구리 +1.96%"
+        "구리 +2.17%"
       ],
       "risk_flags": [
         "PER 629.05 — 밸류에이션 부담"
       ],
       "macro_reasons": [
         "S&P500 -1.52%",
-        "USD/KRW 1437.38 — 원화 약세 경고"
+        "USD/KRW 1438.1 — 원화 약세 경고"
       ],
       "market_risks": [
-        "USD/KRW 1437.38 — 외환 리스크",
+        "USD/KRW 1438.1 — 외환 리스크",
         "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
@@ -7500,17 +7500,17 @@
       "top_reasons": [
         "MA 역배열",
         "복합 매수조건 2/3 충족",
-        "구리 +1.96%"
+        "구리 +2.17%"
       ],
       "risk_flags": [
         "MA 역배열 — 하락 추세"
       ],
       "macro_reasons": [
         "S&P500 -1.52%",
-        "USD/KRW 1437.38 — 원화 약세 경고"
+        "USD/KRW 1438.1 — 원화 약세 경고"
       ],
       "market_risks": [
-        "USD/KRW 1437.38 — 외환 리스크",
+        "USD/KRW 1438.1 — 외환 리스크",
         "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
@@ -7578,7 +7578,7 @@
       "top_reasons": [
         "MA 역배열",
         "볼린저밴드 하단",
-        "구리 +1.96%"
+        "구리 +2.17%"
       ],
       "risk_flags": [
         "MA 역배열 — 하락 추세",
@@ -7586,10 +7586,10 @@
       ],
       "macro_reasons": [
         "S&P500 -1.52%",
-        "USD/KRW 1437.38 — 원화 약세 경고"
+        "USD/KRW 1438.1 — 원화 약세 경고"
       ],
       "market_risks": [
-        "USD/KRW 1437.38 — 외환 리스크",
+        "USD/KRW 1438.1 — 외환 리스크",
         "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
@@ -7665,10 +7665,10 @@
       ],
       "macro_reasons": [
         "S&P500 -1.52%",
-        "USD/KRW 1437.38 — 원화 약세 경고"
+        "USD/KRW 1438.1 — 원화 약세 경고"
       ],
       "market_risks": [
-        "USD/KRW 1437.38 — 외환 리스크",
+        "USD/KRW 1438.1 — 외환 리스크",
         "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
@@ -7744,10 +7744,10 @@
       ],
       "macro_reasons": [
         "S&P500 -1.52%",
-        "USD/KRW 1437.38 — 원화 약세 경고"
+        "USD/KRW 1438.1 — 원화 약세 경고"
       ],
       "market_risks": [
-        "USD/KRW 1437.38 — 외환 리스크",
+        "USD/KRW 1438.1 — 외환 리스크",
         "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
@@ -7810,29 +7810,29 @@
       "stop_loss": 400.0,
       "top_reasons": [
         "복합 매수조건 2/3 충족",
-        "구리 +1.96%"
+        "구리 +2.17%"
       ],
       "risk_flags": [],
       "macro_reasons": [
         "S&P500 -1.52%",
-        "USD/KRW 1437.38 — 원화 약세 경고"
+        "USD/KRW 1438.1 — 원화 약세 경고"
       ],
       "market_risks": [
-        "USD/KRW 1437.38 — 외환 리스크",
+        "USD/KRW 1438.1 — 외환 리스크",
         "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
         "ma5": 422.2600036621094,
         "ma20": 425.1379989624023,
         "ma60": 403.5885508219401,
-        "ma120": 349.56994171142577,
+        "ma120": 349.5699422200521,
         "current_price": 420.57000732421875,
         "ma_aligned_up": false,
         "ma_aligned_down": false,
         "pct_vs_ma5": -0.40022647734426764,
         "pct_vs_ma20": -1.0744726769501334,
         "pct_vs_ma60": 4.207616015789983,
-        "pct_vs_ma120": 20.310689547616878,
+        "pct_vs_ma120": 20.310689372564127,
         "golden_cross": false,
         "dead_cross": false,
         "rsi": 43.6,
@@ -7886,17 +7886,17 @@
       "top_reasons": [
         "RSI 과매수 (84.1)",
         "강한 상승 모멘텀",
-        "구리 +1.96%"
+        "구리 +2.17%"
       ],
       "risk_flags": [
         "RSI 84.1 과매수"
       ],
       "macro_reasons": [
         "S&P500 -1.52%",
-        "USD/KRW 1437.38 — 원화 약세 경고"
+        "USD/KRW 1438.1 — 원화 약세 경고"
       ],
       "market_risks": [
-        "USD/KRW 1437.38 — 외환 리스크",
+        "USD/KRW 1438.1 — 외환 리스크",
         "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
@@ -7964,31 +7964,31 @@
       "top_reasons": [
         "RSI 과매수 (76.6)",
         "강한 상승 모멘텀",
-        "구리 +1.96%"
+        "구리 +2.17%"
       ],
       "risk_flags": [
         "RSI 76.6 과매수"
       ],
       "macro_reasons": [
         "S&P500 -1.52%",
-        "USD/KRW 1437.38 — 원화 약세 경고"
+        "USD/KRW 1438.1 — 원화 약세 경고"
       ],
       "market_risks": [
-        "USD/KRW 1437.38 — 외환 리스크",
+        "USD/KRW 1438.1 — 외환 리스크",
         "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
         "ma5": 191.72999877929686,
         "ma20": 182.63150024414062,
         "ma60": 183.19317016601562,
-        "ma120": 186.23799527486165,
+        "ma120": 186.2379950205485,
         "current_price": 191.86000061035156,
         "ma_aligned_up": false,
         "ma_aligned_down": false,
         "pct_vs_ma5": 0.06780463771052236,
         "pct_vs_ma20": 5.0530715423540595,
         "pct_vs_ma60": 4.730979018749326,
-        "pct_vs_ma120": 3.0187209259810777,
+        "pct_vs_ma120": 3.018721066655994,
         "golden_cross": false,
         "dead_cross": false,
         "rsi": 76.6,
@@ -8042,15 +8042,15 @@
       "top_reasons": [
         "복합 매수조건 2/3 충족",
         "MACD 데드크로스",
-        "구리 +1.96%"
+        "구리 +2.17%"
       ],
       "risk_flags": [],
       "macro_reasons": [
         "S&P500 -1.52%",
-        "USD/KRW 1437.38 — 원화 약세 경고"
+        "USD/KRW 1438.1 — 원화 약세 경고"
       ],
       "market_risks": [
-        "USD/KRW 1437.38 — 외환 리스크",
+        "USD/KRW 1438.1 — 외환 리스크",
         "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
@@ -8116,7 +8116,7 @@
       "target_price": 320.0,
       "stop_loss": 190.0,
       "top_reasons": [
-        "구리 +1.96%",
+        "구리 +2.17%",
         "ROE 34.46%",
         "영업이익률 16.55%"
       ],
@@ -8125,24 +8125,24 @@
       ],
       "macro_reasons": [
         "S&P500 -1.52%",
-        "USD/KRW 1437.38 — 원화 약세 경고"
+        "USD/KRW 1438.1 — 원화 약세 경고"
       ],
       "market_risks": [
-        "USD/KRW 1437.38 — 외환 리스크",
+        "USD/KRW 1438.1 — 외환 리스크",
         "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
         "ma5": 218.2220001220703,
         "ma20": 246.84649887084962,
         "ma60": 254.25484415690104,
-        "ma120": 250.39560190836588,
+        "ma120": 250.39560165405274,
         "current_price": 226.44000244140625,
         "ma_aligned_up": false,
         "ma_aligned_down": false,
         "pct_vs_ma5": 3.7658908426918103,
         "pct_vs_ma20": -8.266876995537242,
         "pct_vs_ma60": -10.939748978127717,
-        "pct_vs_ma120": -9.567100733552959,
+        "pct_vs_ma120": -9.567100641705206,
         "golden_cross": false,
         "dead_cross": false,
         "rsi": 24.3,
@@ -8203,10 +8203,10 @@
       ],
       "macro_reasons": [
         "S&P500 -1.52%",
-        "USD/KRW 1437.38 — 원화 약세 경고"
+        "USD/KRW 1438.1 — 원화 약세 경고"
       ],
       "market_risks": [
-        "USD/KRW 1437.38 — 외환 리스크",
+        "USD/KRW 1438.1 — 외환 리스크",
         "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
@@ -8283,10 +8283,10 @@
       ],
       "macro_reasons": [
         "S&P500 -1.52%",
-        "USD/KRW 1437.38 — 원화 약세 경고"
+        "USD/KRW 1438.1 — 원화 약세 경고"
       ],
       "market_risks": [
-        "USD/KRW 1437.38 — 외환 리스크",
+        "USD/KRW 1438.1 — 외환 리스크",
         "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
@@ -8352,17 +8352,17 @@
       "target_price": 590.0,
       "stop_loss": 510.0,
       "top_reasons": [
-        "구리 +1.96%",
+        "구리 +2.17%",
         "PER 41.83 — 고평가",
         "ROE 72.91%"
       ],
       "risk_flags": [],
       "macro_reasons": [
         "S&P500 -1.52%",
-        "USD/KRW 1437.38 — 원화 약세 경고"
+        "USD/KRW 1438.1 — 원화 약세 경고"
       ],
       "market_risks": [
-        "USD/KRW 1437.38 — 외환 리스크",
+        "USD/KRW 1438.1 — 외환 리스크",
         "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
@@ -8437,10 +8437,10 @@
       ],
       "macro_reasons": [
         "S&P500 -1.52%",
-        "USD/KRW 1437.38 — 원화 약세 경고"
+        "USD/KRW 1438.1 — 원화 약세 경고"
       ],
       "market_risks": [
-        "USD/KRW 1437.38 — 외환 리스크",
+        "USD/KRW 1438.1 — 외환 리스크",
         "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
@@ -8508,7 +8508,7 @@
       "top_reasons": [
         "볼린저밴드 하단",
         "강한 하락 모멘텀",
-        "구리 +1.96%"
+        "구리 +2.17%"
       ],
       "risk_flags": [
         "10일 -15% 급락 — 추가 하락 주의",
@@ -8517,10 +8517,10 @@
       ],
       "macro_reasons": [
         "S&P500 -1.52%",
-        "USD/KRW 1437.38 — 원화 약세 경고"
+        "USD/KRW 1438.1 — 원화 약세 경고"
       ],
       "market_risks": [
-        "USD/KRW 1437.38 — 외환 리스크",
+        "USD/KRW 1438.1 — 외환 리스크",
         "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
@@ -8588,7 +8588,7 @@
       "top_reasons": [
         "MA 역배열",
         "볼린저밴드 하단",
-        "구리 +1.96%"
+        "구리 +2.17%"
       ],
       "risk_flags": [
         "MA 역배열 — 하락 추세",
@@ -8597,10 +8597,10 @@
       ],
       "macro_reasons": [
         "S&P500 -1.52%",
-        "USD/KRW 1437.38 — 원화 약세 경고"
+        "USD/KRW 1438.1 — 원화 약세 경고"
       ],
       "market_risks": [
-        "USD/KRW 1437.38 — 외환 리스크",
+        "USD/KRW 1438.1 — 외환 리스크",
         "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
@@ -8664,7 +8664,7 @@
       "top_reasons": [
         "MA 역배열",
         "볼린저밴드 하단",
-        "구리 +1.96%"
+        "구리 +2.17%"
       ],
       "risk_flags": [
         "MA 역배열 — 하락 추세",
@@ -8673,10 +8673,10 @@
       ],
       "macro_reasons": [
         "S&P500 -1.52%",
-        "USD/KRW 1437.38 — 원화 약세 경고"
+        "USD/KRW 1438.1 — 원화 약세 경고"
       ],
       "market_risks": [
-        "USD/KRW 1437.38 — 외환 리스크",
+        "USD/KRW 1438.1 — 외환 리스크",
         "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
@@ -8749,10 +8749,10 @@
       ],
       "macro_reasons": [
         "S&P500 -1.52%",
-        "USD/KRW 1437.38 — 원화 약세 경고"
+        "USD/KRW 1438.1 — 원화 약세 경고"
       ],
       "market_risks": [
-        "USD/KRW 1437.38 — 외환 리스크",
+        "USD/KRW 1438.1 — 외환 리스크",
         "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
@@ -8827,10 +8827,10 @@
       ],
       "macro_reasons": [
         "S&P500 -1.52%",
-        "USD/KRW 1437.38 — 원화 약세 경고"
+        "USD/KRW 1438.1 — 원화 약세 경고"
       ],
       "market_risks": [
-        "USD/KRW 1437.38 — 외환 리스크",
+        "USD/KRW 1438.1 — 외환 리스크",
         "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
@@ -8901,10 +8901,10 @@
       ],
       "macro_reasons": [
         "S&P500 -1.52%",
-        "USD/KRW 1437.38 — 원화 약세 경고"
+        "USD/KRW 1438.1 — 원화 약세 경고"
       ],
       "market_risks": [
-        "USD/KRW 1437.38 — 외환 리스크",
+        "USD/KRW 1438.1 — 외환 리스크",
         "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
@@ -8968,29 +8968,29 @@
       "top_reasons": [
         "볼린저밴드 상단 과열",
         "강한 상승 모멘텀",
-        "구리 +1.96%"
+        "구리 +2.17%"
       ],
       "risk_flags": [],
       "macro_reasons": [
         "S&P500 -1.52%",
-        "USD/KRW 1437.38 — 원화 약세 경고"
+        "USD/KRW 1438.1 — 원화 약세 경고"
       ],
       "market_risks": [
-        "USD/KRW 1437.38 — 외환 리스크",
+        "USD/KRW 1438.1 — 외환 리스크",
         "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
         "ma5": 172.81400146484376,
         "ma20": 168.85299987792968,
         "ma60": 171.83938395182292,
-        "ma120": 178.9940044403076,
+        "ma120": 178.99400380452474,
         "current_price": 188.3800048828125,
         "ma_aligned_up": false,
         "ma_aligned_down": false,
         "pct_vs_ma5": 9.0073739893902,
         "pct_vs_ma20": 11.564499901689418,
         "pct_vs_ma60": 9.625628625174155,
-        "pct_vs_ma120": 5.243751304326527,
+        "pct_vs_ma120": 5.243751678150077,
         "golden_cross": false,
         "dead_cross": false,
         "rsi": 68.0,
@@ -9043,7 +9043,7 @@
       "stop_loss": 310.0,
       "top_reasons": [
         "강한 하락 모멘텀",
-        "구리 +1.96%",
+        "구리 +2.17%",
         "PER 80.57 — 고평가"
       ],
       "risk_flags": [
@@ -9053,10 +9053,10 @@
       ],
       "macro_reasons": [
         "S&P500 -1.52%",
-        "USD/KRW 1437.38 — 원화 약세 경고"
+        "USD/KRW 1438.1 — 원화 약세 경고"
       ],
       "market_risks": [
-        "USD/KRW 1437.38 — 외환 리스크",
+        "USD/KRW 1438.1 — 외환 리스크",
         "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
@@ -9134,10 +9134,10 @@
       ],
       "macro_reasons": [
         "S&P500 -1.52%",
-        "USD/KRW 1437.38 — 원화 약세 경고"
+        "USD/KRW 1438.1 — 원화 약세 경고"
       ],
       "market_risks": [
-        "USD/KRW 1437.38 — 외환 리스크",
+        "USD/KRW 1438.1 — 외환 리스크",
         "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
@@ -9212,10 +9212,10 @@
       ],
       "macro_reasons": [
         "S&P500 -1.52%",
-        "USD/KRW 1437.38 — 원화 약세 경고"
+        "USD/KRW 1438.1 — 원화 약세 경고"
       ],
       "market_risks": [
-        "USD/KRW 1437.38 — 외환 리스크",
+        "USD/KRW 1438.1 — 외환 리스크",
         "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
@@ -9286,10 +9286,10 @@
       ],
       "macro_reasons": [
         "S&P500 -1.52%",
-        "USD/KRW 1437.38 — 원화 약세 경고"
+        "USD/KRW 1438.1 — 원화 약세 경고"
       ],
       "market_risks": [
-        "USD/KRW 1437.38 — 외환 리스크",
+        "USD/KRW 1438.1 — 외환 리스크",
         "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
@@ -9364,10 +9364,10 @@
       ],
       "macro_reasons": [
         "S&P500 -1.52%",
-        "USD/KRW 1437.38 — 원화 약세 경고"
+        "USD/KRW 1438.1 — 원화 약세 경고"
       ],
       "market_risks": [
-        "USD/KRW 1437.38 — 외환 리스크",
+        "USD/KRW 1438.1 — 외환 리스크",
         "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
@@ -9431,17 +9431,17 @@
       "top_reasons": [
         "MA 역배열",
         "볼린저밴드 하단",
-        "구리 +1.96%"
+        "구리 +2.17%"
       ],
       "risk_flags": [
         "MA 역배열 — 하락 추세"
       ],
       "macro_reasons": [
         "S&P500 -1.52%",
-        "USD/KRW 1437.38 — 원화 약세 경고"
+        "USD/KRW 1438.1 — 원화 약세 경고"
       ],
       "market_risks": [
-        "USD/KRW 1437.38 — 외환 리스크",
+        "USD/KRW 1438.1 — 외환 리스크",
         "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
@@ -9512,24 +9512,24 @@
       ],
       "macro_reasons": [
         "S&P500 -1.52%",
-        "USD/KRW 1437.38 — 원화 약세 경고"
+        "USD/KRW 1438.1 — 원화 약세 경고"
       ],
       "market_risks": [
-        "USD/KRW 1437.38 — 외환 리스크",
+        "USD/KRW 1438.1 — 외환 리스크",
         "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
         "ma5": 187.53800048828126,
         "ma20": 181.6259994506836,
         "ma60": 171.3501205444336,
-        "ma120": 171.95791397094726,
+        "ma120": 171.95791409810383,
         "current_price": 201.3000030517578,
         "ma_aligned_up": false,
         "ma_aligned_down": false,
         "pct_vs_ma5": 7.338247463258263,
         "pct_vs_ma20": 10.832151597555972,
         "pct_vs_ma60": 17.4787636052802,
-        "pct_vs_ma120": 17.063529327163153,
+        "pct_vs_ma120": 17.063529240598953,
         "golden_cross": false,
         "dead_cross": false,
         "rsi": 72.8,
@@ -9581,17 +9581,17 @@
       "target_price": 1940.0,
       "stop_loss": 1660.0,
       "top_reasons": [
-        "구리 +1.96%",
+        "구리 +2.17%",
         "PER 49.25 — 고평가",
         "ROE 31.26%"
       ],
       "risk_flags": [],
       "macro_reasons": [
         "S&P500 -1.52%",
-        "USD/KRW 1437.38 — 원화 약세 경고"
+        "USD/KRW 1438.1 — 원화 약세 경고"
       ],
       "market_risks": [
-        "USD/KRW 1437.38 — 외환 리스크",
+        "USD/KRW 1438.1 — 외환 리스크",
         "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
@@ -9668,10 +9668,10 @@
       ],
       "macro_reasons": [
         "S&P500 -1.52%",
-        "USD/KRW 1437.38 — 원화 약세 경고"
+        "USD/KRW 1438.1 — 원화 약세 경고"
       ],
       "market_risks": [
-        "USD/KRW 1437.38 — 외환 리스크",
+        "USD/KRW 1438.1 — 외환 리스크",
         "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
@@ -9745,10 +9745,10 @@
       ],
       "macro_reasons": [
         "S&P500 -1.52%",
-        "USD/KRW 1437.38 — 원화 약세 경고"
+        "USD/KRW 1438.1 — 원화 약세 경고"
       ],
       "market_risks": [
-        "USD/KRW 1437.38 — 외환 리스크",
+        "USD/KRW 1438.1 — 외환 리스크",
         "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
@@ -9822,10 +9822,10 @@
       ],
       "macro_reasons": [
         "S&P500 -1.52%",
-        "USD/KRW 1437.38 — 원화 약세 경고"
+        "USD/KRW 1438.1 — 원화 약세 경고"
       ],
       "market_risks": [
-        "USD/KRW 1437.38 — 외환 리스크",
+        "USD/KRW 1438.1 — 외환 리스크",
         "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
@@ -9899,10 +9899,10 @@
       ],
       "macro_reasons": [
         "S&P500 -1.52%",
-        "USD/KRW 1437.38 — 원화 약세 경고"
+        "USD/KRW 1438.1 — 원화 약세 경고"
       ],
       "market_risks": [
-        "USD/KRW 1437.38 — 외환 리스크",
+        "USD/KRW 1438.1 — 외환 리스크",
         "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
@@ -9970,7 +9970,7 @@
       "top_reasons": [
         "볼린저밴드 하단",
         "강한 하락 모멘텀",
-        "구리 +1.96%"
+        "구리 +2.17%"
       ],
       "risk_flags": [
         "10일 -15% 급락 — 추가 하락 주의",
@@ -9979,24 +9979,24 @@
       ],
       "macro_reasons": [
         "S&P500 -1.52%",
-        "USD/KRW 1437.38 — 원화 약세 경고"
+        "USD/KRW 1438.1 — 원화 약세 경고"
       ],
       "market_risks": [
-        "USD/KRW 1437.38 — 외환 리스크",
+        "USD/KRW 1438.1 — 외환 리스크",
         "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
         "ma5": 186.1179992675781,
         "ma20": 213.77134323120117,
         "ma60": 227.5303960164388,
-        "ma120": 166.1241003036499,
+        "ma120": 166.12410036722818,
         "current_price": 163.39999389648438,
         "ma_aligned_up": false,
         "ma_aligned_down": false,
         "pct_vs_ma5": -12.206237688184318,
         "pct_vs_ma20": -23.563190731434204,
         "pct_vs_ma60": -28.185421922845457,
-        "pct_vs_ma120": -1.6398020529148183,
+        "pct_vs_ma120": -1.6398020905587951,
         "golden_cross": false,
         "dead_cross": false,
         "rsi": 20.4,
@@ -10055,10 +10055,10 @@
       "risk_flags": [],
       "macro_reasons": [
         "S&P500 -1.52%",
-        "USD/KRW 1437.38 — 원화 약세 경고"
+        "USD/KRW 1438.1 — 원화 약세 경고"
       ],
       "market_risks": [
-        "USD/KRW 1437.38 — 외환 리스크",
+        "USD/KRW 1438.1 — 외환 리스크",
         "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
@@ -10126,7 +10126,7 @@
       "top_reasons": [
         "볼린저밴드 하단",
         "강한 하락 모멘텀",
-        "구리 +1.96%"
+        "구리 +2.17%"
       ],
       "risk_flags": [
         "추세 강도 -0.529 — 하락 추세 진행",
@@ -10135,24 +10135,24 @@
       ],
       "macro_reasons": [
         "S&P500 -1.52%",
-        "USD/KRW 1437.38 — 원화 약세 경고"
+        "USD/KRW 1438.1 — 원화 약세 경고"
       ],
       "market_risks": [
-        "USD/KRW 1437.38 — 외환 리스크",
+        "USD/KRW 1438.1 — 외환 리스크",
         "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
         "ma5": 679.1059936523437,
         "ma20": 704.3299957275391,
         "ma60": 713.0777862548828,
-        "ma120": 661.7718444824219,
+        "ma120": 661.7718470255534,
         "current_price": 661.72998046875,
         "ma_aligned_up": false,
         "ma_aligned_down": false,
         "pct_vs_ma5": -2.558659965603116,
         "pct_vs_ma20": -6.048303425553437,
         "pct_vs_ma60": -7.200870196197496,
-        "pct_vs_ma120": -0.006326049381055743,
+        "pct_vs_ma120": -0.006326433648018437,
         "golden_cross": false,
         "dead_cross": false,
         "rsi": 21.8,
@@ -10214,10 +10214,10 @@
       ],
       "macro_reasons": [
         "S&P500 -1.52%",
-        "USD/KRW 1437.38 — 원화 약세 경고"
+        "USD/KRW 1438.1 — 원화 약세 경고"
       ],
       "market_risks": [
-        "USD/KRW 1437.38 — 외환 리스크",
+        "USD/KRW 1438.1 — 외환 리스크",
         "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
@@ -10291,10 +10291,10 @@
       ],
       "macro_reasons": [
         "S&P500 -1.52%",
-        "USD/KRW 1437.38 — 원화 약세 경고"
+        "USD/KRW 1438.1 — 원화 약세 경고"
       ],
       "market_risks": [
-        "USD/KRW 1437.38 — 외환 리스크",
+        "USD/KRW 1438.1 — 외환 리스크",
         "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
@@ -10358,17 +10358,17 @@
       "top_reasons": [
         "MA 역배열",
         "MACD 강세 다이버전스",
-        "구리 +1.96%"
+        "구리 +2.17%"
       ],
       "risk_flags": [
         "MA 역배열 — 하락 추세"
       ],
       "macro_reasons": [
         "S&P500 -1.52%",
-        "USD/KRW 1437.38 — 원화 약세 경고"
+        "USD/KRW 1438.1 — 원화 약세 경고"
       ],
       "market_risks": [
-        "USD/KRW 1437.38 — 외환 리스크",
+        "USD/KRW 1438.1 — 외환 리스크",
         "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
@@ -10439,10 +10439,10 @@
       ],
       "macro_reasons": [
         "S&P500 -1.52%",
-        "USD/KRW 1437.38 — 원화 약세 경고"
+        "USD/KRW 1438.1 — 원화 약세 경고"
       ],
       "market_risks": [
-        "USD/KRW 1437.38 — 외환 리스크",
+        "USD/KRW 1438.1 — 외환 리스크",
         "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
@@ -10504,31 +10504,31 @@
       "target_price": 370.0,
       "stop_loss": 310.0,
       "top_reasons": [
-        "구리 +1.96%",
+        "구리 +2.17%",
         "ROE 128.38%",
         "부채비율 459.36%"
       ],
       "risk_flags": [],
       "macro_reasons": [
         "S&P500 -1.52%",
-        "USD/KRW 1437.38 — 원화 약세 경고"
+        "USD/KRW 1438.1 — 원화 약세 경고"
       ],
       "market_risks": [
-        "USD/KRW 1437.38 — 외환 리스크",
+        "USD/KRW 1438.1 — 외환 리스크",
         "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
         "ma5": 335.3039978027344,
         "ma20": 339.93149719238284,
         "ma60": 325.85762074788414,
-        "ma120": 336.32379582722984,
+        "ma120": 336.3237950642904,
         "current_price": 338.2699890136719,
         "ma_aligned_up": false,
         "ma_aligned_down": false,
         "pct_vs_ma5": 0.8845678042533889,
         "pct_vs_ma20": -0.4887773543887364,
         "pct_vs_ma60": 3.809138554838709,
-        "pct_vs_ma120": 0.5786665144091652,
+        "pct_vs_ma120": 0.5786667425685676,
         "golden_cross": false,
         "dead_cross": false,
         "rsi": 49.7,
@@ -10582,15 +10582,15 @@
       "top_reasons": [
         "볼린저밴드 상단 과열",
         "52주 고점 근방",
-        "구리 +1.96%"
+        "구리 +2.17%"
       ],
       "risk_flags": [],
       "macro_reasons": [
         "S&P500 -1.52%",
-        "USD/KRW 1437.38 — 원화 약세 경고"
+        "USD/KRW 1438.1 — 원화 약세 경고"
       ],
       "market_risks": [
-        "USD/KRW 1437.38 — 외환 리스크",
+        "USD/KRW 1438.1 — 외환 리스크",
         "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
@@ -10658,7 +10658,7 @@
       "top_reasons": [
         "볼린저밴드 하단",
         "강한 하락 모멘텀",
-        "구리 +1.96%"
+        "구리 +2.17%"
       ],
       "risk_flags": [
         "추세 강도 -0.492 — 하락 추세 진행",
@@ -10666,24 +10666,24 @@
       ],
       "macro_reasons": [
         "S&P500 -1.52%",
-        "USD/KRW 1437.38 — 원화 약세 경고"
+        "USD/KRW 1438.1 — 원화 약세 경고"
       ],
       "market_risks": [
-        "USD/KRW 1437.38 — 외환 리스크",
+        "USD/KRW 1438.1 — 외환 리스크",
         "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
         "ma5": 856.0219970703125,
         "ma20": 907.1648162841797,
         "ma60": 917.7334065755208,
-        "ma120": 832.5159576416015,
+        "ma120": 832.5159586588542,
         "current_price": 782.7100219726562,
         "ma_aligned_up": false,
         "ma_aligned_down": false,
         "pct_vs_ma5": -8.564262991904691,
         "pct_vs_ma20": -13.719094047463209,
         "pct_vs_ma60": -14.712702363826768,
-        "pct_vs_ma120": -5.982580299125839,
+        "pct_vs_ma120": -5.982580414005878,
         "golden_cross": false,
         "dead_cross": false,
         "rsi": 19.7,
@@ -10742,10 +10742,10 @@
       "risk_flags": [],
       "macro_reasons": [
         "S&P500 -1.52%",
-        "USD/KRW 1437.38 — 원화 약세 경고"
+        "USD/KRW 1438.1 — 원화 약세 경고"
       ],
       "market_risks": [
-        "USD/KRW 1437.38 — 외환 리스크",
+        "USD/KRW 1438.1 — 외환 리스크",
         "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
@@ -10820,10 +10820,10 @@
       ],
       "macro_reasons": [
         "S&P500 -1.52%",
-        "USD/KRW 1437.38 — 원화 약세 경고"
+        "USD/KRW 1438.1 — 원화 약세 경고"
       ],
       "market_risks": [
-        "USD/KRW 1437.38 — 외환 리스크",
+        "USD/KRW 1438.1 — 외환 리스크",
         "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
@@ -10902,10 +10902,10 @@
       ],
       "macro_reasons": [
         "S&P500 -1.52%",
-        "USD/KRW 1437.38 — 원화 약세 경고"
+        "USD/KRW 1438.1 — 원화 약세 경고"
       ],
       "market_risks": [
-        "USD/KRW 1437.38 — 외환 리스크",
+        "USD/KRW 1438.1 — 외환 리스크",
         "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
@@ -10969,17 +10969,17 @@
       "top_reasons": [
         "MA 역배열",
         "복합 매수조건 2/3 충족",
-        "구리 +1.96%"
+        "구리 +2.17%"
       ],
       "risk_flags": [
         "MA 역배열 — 하락 추세"
       ],
       "macro_reasons": [
         "S&P500 -1.52%",
-        "USD/KRW 1437.38 — 원화 약세 경고"
+        "USD/KRW 1438.1 — 원화 약세 경고"
       ],
       "market_risks": [
-        "USD/KRW 1437.38 — 외환 리스크",
+        "USD/KRW 1438.1 — 외환 리스크",
         "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
@@ -11043,7 +11043,7 @@
       "top_reasons": [
         "볼린저밴드 하단",
         "강한 하락 모멘텀",
-        "구리 +1.96%"
+        "구리 +2.17%"
       ],
       "risk_flags": [
         "10일 -15% 급락 — 추가 하락 주의",
@@ -11054,10 +11054,10 @@
       ],
       "macro_reasons": [
         "S&P500 -1.52%",
-        "USD/KRW 1437.38 — 원화 약세 경고"
+        "USD/KRW 1438.1 — 원화 약세 경고"
       ],
       "market_risks": [
-        "USD/KRW 1437.38 — 외환 리스크",
+        "USD/KRW 1438.1 — 외환 리스크",
         "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
@@ -11133,10 +11133,10 @@
       ],
       "macro_reasons": [
         "S&P500 -1.52%",
-        "USD/KRW 1437.38 — 원화 약세 경고"
+        "USD/KRW 1438.1 — 원화 약세 경고"
       ],
       "market_risks": [
-        "USD/KRW 1437.38 — 외환 리스크",
+        "USD/KRW 1438.1 — 외환 리스크",
         "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
@@ -11204,7 +11204,7 @@
       "top_reasons": [
         "MA 역배열",
         "볼린저밴드 하단",
-        "구리 +1.96%"
+        "구리 +2.17%"
       ],
       "risk_flags": [
         "MA 역배열 — 하락 추세",
@@ -11213,10 +11213,10 @@
       ],
       "macro_reasons": [
         "S&P500 -1.52%",
-        "USD/KRW 1437.38 — 원화 약세 경고"
+        "USD/KRW 1438.1 — 원화 약세 경고"
       ],
       "market_risks": [
-        "USD/KRW 1437.38 — 외환 리스크",
+        "USD/KRW 1438.1 — 외환 리스크",
         "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
@@ -11287,10 +11287,10 @@
       ],
       "macro_reasons": [
         "S&P500 -1.52%",
-        "USD/KRW 1437.38 — 원화 약세 경고"
+        "USD/KRW 1438.1 — 원화 약세 경고"
       ],
       "market_risks": [
-        "USD/KRW 1437.38 — 외환 리스크",
+        "USD/KRW 1438.1 — 외환 리스크",
         "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
@@ -11354,17 +11354,17 @@
       "top_reasons": [
         "MA 역배열",
         "MACD 강세 다이버전스",
-        "구리 +1.96%"
+        "구리 +2.17%"
       ],
       "risk_flags": [
         "MA 역배열 — 하락 추세"
       ],
       "macro_reasons": [
         "S&P500 -1.52%",
-        "USD/KRW 1437.38 — 원화 약세 경고"
+        "USD/KRW 1438.1 — 원화 약세 경고"
       ],
       "market_risks": [
-        "USD/KRW 1437.38 — 외환 리스크",
+        "USD/KRW 1438.1 — 외환 리스크",
         "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
@@ -11428,7 +11428,7 @@
       "top_reasons": [
         "MA 역배열",
         "볼린저밴드 하단",
-        "구리 +1.96%"
+        "구리 +2.17%"
       ],
       "risk_flags": [
         "MA 역배열 — 하락 추세",
@@ -11436,10 +11436,10 @@
       ],
       "macro_reasons": [
         "S&P500 -1.52%",
-        "USD/KRW 1437.38 — 원화 약세 경고"
+        "USD/KRW 1438.1 — 원화 약세 경고"
       ],
       "market_risks": [
-        "USD/KRW 1437.38 — 외환 리스크",
+        "USD/KRW 1438.1 — 외환 리스크",
         "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
@@ -11510,10 +11510,10 @@
       ],
       "macro_reasons": [
         "S&P500 -1.52%",
-        "USD/KRW 1437.38 — 원화 약세 경고"
+        "USD/KRW 1438.1 — 원화 약세 경고"
       ],
       "market_risks": [
-        "USD/KRW 1437.38 — 외환 리스크",
+        "USD/KRW 1438.1 — 외환 리스크",
         "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
@@ -11577,31 +11577,31 @@
       "top_reasons": [
         "MA 역배열",
         "MACD 강세 다이버전스",
-        "구리 +1.96%"
+        "구리 +2.17%"
       ],
       "risk_flags": [
         "MA 역배열 — 하락 추세"
       ],
       "macro_reasons": [
         "S&P500 -1.52%",
-        "USD/KRW 1437.38 — 원화 약세 경고"
+        "USD/KRW 1438.1 — 원화 약세 경고"
       ],
       "market_risks": [
-        "USD/KRW 1437.38 — 외환 리스크",
+        "USD/KRW 1438.1 — 외환 리스크",
         "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
         "ma5": 111.38600006103516,
         "ma20": 112.05549926757813,
         "ma60": 118.85211346944173,
-        "ma120": 122.37917881011963,
+        "ma120": 122.37917893727621,
         "current_price": 114.22000122070312,
         "ma_aligned_up": false,
         "ma_aligned_down": true,
         "pct_vs_ma5": 2.5443064282001604,
         "pct_vs_ma20": 1.9316338486488505,
         "pct_vs_ma60": -3.897374740357118,
-        "pct_vs_ma120": -6.6671288929598616,
+        "pct_vs_ma120": -6.6671289899362325,
         "golden_cross": false,
         "dead_cross": false,
         "rsi": 55.1,
@@ -11655,17 +11655,17 @@
       "top_reasons": [
         "복합 매수조건 2/3 충족",
         "볼린저밴드 상단 과열",
-        "구리 +1.96%"
+        "구리 +2.17%"
       ],
       "risk_flags": [
         "PER 72.35 — 밸류에이션 부담"
       ],
       "macro_reasons": [
         "S&P500 -1.52%",
-        "USD/KRW 1437.38 — 원화 약세 경고"
+        "USD/KRW 1438.1 — 원화 약세 경고"
       ],
       "market_risks": [
-        "USD/KRW 1437.38 — 외환 리스크",
+        "USD/KRW 1438.1 — 외환 리스크",
         "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
@@ -11731,16 +11731,16 @@
       "target_price": 10.0,
       "stop_loss": 10.0,
       "top_reasons": [
-        "구리 +1.96%",
+        "구리 +2.17%",
         "ROE 적자"
       ],
       "risk_flags": [],
       "macro_reasons": [
         "S&P500 -1.52%",
-        "USD/KRW 1437.38 — 원화 약세 경고"
+        "USD/KRW 1438.1 — 원화 약세 경고"
       ],
       "market_risks": [
-        "USD/KRW 1437.38 — 외환 리스크",
+        "USD/KRW 1438.1 — 외환 리스크",
         "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
@@ -11816,10 +11816,10 @@
       ],
       "macro_reasons": [
         "S&P500 -1.52%",
-        "USD/KRW 1437.38 — 원화 약세 경고"
+        "USD/KRW 1438.1 — 원화 약세 경고"
       ],
       "market_risks": [
-        "USD/KRW 1437.38 — 외환 리스크",
+        "USD/KRW 1438.1 — 외환 리스크",
         "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
@@ -11894,10 +11894,10 @@
       ],
       "macro_reasons": [
         "S&P500 -1.52%",
-        "USD/KRW 1437.38 — 원화 약세 경고"
+        "USD/KRW 1438.1 — 원화 약세 경고"
       ],
       "market_risks": [
-        "USD/KRW 1437.38 — 외환 리스크",
+        "USD/KRW 1438.1 — 외환 리스크",
         "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
@@ -11969,10 +11969,10 @@
       ],
       "macro_reasons": [
         "S&P500 -1.52%",
-        "USD/KRW 1437.38 — 원화 약세 경고"
+        "USD/KRW 1438.1 — 원화 약세 경고"
       ],
       "market_risks": [
-        "USD/KRW 1437.38 — 외환 리스크",
+        "USD/KRW 1438.1 — 외환 리스크",
         "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
@@ -12043,10 +12043,10 @@
       ],
       "macro_reasons": [
         "S&P500 -1.52%",
-        "USD/KRW 1437.38 — 원화 약세 경고"
+        "USD/KRW 1438.1 — 원화 약세 경고"
       ],
       "market_risks": [
-        "USD/KRW 1437.38 — 외환 리스크",
+        "USD/KRW 1438.1 — 외환 리스크",
         "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
@@ -12121,10 +12121,10 @@
       ],
       "macro_reasons": [
         "S&P500 -1.52%",
-        "USD/KRW 1437.38 — 원화 약세 경고"
+        "USD/KRW 1438.1 — 원화 약세 경고"
       ],
       "market_risks": [
-        "USD/KRW 1437.38 — 외환 리스크",
+        "USD/KRW 1438.1 — 외환 리스크",
         "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
@@ -12192,15 +12192,15 @@
       "top_reasons": [
         "MA 정배열",
         "볼린저밴드 상단 과열",
-        "구리 +1.96%"
+        "구리 +2.17%"
       ],
       "risk_flags": [],
       "macro_reasons": [
         "S&P500 -1.52%",
-        "USD/KRW 1437.38 — 원화 약세 경고"
+        "USD/KRW 1438.1 — 원화 약세 경고"
       ],
       "market_risks": [
-        "USD/KRW 1437.38 — 외환 리스크",
+        "USD/KRW 1438.1 — 외환 리스크",
         "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
@@ -12268,17 +12268,17 @@
       "top_reasons": [
         "MA 역배열",
         "MACD 강세 다이버전스",
-        "구리 +1.96%"
+        "구리 +2.17%"
       ],
       "risk_flags": [
         "MA 역배열 — 하락 추세"
       ],
       "macro_reasons": [
         "S&P500 -1.52%",
-        "USD/KRW 1437.38 — 원화 약세 경고"
+        "USD/KRW 1438.1 — 원화 약세 경고"
       ],
       "market_risks": [
-        "USD/KRW 1437.38 — 외환 리스크",
+        "USD/KRW 1438.1 — 외환 리스크",
         "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
@@ -12353,10 +12353,10 @@
       ],
       "macro_reasons": [
         "S&P500 -1.52%",
-        "USD/KRW 1437.38 — 원화 약세 경고"
+        "USD/KRW 1438.1 — 원화 약세 경고"
       ],
       "market_risks": [
-        "USD/KRW 1437.38 — 외환 리스크",
+        "USD/KRW 1438.1 — 외환 리스크",
         "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
@@ -12430,10 +12430,10 @@
       ],
       "macro_reasons": [
         "S&P500 -1.52%",
-        "USD/KRW 1437.38 — 원화 약세 경고"
+        "USD/KRW 1438.1 — 원화 약세 경고"
       ],
       "market_risks": [
-        "USD/KRW 1437.38 — 외환 리스크",
+        "USD/KRW 1438.1 — 외환 리스크",
         "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
@@ -12504,10 +12504,10 @@
       ],
       "macro_reasons": [
         "S&P500 -1.52%",
-        "USD/KRW 1437.38 — 원화 약세 경고"
+        "USD/KRW 1438.1 — 원화 약세 경고"
       ],
       "market_risks": [
-        "USD/KRW 1437.38 — 외환 리스크",
+        "USD/KRW 1438.1 — 외환 리스크",
         "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
@@ -12573,7 +12573,7 @@
       "target_price": 180.0,
       "stop_loss": 140.0,
       "top_reasons": [
-        "구리 +1.96%",
+        "구리 +2.17%",
         "PER 61.81 — 고평가"
       ],
       "risk_flags": [
@@ -12581,10 +12581,10 @@
       ],
       "macro_reasons": [
         "S&P500 -1.52%",
-        "USD/KRW 1437.38 — 원화 약세 경고"
+        "USD/KRW 1438.1 — 원화 약세 경고"
       ],
       "market_risks": [
-        "USD/KRW 1437.38 — 외환 리스크",
+        "USD/KRW 1438.1 — 외환 리스크",
         "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
@@ -12652,7 +12652,7 @@
       "top_reasons": [
         "MA 역배열",
         "볼린저밴드 하단",
-        "구리 +1.96%"
+        "구리 +2.17%"
       ],
       "risk_flags": [
         "MA 역배열 — 하락 추세",
@@ -12661,10 +12661,10 @@
       ],
       "macro_reasons": [
         "S&P500 -1.52%",
-        "USD/KRW 1437.38 — 원화 약세 경고"
+        "USD/KRW 1438.1 — 원화 약세 경고"
       ],
       "market_risks": [
-        "USD/KRW 1437.38 — 외환 리스크",
+        "USD/KRW 1438.1 — 외환 리스크",
         "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
@@ -12736,10 +12736,10 @@
       ],
       "macro_reasons": [
         "S&P500 -1.52%",
-        "USD/KRW 1437.38 — 원화 약세 경고"
+        "USD/KRW 1438.1 — 원화 약세 경고"
       ],
       "market_risks": [
-        "USD/KRW 1437.38 — 외환 리스크",
+        "USD/KRW 1438.1 — 외환 리스크",
         "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
@@ -12803,7 +12803,7 @@
       "top_reasons": [
         "MA 역배열",
         "볼린저밴드 하단",
-        "구리 +1.96%"
+        "구리 +2.17%"
       ],
       "risk_flags": [
         "MA 역배열 — 하락 추세",
@@ -12813,10 +12813,10 @@
       ],
       "macro_reasons": [
         "S&P500 -1.52%",
-        "USD/KRW 1437.38 — 원화 약세 경고"
+        "USD/KRW 1438.1 — 원화 약세 경고"
       ],
       "market_risks": [
-        "USD/KRW 1437.38 — 외환 리스크",
+        "USD/KRW 1438.1 — 외환 리스크",
         "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
@@ -12880,7 +12880,7 @@
       "top_reasons": [
         "MA 역배열",
         "볼린저밴드 하단",
-        "구리 +1.96%"
+        "구리 +2.17%"
       ],
       "risk_flags": [
         "MA 역배열 — 하락 추세",
@@ -12889,10 +12889,10 @@
       ],
       "macro_reasons": [
         "S&P500 -1.52%",
-        "USD/KRW 1437.38 — 원화 약세 경고"
+        "USD/KRW 1438.1 — 원화 약세 경고"
       ],
       "market_risks": [
-        "USD/KRW 1437.38 — 외환 리스크",
+        "USD/KRW 1438.1 — 외환 리스크",
         "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
@@ -12956,17 +12956,17 @@
       "top_reasons": [
         "MA 역배열",
         "MACD 강세 다이버전스",
-        "구리 +1.96%"
+        "구리 +2.17%"
       ],
       "risk_flags": [
         "MA 역배열 — 하락 추세"
       ],
       "macro_reasons": [
         "S&P500 -1.52%",
-        "USD/KRW 1437.38 — 원화 약세 경고"
+        "USD/KRW 1438.1 — 원화 약세 경고"
       ],
       "market_risks": [
-        "USD/KRW 1437.38 — 외환 리스크",
+        "USD/KRW 1438.1 — 외환 리스크",
         "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
@@ -13030,7 +13030,7 @@
       "top_reasons": [
         "데드크로스",
         "MACD 데드크로스",
-        "구리 +1.96%"
+        "구리 +2.17%"
       ],
       "risk_flags": [
         "데드크로스 발생",
@@ -13038,24 +13038,24 @@
       ],
       "macro_reasons": [
         "S&P500 -1.52%",
-        "USD/KRW 1437.38 — 원화 약세 경고"
+        "USD/KRW 1438.1 — 원화 약세 경고"
       ],
       "market_risks": [
-        "USD/KRW 1437.38 — 외환 리스크",
+        "USD/KRW 1438.1 — 외환 리스크",
         "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
         "ma5": 381.76800537109375,
         "ma20": 382.3634994506836,
         "ma60": 400.66063181559247,
-        "ma120": 373.2184725443522,
+        "ma120": 373.2184722900391,
         "current_price": 370.32000732421875,
         "ma_aligned_up": false,
         "ma_aligned_down": false,
         "pct_vs_ma5": -2.9986792727030864,
         "pct_vs_ma20": -3.1497494252895386,
         "pct_vs_ma60": -7.5726492902198235,
-        "pct_vs_ma120": -0.7766135476557912,
+        "pct_vs_ma120": -0.7766134800444302,
         "golden_cross": false,
         "dead_cross": true,
         "rsi": 35.5,
@@ -13116,24 +13116,24 @@
       ],
       "macro_reasons": [
         "S&P500 -1.52%",
-        "USD/KRW 1437.38 — 원화 약세 경고"
+        "USD/KRW 1438.1 — 원화 약세 경고"
       ],
       "market_risks": [
-        "USD/KRW 1437.38 — 외환 리스크",
+        "USD/KRW 1438.1 — 외환 리스크",
         "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
         "ma5": 549.54599609375,
         "ma20": 538.1720550537109,
         "ma60": 508.111311340332,
-        "ma120": 508.8843472798665,
+        "ma120": 508.8843490600586,
         "current_price": 563.3200073242188,
         "ma_aligned_up": false,
         "ma_aligned_down": false,
         "pct_vs_ma5": 2.50643464393816,
         "pct_vs_ma20": 4.672846171471701,
         "pct_vs_ma60": 10.86547273239269,
-        "pct_vs_ma120": 10.697059230712537,
+        "pct_vs_ma120": 10.697058843469298,
         "golden_cross": false,
         "dead_cross": false,
         "rsi": 70.9,
@@ -13187,7 +13187,7 @@
       "top_reasons": [
         "볼린저밴드 하단",
         "강한 하락 모멘텀",
-        "구리 +1.96%"
+        "구리 +2.17%"
       ],
       "risk_flags": [
         "추세 강도 -0.517 — 하락 추세 진행",
@@ -13196,10 +13196,10 @@
       ],
       "macro_reasons": [
         "S&P500 -1.52%",
-        "USD/KRW 1437.38 — 원화 약세 경고"
+        "USD/KRW 1438.1 — 원화 약세 경고"
       ],
       "market_risks": [
-        "USD/KRW 1437.38 — 외환 리스크",
+        "USD/KRW 1438.1 — 외환 리스크",
         "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
@@ -13276,10 +13276,10 @@
       ],
       "macro_reasons": [
         "S&P500 -1.52%",
-        "USD/KRW 1437.38 — 원화 약세 경고"
+        "USD/KRW 1438.1 — 원화 약세 경고"
       ],
       "market_risks": [
-        "USD/KRW 1437.38 — 외환 리스크",
+        "USD/KRW 1438.1 — 외환 리스크",
         "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
@@ -13353,10 +13353,10 @@
       ],
       "macro_reasons": [
         "S&P500 -1.52%",
-        "USD/KRW 1437.38 — 원화 약세 경고"
+        "USD/KRW 1438.1 — 원화 약세 경고"
       ],
       "market_risks": [
-        "USD/KRW 1437.38 — 외환 리스크",
+        "USD/KRW 1438.1 — 외환 리스크",
         "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
@@ -13431,10 +13431,10 @@
       ],
       "macro_reasons": [
         "S&P500 -1.52%",
-        "USD/KRW 1437.38 — 원화 약세 경고"
+        "USD/KRW 1438.1 — 원화 약세 경고"
       ],
       "market_risks": [
-        "USD/KRW 1437.38 — 외환 리스크",
+        "USD/KRW 1438.1 — 외환 리스크",
         "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
@@ -13506,10 +13506,10 @@
       ],
       "macro_reasons": [
         "S&P500 -1.52%",
-        "USD/KRW 1437.38 — 원화 약세 경고"
+        "USD/KRW 1438.1 — 원화 약세 경고"
       ],
       "market_risks": [
-        "USD/KRW 1437.38 — 외환 리스크",
+        "USD/KRW 1438.1 — 외환 리스크",
         "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
@@ -13573,7 +13573,7 @@
       "top_reasons": [
         "MA 역배열",
         "볼린저밴드 하단",
-        "구리 +1.96%"
+        "구리 +2.17%"
       ],
       "risk_flags": [
         "MA 역배열 — 하락 추세",
@@ -13582,10 +13582,10 @@
       ],
       "macro_reasons": [
         "S&P500 -1.52%",
-        "USD/KRW 1437.38 — 원화 약세 경고"
+        "USD/KRW 1438.1 — 원화 약세 경고"
       ],
       "market_risks": [
-        "USD/KRW 1437.38 — 외환 리스크",
+        "USD/KRW 1438.1 — 외환 리스크",
         "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
@@ -13649,7 +13649,7 @@
       "top_reasons": [
         "볼린저밴드 하단",
         "강한 하락 모멘텀",
-        "구리 +1.96%"
+        "구리 +2.17%"
       ],
       "risk_flags": [
         "10일 -15% 급락 — 추가 하락 주의",
@@ -13659,10 +13659,10 @@
       ],
       "macro_reasons": [
         "S&P500 -1.52%",
-        "USD/KRW 1437.38 — 원화 약세 경고"
+        "USD/KRW 1438.1 — 원화 약세 경고"
       ],
       "market_risks": [
-        "USD/KRW 1437.38 — 외환 리스크",
+        "USD/KRW 1438.1 — 외환 리스크",
         "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
@@ -13725,16 +13725,16 @@
       "stop_loss": 170.0,
       "top_reasons": [
         "볼린저밴드 하단",
-        "구리 +1.96%",
+        "구리 +2.17%",
         "ROE 적자"
       ],
       "risk_flags": [],
       "macro_reasons": [
         "S&P500 -1.52%",
-        "USD/KRW 1437.38 — 원화 약세 경고"
+        "USD/KRW 1438.1 — 원화 약세 경고"
       ],
       "market_risks": [
-        "USD/KRW 1437.38 — 외환 리스크",
+        "USD/KRW 1438.1 — 외환 리스크",
         "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
@@ -13802,15 +13802,15 @@
       "top_reasons": [
         "골든크로스",
         "볼린저밴드 상단 과열",
-        "구리 +1.96%"
+        "구리 +2.17%"
       ],
       "risk_flags": [],
       "macro_reasons": [
         "S&P500 -1.52%",
-        "USD/KRW 1437.38 — 원화 약세 경고"
+        "USD/KRW 1438.1 — 원화 약세 경고"
       ],
       "market_risks": [
-        "USD/KRW 1437.38 — 외환 리스크",
+        "USD/KRW 1438.1 — 외환 리스크",
         "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
@@ -13877,7 +13877,7 @@
       "stop_loss": 160.0,
       "top_reasons": [
         "52주 고점 근방",
-        "구리 +1.96%",
+        "구리 +2.17%",
         "PER 92.6 — 고평가"
       ],
       "risk_flags": [
@@ -13885,10 +13885,10 @@
       ],
       "macro_reasons": [
         "S&P500 -1.52%",
-        "USD/KRW 1437.38 — 원화 약세 경고"
+        "USD/KRW 1438.1 — 원화 약세 경고"
       ],
       "market_risks": [
-        "USD/KRW 1437.38 — 외환 리스크",
+        "USD/KRW 1438.1 — 외환 리스크",
         "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
@@ -13967,10 +13967,10 @@
       ],
       "macro_reasons": [
         "S&P500 -1.52%",
-        "USD/KRW 1437.38 — 원화 약세 경고"
+        "USD/KRW 1438.1 — 원화 약세 경고"
       ],
       "market_risks": [
-        "USD/KRW 1437.38 — 외환 리스크",
+        "USD/KRW 1438.1 — 외환 리스크",
         "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
@@ -14034,7 +14034,7 @@
       "top_reasons": [
         "MA 역배열",
         "볼린저밴드 하단",
-        "구리 +1.96%"
+        "구리 +2.17%"
       ],
       "risk_flags": [
         "MA 역배열 — 하락 추세",
@@ -14043,10 +14043,10 @@
       ],
       "macro_reasons": [
         "S&P500 -1.52%",
-        "USD/KRW 1437.38 — 원화 약세 경고"
+        "USD/KRW 1438.1 — 원화 약세 경고"
       ],
       "market_risks": [
-        "USD/KRW 1437.38 — 외환 리스크",
+        "USD/KRW 1438.1 — 외환 리스크",
         "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
@@ -14121,10 +14121,10 @@
       ],
       "macro_reasons": [
         "S&P500 -1.52%",
-        "USD/KRW 1437.38 — 원화 약세 경고"
+        "USD/KRW 1438.1 — 원화 약세 경고"
       ],
       "market_risks": [
-        "USD/KRW 1437.38 — 외환 리스크",
+        "USD/KRW 1438.1 — 외환 리스크",
         "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
@@ -14187,16 +14187,16 @@
       "stop_loss": 0.0,
       "top_reasons": [
         "볼린저밴드 상단 과열",
-        "구리 +1.96%",
+        "구리 +2.17%",
         "ROE 적자"
       ],
       "risk_flags": [],
       "macro_reasons": [
         "S&P500 -1.52%",
-        "USD/KRW 1437.38 — 원화 약세 경고"
+        "USD/KRW 1438.1 — 원화 약세 경고"
       ],
       "market_risks": [
-        "USD/KRW 1437.38 — 외환 리스크",
+        "USD/KRW 1438.1 — 외환 리스크",
         "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
@@ -14263,7 +14263,7 @@
       "stop_loss": 19880.0,
       "top_reasons": [
         "MA 역배열",
-        "구리 +1.96%",
+        "구리 +2.17%",
         "외국인 7일 연속 순매도"
       ],
       "risk_flags": [
@@ -14271,10 +14271,10 @@
       ],
       "macro_reasons": [
         "S&P500 -1.52%",
-        "USD/KRW 1437.38 — 원화 약세 경고"
+        "USD/KRW 1438.1 — 원화 약세 경고"
       ],
       "market_risks": [
-        "USD/KRW 1437.38 — 외환 리스크",
+        "USD/KRW 1438.1 — 외환 리스크",
         "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
@@ -14338,7 +14338,7 @@
       "top_reasons": [
         "MA 역배열",
         "볼린저밴드 하단",
-        "구리 +1.96%"
+        "구리 +2.17%"
       ],
       "risk_flags": [
         "MA 역배열 — 하락 추세",
@@ -14348,10 +14348,10 @@
       ],
       "macro_reasons": [
         "S&P500 -1.52%",
-        "USD/KRW 1437.38 — 원화 약세 경고"
+        "USD/KRW 1438.1 — 원화 약세 경고"
       ],
       "market_risks": [
-        "USD/KRW 1437.38 — 외환 리스크",
+        "USD/KRW 1438.1 — 외환 리스크",
         "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
@@ -14415,7 +14415,7 @@
       "top_reasons": [
         "MA 역배열",
         "볼린저밴드 하단",
-        "구리 +1.96%"
+        "구리 +2.17%"
       ],
       "risk_flags": [
         "MA 역배열 — 하락 추세",
@@ -14424,10 +14424,10 @@
       ],
       "macro_reasons": [
         "S&P500 -1.52%",
-        "USD/KRW 1437.38 — 원화 약세 경고"
+        "USD/KRW 1438.1 — 원화 약세 경고"
       ],
       "market_risks": [
-        "USD/KRW 1437.38 — 외환 리스크",
+        "USD/KRW 1438.1 — 외환 리스크",
         "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
@@ -14491,7 +14491,7 @@
       "top_reasons": [
         "MA 역배열",
         "볼린저밴드 하단",
-        "구리 +1.96%"
+        "구리 +2.17%"
       ],
       "risk_flags": [
         "MA 역배열 — 하락 추세",
@@ -14501,10 +14501,10 @@
       ],
       "macro_reasons": [
         "S&P500 -1.52%",
-        "USD/KRW 1437.38 — 원화 약세 경고"
+        "USD/KRW 1438.1 — 원화 약세 경고"
       ],
       "market_risks": [
-        "USD/KRW 1437.38 — 외환 리스크",
+        "USD/KRW 1438.1 — 외환 리스크",
         "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
@@ -14567,7 +14567,7 @@
       "stop_loss": 300.0,
       "top_reasons": [
         "볼린저밴드 하단",
-        "구리 +1.96%",
+        "구리 +2.17%",
         "PER 278.01 — 고평가"
       ],
       "risk_flags": [
@@ -14575,10 +14575,10 @@
       ],
       "macro_reasons": [
         "S&P500 -1.52%",
-        "USD/KRW 1437.38 — 원화 약세 경고"
+        "USD/KRW 1438.1 — 원화 약세 경고"
       ],
       "market_risks": [
-        "USD/KRW 1437.38 — 외환 리스크",
+        "USD/KRW 1438.1 — 외환 리스크",
         "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
@@ -14644,16 +14644,16 @@
       "target_price": 20.0,
       "stop_loss": 10.0,
       "top_reasons": [
-        "구리 +1.96%",
+        "구리 +2.17%",
         "ROE 적자"
       ],
       "risk_flags": [],
       "macro_reasons": [
         "S&P500 -1.52%",
-        "USD/KRW 1437.38 — 원화 약세 경고"
+        "USD/KRW 1438.1 — 원화 약세 경고"
       ],
       "market_risks": [
-        "USD/KRW 1437.38 — 외환 리스크",
+        "USD/KRW 1438.1 — 외환 리스크",
         "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
@@ -14721,7 +14721,7 @@
       "top_reasons": [
         "MA 역배열",
         "볼린저밴드 하단",
-        "구리 +1.96%"
+        "구리 +2.17%"
       ],
       "risk_flags": [
         "MA 역배열 — 하락 추세",
@@ -14730,10 +14730,10 @@
       ],
       "macro_reasons": [
         "S&P500 -1.52%",
-        "USD/KRW 1437.38 — 원화 약세 경고"
+        "USD/KRW 1438.1 — 원화 약세 경고"
       ],
       "market_risks": [
-        "USD/KRW 1437.38 — 외환 리스크",
+        "USD/KRW 1438.1 — 외환 리스크",
         "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
@@ -14797,17 +14797,17 @@
       "top_reasons": [
         "MA 역배열",
         "RSI 과매도 회복 (36.8)",
-        "구리 +1.96%"
+        "구리 +2.17%"
       ],
       "risk_flags": [
         "MA 역배열 — 하락 추세"
       ],
       "macro_reasons": [
         "S&P500 -1.52%",
-        "USD/KRW 1437.38 — 원화 약세 경고"
+        "USD/KRW 1438.1 — 원화 약세 경고"
       ],
       "market_risks": [
-        "USD/KRW 1437.38 — 외환 리스크",
+        "USD/KRW 1438.1 — 외환 리스크",
         "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
@@ -14881,10 +14881,10 @@
       ],
       "macro_reasons": [
         "S&P500 -1.52%",
-        "USD/KRW 1437.38 — 원화 약세 경고"
+        "USD/KRW 1438.1 — 원화 약세 경고"
       ],
       "market_risks": [
-        "USD/KRW 1437.38 — 외환 리스크",
+        "USD/KRW 1438.1 — 외환 리스크",
         "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
@@ -14947,7 +14947,7 @@
       "stop_loss": 70810.0,
       "top_reasons": [
         "MA 역배열",
-        "구리 +1.96%",
+        "구리 +2.17%",
         "외국인 6일 연속 순매도"
       ],
       "risk_flags": [
@@ -14955,10 +14955,10 @@
       ],
       "macro_reasons": [
         "S&P500 -1.52%",
-        "USD/KRW 1437.38 — 원화 약세 경고"
+        "USD/KRW 1438.1 — 원화 약세 경고"
       ],
       "market_risks": [
-        "USD/KRW 1437.38 — 외환 리스크",
+        "USD/KRW 1438.1 — 외환 리스크",
         "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
@@ -15022,7 +15022,7 @@
       "top_reasons": [
         "MA 역배열",
         "볼린저밴드 하단",
-        "구리 +1.96%"
+        "구리 +2.17%"
       ],
       "risk_flags": [
         "MA 역배열 — 하락 추세",
@@ -15032,10 +15032,10 @@
       ],
       "macro_reasons": [
         "S&P500 -1.52%",
-        "USD/KRW 1437.38 — 원화 약세 경고"
+        "USD/KRW 1438.1 — 원화 약세 경고"
       ],
       "market_risks": [
-        "USD/KRW 1437.38 — 외환 리스크",
+        "USD/KRW 1438.1 — 외환 리스크",
         "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
@@ -15110,10 +15110,10 @@
       ],
       "macro_reasons": [
         "S&P500 -1.52%",
-        "USD/KRW 1437.38 — 원화 약세 경고"
+        "USD/KRW 1438.1 — 원화 약세 경고"
       ],
       "market_risks": [
-        "USD/KRW 1437.38 — 외환 리스크",
+        "USD/KRW 1438.1 — 외환 리스크",
         "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
@@ -15185,10 +15185,10 @@
       ],
       "macro_reasons": [
         "S&P500 -1.52%",
-        "USD/KRW 1437.38 — 원화 약세 경고"
+        "USD/KRW 1438.1 — 원화 약세 경고"
       ],
       "market_risks": [
-        "USD/KRW 1437.38 — 외환 리스크",
+        "USD/KRW 1438.1 — 외환 리스크",
         "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
@@ -15252,17 +15252,17 @@
       "top_reasons": [
         "MA 역배열",
         "MACD 데드크로스",
-        "구리 +1.96%"
+        "구리 +2.17%"
       ],
       "risk_flags": [
         "MA 역배열 — 하락 추세"
       ],
       "macro_reasons": [
         "S&P500 -1.52%",
-        "USD/KRW 1437.38 — 원화 약세 경고"
+        "USD/KRW 1438.1 — 원화 약세 경고"
       ],
       "market_risks": [
-        "USD/KRW 1437.38 — 외환 리스크",
+        "USD/KRW 1438.1 — 외환 리스크",
         "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
@@ -15324,7 +15324,7 @@
       "target_price": 60.0,
       "stop_loss": 40.0,
       "top_reasons": [
-        "구리 +1.96%",
+        "구리 +2.17%",
         "ROE 적자",
         "부채비율 435.04%"
       ],
@@ -15333,10 +15333,10 @@
       ],
       "macro_reasons": [
         "S&P500 -1.52%",
-        "USD/KRW 1437.38 — 원화 약세 경고"
+        "USD/KRW 1438.1 — 원화 약세 경고"
       ],
       "market_risks": [
-        "USD/KRW 1437.38 — 외환 리스크",
+        "USD/KRW 1438.1 — 외환 리스크",
         "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
@@ -15416,10 +15416,10 @@
       ],
       "macro_reasons": [
         "S&P500 -1.52%",
-        "USD/KRW 1437.38 — 원화 약세 경고"
+        "USD/KRW 1438.1 — 원화 약세 경고"
       ],
       "market_risks": [
-        "USD/KRW 1437.38 — 외환 리스크",
+        "USD/KRW 1438.1 — 외환 리스크",
         "매크로 RISK-OFF — 보수적 접근 권고"
       ],
       "indicators": {
@@ -15461,5 +15461,5 @@
       "current_price": "8540"
     }
   ],
-  "updated": "2026-07-30 17:30 KST"
+  "updated": "2026-07-30 17:35 KST"
 }
