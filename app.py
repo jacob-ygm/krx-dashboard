@@ -339,7 +339,7 @@ def main():
     df_filt = df_filt.copy()
     df_filt["market"] = df_filt["ticker"].apply(lambda x: "KR" if str(x).isdigit() else "US")
 
-    tab_guide, tab_guide, tab_kr, tab_us, tab_sector, tab_watch, tab2, tab3, tab4 = st.tabs(["📖 가이드", "🇰🇷 한국", "🇺🇸 미국", "📈 섹터 동향", "👀 관찰 대상", "📊 점수 분석", "🔍 종목 상세", "🧪 백테스트"])
+    tab_guide, tab_kr, tab_us, tab_sector, tab_watch, tab2, tab3, tab4 = st.tabs(["📖 가이드", "🇰🇷 한국", "🇺🇸 미국", "📈 섹터 동향", "👀 관찰 대상", "📊 점수 분석", "🔍 종목 상세", "🧪 백테스트"])
 
     # ─── 탭1: 신호 리스트 ────────────────────────────────────────────────
     def render_signal_list(df_filt):
